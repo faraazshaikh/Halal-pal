@@ -4,13 +4,9 @@ import 'package:provider/provider.dart';
 import 'package:smooth_app/data_models/onboarding_loader.dart';
 import 'package:smooth_app/data_models/preferences/user_preferences.dart';
 import 'package:smooth_app/database/local_database.dart';
-import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/onboarding/onboarding_flow_navigator.dart';
 import 'package:smooth_app/pages/onboarding/v2/onboarding_bottom_hills.dart';
-import 'package:smooth_app/resources/app_animations.dart';
-import 'package:smooth_app/themes/smooth_theme_colors.dart';
 import 'package:smooth_app/widgets/smooth_scaffold.dart';
-import 'package:smooth_app/widgets/text/text_highlighter.dart';
 
 /// Onboarding page: "reinvention"
 class OnboardingHomePage extends StatelessWidget {
@@ -21,7 +17,7 @@ class OnboardingHomePage extends StatelessWidget {
     return SmoothBrightnessOverride(
       brightness: Brightness.dark,
       child: SmoothScaffold(
-        backgroundColor: const Color(0xFFE3F3FE),
+        backgroundColor: const Color(0xFFF6F1E4),
         body: Provider<OnboardingConfig>.value(
           value: OnboardingConfig._(MediaQuery.sizeOf(context)),
           child: Stack(
@@ -71,7 +67,6 @@ class _OnboardingWelcomePageContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AppLocalizations appLocalizations = AppLocalizations.of(context);
     final double fontMultiplier = OnboardingConfig.of(context).fontMultiplier;
     final double hillsHeight = OnboardingBottomHills.height(context);
 
@@ -86,45 +81,37 @@ class _OnboardingWelcomePageContent extends StatelessWidget {
           Expanded(
             flex: 15,
             child: Text(
-              appLocalizations.onboarding_home_welcome_text1,
+              'Welcome to\nHalal Pal',
               style: TextStyle(
-                fontSize: 45 * fontMultiplier,
+                fontSize: 38 * fontMultiplier,
                 fontWeight: FontWeight.bold,
+                height: 1.15,
+                color: const Color(0xFF0F2A1C),
               ),
               textAlign: TextAlign.center,
             ),
           ),
-          const Expanded(flex: 37, child: _SunAndCloud()),
+          Expanded(
+            flex: 37,
+            child: Center(
+              child: SvgPicture.asset('assets/app/release_icon.svg', width: 170),
+            ),
+          ),
           Expanded(
             flex: 45,
             child: FractionallySizedBox(
-              widthFactor: 0.65,
+              widthFactor: 0.75,
               child: Align(
                 alignment: const Alignment(0, -0.2),
-                child: TextWithBubbleParts(
-                  text: appLocalizations.onboarding_home_welcome_text2,
-                  fontMultiplier: fontMultiplier,
-                  backgroundColor: context
-                      .extension<SmoothColorsThemeExtension>()
-                      .secondaryVibrant,
-                  textAlign: TextAlign.center,
-                  textStyle: const TextStyle(
-                    fontSize: 26,
-                    height: 1.48,
+                child: Text(
+                  'Scan any packaged food and see at once whether it is halal, doubtful or haram.',
+                  style: TextStyle(
+                    fontSize: 22 * fontMultiplier,
+                    height: 1.4,
                     fontWeight: FontWeight.w600,
+                    color: const Color(0xFF0F2A1C),
                   ),
-                  bubblePadding: const EdgeInsetsDirectional.only(
-                    top: 1.0,
-                    bottom: 5.0,
-                    start: 15.0,
-                    end: 15.0,
-                  ),
-                  bubbleTextStyle: const TextStyle(
-                    fontSize: 22,
-                    height: 1.53,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white,
-                  ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             ),
@@ -132,70 +119,6 @@ class _OnboardingWelcomePageContent extends StatelessWidget {
         ],
       ),
     );
-  }
-}
-
-class _SunAndCloud extends StatefulWidget {
-  const _SunAndCloud();
-
-  @override
-  State<_SunAndCloud> createState() => _SunAndCloudState();
-}
-
-class _SunAndCloudState extends State<_SunAndCloud>
-    with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation<double> _animation;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 2),
-    )..addListener(() => setState(() {}));
-    _animation = Tween<double>(begin: -1.0, end: 1.0).animate(_controller);
-    _controller.repeat(reverse: true);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final TextDirection textDirection = Directionality.of(context);
-
-    return RepaintBoundary(
-      child: LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints) {
-          return Stack(
-            children: <Widget>[
-              Positioned.directional(
-                top: constraints.maxHeight * 0.3,
-                bottom: constraints.maxHeight * 0.2,
-                start: (_animation.value * 161.0) * 0.3,
-                textDirection: textDirection,
-                child: SvgPicture.asset('assets/onboarding/cloud.svg'),
-              ),
-              const Align(
-                alignment: Alignment.center,
-                child: SunAnimation(type: SunAnimationType.loop),
-              ),
-              Positioned.directional(
-                top: constraints.maxHeight * 0.22,
-                bottom: constraints.maxHeight * 0.35,
-                end: (_animation.value * 40.0) - 31,
-                textDirection: textDirection,
-                child: SvgPicture.asset('assets/onboarding/cloud.svg'),
-              ),
-            ],
-          );
-        },
-      ),
-    );
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
   }
 }
 

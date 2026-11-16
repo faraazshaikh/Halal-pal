@@ -64,45 +64,11 @@ class PreferencesPage extends StatelessWidget {
     return ChangeNotifierProvider<PreferencesRootSearchController>(
       create: (_) => PreferencesRootSearchController(),
       child: DefaultPreferencesRoot(
-        customAppBar: userId != null
-            ? LoggedInAppBar(userId: userId)
-            : const LoggedOutAppBar(),
+        title: 'Halal Pal',
         cards: <PreferenceCard>[
-          _buildContributeCard(context, appLocalizations, pricesRoot),
           PreferenceCard(
             title: appLocalizations.preferences_page_customize_app_title,
-            tiles: <PreferenceTile>[
-              ..._projects.map((PreferencesPageProjects project) {
-                final bool alreadySet = userPreferences
-                    .arePreferencesSetForProject(project);
-                return NavigationPreferenceTile(
-                  leading: project.getLeadingIcon(lightTheme),
-                  title: project.getTitle(appLocalizations),
-                  subtitleText: project.getSubtitle(appLocalizations),
-                  boldPostScriptum: alreadySet
-                      ? null
-                      : appLocalizations.myPreferences_not_configured_yet,
-                  target: FoodPreferencesPage(project: project),
-                  fullScreen: true,
-                );
-              }),
-              _buildAppSettingsTile(appLocalizations),
-            ],
-          ),
-          PreferenceCard(
-            title: appLocalizations.preferences_card_project,
-            tiles: <PreferenceTile>[
-              _buildContributeProjectTile(appLocalizations),
-              _buildSupportTile(context, appLocalizations),
-            ],
-          ),
-          PreferenceCard(
-            title: appLocalizations.preferences_card_help,
-            header: const NutriScoreV2Banner(),
-            tiles: <PreferenceTile>[
-              _buildFaqTile(appLocalizations),
-              _buildConnectTile(appLocalizations),
-            ],
+            tiles: <PreferenceTile>[_buildAppSettingsTile(appLocalizations)],
           ),
           PreferenceCard(
             title: appLocalizations.preferences_card_about,
@@ -113,31 +79,11 @@ class PreferencesPage extends StatelessWidget {
                   appLocalizations,
                   context.extension<SmoothColorsThemeExtension>().error,
                 ),
-              _buildAboutAppTile(appLocalizations),
             ],
           ),
         ],
-        searchRoots: <PreferencesRoot>[pricesRoot],
-        externalSearchTiles: const <ExternalSearchPreferenceTile>[
-          WikiSearchPreferenceTile(),
-          GithubSearchPreferenceTile(),
-          ForumSearchPreferenceTile(),
-        ],
-        footer: (_) => Consumer2<PreferencesRootSearchController, FocusNode>(
-          builder:
-              (
-                BuildContext context,
-                PreferencesRootSearchController controller,
-                FocusNode focusNode,
-                _,
-              ) {
-                if (controller.query?.isNotEmpty == true ||
-                    focusNode.hasFocus) {
-                  return EMPTY_WIDGET;
-                }
-                return const SocialNetworksFooter();
-              },
-        ),
+        searchRoots: const <PreferencesRoot>[],
+        externalSearchTiles: const <ExternalSearchPreferenceTile>[],
       ),
     );
   }

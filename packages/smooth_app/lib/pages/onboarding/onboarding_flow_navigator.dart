@@ -24,20 +24,32 @@ enum OnboardingPage {
   PERMISSIONS_PAGE,
   ONBOARDING_COMPLETE;
 
+  // Halal Pal: the long Open Food Facts tour is skipped. The flow is
+  // welcome -> camera permission -> done.
   OnboardingPage getPrevPage() {
-    int indexOf = OnboardingPage.values.indexOf(this);
-    if (indexOf > 0) {
-      indexOf--;
+    switch (this) {
+      case OnboardingPage.PERMISSIONS_PAGE:
+        return OnboardingPage.HOME_PAGE;
+      case OnboardingPage.ONBOARDING_COMPLETE:
+        return OnboardingPage.PERMISSIONS_PAGE;
+      default:
+        return OnboardingPage.NOT_STARTED;
     }
-    return OnboardingPage.values[indexOf];
   }
 
   OnboardingPage getNextPage() {
-    int indexOf = OnboardingPage.values.indexOf(this);
-    if (indexOf < OnboardingPage.values.length - 1) {
-      indexOf++;
+    switch (this) {
+      case OnboardingPage.NOT_STARTED:
+      case OnboardingPage.HOME_PAGE:
+      case OnboardingPage.WELCOME:
+      case OnboardingPage.HEALTH_CARD_EXAMPLE:
+      case OnboardingPage.ECO_CARD_EXAMPLE:
+      case OnboardingPage.PREFERENCES_PAGE:
+        return OnboardingPage.PERMISSIONS_PAGE;
+      case OnboardingPage.PERMISSIONS_PAGE:
+      case OnboardingPage.ONBOARDING_COMPLETE:
+        return OnboardingPage.ONBOARDING_COMPLETE;
     }
-    return OnboardingPage.values[indexOf];
   }
 
   bool isOnboardingComplete() =>
@@ -49,7 +61,7 @@ enum OnboardingPage {
     switch (this) {
       case OnboardingPage.NOT_STARTED:
       case OnboardingPage.HOME_PAGE:
-        return const Color(0xFFDFF4FF);
+        return const Color(0xFFF6F1E4);
       case OnboardingPage.WELCOME:
         return const Color(0xFFFCFCFC);
       case OnboardingPage.HEALTH_CARD_EXAMPLE:
@@ -57,9 +69,9 @@ enum OnboardingPage {
       case OnboardingPage.ECO_CARD_EXAMPLE:
         return const Color(0xFFE3F6DE);
       case OnboardingPage.PREFERENCES_PAGE:
-        return const Color(0xFFEBF1FF);
+        return const Color(0xFFEAF3EC);
       case OnboardingPage.PERMISSIONS_PAGE:
-        return const Color(0xFFEBF1FF);
+        return const Color(0xFFEAF3EC);
       case OnboardingPage.ONBOARDING_COMPLETE:
         // whatever, it's not used
         return Colors.black;
