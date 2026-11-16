@@ -27,7 +27,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "org.openfoodfacts.scanner"
+        applicationId = "com.intelisenselabs.halalpal"
         // In debug builds, bump minSdk to at least 24 (Android 7.0+) unless explicitly overridden.
         // This avoids legacy MultiDex dexing passes and heavy Java desugaring transformations,
         // drastically speeding up incremental and cold debug builds.

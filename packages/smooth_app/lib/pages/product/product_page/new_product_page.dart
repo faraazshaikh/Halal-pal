@@ -19,6 +19,7 @@ import 'package:smooth_app/helpers/ui_helpers.dart';
 import 'package:smooth_app/knowledge_panel/knowledge_panels_builder.dart';
 import 'package:smooth_app/pages/donation/donation_reminder_scope.dart';
 import 'package:smooth_app/pages/product/common/product_refresher.dart';
+import 'package:smooth_app/helpers/halal_checker.dart';
 import 'package:smooth_app/pages/product/halal_card.dart';
 import 'package:smooth_app/pages/product/product_page/footer/new_product_footer.dart';
 import 'package:smooth_app/pages/product/product_page/header/product_page_tabs.dart';
@@ -119,9 +120,12 @@ class ProductPageState extends State<ProductPage>
           Provider<ProductPageState>.value(value: this),
           Provider<ProductPageCompatibility>.value(
             value: ProductPageCompatibility(
-              color: ProductCompatibilityHelper.product(
-                matchedProductV2,
-              ).getColor(context),
+              color: HalalStyle.of(
+                checkHalal(
+                  ingredientsText: upToDateProduct.ingredientsText,
+                  additiveNames: upToDateProduct.additives?.names,
+                ).verdict,
+              ).color,
               matchedProductV2: matchedProductV2,
             ),
           ),
@@ -180,6 +184,7 @@ class ProductPageState extends State<ProductPage>
                       pinned: true,
                       floating: false,
                     ),
+                    SliverToBoxAdapter(child: HalalCard(upToDateProduct)),
                     SliverToBoxAdapter(
                       child: HeroMode(
                         enabled:
@@ -195,7 +200,6 @@ class ProductPageState extends State<ProductPage>
                         ),
                       ),
                     ),
-                    SliverToBoxAdapter(child: HalalCard(upToDateProduct)),
                     ProductPageTabBar(tabController: tabController, tabs: tabs),
                   ];
                 },
@@ -268,7 +272,7 @@ class ProductPageCompatibility {
   final Color _color;
   final String? score;
 
-  Color? get color => score != null ? _color : null;
+  Color? get color => _color;
 
   @override
   //ignore: avoid_equals_and_hash_code_on_mutable_classes (false positive)

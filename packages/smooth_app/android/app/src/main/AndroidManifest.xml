@@ -18,7 +18,7 @@
     </queries>
 
     <application
-        android:label="OpenFoodFacts"
+        android:label="Halal Pal"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:hasFragileUserData="true"

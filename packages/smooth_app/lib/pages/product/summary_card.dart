@@ -272,11 +272,6 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
             },
           ),
         ),
-        if (ProductIncompleteCard.isProductIncomplete(upToDateProduct))
-          Padding(
-            padding: padding,
-            child: ProductIncompleteCard(product: upToDateProduct),
-          ),
         ..._getAttributes(scoreAttributes),
         if (widget.attributeGroupsVisible) _attributesContainer(padding),
         Padding(

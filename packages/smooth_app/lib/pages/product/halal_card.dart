@@ -3,7 +3,50 @@ import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/helpers/halal_checker.dart';
 
-/// Card on the product page showing the result of the local halal check.
+/// Colours, icon and wording for each halal verdict.
+class HalalStyle {
+  const HalalStyle({
+    required this.label,
+    required this.subtitle,
+    required this.color,
+    required this.icon,
+  });
+
+  final String label;
+  final String subtitle;
+  final Color color;
+  final IconData icon;
+
+  static HalalStyle of(HalalVerdict verdict) => switch (verdict) {
+    HalalVerdict.haram => const HalalStyle(
+      label: 'Haram',
+      subtitle: 'Contains haram ingredients',
+      color: Color(0xFFC62828),
+      icon: Icons.close_rounded,
+    ),
+    HalalVerdict.mushbooh => const HalalStyle(
+      label: 'Doubtful',
+      subtitle: 'Mushbooh: depends on the source',
+      color: Color(0xFFE08A00),
+      icon: Icons.question_mark_rounded,
+    ),
+    HalalVerdict.clear => const HalalStyle(
+      label: 'No issues found',
+      subtitle: 'No haram or doubtful ingredients flagged',
+      color: Color(0xFF2E7D32),
+      icon: Icons.check_rounded,
+    ),
+    HalalVerdict.unknown => const HalalStyle(
+      label: 'No data',
+      subtitle: 'No ingredient list to check',
+      color: Color(0xFF616161),
+      icon: Icons.help_outline_rounded,
+    ),
+  };
+}
+
+/// Verdict banner on the product page: a big coloured status, then the
+/// ingredients that caused it.
 ///
 /// Texts are hardcoded in English on purpose (personal fork).
 class HalalCard extends StatelessWidget {
@@ -17,88 +60,99 @@ class HalalCard extends StatelessWidget {
       ingredientsText: product.ingredientsText,
       additiveNames: product.additives?.names,
     );
-    final _HalalStyle style = _HalalStyle.of(result.verdict);
+    final HalalStyle style = HalalStyle.of(result.verdict);
     final TextTheme textTheme = Theme.of(context).textTheme;
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: SMALL_SPACE,
-        vertical: SMALL_SPACE,
-      ),
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.all(MEDIUM_SPACE),
-        decoration: BoxDecoration(
-          color: style.color.withValues(alpha: 0.12),
-          border: Border.all(color: style.color, width: 1.5),
-          borderRadius: ROUNDED_BORDER_RADIUS,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Icon(style.icon, color: style.color),
-                const SizedBox(width: SMALL_SPACE),
-                Expanded(
-                  child: Text(
-                    style.title,
-                    style: textTheme.titleMedium?.copyWith(
-                      color: style.color,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+    return Container(
+      width: double.infinity,
+      color: style.color,
+      padding: const EdgeInsets.all(MEDIUM_SPACE),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              Container(
+                width: 64,
+                height: 64,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
                 ),
-              ],
-            ),
-            for (final HalalFinding finding in result.findings)
-              Padding(
-                padding: const EdgeInsets.only(top: SMALL_SPACE),
-                child: Text(
-                  '• ${finding.term} — ${finding.reason}',
-                  style: textTheme.bodyMedium,
+                child: Icon(style.icon, color: style.color, size: 40),
+              ),
+              const SizedBox(width: MEDIUM_SPACE),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      style.label,
+                      style: textTheme.headlineMedium?.copyWith(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                    Text(
+                      style.subtitle,
+                      style: textTheme.bodyMedium?.copyWith(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
               ),
-            const SizedBox(height: SMALL_SPACE),
-            Text(
-              'Based on the ingredient list only. This is not a halal '
-              'certificate: check the pack for a halal mark.',
-              style: textTheme.bodySmall,
+            ],
+          ),
+          if (result.findings.isNotEmpty) ...<Widget>[
+            const SizedBox(height: MEDIUM_SPACE),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(SMALL_SPACE),
+              decoration: BoxDecoration(
+                color: Colors.black.withValues(alpha: 0.25),
+                borderRadius: ROUNDED_BORDER_RADIUS,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  for (final HalalFinding finding in result.findings)
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 4),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5, right: 8),
+                            child: Icon(
+                              Icons.circle,
+                              size: 10,
+                              color: HalalStyle.of(finding.verdict).color,
+                            ),
+                          ),
+                          Expanded(
+                            child: Text(
+                              '${finding.term}: ${finding.reason}',
+                              style: textTheme.bodyMedium?.copyWith(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                ],
+              ),
             ),
           ],
-        ),
+          const SizedBox(height: SMALL_SPACE),
+          Text(
+            'Based on the ingredient list only. Not a halal certificate: '
+            'check the pack for a halal mark.',
+            style: textTheme.bodySmall?.copyWith(color: Colors.white70),
+          ),
+        ],
       ),
     );
   }
-}
-
-class _HalalStyle {
-  const _HalalStyle(this.title, this.color, this.icon);
-
-  final String title;
-  final Color color;
-  final IconData icon;
-
-  static _HalalStyle of(HalalVerdict verdict) => switch (verdict) {
-    HalalVerdict.haram => const _HalalStyle(
-      'Haram ingredient found',
-      Color(0xFFB3261E),
-      Icons.dangerous,
-    ),
-    HalalVerdict.mushbooh => const _HalalStyle(
-      'Doubtful (mushbooh) ingredients',
-      Color(0xFFB26A00),
-      Icons.warning_amber_rounded,
-    ),
-    HalalVerdict.clear => const _HalalStyle(
-      'No haram or doubtful ingredients flagged',
-      Color(0xFF2E7D32),
-      Icons.check_circle,
-    ),
-    HalalVerdict.unknown => const _HalalStyle(
-      'No ingredient list to check',
-      Color(0xFF616161),
-      Icons.help_outline,
-    ),
-  };
 }

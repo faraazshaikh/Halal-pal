@@ -40,18 +40,8 @@ class ScanBottomCard extends StatelessWidget {
                 // Nothing (-> news)
               }
 
-              final ScanTagLineState state = scanTagLineProvider.value;
-
-              return switch (state) {
-                ScanTagLineStateLoading() => const ScanBottomCardLoading(),
-                ScanTagLineStateNoContent() => EMPTY_WIDGET,
-                // Keyed on the state: the card keeps its rotation index across
-                // rebuilds, and a shorter list would index past its end.
-                ScanTagLineStateLoaded() => KeyedSubtree(
-                  key: ObjectKey(state),
-                  child: ScanNewsCard(news: state.tagLine),
-                ),
-              };
+              // Halal Pal: no Open Food Facts news card.
+              return EMPTY_WIDGET;
             },
       ),
     );

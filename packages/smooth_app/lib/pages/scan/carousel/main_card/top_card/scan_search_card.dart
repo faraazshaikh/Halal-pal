@@ -51,15 +51,14 @@ class ScanSearchCard extends StatelessWidget {
           children: <Widget>[
             LayoutBuilder(
               builder: (_, BoxConstraints constraints) {
-                return SvgPicture(
-                  AssetBytesLoader(
-                    lightTheme
-                        ? 'assets/app/logo_text_black.svg.vec'
-                        : 'assets/app/logo_text_white.svg.vec',
+                return Text(
+                  'Halal Pal',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: math.min(44.0, constraints.maxWidth * 0.14),
+                    fontWeight: FontWeight.w800,
+                    color: lightTheme ? Colors.black : Colors.white,
                   ),
-                  width: math.min(311.0, constraints.maxWidth * 0.85),
-                  semanticsLabel:
-                      localizations.homepage_main_card_logo_description,
                 );
               },
             ),

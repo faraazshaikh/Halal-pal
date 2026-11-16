@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - halal-badge
+      - halalpal-rebrand
 
 permissions:
   contents: read
