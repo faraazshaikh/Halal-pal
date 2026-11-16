@@ -7,6 +7,7 @@ import 'package:smooth_app/pages/preferences_v2/tiles/preference_tile.dart';
 class DefaultPreferencesRoot extends PreferencesRoot {
   const DefaultPreferencesRoot({
     required this.cards,
+    super.title,
     super.customAppBar,
     this.externalSearchTiles = const <ExternalSearchPreferenceTile>[],
     this.searchRoots = const <PreferencesRoot>[],
