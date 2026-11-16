@@ -19,6 +19,7 @@ import 'package:smooth_app/helpers/ui_helpers.dart';
 import 'package:smooth_app/knowledge_panel/knowledge_panels_builder.dart';
 import 'package:smooth_app/pages/donation/donation_reminder_scope.dart';
 import 'package:smooth_app/pages/product/common/product_refresher.dart';
+import 'package:smooth_app/pages/product/halal_card.dart';
 import 'package:smooth_app/pages/product/product_page/footer/new_product_footer.dart';
 import 'package:smooth_app/pages/product/product_page/header/product_page_tabs.dart';
 import 'package:smooth_app/pages/product/product_page/new_product_header.dart';
@@ -194,6 +195,7 @@ class ProductPageState extends State<ProductPage>
                         ),
                       ),
                     ),
+                    SliverToBoxAdapter(child: HalalCard(upToDateProduct)),
                     ProductPageTabBar(tabController: tabController, tabs: tabs),
                   ];
                 },
