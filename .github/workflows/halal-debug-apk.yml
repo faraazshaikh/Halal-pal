@@ -54,6 +54,10 @@ jobs:
 
       - name: 📱 Build debug APK
         working-directory: packages/smooth_app
+        env:
+          # sentry_flutter needs minSdk 26 (Android 8.0+); build.gradle.kts
+          # reads this Gradle project property.
+          ORG_GRADLE_PROJECT_minSdk: 26
         run: flutter build apk --debug -t lib/entrypoints/android/main_google_play.dart --target-platform android-arm64
 
       - name: ⬆️ Upload APK
