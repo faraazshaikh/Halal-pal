@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:smooth_app/cards/data_cards/score_card.dart';
 import 'package:smooth_app/cards/product_cards/product_title_card.dart';
 import 'package:smooth_app/data_models/continuous_scan_model.dart';
-import 'package:smooth_app/data_models/preferences/user_preferences.dart';
 import 'package:smooth_app/data_models/product_preferences.dart';
 import 'package:smooth_app/data_models/up_to_date_mixin.dart';
 import 'package:smooth_app/database/local_database.dart';
@@ -215,15 +214,6 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
     EdgeInsetsGeometry padding = EdgeInsetsDirectional.zero,
   }) {
     final AppLocalizations localizations = AppLocalizations.of(context);
-    final UserPreferences userPreferences = context.read<UserPreferences>();
-
-    final List<String> excludedAttributeIds = userPreferences
-        .getExcludedAttributeIds();
-    final List<Attribute> scoreAttributes = getPopulatedAttributes(
-      upToDateProduct,
-      SCORE_ATTRIBUTE_IDS,
-      excludedAttributeIds,
-    );
 
     final List<Widget> summaryCardButtons = <Widget>[];
 
@@ -272,7 +262,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
             },
           ),
         ),
-        ..._getAttributes(scoreAttributes),
+        // Halal Pal: no Nutri-Score / Green Score rows.
         if (widget.attributeGroupsVisible) _attributesContainer(padding),
         Padding(
           padding: padding,

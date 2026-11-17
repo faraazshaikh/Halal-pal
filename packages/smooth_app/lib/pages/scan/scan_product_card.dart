@@ -41,7 +41,7 @@ class ScanProductCardFound extends StatelessWidget {
         }
       },
       child: ScanProductBaseCard(
-        headerLabel: halalStyle.label,
+        headerLabel: product.barcode!,
         headerIndicatorColor: Colors.white,
         headerBackgroundColor: halalStyle.color,
         childPadding: EdgeInsets.zero,

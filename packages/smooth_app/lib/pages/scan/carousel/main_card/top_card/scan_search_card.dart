@@ -156,7 +156,7 @@ class _ScanSearchBar extends StatelessWidget {
                           color: context.lightTheme()
                               ? theme.primaryBlack
                               : theme.primaryUltraBlack,
-                          child: const OxFLogosAnimation(),
+                          child: const Icon(Icons.mosque_outlined, size: 28),
                         ),
                       ),
                       Expanded(
