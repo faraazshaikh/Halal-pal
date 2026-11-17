@@ -65,72 +65,96 @@ class _ScanPageState extends State<ScanPage> {
       backgroundColor: context.lightTheme()
           ? themeExtension.primaryLight
           : null,
-      body: Column(
-        children: <Widget>[
-          if (hasACamera)
-            Expanded(
-              flex: 100 - _carouselHeightPct,
-              child: Consumer<PermissionListener>(
-                builder:
-                    (BuildContext context, PermissionListener listener, _) {
-                      return switch (listener.value.status) {
-                        DevicePermissionStatus.checking => EMPTY_WIDGET,
-                        DevicePermissionStatus.granted =>
-                          const CameraScannerPage(),
-                        _ => const _PermissionDeniedCard(),
-                      };
-                    },
-              ),
-            ),
-          Expanded(
-            flex: _carouselHeightPct,
-            child: Padding(
-              padding: const EdgeInsetsDirectional.only(bottom: BALANCED_SPACE),
-              child: ScanPageCarousel(
-                onPageChangedTo: (int page, String? barcode) async {
-                  if (barcode == null) {
-                    // We only notify for new products
-                    return;
-                  }
-
-                  // Both are Future methods, but it doesn't matter to wait here
-                  unawaited(SmoothHapticFeedback.lightNotification());
-
-                  if (_userPreferences.playCameraSound) {
-                    await _initSoundManagerIfNecessary();
-                    await _musicPlayer!.stop();
-                    await _musicPlayer!.play(
-                      AssetSource('audio/beep.wav'),
-                      volume: 0.5,
-                      ctx: AudioContext(
-                        android: const AudioContextAndroid(
-                          isSpeakerphoneOn: false,
-                          stayAwake: false,
-                          contentType: AndroidContentType.sonification,
-                          usageType: AndroidUsageType.notification,
-                          audioFocus: AndroidAudioFocus.gainTransientMayDuck,
-                        ),
-                        iOS: AudioContextIOS(
-                          category: AVAudioSessionCategory.soloAmbient,
-                          options: const <AVAudioSessionOptions>{
-                            AVAudioSessionOptions.mixWithOthers,
-                          },
-                        ),
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints) {
+          final double sheetHeight =
+              constraints.maxHeight * _carouselHeightPct / 100;
+          return Stack(
+            children: <Widget>[
+              if (hasACamera)
+                Positioned(
+                  top: 0.0,
+                  left: 0.0,
+                  right: 0.0,
+                  // The camera runs under the rounded top of the sheet.
+                  bottom: sheetHeight - 28.0,
+                  child: Consumer<PermissionListener>(
+                    builder:
+                        (BuildContext context, PermissionListener listener, _) {
+                          return switch (listener.value.status) {
+                            DevicePermissionStatus.checking => EMPTY_WIDGET,
+                            DevicePermissionStatus.granted =>
+                              const CameraScannerPage(),
+                            _ => const _PermissionDeniedCard(),
+                          };
+                        },
+                  ),
+                ),
+              // Apple-style bottom sheet with rounded top corners.
+              Positioned(
+                left: 0.0,
+                right: 0.0,
+                bottom: 0.0,
+                height: sheetHeight,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.vertical(
+                    top: Radius.circular(28.0),
+                  ),
+                  child: ColoredBox(
+                    color: Theme.of(context).scaffoldBackgroundColor,
+                    child: Padding(
+                      padding: const EdgeInsetsDirectional.only(
+                        bottom: BALANCED_SPACE,
                       ),
-                    );
-                  }
+                      child: ScanPageCarousel(
+                        onPageChangedTo: (int page, String? barcode) async {
+                          if (barcode == null) {
+                            // We only notify for new products
+                            return;
+                          }
 
-                  SemanticsService.sendAnnouncement(
-                    PlatformDispatcher.instance.implicitView!,
-                    appLocalizations.scan_announce_new_barcode(barcode),
-                    direction,
-                    assertiveness: Assertiveness.assertive,
-                  );
-                },
+                          // Both are Future methods, but it doesn't matter to wait here
+                          unawaited(SmoothHapticFeedback.lightNotification());
+
+                          if (_userPreferences.playCameraSound) {
+                            await _initSoundManagerIfNecessary();
+                            await _musicPlayer!.stop();
+                            await _musicPlayer!.play(
+                              AssetSource('audio/beep.wav'),
+                              volume: 0.5,
+                              ctx: AudioContext(
+                                android: const AudioContextAndroid(
+                                  isSpeakerphoneOn: false,
+                                  stayAwake: false,
+                                  contentType: AndroidContentType.sonification,
+                                  usageType: AndroidUsageType.notification,
+                                  audioFocus: AndroidAudioFocus.gainTransientMayDuck,
+                                ),
+                                iOS: AudioContextIOS(
+                                  category: AVAudioSessionCategory.soloAmbient,
+                                  options: const <AVAudioSessionOptions>{
+                                    AVAudioSessionOptions.mixWithOthers,
+                                  },
+                                ),
+                              ),
+                            );
+                          }
+
+                          SemanticsService.sendAnnouncement(
+                            PlatformDispatcher.instance.implicitView!,
+                            appLocalizations.scan_announce_new_barcode(barcode),
+                            direction,
+                            assertiveness: Assertiveness.assertive,
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                ),
               ),
-            ),
-          ),
-        ],
+            ],
+          );
+        },
       ),
     );
   }

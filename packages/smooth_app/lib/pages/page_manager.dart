@@ -138,11 +138,13 @@ class PageManagerState extends State<PageManager> {
               icon: const Icon(Icons.qr_code_scanner_rounded),
               label: appLocalizations.scan_navbar_label,
               visible: !showNewHomePage,
+              prominent: true,
             ),
             SmoothNavigationDestination(
               icon: const Icon(Icons.qr_code_scanner_rounded),
               label: appLocalizations.scan_navbar_label,
               visible: showNewHomePage,
+              prominent: true,
             ),
             SmoothNavigationDestination(
               icon: const Icon(Icons.search_rounded),

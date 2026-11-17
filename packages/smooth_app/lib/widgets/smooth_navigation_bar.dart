@@ -203,6 +203,47 @@ class _SmoothNavigationBarItemState extends State<_SmoothNavigationBarItem>
         .extension<SmoothColorsThemeExtension>();
     final bool lightTheme = context.lightTheme();
 
+    if (widget.destination.prominent) {
+      final Color accent = lightTheme
+          ? const Color(0xFF1B7F4B)
+          : const Color(0xFF30D158);
+      return Padding(
+        padding: const EdgeInsetsDirectional.only(top: 6.0, bottom: 6.0),
+        child: Center(
+          child: AnimatedScale(
+            scale: widget.selected ? 1.0 : 0.94,
+            duration: const Duration(milliseconds: 200),
+            child: Container(
+              width: 54.0,
+              height: 54.0,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: <Color>[
+                    Color.lerp(accent, Colors.white, 0.18)!,
+                    accent,
+                  ],
+                ),
+                boxShadow: <BoxShadow>[
+                  BoxShadow(
+                    color: accent.withValues(alpha: 0.45),
+                    blurRadius: 14.0,
+                    offset: const Offset(0.0, 4.0),
+                  ),
+                ],
+              ),
+              child: IconTheme(
+                data: const IconThemeData(color: Colors.white, size: 28.0),
+                child: widget.destination.icon,
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
     return Padding(
       padding: const EdgeInsetsDirectional.only(
         start: MEDIUM_SPACE,
@@ -365,9 +406,13 @@ class SmoothNavigationDestination {
     required this.icon,
     required this.label,
     this.visible = true,
+    this.prominent = false,
   });
 
   final Widget icon;
   final String label;
   final bool visible;
+
+  /// Drawn as a raised round button (used for Scan).
+  final bool prominent;
 }
