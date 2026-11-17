@@ -25,7 +25,7 @@ const ColorScheme darkColorScheme = ColorScheme(
   onSecondary: Color(0xFFFFFFFF),
   error: Color(0xFFEB5757),
   onError: Color(0xFFFFFFFF),
-  surface: Color(0xFF0E1A1A),
+  surface: Color(0xFF1C1C1E),
   onSurface: Color(0xFFFFFFFF),
 );
 

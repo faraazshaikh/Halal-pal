@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:math' as math;
+import 'dart:ui' show ImageFilter;
 
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
@@ -36,10 +37,23 @@ class _SmoothNavigationBarState extends State<SmoothNavigationBar> {
       onChange: (Size size) => _size = size,
       child: SizedBox(
         width: double.infinity,
-        child: ColoredBox(
-          color: context.lightTheme()
-              ? const Color(0xFFEFE8EA)
-              : Theme.of(context).scaffoldBackgroundColor,
+        child: ClipRect(
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 28.0, sigmaY: 28.0),
+            child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: context.lightTheme()
+                ? const Color(0xFFF9F9F9).withValues(alpha: 0.82)
+                : const Color(0xFF1C1C1E).withValues(alpha: 0.82),
+            border: Border(
+              top: BorderSide(
+                color: context.lightTheme()
+                    ? const Color(0x33000000)
+                    : const Color(0x40FFFFFF),
+                width: 0.5,
+              ),
+            ),
+          ),
           child: Padding(
             padding: EdgeInsetsDirectional.only(
               bottom: math.max(
@@ -103,6 +117,8 @@ class _SmoothNavigationBarState extends State<SmoothNavigationBar> {
             ),
           ),
         ),
+        ),
+        ),
       ),
     );
   }
@@ -150,13 +166,17 @@ class _SmoothNavigationBarItemState extends State<_SmoothNavigationBarItem>
         .extension<SmoothColorsThemeExtension>();
     final bool lightTheme = context.lightTheme();
 
+    // iOS tab bar: grey when idle, system green when selected, no pill.
+    final Color active = lightTheme
+        ? const Color(0xFF1B7F4B)
+        : const Color(0xFF30D158);
     _iconColorAnimation = ColorTween(
-      begin: lightTheme ? extension.primaryDark : extension.primaryMedium,
-      end: lightTheme ? Colors.white : extension.primaryBlack,
+      begin: const Color(0xFF8E8E93),
+      end: active,
     ).animate(_controller);
     _textColorAnimation = ColorTween(
-      begin: lightTheme ? extension.primaryDark : extension.primaryMedium,
-      end: lightTheme ? extension.primaryBlack : extension.primaryLight,
+      begin: const Color(0xFF8E8E93),
+      end: active,
     ).animate(_controller);
 
     if (widget.selected) {
@@ -203,12 +223,8 @@ class _SmoothNavigationBarItemState extends State<_SmoothNavigationBarItem>
                   Positioned.fill(
                     child: CustomPaint(
                       painter: _SmoothNavigationBarIconPainter(
-                        defaultColor: lightTheme
-                            ? const Color(0xFFEEDAD3)
-                            : extension.primarySemiDark.withValues(alpha: 0.4),
-                        selectedColor: lightTheme
-                            ? extension.primaryDark
-                            : extension.primaryMedium,
+                        defaultColor: Colors.transparent,
+                        selectedColor: Colors.transparent,
                         progress: _controller.value.progressAndClamp(
                           0.0,
                           0.5,
@@ -229,8 +245,9 @@ class _SmoothNavigationBarItemState extends State<_SmoothNavigationBarItem>
           DefaultTextStyle.merge(
             style: TextStyle(
               color: _textColorAnimation.value,
-              fontSize: 14.5,
-              fontWeight: widget.selected ? FontWeight.w700 : FontWeight.w600,
+              fontSize: 11.0,
+              letterSpacing: 0.1,
+              fontWeight: widget.selected ? FontWeight.w600 : FontWeight.w500,
             ),
             child: Text(
               widget.destination.label,

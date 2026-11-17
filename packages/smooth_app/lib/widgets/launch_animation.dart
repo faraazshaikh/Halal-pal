@@ -21,15 +21,17 @@ class LaunchAnimation extends StatefulWidget {
 class _LaunchAnimationState extends State<LaunchAnimation>
     with SingleTickerProviderStateMixin {
   static const Color _BRAND = Color(0xFF0F4C4F);
-  static bool _alreadyPlayed = false;
+  static DateTime? _startedAt;
+  static bool _finished = false;
+  static bool _soundStarted = false;
+  static AudioPlayer? _player;
 
   late final AnimationController _controller;
   late final Animation<double> _iconScale;
   late final Animation<double> _iconOpacity;
   late final Animation<double> _titleOpacity;
   late final Animation<double> _overlayOpacity;
-  AudioPlayer? _player;
-  bool _visible = !_alreadyPlayed;
+  bool _visible = !_finished;
 
   @override
   void initState() {
@@ -60,13 +62,21 @@ class _LaunchAnimationState extends State<LaunchAnimation>
     );
 
     if (_visible) {
-      _alreadyPlayed = true;
-      _controller.forward().whenComplete(() {
+      // Time-based, so a rebuilt widget resumes where the animation was.
+      _startedAt ??= DateTime.now();
+      final double elapsed =
+          DateTime.now().difference(_startedAt!).inMilliseconds /
+          _controller.duration!.inMilliseconds;
+      _controller.forward(from: elapsed.clamp(0.0, 1.0)).whenComplete(() {
+        _finished = true;
         if (mounted) {
           setState(() => _visible = false);
         }
       });
-      unawaited(_play());
+      if (!_soundStarted) {
+        _soundStarted = true;
+        unawaited(_play());
+      }
     }
   }
 
@@ -74,7 +84,7 @@ class _LaunchAnimationState extends State<LaunchAnimation>
     try {
       HapticFeedback.lightImpact();
       _player = AudioPlayer();
-      await _player!.setVolume(0.6);
+      await _player!.setVolume(0.7);
       await _player!.play(AssetSource('audio/launch.wav'));
     } catch (_) {
       // A missing sound must never block the app.
@@ -84,7 +94,6 @@ class _LaunchAnimationState extends State<LaunchAnimation>
   @override
   void dispose() {
     _controller.dispose();
-    _player?.dispose();
     super.dispose();
   }
 

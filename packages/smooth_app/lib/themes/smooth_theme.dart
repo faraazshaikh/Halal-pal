@@ -81,7 +81,7 @@ class SmoothTheme {
       scaffoldBackgroundColor:
           themeProvider.currentTheme == THEME_DARK ||
               (!lightTheme && themeProvider.currentTheme != THEME_AMOLED)
-          ? const Color(0xFF303030)
+          ? const Color(0xFF000000)
           : (lightTheme ? const Color(0xFFF2F2F7) : null),
       shadowColor: brightness == Brightness.light
           ? Colors.black54
