@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:smooth_app/data_models/product_list.dart';
 import 'package:smooth_app/database/dao_product_list.dart';
 import 'package:smooth_app/database/local_database.dart';
+import 'package:smooth_app/helpers/scan_times.dart';
 import 'package:smooth_app/pages/product/common/product_list_page.dart';
 
 class HistoryPage extends StatefulWidget {
@@ -13,6 +14,12 @@ class HistoryPage extends StatefulWidget {
 
 class _HistoryPageState extends State<HistoryPage> {
   final ProductList productList = ProductList.history();
+
+  @override
+  void initState() {
+    super.initState();
+    ScanTimes.init();
+  }
 
   @protected
   @mustCallSuper

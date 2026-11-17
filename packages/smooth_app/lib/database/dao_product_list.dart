@@ -7,6 +7,7 @@ import 'package:smooth_app/data_models/product_list.dart';
 import 'package:smooth_app/database/abstract_dao.dart';
 import 'package:smooth_app/database/dao_product.dart';
 import 'package:smooth_app/database/local_database.dart';
+import 'package:smooth_app/helpers/scan_times.dart';
 
 /// "Total size" fake value for lists that are not partial/paged.
 const int _uselessTotalSizeValue = 0;
@@ -190,6 +191,9 @@ class DaoProductList extends AbstractDao {
     barcodes.add(barcode);
     final _BarcodeList newList = _BarcodeList.now(barcodes);
     await _put(getKey(productList), newList);
+    if (productList.listType == ProductListType.HISTORY) {
+      await ScanTimes.record(barcode);
+    }
   }
 
   Future<void> clear(ProductList productList) async {

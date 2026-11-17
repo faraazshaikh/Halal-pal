@@ -1,22 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:smooth_app/pages/product/halal_card.dart';
+import 'package:smooth_app/helpers/scan_times.dart';
+import 'package:smooth_app/helpers/halal_checker.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 import 'package:smooth_app/cards/product_cards/smooth_product_image.dart';
-import 'package:smooth_app/data_models/preferences/user_preferences.dart';
-import 'package:smooth_app/data_models/product_preferences.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
-import 'package:smooth_app/generic_lib/svg_icon_chip.dart';
 import 'package:smooth_app/generic_lib/widgets/picture_not_found.dart';
 import 'package:smooth_app/helpers/product_cards_helper.dart';
-import 'package:smooth_app/helpers/product_compatibility_helper.dart';
-import 'package:smooth_app/helpers/ui_helpers.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/navigator/app_navigator.dart';
-import 'package:smooth_app/pages/product/product_type_extensions.dart';
-import 'package:smooth_app/themes/smooth_theme_colors.dart';
-import 'package:vector_graphics/vector_graphics.dart';
 
 class SmoothProductCardItemFound extends StatelessWidget {
   const SmoothProductCardItemFound({
@@ -29,7 +23,6 @@ class SmoothProductCardItemFound extends StatelessWidget {
 
   final Product product;
   final String heroTag;
-  static const double elevation = 4.0;
   final Color? backgroundColor;
   final VoidCallback? onLongPress;
   final VoidCallback? onTap;
@@ -37,81 +30,87 @@ class SmoothProductCardItemFound extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final AppLocalizations appLocalizations = AppLocalizations.of(context);
-    final ThemeData themeData = Theme.of(context);
+    final bool light = Theme.of(context).brightness == Brightness.light;
+    final HalalResult halal = checkHalal(
+      ingredientsText: product.ingredientsText,
+      additiveNames: product.additives?.names,
+    );
+    final HalalStyle style = HalalStyle.of(halal.verdict);
+    final Color secondary = light
+        ? const Color(0xFF6D6D72)
+        : const Color(0xFF98989F);
 
-    Widget child = Padding(
+    final Widget child = Padding(
       padding: const EdgeInsetsDirectional.symmetric(
         horizontal: LARGE_SPACE,
-        vertical: LARGE_SPACE,
+        vertical: 12.0,
       ),
-      child: Material(
-        type: MaterialType.transparency,
-        child: IntrinsicHeight(
-          child: Row(
-            children: <Widget>[
-              const _SmoothProductItemPicture(),
-              const SizedBox(width: BALANCED_SPACE),
-              Expanded(
-                child: SizedBox(
-                  height: double.infinity,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      ConstrainedBox(
-                        constraints: BoxConstraints(
-                          minHeight:
-                              themeData.textTheme.headlineMedium!.fontSize! *
-                              2.0,
-                        ),
-                        child: Align(
-                          alignment: AlignmentDirectional.centerStart,
-                          child: Text(
-                            getProductName(product, appLocalizations),
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 2,
-                            style: const TextStyle(
-                              fontSize: 17.0,
-                              fontWeight: FontWeight.w700,
-                              height: 1.3,
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: VERY_SMALL_SPACE),
-                      Text(
-                        getProductBrandsList(
-                              product,
-                              appLocalizations,
-                            ).firstOrNull ??
-                            appLocalizations.unknownBrand,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: themeData.textTheme.bodyMedium,
-                      ),
-                      const Spacer(),
-                      const _SmoothProductItemScores(),
-                    ],
+      child: Row(
+        children: <Widget>[
+          ProductPicture.fromProduct(
+            product: product,
+            imageField: ImageField.FRONT,
+            fallbackUrl: product.imageFrontUrl,
+            allowAlternativeLanguage: true,
+            size: const Size(64.0, 64.0),
+            borderRadius: const BorderRadius.all(Radius.circular(14.0)),
+            noImageBuilder: (_) => const PictureNotFound(),
+            blurFilter: false,
+          ),
+          const SizedBox(width: 14.0),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  getProductName(product, appLocalizations),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w600,
+                    letterSpacing: -0.3,
+                    height: 1.25,
                   ),
                 ),
-              ),
-            ],
+                const SizedBox(height: 2.0),
+                Text(
+                  getProductBrandsList(product, appLocalizations).firstOrNull ??
+                      appLocalizations.unknownBrand,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(fontSize: 13.5, color: secondary),
+                ),
+                const SizedBox(height: 6.0),
+                Row(
+                  children: <Widget>[
+                    Container(
+                      width: 10.0,
+                      height: 10.0,
+                      decoration: BoxDecoration(
+                        color: style.color,
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                    const SizedBox(width: 6.0),
+                    Text(
+                      style.label,
+                      style: TextStyle(
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w700,
+                        color: style.color,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
-        ),
+          const SizedBox(width: 8.0),
+          _TimeAgo(barcode: product.barcode!, color: secondary),
+        ],
       ),
     );
-
-    if (product.productType != ProductType.food) {
-      child = Stack(
-        children: <Widget>[
-          const PositionedDirectional(
-            bottom: 0.0,
-            end: 0.0,
-            child: _SmoothProductItemTypeIndicator(),
-          ),
-          child,
-        ],
-      );
-    }
 
     return MultiProvider(
       providers: <SingleChildWidget>[
@@ -132,160 +131,23 @@ class SmoothProductCardItemFound extends StatelessWidget {
   }
 }
 
-class _SmoothProductItemPicture extends StatelessWidget {
-  const _SmoothProductItemPicture();
+class _TimeAgo extends StatelessWidget {
+  const _TimeAgo({required this.barcode, required this.color});
+
+  final String barcode;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
-    final Product product = context.watch<Product>();
-    final double size = MediaQuery.sizeOf(context).width * 0.25;
-    final bool hasScore = product.productType == ProductType.food;
-    final Color borderColor;
-    final Widget? scoreWidget;
-
-    if (hasScore) {
-      final ProductPreferences productPreferences = context
-          .watch<ProductPreferences>();
-
-      final MatchedProductV2 matchedProduct = MatchedProductV2(
-        product,
-        productPreferences,
-      );
-      final ProductCompatibilityHelper helper =
-          ProductCompatibilityHelper.product(matchedProduct);
-      final String? score = helper.getFormattedScore(singleDigitAllowed: true);
-
-      borderColor = helper.getColor(context);
-
-      scoreWidget = SizedBox(
-        width: size,
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            color: helper.getColor(context),
-            borderRadius: const BorderRadius.vertical(
-              top: Radius.circular(08.0),
-            ),
-          ),
-          child: Padding(
-            padding: const EdgeInsetsDirectional.only(
-              start: SMALL_SPACE,
-              end: SMALL_SPACE,
-              top: 6.0,
-              bottom: 8.0,
-            ),
-            child: Text(
-              score != null
-                  ? '$score%'
-                  : AppLocalizations.of(context).not_applicable_short,
-              maxLines: 1,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 14.5,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-      );
-    } else {
-      scoreWidget = null;
-      borderColor = context.extension<SmoothColorsThemeExtension>().greyNormal;
-    }
-
-    return Ink(
-      decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(Radius.circular(09.0)),
-        border: Border.all(color: borderColor, width: 1.0),
-      ),
-      child: Column(
-        children: <Widget>[
-          ?scoreWidget,
-          ProductPicture.fromProduct(
-            product: product,
-            imageField: ImageField.FRONT,
-            fallbackUrl: product.imageFrontUrl,
-            allowAlternativeLanguage: true,
-            size: Size(size, size - (scoreWidget != null ? 25.0 : 5.0)),
-            borderRadius: BorderRadius.vertical(
-              top: hasScore ? Radius.zero : const Radius.circular(08.0),
-              bottom: const Radius.circular(08.0),
-            ),
-            noImageBuilder: (_) => const PictureNotFound(),
-            blurFilter: false,
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _SmoothProductItemScores extends StatelessWidget {
-  const _SmoothProductItemScores();
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsetsDirectional.symmetric(
-        vertical: VERY_SMALL_SPACE,
-      ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        spacing: BALANCED_SPACE,
-        children: _getWidgets(context),
-      ),
-    );
-  }
-
-  List<Widget> _getWidgets(BuildContext context) {
-    final Product product = context.watch<Product>();
-
-    final UserPreferences userPreferences = context.watch<UserPreferences>();
-
-    final List<String> excludedAttributeIds = userPreferences
-        .getExcludedAttributeIds();
-
-    final List<Attribute> attributes = getPopulatedAttributes(
-      product,
-      SCORE_ATTRIBUTE_IDS,
-      excludedAttributeIds,
-    );
-
-    final List<Widget> scores = List<Widget>.generate(attributes.length, (
-      int index,
-    ) {
-      final bool nutriScoreLogo =
-          attributes[index].iconUrl?.contains(
-            RegExp(r'.*/nutriscore-[a-z]-.*\.svg'),
-          ) ==
-          true;
-
-      return Padding(
-        padding: const EdgeInsetsDirectional.only(end: 1.0),
-        child: SvgIconChip(
-          attributes[index].iconUrl!,
-          height: 39.0 - (nutriScoreLogo ? 1.0 : 0.0),
-        ),
-      );
-    });
-    return scores;
-  }
-}
-
-class _SmoothProductItemTypeIndicator extends StatelessWidget {
-  const _SmoothProductItemTypeIndicator();
-
-  @override
-  Widget build(BuildContext context) {
-    final ProductType? productType = context.watch<Product>().productType;
-
-    if (productType == null) {
-      return EMPTY_WIDGET;
-    }
-
-    return SvgPicture(
-      AssetBytesLoader(productType.getIllustration()),
-      width: 50.0,
+    return ValueListenableBuilder<int>(
+      valueListenable: ScanTimes.changes,
+      builder: (BuildContext context, int _, Widget? __) {
+        final String text = ScanTimes.ago(ScanTimes.of(barcode));
+        if (text.isEmpty) {
+          return EMPTY_WIDGET;
+        }
+        return Text(text, style: TextStyle(fontSize: 12.5, color: color));
+      },
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:smooth_app/pages/preferences_v2/preferences_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:matomo_tracker/matomo_tracker.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
@@ -142,6 +143,16 @@ class _ProductListPageState extends State<ProductListPage>
         centerTitle: false,
         animateActionMode: true,
         actions: <Widget>[
+          if (productList.listType == ProductListType.HISTORY)
+            IconButton(
+              icon: const Icon(Icons.settings_outlined),
+              tooltip: 'Settings',
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (_) => PreferencesPage(),
+                ),
+              ),
+            ),
           SmoothPopupMenuButton<ProductListPopupItem>(
             onSelected: (ProductListPopupItem action) async {
               final ProductList? differentProductList = await action
