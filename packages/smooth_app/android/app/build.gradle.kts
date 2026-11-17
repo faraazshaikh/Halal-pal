@@ -41,6 +41,14 @@ android {
     }
 
     signingConfigs {
+        // Fixed debug key so every CI build installs over the previous one.
+        // Debug use only: this key is public and must never sign a release.
+        getByName("debug") {
+            storeFile = file("halalpal-debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
         create("release") {
             storeFile = System.getenv("SIGN_STORE_PATH")?.let { file(it) }
             storePassword = System.getenv("SIGN_STORE_PASSWORD")
