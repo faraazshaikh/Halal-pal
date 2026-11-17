@@ -212,41 +212,9 @@ class ProductPageTabsGenerator {
       ),
     );
 
-    tabs.add(
-      ProductPageTab(
-        id: ProductPageHarcodedTabs.PRICES.key,
-        labelBuilder: (_) =>
-            ProductPageHarcodedTabs.PRICES.label(appLocalizations),
-        builder: (_, Product product) => ProductPricesTab(product),
-        suffix: FutureBuilder<int?>(
-          future: _getPricesTotal(product, context),
-          builder: (BuildContext context, AsyncSnapshot<int?> snapshot) {
-            if (!snapshot.hasData || snapshot.data == null) {
-              return EMPTY_WIDGET;
-            }
-            return _ProductPageTabBadge(snapshot.data!);
-          },
-        ),
-      ),
-    );
+    // Halal Pal: no Prices tab.
 
-    tabs.add(
-      ProductPageTab(
-        id: ProductPageHarcodedTabs.FOLKSONOMY.key,
-        labelBuilder: (_) =>
-            ProductPageHarcodedTabs.FOLKSONOMY.label(appLocalizations),
-        builder: (_, Product product) => ProductFolksonomyTab(product),
-        suffix: FutureBuilder<int?>(
-          future: _getFolksonomyTotal(product),
-          builder: (BuildContext context, AsyncSnapshot<int?> snapshot) {
-            if (!snapshot.hasData || snapshot.data == null) {
-              return EMPTY_WIDGET;
-            }
-            return _ProductPageTabBadge(snapshot.data!);
-          },
-        ),
-      ),
-    );
+    // Halal Pal: no Folksonomy (OFF tags) tab.
 
     return tabs;
   }

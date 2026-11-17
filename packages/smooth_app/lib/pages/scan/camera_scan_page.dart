@@ -13,7 +13,6 @@ import 'package:smooth_app/helpers/camera_helper.dart';
 import 'package:smooth_app/helpers/global_vars.dart';
 import 'package:smooth_app/helpers/haptic_feedback_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
-import 'package:smooth_app/pages/scan/scan_header.dart';
 import 'package:smooth_app/resources/app_icons.dart' as icons;
 
 /// A page showing the camera feed and decoding barcodes.
@@ -152,7 +151,8 @@ class _CameraScannerPageState extends State<CameraScannerPage>
             top: statusBarHeight,
             start: 0.0,
             end: 0.0,
-            child: ScanHeader(key: _headerKey),
+            // Halal Pal: no Compare / Clear pills over the camera.
+            child: SizedBox.shrink(key: _headerKey),
           ),
         ],
       ),

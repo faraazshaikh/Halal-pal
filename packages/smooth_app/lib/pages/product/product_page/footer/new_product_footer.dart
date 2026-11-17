@@ -56,7 +56,7 @@ class ProductFooter extends StatelessWidget {
       child: _ProductFooterButtonsBar(
         actions: actions,
         scrollController: scrollController,
-        showSettings: showSettings,
+        showSettings: false,
         highlightFirstItem: highlightFirstItem,
       ),
     );
@@ -99,14 +99,7 @@ enum ProductFooterActionBar {
 
   /// The "settings" value must not persisted
   static List<ProductFooterActionBar> defaultOrder() =>
-      const <ProductFooterActionBar>[
-        edit,
-        addPrice,
-        compare,
-        addToList,
-        addProperty,
-        share,
-      ];
+      const <ProductFooterActionBar>[addToList, share];
 }
 
 class _ProductFooterButtonsBar extends StatelessWidget {
@@ -160,8 +153,15 @@ class _ProductFooterButtonsBar extends StatelessWidget {
                 ) => previous?.productPageActions != current.productPageActions,
                 builder:
                     (BuildContext context, UserPreferences userPreferences, _) {
+                      // Halal Pal: only "add to list" and "share" remain.
                       final List<ProductFooterActionBar> productPageActions =
-                          userPreferences.productPageActions;
+                          userPreferences.productPageActions
+                              .where(
+                                (ProductFooterActionBar a) =>
+                                    a == ProductFooterActionBar.addToList ||
+                                    a == ProductFooterActionBar.share,
+                              )
+                              .toList();
 
                       return _ProductFooterButtonsBarItems(
                         actions: productPageActions,
