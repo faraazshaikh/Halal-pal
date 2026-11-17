@@ -61,9 +61,8 @@ class _PermissionsPageState extends State<PermissionsPage> {
                               ) {
                                 return SizedBox.square(
                                   dimension: constraints.maxWidth * 0.5,
-                                  child: Transform.rotate(
-                                    angle: -0.2,
-                                    child: const animations.BarcodeAnimation(),
+                                  child: SvgPicture.asset(
+                                    'assets/app/release_icon.svg',
                                   ),
                                 );
                               },
@@ -178,7 +177,7 @@ class _IgnoreButton extends StatelessWidget {
 
     return OnboardingBottomButton(
       onPressed: onPermissionIgnored,
-      backgroundColor: const Color(0xFFA08D84),
+      backgroundColor: const Color(0xFF5F8486),
       foregroundColor: Colors.white,
       label: appLocalizations.ask_me_later_button_label,
     );
