@@ -178,7 +178,7 @@ class _SmoothAppState extends State<SmoothApp> {
   @override
   void initState() {
     super.initState();
-    _initFuture = _init2();
+    _initFuture = _initWithLaunchScreen();
   }
 
   Future<bool> _init2() async {
@@ -208,6 +208,19 @@ class _SmoothAppState extends State<SmoothApp> {
     return true;
   }
 
+  /// Initialises the app, but never shows the launch screen for less than
+  /// [LAUNCH_MIN_DURATION] so the animation and chime can finish.
+  Future<void> _initWithLaunchScreen() async {
+    final Stopwatch stopwatch = Stopwatch()..start();
+    await _init2();
+    if (!_screenshots) {
+      final Duration left = LAUNCH_MIN_DURATION - stopwatch.elapsed;
+      if (left > Duration.zero) {
+        await Future<void>.delayed(left);
+      }
+    }
+  }
+
   @override
   void dispose() {
     _lifecycleListener?.dispose();
@@ -229,8 +242,10 @@ class _SmoothAppState extends State<SmoothApp> {
           return _buildError(snapshot);
         }
         if (snapshot.connectionState != ConnectionState.done) {
-          //We don't need a loading indicator since the splash screen is still visible
-          return EMPTY_WIDGET;
+          // Hand over from the native splash to our animated launch screen
+          // as early as possible, so it plays while the app initialises.
+          FlutterNativeSplash.remove();
+          return const LaunchScreen();
         }
 
         if (!_screenshots) {
@@ -325,7 +340,7 @@ class _SmoothAppState extends State<SmoothApp> {
           // Apple-style: rubber-band scrolling, no Android glow.
           scrollBehavior: const _AppleScrollBehavior(),
           builder: (BuildContext context, Widget? child) =>
-              LaunchAnimation(child: child),
+              LaunchFadeOut(child: child),
         ),
       ),
     );
