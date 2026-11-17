@@ -35,7 +35,8 @@ class _DonationReminderScopeState extends State<DonationReminderScope> {
     final UserPreferences preferences = context.read<UserPreferences>();
     unawaited(preferences.countProductLookedUp(widget.barcode));
 
-    _eligible = _isEligibleNow(DonationOffer.fromNews(_liveDonation()));
+    // Halal Pal: no donation prompts.
+    _eligible = false;
   }
 
   AppNewsItem? _liveDonation() {

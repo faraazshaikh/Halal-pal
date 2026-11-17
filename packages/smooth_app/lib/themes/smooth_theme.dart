@@ -82,7 +82,7 @@ class SmoothTheme {
           themeProvider.currentTheme == THEME_DARK ||
               (!lightTheme && themeProvider.currentTheme != THEME_AMOLED)
           ? const Color(0xFF000000)
-          : (lightTheme ? const Color(0xFFF2F2F7) : null),
+          : (lightTheme ? const Color(0xFFF6F3EA) : null),
       shadowColor: brightness == Brightness.light
           ? Colors.black54
           : Colors.white12,

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
-import 'package:smooth_app/resources/app_animations.dart';
-import 'package:smooth_app/themes/smooth_theme_colors.dart';
-import 'package:smooth_app/themes/theme_provider.dart';
 
+/// Empty-state hint of the search page (Apple style: centred, quiet).
 class SearchHint extends StatelessWidget {
   const SearchHint({required this.text, super.key});
 
@@ -11,33 +9,34 @@ class SearchHint extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final SmoothColorsThemeExtension theme = context
-        .extension<SmoothColorsThemeExtension>();
-
-    final Color color = context.lightTheme()
-        ? theme.primaryNormal
-        : theme.primaryMedium;
-
     return SizedBox(
       width: double.infinity,
-      child: Stack(
-        clipBehavior: Clip.none,
-        children: <Widget>[
-          HintArrowAnimation(size: 70.0, color: color),
-          PositionedDirectional(
-            top: 50.0,
-            start: 30.0,
-            end: SMALL_SPACE,
-            child: Text(
+      child: Padding(
+        padding: const EdgeInsetsDirectional.only(
+          top: 56.0,
+          start: LARGE_SPACE * 2,
+          end: LARGE_SPACE * 2,
+        ),
+        child: Column(
+          children: <Widget>[
+            const Icon(
+              Icons.search_rounded,
+              size: 44.0,
+              color: Color(0xFF8E8E93),
+            ),
+            const SizedBox(height: 14.0),
+            Text(
               text,
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.bold,
-                color: color,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.w500,
+                letterSpacing: -0.3,
+                color: Color(0xFF8E8E93),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

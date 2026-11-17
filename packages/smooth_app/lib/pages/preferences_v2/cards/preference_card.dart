@@ -48,6 +48,9 @@ class PreferenceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (!grid) {
+      return _buildAppleGroup(context);
+    }
     const double leadingMargin = 6.0;
 
     final SmoothColorsThemeExtension extension = context
@@ -114,6 +117,68 @@ class PreferenceCard extends StatelessWidget {
                 ..._getTilesWithDividers(context),
               ],
             ),
+    );
+  }
+
+  /// iOS "inset grouped" look: small grey section label, then a rounded
+  /// white (or dark grey) block with hairline dividers.
+  Widget _buildAppleGroup(BuildContext context) {
+    final bool light = context.lightTheme();
+    final Color background = light ? Colors.white : const Color(0xFF1C1C1E);
+    final Color divider = light
+        ? const Color(0x1F000000)
+        : const Color(0x33FFFFFF);
+
+    final List<Widget> rows = <Widget>[];
+    for (int i = 0; i < tiles.length; i++) {
+      if (i > 0) {
+        rows.add(
+          Divider(height: 0.5, thickness: 0.5, indent: 16.0, color: divider),
+        );
+      }
+      rows.add(tiles[i]);
+    }
+
+    return Padding(
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          if (title != null)
+            Padding(
+              padding: const EdgeInsetsDirectional.only(
+                start: 16.0,
+                bottom: 8.0,
+              ),
+              child: Text(
+                title!.toUpperCase(),
+                style: const TextStyle(
+                  fontSize: 13.0,
+                  fontWeight: FontWeight.w500,
+                  letterSpacing: -0.1,
+                  color: Color(0xFF8E8E93),
+                ),
+              ),
+            ),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(14.0),
+            child: ColoredBox(
+              color: background,
+              child: Column(
+                children: <Widget>[
+                  if (bannerText != null)
+                    Padding(
+                      padding: const EdgeInsetsDirectional.all(MEDIUM_SPACE),
+                      child: Text(bannerText!),
+                    ),
+                  if (header != null) header!,
+                  ...rows,
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
