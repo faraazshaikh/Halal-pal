@@ -32,7 +32,7 @@ class SearchProductHelper extends SearchHelper {
       appLocalizations.search_product_help;
 
   @override
-  Widget? getLeadingWidget(_) => const ProductTypeSearchSelector();
+  Widget? getLeadingWidget(_) => null;
 
   @override
   void search(

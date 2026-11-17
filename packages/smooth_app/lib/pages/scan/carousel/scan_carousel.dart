@@ -189,7 +189,7 @@ class _ScanPageCarouselState extends State<ScanPageCarousel> {
   double _computeViewPortFraction() {
     final double screenWidth = MediaQuery.sizeOf(context).width;
     if (barcodes.isEmpty) {
-      return 0.95;
+      return 1.0;
     }
 
     return (screenWidth -
