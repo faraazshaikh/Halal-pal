@@ -68,12 +68,28 @@ jobs:
           path: packages/smooth_app/build/app/outputs/flutter-apk/app-debug.apk
           retention-days: 14
 
+      - name: 🔑 Prepare release signing key (if secrets are set)
+        id: sign
+        env:
+          KS_B64: ${{ secrets.SIGN_KEYSTORE_B64 }}
+        run: |
+          if [ -n "$KS_B64" ]; then
+            echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/halalpal-release.jks"
+            echo "SIGN_STORE_PATH=$RUNNER_TEMP/halalpal-release.jks" >> "$GITHUB_ENV"
+            echo "signed=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "signed=no" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: 🚀 Build release APK (fast, personal sideload)
         id: release
         continue-on-error: true
         working-directory: packages/smooth_app
         env:
           ORG_GRADLE_PROJECT_minSdk: 26
+          SIGN_STORE_PASSWORD: ${{ secrets.SIGN_STORE_PASSWORD }}
+          SIGN_KEY_ALIAS: ${{ secrets.SIGN_KEY_ALIAS }}
+          SIGN_KEY_PASSWORD: ${{ secrets.SIGN_KEY_PASSWORD }}
         run: flutter build apk --release -t lib/entrypoints/android/main_google_play.dart --target-platform android-arm64
 
       - name: ⬆️ Upload release APK

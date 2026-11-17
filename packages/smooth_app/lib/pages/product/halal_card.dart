@@ -38,7 +38,7 @@ class HalalStyle {
     ),
     HalalVerdict.unknown => const HalalStyle(
       label: 'No data',
-      subtitle: 'No ingredient list to check',
+      subtitle: 'No ingredient list: check the pack yourself',
       color: Color(0xFF616161),
       icon: Icons.help_outline_rounded,
     ),

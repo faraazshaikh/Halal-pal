@@ -192,11 +192,7 @@ class _ScanPageCarouselState extends State<ScanPageCarousel> {
       return 1.0;
     }
 
-    return (screenWidth -
-            (SmoothBarcodeScannerVisor.CORNER_PADDING * 2) -
-            (SmoothBarcodeScannerVisor.STROKE_WIDTH * 2) +
-            (HORIZONTAL_SPACE_BETWEEN_CARDS * 4)) /
-        screenWidth;
+    return 1.0;
   }
 }
 

@@ -28,9 +28,16 @@ class LegalInformationRoot extends PreferencesRoot {
     return <PreferenceCard>[
       PreferenceCard(
         tiles: <PreferenceTile>[
-          _buildTermsOfUseTile(appLocalizations),
-          _buildLegalMentionsTile(appLocalizations),
-          _buildPrivacyPolicyTile(appLocalizations),
+          UrlPreferenceTile(
+            icon: const icons.Document(),
+            title: 'Product data: Open Food Facts contributors (ODbL)',
+            url: 'https://world.openfoodfacts.org/legal',
+          ),
+          UrlPreferenceTile(
+            icon: const icons.Document(),
+            title: 'ODbL licence text',
+            url: 'https://opendatacommons.org/licenses/odbl/1-0/',
+          ),
           _buildLicensesTile(context, appLocalizations),
         ],
       ),

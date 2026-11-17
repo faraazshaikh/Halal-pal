@@ -108,7 +108,7 @@ class _ProductHeaderState extends State<_ProductHeader> {
                                   ),
                                 ),
                               ),
-                              if (productCompatibility.score != null)
+                              if (false)
                                 _ProductCompatibilityScore(
                                   progress: _compatibilityScoreOpacity,
                                 ),

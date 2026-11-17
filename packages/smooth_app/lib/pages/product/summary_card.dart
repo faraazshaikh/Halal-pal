@@ -219,7 +219,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
 
     if (widget.isFullVersion) {
       final List<String> statesTags =
-          upToDateProduct.statesTags ?? List<String>.empty();
+          List<String>.empty(); // Halal Pal: no OFF completion prompts
 
       // Complete basic details
       if (statesTags.contains(

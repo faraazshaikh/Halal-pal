@@ -42,6 +42,22 @@ const List<HalalRule> HALAL_HARAM_KEYWORDS = <HalalRule>[
   HalalRule('cochineal', 'Insect-derived dye (carmine)'),
   HalalRule('carmine', 'Insect-derived dye (carmine)'),
   HalalRule('carminic acid', 'Insect-derived dye (carmine)'),
+  HalalRule('ethyl alcohol', 'Alcohol'),
+  HalalRule('cognac', 'Alcohol'),
+  HalalRule('champagne', 'Alcohol'),
+  HalalRule('bourbon', 'Alcohol'),
+  HalalRule('tequila', 'Alcohol'),
+  HalalRule('sherry', 'Alcohol'),
+  HalalRule('mirin', 'Contains alcohol'),
+  HalalRule('cooking wine', 'Alcohol'),
+  HalalRule('rum extract', 'Alcohol'),
+  HalalRule('gammon', 'Pork'),
+  HalalRule('lardons', 'Pork'),
+  HalalRule('chorizo', 'Usually pork'),
+  HalalRule('pepperoni', 'Usually pork'),
+  HalalRule('suar', 'Pork (Hindi/Urdu)'),
+  HalalRule('sharab', 'Alcohol (Hindi/Urdu)'),
+  HalalRule('khinzir', 'Pork (Arabic)'),
 ];
 
 /// E-numbers always flagged as haram.
@@ -96,6 +112,14 @@ const List<HalalRule> HALAL_MUSHBOOH_KEYWORDS = <HalalRule>[
   HalalRule('whey', 'Can be made with animal rennet'),
   HalalRule('lecithin', 'Usually soy, can be egg or animal'),
   HalalRule('tallow', 'Animal fat: source animal unknown'),
+  HalalRule('suet', 'Animal fat: source animal unknown'),
+  HalalRule('animal fat', 'Animal fat: source animal unknown'),
+  HalalRule('animal shortening', 'Animal fat: source animal unknown'),
+  HalalRule('collagen', 'Animal-derived: source animal unknown'),
+  HalalRule('natural flavouring', 'May use alcohol or animal carriers'),
+  HalalRule('natural flavoring', 'May use alcohol or animal carriers'),
+  HalalRule('vanilla essence', 'May be made with alcohol'),
+  HalalRule('bone', 'Animal bones: source animal unknown'),
 ];
 
 /// E-numbers flagged as doubtful (mushbooh).

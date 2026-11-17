@@ -202,15 +202,7 @@ class ProductPageTabsGenerator {
   ) {
     final AppLocalizations appLocalizations = AppLocalizations.of(context);
 
-    tabs.insert(
-      0,
-      ProductPageTab(
-        id: ProductPageHarcodedTabs.FOR_ME.key,
-        labelBuilder: (_) =>
-            ProductPageHarcodedTabs.FOR_ME.label(appLocalizations),
-        builder: (BuildContext context, _) => const ProductForMeTab(),
-      ),
-    );
+    // Halal Pal: no "For me" (compatibility) tab.
 
     // Halal Pal: no Prices tab.
 
