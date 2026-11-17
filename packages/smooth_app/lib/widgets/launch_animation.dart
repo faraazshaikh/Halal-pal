@@ -60,13 +60,13 @@ class _LaunchContent extends StatelessWidget {
                     borderRadius: BorderRadius.circular(28),
                     child: SvgPicture.asset(
                       'assets/app/release_icon.svg',
-                      width: 112,
-                      height: 112,
+                      width: 208,
+                      height: 208,
                     ),
                   ),
                 ),
               ),
-              const SizedBox(height: 22),
+              const SizedBox(height: 8),
               Opacity(
                 opacity: titleOpacity,
                 child: const Text(

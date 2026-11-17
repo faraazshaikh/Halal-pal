@@ -65,7 +65,10 @@ android {
             signingConfig = if (System.getenv("SIGN_STORE_PATH") != null) {
                 signingConfigs.getByName("release")
             } else {
-                null
+                // Personal sideload builds only (CI "release APK" artifact):
+                // reuse the fixed debug key so it installs over the debug
+                // build. Never publish an APK signed this way.
+                signingConfigs.getByName("debug")
             }
         }
     }

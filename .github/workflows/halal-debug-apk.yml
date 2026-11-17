@@ -67,3 +67,19 @@ jobs:
           name: halal-pal-debug-apk
           path: packages/smooth_app/build/app/outputs/flutter-apk/app-debug.apk
           retention-days: 14
+
+      - name: 🚀 Build release APK (fast, personal sideload)
+        id: release
+        continue-on-error: true
+        working-directory: packages/smooth_app
+        env:
+          ORG_GRADLE_PROJECT_minSdk: 26
+        run: flutter build apk --release -t lib/entrypoints/android/main_google_play.dart --target-platform android-arm64
+
+      - name: ⬆️ Upload release APK
+        if: steps.release.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: halal-pal-release-apk
+          path: packages/smooth_app/build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 14
