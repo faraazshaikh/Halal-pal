@@ -132,9 +132,15 @@ class _LegalInformationHeader extends StatelessWidget {
                   horizontal: SMALL_SPACE,
                   vertical: MEDIUM_SPACE,
                 ),
-                child: SvgPicture(
-                  AssetBytesLoader('assets/app/logo_text_white.svg.vec'),
-                  fit: BoxFit.contain,
+                child: Text(
+                  'Halal Pal',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: -0.6,
+                  ),
                 ),
               ),
             ),
