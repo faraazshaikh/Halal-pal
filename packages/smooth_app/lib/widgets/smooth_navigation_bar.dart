@@ -209,8 +209,9 @@ class _SmoothNavigationBarItemState extends State<_SmoothNavigationBarItem>
           : const Color(0xFF30D158);
       return Padding(
         padding: const EdgeInsetsDirectional.only(top: 6.0, bottom: 6.0),
-        child: Center(
-          child: AnimatedScale(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[AnimatedScale(
             scale: widget.selected ? 1.0 : 0.94,
             duration: const Duration(milliseconds: 200),
             child: Container(
@@ -240,6 +241,7 @@ class _SmoothNavigationBarItemState extends State<_SmoothNavigationBarItem>
               ),
             ),
           ),
+        ],
         ),
       );
     }
