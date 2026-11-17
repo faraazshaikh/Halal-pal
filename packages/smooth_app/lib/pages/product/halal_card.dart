@@ -25,14 +25,14 @@ class HalalStyle {
       icon: Icons.close_rounded,
     ),
     HalalVerdict.mushbooh => const HalalStyle(
-      label: 'Doubtful',
-      subtitle: 'Mushbooh: depends on the source',
+      label: 'Mushbooh',
+      subtitle: 'Doubtful: depends on the source',
       color: Color(0xFFE08A00),
-      icon: Icons.question_mark_rounded,
+      icon: Icons.warning_amber_rounded,
     ),
     HalalVerdict.clear => const HalalStyle(
-      label: 'No issues found',
-      subtitle: 'No haram or doubtful ingredients flagged',
+      label: 'Halal',
+      subtitle: 'No haram or doubtful ingredients found',
       color: Color(0xFF2E7D32),
       icon: Icons.check_rounded,
     ),
@@ -50,9 +50,10 @@ class HalalStyle {
 ///
 /// Texts are hardcoded in English on purpose (personal fork).
 class HalalCard extends StatelessWidget {
-  const HalalCard(this.product, {super.key});
+  const HalalCard(this.product, {this.showDisclaimer = true, super.key});
 
   final Product product;
+  final bool showDisclaimer;
 
   @override
   Widget build(BuildContext context) {
@@ -145,12 +146,14 @@ class HalalCard extends StatelessWidget {
               ),
             ),
           ],
-          const SizedBox(height: SMALL_SPACE),
-          Text(
-            'Based on the ingredient list only. Not a halal certificate: '
-            'check the pack for a halal mark.',
-            style: textTheme.bodySmall?.copyWith(color: Colors.white70),
-          ),
+          if (showDisclaimer) ...<Widget>[
+            const SizedBox(height: SMALL_SPACE),
+            Text(
+              'Based on the ingredient list only. Not a halal certificate: '
+              'check the pack for a halal mark.',
+              style: textTheme.bodySmall?.copyWith(color: Colors.white70),
+            ),
+          ],
         ],
       ),
     );

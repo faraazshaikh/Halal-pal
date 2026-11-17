@@ -6,9 +6,9 @@ import 'package:smooth_app/cards/product_cards/smooth_product_image.dart';
 import 'package:smooth_app/data_models/product_preferences.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/generic_lib/widgets/smooth_back_button.dart';
-import 'package:smooth_app/helpers/product_compatibility_helper.dart';
-import 'package:smooth_app/l10n/app_localizations.dart';
+import 'package:smooth_app/helpers/halal_checker.dart';
 import 'package:smooth_app/pages/navigator/app_navigator.dart';
+import 'package:smooth_app/pages/product/halal_card.dart';
 import 'package:smooth_app/pages/product/product_page/new_product_header.dart';
 import 'package:smooth_app/pages/product/summary_card.dart';
 
@@ -22,14 +22,13 @@ class ScanProductCardFound extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ProductCompatibilityHelper helper =
-        ProductCompatibilityHelper.product(
-          MatchedProductV2(product, context.watch<ProductPreferences>()),
-        );
-
     final ProductPreferences productPreferences = context
         .watch<ProductPreferences>();
-    final String? compatibilityScore = helper.getFormattedScore();
+    final HalalResult halal = checkHalal(
+      ingredientsText: product.ingredientsText,
+      additiveNames: product.additives?.names,
+    );
+    final HalalStyle halalStyle = HalalStyle.of(halal.verdict);
 
     return GestureDetector(
       onTap: () => _openProductPage(context),
@@ -42,24 +41,30 @@ class ScanProductCardFound extends StatelessWidget {
         }
       },
       child: ScanProductBaseCard(
-        headerLabel: compatibilityScore != null
-            ? '${helper.getSubtitle(AppLocalizations.of(context))} ($compatibilityScore%)'
-            : product.barcode!,
+        headerLabel: halalStyle.label,
         headerIndicatorColor: Colors.white,
-        headerBackgroundColor: helper.getColor(context),
+        headerBackgroundColor: halalStyle.color,
         childPadding: EdgeInsets.zero,
         onRemove: onRemoveProduct,
-        child: SummaryCard(
-          product,
-          productPreferences,
-          heroTag: _heroTag,
-          margin: EdgeInsetsDirectional.zero,
-          contentPadding: const EdgeInsets.symmetric(
-            horizontal: LARGE_SPACE,
-            vertical: VERY_SMALL_SPACE,
-          ),
-          scrollableContent: true,
-          isTextSelectable: false,
+        child: Column(
+          children: <Widget>[
+            // Halal verdict first, everything else below it.
+            HalalCard(product, showDisclaimer: false),
+            Expanded(
+              child: SummaryCard(
+                product,
+                productPreferences,
+                heroTag: _heroTag,
+                margin: EdgeInsetsDirectional.zero,
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: LARGE_SPACE,
+                  vertical: VERY_SMALL_SPACE,
+                ),
+                scrollableContent: true,
+                isTextSelectable: false,
+              ),
+            ),
+          ],
         ),
       ),
     );
