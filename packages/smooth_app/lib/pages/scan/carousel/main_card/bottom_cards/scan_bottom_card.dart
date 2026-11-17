@@ -20,31 +20,8 @@ class ScanBottomCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Provider<ScanBottomCardDensity>(
-      create: (_) =>
-          dense ? ScanBottomCardDensity.dense : ScanBottomCardDensity.normal,
-      child: Consumer2<ScanNewsFeedProvider, AppReviewProvider>(
-        builder:
-            (
-              BuildContext context,
-              ScanNewsFeedProvider scanTagLineProvider,
-              AppReviewProvider appReviewProvider,
-              Widget? child,
-            ) {
-              switch (appReviewProvider.value) {
-                case AppReviewState.checking:
-                  return const ScanBottomCardLoading();
-                case AppReviewState.askForReview:
-                  return const ScanAppReview();
-                default:
-                // Nothing (-> news)
-              }
-
-              // Halal Pal: no Open Food Facts news card.
-              return EMPTY_WIDGET;
-            },
-      ),
-    );
+    // Halal Pal: no app-review prompt and no news card.
+    return EMPTY_WIDGET;
   }
 }
 

@@ -46,7 +46,7 @@ class ScanMainCard extends StatelessWidget {
                     child: const ScanSearchCard(expandedMode: false),
                   ),
                   const SizedBox(height: SMALL_SPACE),
-                  if (state.donationStrip) ...const <Widget>[
+                  if (false) ...const <Widget>[
                     _DonationStrip(),
                     SizedBox(height: SMALL_SPACE),
                   ],
