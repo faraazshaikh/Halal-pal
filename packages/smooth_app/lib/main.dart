@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:app_store_shared/app_store_shared.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:smooth_app/widgets/launch_animation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:matomo_tracker/matomo_tracker.dart';
@@ -321,6 +322,10 @@ class _SmoothAppState extends State<SmoothApp> {
           ),
           themeMode: themeProvider.currentThemeMode,
           routerConfig: AppNavigator.of(context).router,
+          // Apple-style: rubber-band scrolling, no Android glow.
+          scrollBehavior: const _AppleScrollBehavior(),
+          builder: (BuildContext context, Widget? child) =>
+              LaunchAnimation(child: child),
         ),
       ),
     );
@@ -334,4 +339,21 @@ class _SmoothAppState extends State<SmoothApp> {
       ),
     );
   }
+}
+
+
+/// Bouncing physics and no overscroll glow, like iOS.
+class _AppleScrollBehavior extends MaterialScrollBehavior {
+  const _AppleScrollBehavior();
+
+  @override
+  ScrollPhysics getScrollPhysics(BuildContext context) =>
+      const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics());
+
+  @override
+  Widget buildOverscrollIndicator(
+    BuildContext context,
+    Widget child,
+    ScrollableDetails details,
+  ) => child;
 }

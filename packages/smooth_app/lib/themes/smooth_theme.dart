@@ -49,7 +49,28 @@ class SmoothTheme {
         : _TEXT_THEME;
 
     return ThemeData(
-      fontFamily: 'OpenSans',
+      fontFamily: 'Inter',
+      // Apple-style: iOS page transitions, no Material ripple, soft shapes.
+      pageTransitionsTheme: const PageTransitionsTheme(
+        builders: <TargetPlatform, PageTransitionsBuilder>{
+          TargetPlatform.android: CupertinoPageTransitionsBuilder(),
+          TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+        },
+      ),
+      splashFactory: NoSplash.splashFactory,
+      highlightColor: Colors.transparent,
+      cardTheme: CardThemeData(
+        elevation: 0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      ),
+      dialogTheme: DialogThemeData(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+      ),
+      bottomSheetTheme: const BottomSheetThemeData(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(22)),
+        ),
+      ),
       primaryColor: smoothExtension.primaryBlack,
       extensions: <ThemeExtension<dynamic>>[smoothExtension],
       colorScheme: myColorScheme,
@@ -60,12 +81,19 @@ class SmoothTheme {
           themeProvider.currentTheme == THEME_DARK ||
               (!lightTheme && themeProvider.currentTheme != THEME_AMOLED)
           ? const Color(0xFF303030)
-          : null,
+          : (lightTheme ? const Color(0xFFF2F2F7) : null),
       shadowColor: brightness == Brightness.light
           ? Colors.black54
           : Colors.white12,
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
+          elevation: const WidgetStatePropertyAll<double>(0),
+          shape: WidgetStatePropertyAll<OutlinedBorder>(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+          ),
+          textStyle: const WidgetStatePropertyAll<TextStyle>(
+            TextStyle(fontWeight: FontWeight.w600, letterSpacing: -0.2),
+          ),
           backgroundColor: WidgetStateProperty.resolveWith<Color?>(
             (Set<WidgetState> states) => states.contains(WidgetState.disabled)
                 ? Colors.grey
@@ -87,7 +115,9 @@ class SmoothTheme {
       ),
       textTheme: textTheme,
       appBarTheme: AppBarTheme(
-        centerTitle: false,
+        elevation: 0,
+        scrolledUnderElevation: 0,
+        centerTitle: true,
         backgroundColor: myColorScheme.surface,
         foregroundColor: myColorScheme.onSurface,
         systemOverlayStyle: SystemUiOverlayStyle.light,
@@ -152,34 +182,20 @@ class SmoothTheme {
         }),
       ),
       switchTheme: SwitchThemeData(
-        thumbColor: WidgetStateProperty.resolveWith<Color?>((
-          Set<WidgetState> states,
-        ) {
-          if (states.contains(WidgetState.selected)) {
-            if (lightTheme) {
-              return smoothExtension.primaryDark;
-            } else {
-              return smoothExtension.primarySemiDark;
-            }
-          } else if (states.contains(WidgetState.disabled)) {
-            if (lightTheme) {
-              return const Color(0xFFC2B5B0);
-            } else {
-              return smoothExtension.primaryNormal;
-            }
-          } else {
-            return null;
-          }
-        }),
+        thumbColor: const WidgetStatePropertyAll<Color>(Colors.white),
         trackColor: WidgetStateProperty.resolveWith<Color?>((
           Set<WidgetState> states,
         ) {
-          if (lightTheme) {
-            return smoothExtension.primaryMedium;
-          } else {
-            return const Color(0xFFEDE0DB);
+          if (states.contains(WidgetState.selected)) {
+            return const Color(0xFF34C759); // iOS system green
           }
+          return lightTheme
+              ? const Color(0xFFE5E5EA)
+              : const Color(0xFF39393D);
         }),
+        trackOutlineColor: const WidgetStatePropertyAll<Color>(
+          Colors.transparent,
+        ),
       ),
     );
   }
@@ -206,21 +222,36 @@ class SmoothTheme {
   }
 
   static const TextTheme _TEXT_THEME = TextTheme(
-    displayLarge: TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
+    displayLarge: TextStyle(
+      fontSize: 34.0,
+      fontWeight: FontWeight.w700,
+      letterSpacing: -0.8,
+    ),
     displayMedium: TextStyle(
-      fontSize: 24.0,
-      fontWeight: FontWeight.bold,
+      fontSize: 26.0,
+      fontWeight: FontWeight.w700,
+      letterSpacing: -0.6,
       color: Colors.black,
     ),
-    displaySmall: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+    displaySmall: TextStyle(
+      fontSize: 20.0,
+      fontWeight: FontWeight.w600,
+      letterSpacing: -0.4,
+    ),
     headlineMedium: TextStyle(
-      fontSize: LARGE_SPACE,
-      fontWeight: FontWeight.bold,
+      fontSize: 20.0,
+      fontWeight: FontWeight.w700,
+      letterSpacing: -0.4,
       color: Colors.black,
     ),
-    bodyMedium: TextStyle(fontSize: 14, letterSpacing: 0.5),
-    titleMedium: TextStyle(fontSize: 14.0),
-    titleSmall: TextStyle(fontSize: 12.0),
+    titleLarge: TextStyle(
+      fontSize: 17.0,
+      fontWeight: FontWeight.w600,
+      letterSpacing: -0.4,
+    ),
+    bodyMedium: TextStyle(fontSize: 15.0, letterSpacing: -0.2),
+    titleMedium: TextStyle(fontSize: 15.0, letterSpacing: -0.2),
+    titleSmall: TextStyle(fontSize: 13.0, letterSpacing: -0.1),
   );
 
   static MaterialColor getMaterialColorFromColor(Color color) {

@@ -205,13 +205,13 @@ class _PhotoRowBannerState extends State<_PhotoRowBanner> {
         fontSize: 16.0,
         fontWeight: FontWeight.w500,
         color: lightTheme ? Colors.black : Colors.white,
-        fontFamily: 'OpenSans',
+        fontFamily: 'Inter',
       ),
       leadingAndTrailingTextStyle: TextStyle(
         fontSize: 16.0,
         fontWeight: FontWeight.w500,
         color: lightTheme ? Colors.black : Colors.white,
-        fontFamily: 'OpenSans',
+        fontFamily: 'Inter',
       ),
       contentPadding: const EdgeInsetsDirectional.only(
         start: BALANCED_SPACE,
