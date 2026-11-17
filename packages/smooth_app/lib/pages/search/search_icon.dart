@@ -29,15 +29,15 @@ class SearchBarIcon extends StatelessWidget {
       child: Ink(
         decoration: ShapeDecoration(
           color: context.lightTheme()
-              ? theme.primaryBlack
-              : theme.primaryUltraBlack,
+              ? const Color(0xFF1B7F4B)
+              : const Color(0xFF30D158),
           shape: const CircleBorder(),
         ),
         child: Padding(
           padding: padding ?? const EdgeInsetsDirectional.all(BALANCED_SPACE),
           child: IconTheme(
             data: const IconThemeData(size: 20.0, color: Colors.white),
-            child: icon ?? const icons.Search.off(),
+            child: icon ?? const Icon(Icons.search_rounded),
           ),
         ),
       ),

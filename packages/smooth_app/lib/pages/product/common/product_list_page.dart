@@ -34,6 +34,7 @@ import 'package:smooth_app/pages/scan/carousel/scan_carousel_manager.dart';
 import 'package:smooth_app/query/product_query.dart';
 import 'package:smooth_app/query/search_products_manager.dart';
 import 'package:smooth_app/resources/app_icons.dart' as icons;
+import 'package:smooth_app/themes/theme_provider.dart';
 import 'package:smooth_app/themes/smooth_theme_colors.dart';
 import 'package:smooth_app/widgets/autosize_text.dart';
 import 'package:smooth_app/widgets/smooth_app_bar.dart';
@@ -176,7 +177,9 @@ class _ProductListPageState extends State<ProductListPage>
         title: _ProductListAppBarTitle(
           productList: productList,
           onTap: () => _onChangeList(appLocalizations, daoProductList),
-          enabled: widget.allowToSwitchBetweenLists,
+          enabled:
+              widget.allowToSwitchBetweenLists &&
+              productList.listType != ProductListType.HISTORY,
         ),
 
         titleSpacing: 0.0,
@@ -279,8 +282,14 @@ class _ProductListPageState extends State<ProductListPage>
                     localDatabase,
                     appLocalizations,
                   ),
-                  separatorBuilder: (BuildContext context, _) =>
-                      const Divider(),
+                  separatorBuilder: (BuildContext context, _) => Divider(
+                    height: 0.5,
+                    thickness: 0.5,
+                    indent: 92.0,
+                    color: context.lightTheme()
+                        ? const Color(0x1F000000)
+                        : const Color(0x33FFFFFF),
+                  ),
                 ),
               ),
             ),
@@ -297,7 +306,7 @@ class _ProductListPageState extends State<ProductListPage>
               onPressed: () =>
                   ExternalScanCarouselManager.read(context).showSearchCard(),
             )
-          : _selectionMode
+          : (_selectionMode || productList.listType == ProductListType.HISTORY)
           ? null
           : SmoothExpandableFloatingActionButton(
               scrollController: _scrollController,

@@ -82,7 +82,12 @@ class _SearchFieldState extends State<SearchField> {
       _controller = TextEditingController();
     }
 
-    final TextStyle textStyle = SearchFieldUIHelper.textStyle;
+    final bool light = context.lightTheme();
+    final Color fill = light ? const Color(0xFFE9E9EB) : const Color(0xFF1C1C1E);
+    final TextStyle textStyle = TextStyle(
+      color: light ? Colors.black : Colors.white,
+      fontSize: 16.0,
+    );
 
     final Widget? leadingWidget = widget.searchHelper.getLeadingWidget(context);
     final SmoothColorsThemeExtension theme = context
@@ -108,12 +113,12 @@ class _SearchFieldState extends State<SearchField> {
           child: Material(
             // ↑ Needed by the Hero Widget
             borderRadius: MAX_BORDER_RADIUS,
-            color: widget.borderColor ?? Colors.white,
+            color: widget.borderColor ?? fill,
             child: Padding(
               padding: const EdgeInsetsDirectional.all(1.0),
               child: Material(
                 borderRadius: MAX_BORDER_RADIUS,
-                color: widget.backgroundColor ?? Colors.white,
+                color: widget.backgroundColor ?? fill,
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -159,7 +164,10 @@ class _SearchFieldState extends State<SearchField> {
                               ),
                               hintStyle:
                                   widget.hintTextStyle ??
-                                  SearchFieldUIHelper.hintTextStyle,
+                                  const TextStyle(
+                                    fontSize: 16.0,
+                                    color: Color(0xFF8E8E93),
+                                  ),
                               border: InputBorder.none,
                             ),
 
@@ -205,8 +213,8 @@ class _SearchIcon extends StatelessWidget {
     final AppLocalizations localizations = AppLocalizations.of(context);
 
     return SearchBarIcon(
-      icon: const icons.Search.offRounded(),
-      padding: const EdgeInsetsDirectional.only(bottom: 2.0),
+      icon: const Icon(Icons.search_rounded),
+      padding: const EdgeInsetsDirectional.all(10.0),
       label: localizations.search,
       onTap: onTap,
     );
@@ -225,9 +233,8 @@ class SearchFieldUIHelper {
       EdgeInsetsDirectional.only(start: 20.0, end: BALANCED_SPACE, bottom: 3.0);
 
   static TextStyle get hintTextStyle => const TextStyle(
-    fontSize: 15.0,
-    fontStyle: FontStyle.italic,
-    color: Colors.black54,
+    fontSize: 16.0,
+    color: Color(0xFF8E8E93),
   );
 
   static TextStyle get textStyle => const TextStyle(color: Colors.black);
@@ -240,10 +247,7 @@ class SearchFieldUIHelper {
 
     return BoxDecoration(
       borderRadius: SearchFieldUIHelper.SEARCH_BAR_BORDER_RADIUS,
-      color: Colors.white,
-      border: Border.all(
-        color: lightTheme ? theme.primaryBlack : theme.primarySemiDark,
-      ),
+      color: lightTheme ? const Color(0xFFE9E9EB) : const Color(0xFF1C1C1E),
     );
   }
 }
