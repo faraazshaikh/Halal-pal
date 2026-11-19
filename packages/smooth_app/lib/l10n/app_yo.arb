@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Ẹ káàbọ̀ sí Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts jẹ́ àjọ tí kìí ṣe èrè lágbàáyé tí àwọn agbègbè ń ṣiṣẹ́ fún.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Wo alaye ounjẹ ti o baamu awọn ayanfẹ rẹ.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Kò sí ìdáhùn sí olupin! O le ṣí ìṣòro kan pẹ̀lú ìjápọ̀ yìí.",
   "@user_management": {},
-  "sign_in_text": "Wọlé sí àkọọ́lẹ̀ Open Food Facts rẹ láti fi àwọn àfikún rẹ pamọ́",
   "incorrect_credentials": "Orúkọ tàbí ọ̀rọ̀ìpamọ́ tí kò tọ́.",
   "password_lost_incorrect_credentials": "Kò sí ìmeeli tàbí orúkọ ìforúkọsílẹ̀ yìí. Jọ̀wọ́ ṣàyẹ̀wò àwọn ìwé ẹ̀rí rẹ.",
   "password_lost_server_unavailable": "A n ni iriri idinku lori awọn olupin wa lọwọlọwọ ati pe a tọrọ aforiji fun rẹ. Jọwọ gbiyanju lẹẹkansi nigbamii.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Fún ẹ̀yà ara ẹ̀rọ yẹn, a nílò kí o wọlé.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Ṣe ìrànlọ́wọ́ láti mú kí Open Food Facts ní orílẹ̀-èdè rẹ sunwọ̀n síi",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "ifowosi jada",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "So ni pato orukoabawole re",
   "sign_up_page_confirm_password_error_empty": "Jọwọ jẹrisi ọrọ igbaniwọle rẹ",
   "sign_up_page_confirm_password_error_invalid": "Àwọn ọ̀rọ̀ ìpamọ́ kò báramu",
-  "sign_up_page_agree_text": "Mo gba si Awọn Otitọ Ounjẹ Ṣiṣi",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "awọn ofin lilo ati ilowosi",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Olùpèsè oúnjẹ ni mí",
   "sign_up_page_producer_hint": "Olùpèsè/orúkọ ọjà",
   "sign_up_page_producer_error_empty": "Jọ̀wọ́ tẹ orúkọ olùgbéjáde tàbí orúkọ ilé iṣẹ́ kan",
-  "sign_up_page_subscribe_checkbox": "Mo fẹ́ forúkọ sílẹ̀ fún ìwé ìròyìn Open Food Facts (O lè yọ ara rẹ kúrò nínú rẹ̀ nígbàkigbà)",
   "sign_up_page_user_name_already_used": "Orúkọ olùlò náà ti wà tẹ́lẹ̀, jọ̀wọ́ yan orúkọ olùlò mìíràn.",
   "sign_up_page_email_already_exists": "ti wa tẹlẹ, wọle si akọọlẹ naa tabi gbiyanju pẹlu imeeli miiran.",
   "sign_up_page_provide_valid_email": "Jọwọ pese adirẹsi imeeli to wulo.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Beere fun iranlọwọ ni ikanni Slack wa",
   "support_via_forum": "Beere fun iranlọwọ lori apejọ wa",
-  "support_via_email": "Fi imeeli ranṣẹ si wa",
   "support_via_email_include_logs_dialog_title": "Fi àwọn àkọsílẹ̀ àpù ránṣẹ́?",
   "support_via_email_include_logs_dialog_body": "Ṣe o fẹ lati fi awọn akọsilẹ ohun elo kun si asomọ si imeeli rẹ?",
   "termsOfUse": "Awọn ofin lilo",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Kóòdù fún gbogbo ọjà Open Food Facts wà lórí GitHub. Ẹ lè tún lo kódù náà (ó jẹ́ orísun ṣíṣí sílẹ̀) kí ẹ sì ràn wá lọ́wọ́ láti mú un sunwọ̀n sí i, fún gbogbo ènìyàn, ní gbogbo ayé.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "O le darapọ mọ Open Food Facts Slack chatroom, eyi ti o jẹ ọna ti o fẹ lati beere awọn ibeere.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "Ipò DEV?",
   "contribute_develop_dev_mode_subtitle": "Mu Ipo DEV ṣiṣẹ",
   "contribute_donate_title": "Donate",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Ṣe ìtọrẹ sí Àwọn Ìròyìn Oúnjẹ Ṣíṣí",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Jọ̀wọ́ jẹ́wọ́ pé pẹ̀lú ẹ̀yà alpha inú, pípadánù dátà pátápátá ṣeé ṣe, àti pé àpù náà lè má ṣeé lò nígbàkigbà!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Awọn ọja ti a gbọdọ pari",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Ibi ipamọ data ni ipilẹ iṣẹ akanṣe naa. O rọrun ati ki o yara pupọ lati ṣe iranlọwọ. O le ṣe igbasilẹ app alagbeka fun foonu rẹ, ki o bẹrẹ si ṣafikun tabi mu awọn ọja dara si.\n\nNi apa keji, oju opo wẹẹbu Open Food Facts nfunni ni ọpọlọpọ awọn ọna lati ṣe alabapin: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Túmọ̀",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts jẹ́ iṣẹ́ àgbáyé kan, tí ó ní àwọn ọjà láti orílẹ̀-èdè tó ju 160 lọ. A ń túmọ̀ Open Food Facts sí ọ̀pọ̀lọpọ̀ èdè, pẹ̀lú àwọn akoonu tí ń yípadà nígbà gbogbo.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Ìtumọ̀ jẹ́ ọ̀kan lára àwọn iṣẹ́ pàtàkì nínú iṣẹ́ náà",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Ṣe àfikún àwọn ọgbọ́n rẹ sí Open Food Facts. Dára pọ̀ mọ́ àwọn ọgbọ́n náà!",
-  "contribute_share_header": "Pin Awọn Otitọ Ounjẹ Ṣiṣi pẹlu awọn ọrẹ rẹ",
-  "@contribute_share_header": {},
   "contribute_share_content": "I wanted to let you know about the app I've been using, Open Food Facts, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it's free, does not require registration, and you can even help increase the number of products decyphered. Here's the link to get it for your phone: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Wọlé sí àkọọ́lẹ̀ Open Food Facts rẹ láti gba ìyìn fún àwọn àfikún rẹ",
   "question_yes_button_accessibility_value": "Dáhùn pẹ̀lú bẹ́ẹ̀ni",
   "question_no_button_accessibility_value": "Dáhùn pẹ̀lú rárá",
   "question_skip_button_accessibility_value": "Fo ibeere yii",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Ṣẹ̀dá àkọọ́lẹ̀ rẹ kí o sì dara pọ̀ mọ́ àwùjọ Open Food Facts láti ran ọ́ lọ́wọ́ láti kọ́ ìmọ̀ nípa oúnjẹ kárí ayé!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Darapo mo wa",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Ìwífún Rẹ",
-  "myPreferences_profile_subtitle": "Ṣàkóso àkọọ́lẹ̀ olùkópa Open Food Facts rẹ.",
   "myPreferences_settings_title": "Àwọn Ètò Àpù",
   "myPreferences_settings_subtitle": "Ipo dudu, Awọn ede…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Àwọn Àyànfẹ́ Oúnjẹ",
   "myPreferences_food_subtitle": "Yan alaye ti o ṣe pataki julọ si ọ nipa ounjẹ.",
   "myPreferences_food_compatibility_explainer": "Yan alaye ti o ṣe pataki julọ fun ọ, lati le ṣe ipo ounjẹ ni ibamu si awọn ayanfẹ rẹ, wo alaye ti o nifẹ si akọkọ, ki o si gba akopọ ibamu.",
-  "myPreferences_food_privacy": "Awọn ayanfẹ ounjẹ wọnyẹn wa lori ẹrọ rẹ, wọn ko si ni nkan ṣe pẹlu akọọlẹ olufunni Open Food Facts rẹ ti o ba ni ọkan.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "O ti ri ọja tuntun kan!",
   "@missing_product": {},
-  "add_product_take_photos": "Ya awọn fọto ti apoti naa lati fi ọja yii kun si Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Jọ̀wọ́, ya àwọn fọ́tò díẹ̀ ní àkọ́kọ́. O lè parí ọjà náà nígbà míì.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Gba nipa kikún ẹka ounjẹ ati awọn eroja",
   "new_product_desc_nova_unknown": "A ko mọ ipele ṣiṣe ounjẹ",
   "new_product_title_pictures": "Ọjà tuntun",
-  "new_product_title_pictures_details": "Jọ̀wọ́ ya àwọn fọ́tò wọ̀nyí kí ẹ̀rọ Open Food Facts lè mọ ìyókù!",
   "new_product_title_misc": "Ati diẹ ninu awọn data ipilẹ…",
   "new_product_done_msg": "O ṣeun fun ilowosi rẹ “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Gbigbe fọto si olupin naa",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Gbigbe aworan iwaju si Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Àwòrán àwọn èròjà tí a gbé sórí ìkànnì Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Gbigbe aworan ounjẹ si Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Gbigbe aworan apoti si Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Gbigbe aworan miiran si Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Gbigbe aworan si Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Fi awọn eroja ti o padanu kun",
   "score_add_missing_packaging_image": "Fi àwòrán àpò tí ó sọnù kún un",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Ẹ káàbọ̀ sí Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Ṣe àyẹ̀wò** àmì ìdámọ̀ràn tàbí\n**wá** fún ọjà kan",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Ṣí àwọn ètò ètò fún Àwọn Ìròyìn Oúnjẹ Ṣíṣí",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "A ti yọ ọjà náà kúrò nínú ìtàn",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Tẹ̀lé wa lórí TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Tẹ̀lé wa lórí Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Tẹ̀lé wa lórí X (tí a mọ̀ sí Twitter tẹ́lẹ̀)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Tẹ̀lé wa lórí Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Bulọọgi",
   "faq": "Awọn ibeere ti a maa n beere nigbagbogbo",
-  "discover": "Iwari",
   "how_to_contribute": "Bí a ṣe lè ṣe àfikún",
   "hint_knowledge_panel_message": "O le tẹ apa eyikeyi ti kaadi naa lati gba alaye siwaju sii nipa ohun ti o ri. Gbiyanju rẹ ni bayi!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Wọlé tàbí forúkọ sílẹ̀ láti dara pọ̀ mọ́ àwùjọ Open Food Facts",
-  "user_profile_title_id_email": "Open Food Facts wọlé: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Ẹ káàbọ̀ {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Pa àkọọ́lẹ̀ rẹ rẹ́",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Ẹ n lẹ o, ẹ jọ̀wọ́ ẹ pa àkọọ́lẹ̀ Open Food Facts mi rẹ́: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Ohun elo",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Nígbà tí a bá ti ṣiṣẹ́, a máa fi àwọn ìròyìn ìjákulẹ̀ ránṣẹ́ sí ètò ìtọ́pinpin àṣìṣe Open Food Facts láìfọwọ́sí, kí a lè ṣàtúnṣe àwọn àṣìṣe kí a sì lè mú àpù náà sunwọ̀n síi.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Ẹ̀ka tí ó pàdánù?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Tí ẹ̀ka kan kò bá sí ní ìparí aládàáṣe**, má ṣe lọ́ tìkọ̀ láti fi kún un.\nÈyí yóò ràn wá lọ́wọ́ láti mú kí àwọn ohun tí a ń pè ní Open Food Facts sunwọ̀n síi ní orílẹ̀-èdè rẹ.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Àwọn sardínì nínú òróró ólífì",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Àpù àbùdá sí àpù Iye lórí ojú ìwé ọjà",
-  "prices_app_button": "Lọ sí àpù Iye owó",
-  "prices_website_button": "Ṣii lori oju opo wẹẹbu Awọn idiyele Ṣii",
   "prices_bulk_proof_upload_select": "Fi awọn ami idiyele kun taara lati ibi aworan aworan",
   "prices_bulk_proof_upload_warning": "Nígbà tí o bá ti yan àwọn àwòrán, o kò ní lè ṣàtúnṣe wọn!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Ẹ̀rí ìdíyelé tí ó ṣí sílẹ̀",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Kò sí ẹ̀rí síbẹ̀} =1{Ẹ̀rí kan ṣoṣo} other{Gbogbo {count} Ẹ̀rí}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Jẹ́rìísí",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Mo gba si Awọn Otitọ Ounjẹ Ṣiṣi ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "awọn ofin lilo ati ilowosi",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Àmì Àtúpalẹ̀",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Wo ọjà yìí lórí Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Wo ọjà yìí lórí Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Wo ọjà yìí lórí Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Wo ọjà yìí lórí Àwọn Ìròyìn Àwọn Ọjà Ṣíṣí: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Wo àkójọ àwọn ọjà mi lórí Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Ìrànlọ́wọ́ pẹ̀lú OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "A o ṣe imudojuiwọn ọja naa ni abẹlẹ ni kete bi o ti ṣee.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Gbogbo Àwọn Àwòrán",
-  "selected_images": "Àwọn Àwòrán Tí A Yàn",
   "product_card_remove_product_tooltip": "Yọ ọja kuro",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Ṣe àtúnṣe ibi ìpamọ́ ọjà àdúgbò pẹ̀lú ìwífún tuntun láti Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Pa data ọjà aisinipo rẹ",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Ẹ kú àbọ̀ sí Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Kí ni Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts jẹ́ ibi ìkópamọ́ àwọn ọjà oúnjẹ láti gbogbo àgbáyé tí a lè fọwọ́sowọ́pọ̀, tí ó jẹ́ ọ̀fẹ́**, tí ó sì jẹ́ **ọ̀fẹ́**.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Àmì láti yẹra fún àwọn oúnjẹ tí a ti ṣe iṣẹ́ púpọ̀ jù",
   "guide_open_food_facts_scores_arg3_title": "Àmì fún pílánẹ́ẹ̀tì",
   "guide_open_food_facts_share_link": "https://world-yo.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Ẹ kú àbọ̀ sí Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Kí ni Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts nà iṣẹ́ wa sí àwọn ọ̀rẹ́ wa onírun! Ó jẹ́ **ìpìlẹ̀ ìpamọ́ àwọn ọjà oúnjẹ ẹranko fún àwọn ológbò, ajá, àti àwọn ẹlẹgbẹ́ mìíràn**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Àkọsílẹ̀ lórí ìdíyelé",
   "guide_open_pet_food_facts_scores_paragraph1": "Ṣíṣe ètò ìṣàyẹ̀wò fún oúnjẹ ẹranko **kì í ṣe ohun pàtàkì ní báyìí**. Ọ̀nà tí a gbà ń lò ó yóò díjú, nítorí pé àìní oúnjẹ yàtọ̀ síra gidigidi nípa irú ẹranko, ọjọ́ orí àti ipò ìlera. A kò tí ì rí ẹgbẹ́ onímọ̀ sáyẹ́ǹsì èyíkéyìí tí ó lè ṣe irú àmì bẹ́ẹ̀.",
   "guide_open_pet_food_facts_share_link": "https://world-yo.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Kaabo si Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Kí ni Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts jẹ́ ibi ìkópamọ́ ìfọwọ́sowọ́pọ̀ ti **àwọn ọjà ohun ọ̀ṣọ́**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Gba àwọn fọ́tò àwọn àmì owó ní àwọn ibi ìtajà",
   "guide_open_prices_how_arg2_title": "Gba awọn fọto ti awọn iwe-ẹri isanwo",
   "guide_open_prices_why_title": "Kí ló dé tí Open Food Facts fi ń ṣe èyí?",
-  "guide_open_prices_why_paragraph1": "Ìwífún nípa iye owó ṣe pàtàkì gan-an láti lóye ètò oúnjẹ. Ó jẹ́ kókó pàtàkì nínú òye iye owó oúnjẹ àti láti gbé oúnjẹ tó dára lárugẹ. Ṣíṣí ìwífún nípa iye owó jẹ́ ọ̀nà láti mú kí ó rọrùn fún àwọn olùwádìí, àwọn oníròyìn, àti àwọn ará ìlú láti **ní òye tó dára jù nípa bí iye owó oúnjẹ ṣe yàtọ̀ síra ní agbègbè àti ní àkókò**.",
   "guide_open_prices_why_arg1_title": "Tọpinpin idagbasoke ti awọn idiyele lori akoko",
   "guide_open_prices_why_arg1_text": "Wo **ilọsiwaju ti awọn idiyele**: idinku iṣu, idinku iṣu, a le tọpinpin wọn papọ!",
   "guide_open_prices_why_arg2_title": "Ṣe afiwe awọn idiyele nitosi rẹ",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "I'm a retailer and I want to contribute prices. How can I do that?",
   "guide_open_prices_retailers_paragraph1": "O le fi awọn idiyele ranṣẹ nipa lilo API wa.\nTi o ba fẹ lati fi awọn idiyele kun ni iwọn, jọwọ kan si wa ni prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Kaabo si Awọn Otitọ Awọn Ọja Ṣiṣi!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Kí ni Àwọn Òtítọ́ nípa Àwọn Ọjà Ìṣípìlẹ̀?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts jẹ́ ibi ìkópamọ́ data tó gbòòrò fún **ọjà tó ní àmì ìdámọ̀ràn, èyí tí kì í ṣe oúnjẹ, ohun ọ̀ṣọ́ tàbí oúnjẹ ẹranko**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Óò!",
-  "carousel_unsupported_text": "Open Food Facts kò ṣe atilẹyin fun koodu barcode ti a ṣe ayẹwo!",
   "carousel_error_header": "Àṣìṣe!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "The Open Food Facts ise agbese",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Contribute",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts jẹ aaye data awọn ọja ounjẹ **ti gbogbo eniyan ṣe, fun gbogbo eniyan**. O le lo lati ṣe awọn yiyan ounjẹ to dara julọ, ati pe bi o ti jẹ **data ṣiṣi**, ẹnikẹni le **tun-lo fun idi eyikeyi**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Ètò ìpamọ́",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Awọn ọja titun Mo ṣafikun si Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Awọn ọja Mo nilo lati pari",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Tiwon si ise agbese",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Awọn ọna ti o rọrun lati ṣe iranlọwọ fun Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Awọn ilana Dimegilio, iranlọwọ, ati diẹ sii nipa iṣẹ akanṣe naa",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Àkọọ́lẹ̀",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Mu Open Food Facts wá si ede rẹ",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Fi orukọ silẹ ni ẹya alfa ti app naa",
   "@preferences_contribute_enroll_alpha": {},

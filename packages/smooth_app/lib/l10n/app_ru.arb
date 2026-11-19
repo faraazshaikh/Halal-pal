@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Открытые цены",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Добро пожаловать в Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts — это глобальная некоммерческая организация, основанная местными сообществами.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Смотрите данные о еде, соответствующие вашим предпочтениям.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Нет ответа сервера! Вы можете открыть проблему по следующей ссылке.",
   "@user_management": {},
-  "sign_in_text": "Войдите в свою учетную запись Open Food Facts, чтобы сохранить свои взносы",
   "incorrect_credentials": "Неверное имя пользователя или пароль.",
   "password_lost_incorrect_credentials": "Этот адрес электронной почты или имя пользователя не существует. Проверьте свои учетные данные.",
   "password_lost_server_unavailable": "В настоящее время мы испытываем замедление работы наших серверов и приносим извинения за это. Пожалуйста, попробуйте еще раз позже.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Для использования этой функции вам надо войти в систему.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Помогите улучшить Open Food Facts в вашей стране",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Выйти",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Подтвердите пароль",
   "sign_up_page_confirm_password_error_empty": "Пожалуйста, подтверлите пароль",
   "sign_up_page_confirm_password_error_invalid": "Пароли не совпадают",
-  "sign_up_page_agree_text": "Я согласен с Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "условия использования и вклад",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://world-ru.openfoodfacts.org/pozhertvovat-open-food-facts",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Я производитель продуктов питания",
   "sign_up_page_producer_hint": "Производитель/марка",
   "sign_up_page_producer_error_empty": "Пожалуйста, введите производителя или название марки",
-  "sign_up_page_subscribe_checkbox": "Я хотел бы подписаться на рассылку Open Food Facts (Вы можете отказаться от рассылки в любое время)",
   "sign_up_page_user_name_already_used": "Имя пользователя уже существует, пожалуйста выберите другое имя.",
   "sign_up_page_email_already_exists": "уже существует, войдите в учётную запись или попробуйте другой адрес электронной почты.",
   "sign_up_page_provide_valid_email": "Пожалуйста, укажите действующий адрес электронной почты.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Попросите помощи в нашем канале Slack",
   "support_via_forum": "Обратитесь за помощью на наш форум",
-  "support_via_email": "Отправьте нам электронное письмо",
   "support_via_email_include_logs_dialog_title": "Отправить журнал приложений?",
   "support_via_email_include_logs_dialog_body": "Вы хотите включить журналы приложений во вложение к вашему электронному письму?",
   "termsOfUse": "Условия использования",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Код для каждого продукта Open Food Facts доступен на GitHub. Вы можете повторно использовать код (это открытый исходный код) и помочь нам улучшить его для всех людей на нашей планете.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Вы можете присоединиться к чату Open Food Facts Slack, здесь будет удобно задавать вопросы.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "Режим Разработчика?",
   "contribute_develop_dev_mode_subtitle": "Активировать Режим Разработчика",
   "contribute_donate_title": "Поддержать",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Поддержите Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Пожалуйста, примите во внимание, что при использовании внутренней альфа-версии возможна полная потеря данных, и приложение может стать непригодным для использования в любой момент!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Незавершенные продукты",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "База данных — это основа проекта. Помочь нетрудно и не займет много времени. Вы можете загрузить мобильное приложение на свой телефон и начать добавлять или улучшать продукты.\n\nВ то же время, сайт Open Food Facts предлагает множество способов внести свой вклад: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Перевести",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts — это глобальный проект, содержащий информацию о продуктах из более чем 160 стран. Open Food Facts переведена на десятки языков, и продолжает постоянно изменяться.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Переводы — одна из ключевых задач проекта",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Поделитесь своими навыками с Open Food Facts. Присоединяйтесь к пулу навыков!",
-  "contribute_share_header": "Поделитесь Open Food Facts с друзьями",
-  "@contribute_share_header": {},
   "contribute_share_content": "Хочу рассказать вам о приложении Open Food Facts, которое позволяет получать информацию и персональные рекомендации о влиянии еды на здоровье и окружающую среду. Приложение работает путём сканирования штрихкодов. Приложение бесплатное, не требует регистрации, и вы можете добавить недостающую информацию! Ссылка для установки: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Войдите в свою учетную запись Open Food Facts, чтобы получить признание за свой вклад",
   "question_yes_button_accessibility_value": "Ответить да",
   "question_no_button_accessibility_value": "Ответить нет",
   "question_skip_button_accessibility_value": "Пропустить этот вопрос",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Создайте свой аккаунт и присоединяйтесь к сообществу Open Food Facts, чтобы помочь создать знания о пище по всему миру!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Присоединяйтесь к нам",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Ваш профиль",
-  "myPreferences_profile_subtitle": "Управляйте своей учётной записью участника Open Food Facts.",
   "myPreferences_settings_title": "Настройки",
   "myPreferences_settings_subtitle": "Тёмный режим, Языки…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Предпочтения в еде",
   "myPreferences_food_subtitle": "Выберите, какая информация о еде представляет для вас наибольший интерес.",
   "myPreferences_food_compatibility_explainer": "Выберите информацию о еде, которая представляет для вас наибольший интерес, чтобы отсортировывать еду в соответствии с вашими предпочтениями, показывать нужную вам информацию в первую очередь, а также получать данные о совместимости.",
-  "myPreferences_food_privacy": "Выбранные вами предпочтения останутся на вашем устройстве и никак не связаны с вашим профилем участника Open Food Facts, если таковой имеется.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Вы нашли новый продукт!",
   "@missing_product": {},
-  "add_product_take_photos": "Сфотографируйте упаковку, чтобы добавить этот продукт в Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Пожалуйста, сделайте фотографии в первую очередь. Вы всегда можете дополнить продукт потом.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Добавление информации о продукте",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Для этого заполните категорию и состав продукта",
   "new_product_desc_nova_unknown": "Степень обработки продуктов неизвестна",
   "new_product_title_pictures": "Давайте сделаем несколько фотографий!",
-  "new_product_title_pictures_details": "Пожалуйста, сделайте следующие фотографии, а движок Open Food Facts сделает все остальное!",
   "new_product_title_misc": "И некоторые основные данные…",
   "new_product_done_msg": "Спасибо за ваш вклад «{username}»!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Фото выгружается на сервер",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Загрузка фронтального изображения в Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Загрузка списка ингредиентов в Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Загрузка изображения пищевой ценности в Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Загрузка изображения упаковки в Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Загрузка другого изображения на Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Загрузка изображения в Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Добавить недостающие ингридиенты",
   "score_add_missing_packaging_image": "Добавить отсутствующее изображение упаковки",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Добро пожаловать в Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Сканируйте** штрихкод или\n**найдите** продукт",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Открыть настройки системы для Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Продукт удален из истории",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Подписывайтесь на наш TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Подпишитесь на нас в Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Подпишитесь на нас в X (ранее Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Подпишитесь на нас в Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Блог",
   "faq": "Часто задаваемые вопросы",
-  "discover": "О проекте",
   "how_to_contribute": "Как помочь проекту",
   "hint_knowledge_panel_message": "Вы можете нажать на любую часть карточки, чтобы получить более подробную информацию о том, что вы видите. Попробуйте сейчас!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Войти или зарегистрироваться, чтобы присоединиться к сообществу Open Food Facts",
-  "user_profile_title_id_email": "Open Food Facts логин: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Добро пожаловать, {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Удалить учётную запись",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Пожалуйста, удалите мою учётную запись Open Food Facts: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Приложение",
   "settings_app_data": "Конфиденциальность и мониторинг",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Автоматически отправлять отчёты о неполадках в систему отслеживания ошибок для их последующего исправления.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Отправлять анонимные данные",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "Отправлять анонимные данные аналитики, которые помогают Open Food Facts оценивать информацию об использовании функций.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Отсутствует категория?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Если категория **недоступна в автозаполнении**, смело добавляйте ее.\nЭто поможет нам улучшить Open Food Facts в вашей стране.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Сардины в оливковом масле",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Ярлык приложения «Цены» на странице продукта",
-  "prices_app_button": "Перейти к приложению «Цены»",
-  "prices_website_button": "Открыть на сайте Open Prices",
   "prices_bulk_proof_upload_select": "Добавляйте ценники прямо из галереи",
   "prices_bulk_proof_upload_warning": "После выбора изображений вы не сможете их редактировать!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Цена открыта",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, few {Все {count} доказательства} many {Все {count} доказательства} =0{Пока нет доказательств} =1{Только одно доказательство} other{Все {count} доказательства}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Подтвердить",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Я согласен с Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "условия использования и вклад",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Значок аналитики",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Посмотрите как выглядит этот продукт на Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Посмотрите этот продукт на Open Beauty Facts:",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Взгляните на этот продукт на сайте Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Взгляните на этот продукт на сайте Open Products Facts: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Взгляните на мой список продуктов на Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Новый снимок",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Помощь с OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Продукт будет обновлен в фоновом режиме как можно скорее.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Все изображения",
-  "selected_images": "Ważne: potrzebujemy Twojego wsparcia!\n\nOpen Food Facts to wspólny projekt stworzony przez dziesiątki tysięcy wolontariuszy i zarządzany przez organizację non-profit z 4 pracownikami.\nPotrzebujemy Twoich darowizn, aby sfinansować budżet Open Food Facts na rok 2022 i kontynuować prace nad projektem. Dziękuję! ❤️",
   "product_card_remove_product_tooltip": "Удалить продукт",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Обновите локальную базу данных продуктов с использованием последних данных Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Очистить данные о продукте в автономном режиме",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Добро пожаловать на сайт Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Что такое Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts — это **совместная**, **бесплатная** и **открытая** база данных о продуктах питания со всего мира.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Оценка, позволяющая избегать ультра-обработанных продуктов",
   "guide_open_food_facts_scores_arg3_title": "Оценка для планеты",
   "guide_open_food_facts_share_link": "https://world-ru.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Добро пожаловать на сайт Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Что такое Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts распространяет свою миссию и на наших пушистых друзей! Это **база данных о кормах для кошек, собак и других домашних любимцев**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Примечание о подсчете очков",
   "guide_open_pet_food_facts_scores_paragraph1": "Разработка системы оценки кормов для домашних животных **сейчас не является приоритетом**. Методология будет сложной, поскольку потребности в питании сильно различаются в зависимости от вида, возраста и состояния здоровья. Мы пока не нашли ни одной независимой научной группы, способной разработать такую систему.",
   "guide_open_pet_food_facts_share_link": "https://world-ru.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Добро пожаловать на сайт Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Что такое Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts — это совместная база данных **косметических продуктов**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Собирайте фотографии ценников в проходах.",
   "guide_open_prices_how_arg2_title": "Собирайте фотографии квитанций",
   "guide_open_prices_why_title": "Почему Open Food Facts это делает?",
-  "guide_open_prices_why_paragraph1": "Информация о ценах имеет первостепенное значение для понимания продовольственных систем. Это ключевой фактор в оценке стоимости продуктов питания и продвижении более здорового питания. Данные о ценах на продукты питания позволяют исследователям, журналистам и гражданам **лучше понимать, как цены на продукты питания меняются в зависимости от географического положения и времени**.",
   "guide_open_prices_why_arg1_title": "Отслеживайте динамику цен с течением времени",
   "guide_open_prices_why_arg1_text": "Посмотрите на **эволюцию цен**: деструкционная инфляция, дешевая инфляция — мы можем отслеживать их вместе!",
   "guide_open_prices_why_arg2_title": "Сравните цены рядом с вами",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "Я розничный торговец и хочу внести цены. Как я могу это сделать?",
   "guide_open_prices_retailers_paragraph1": "Вы можете вносить цены, используя наш API.\nЕсли вы хотите вносить цены в больших объемах, свяжитесь с нами по адресу prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Добро пожаловать на сайт Open Products Facts!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Что такое Open Products Facts?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts — это огромная открытая база данных для **любых продуктов со штрихкодом, которые не являются продуктами питания, косметикой или кормом для домашних животных**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Упссс!",
-  "carousel_unsupported_text": "Отсканированный штрихкод не поддерживается Open Food Facts!",
   "carousel_error_header": "Ошибка!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Проект Open Food Facts",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Способствовать",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Правовые основания",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts — это база данных о продуктах питания, **созданная всеми для всех**.\nВы можете использовать ее для лучшего выбора продуктов питания, и поскольку это **открытые данные**, любой может **использовать ее повторно в любых целях**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Политика конфиденциальности",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Новые продукты, которые я добавил в Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Продукты, которые мне нужно заполнить",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Внести свой вклад в проект",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Простые способы помочь Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Методологии оценки, помощь и многое другое о проекте",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Учётная запись",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Перенесите Open Food Facts на свой язык",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Зарегистрируйтесь в альфа-версии приложения",
   "@preferences_contribute_enroll_alpha": {},

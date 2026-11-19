@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "კეთილი იყოს თქვენი მობრძანება Open Food Facts-ში",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts არის გლობალური არაკომერციული ორგანიზაცია, რომელსაც ადგილობრივი თემები აფინანსებენ.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "იხილეთ თქვენი პრეფერენციების შესაბამისი საკვების მონაცემები.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "სერვერის პასუხი არ არის! შესაძლოა, პრობლემა შემდეგი ბმულით გახსნათ.",
   "@user_management": {},
-  "sign_in_text": "შედით თქვენს Open Food Facts ანგარიშზე თქვენი წვლილის შესანახად",
   "incorrect_credentials": "არასწორი მომხმარებლის სახელი ან პაროლი.",
   "password_lost_incorrect_credentials": "ეს ელ. ფოსტა ან მომხმარებლის სახელი არ არსებობს. გთხოვთ, შეამოწმოთ თქვენი ავტორიზაციის მონაცემები.",
   "password_lost_server_unavailable": "ამჟამად ჩვენს სერვერებზე შენელებაა და ბოდიშს გიხდით ამის გამო. გთხოვთ, სცადოთ მოგვიანებით.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "ამ ფუნქციის გამოსაყენებლად საჭიროა თქვენი შესვლა.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "დაგვეხმარეთ თქვენს ქვეყანაში Open Food Facts-ის გაუმჯობესებაში",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "გასვლა",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "პაროლის დადასტურება",
   "sign_up_page_confirm_password_error_empty": "გთხოვთ, დაადასტუროთ პაროლი",
   "sign_up_page_confirm_password_error_invalid": "პაროლები არ ემთხვევა",
-  "sign_up_page_agree_text": "ვეთანხმები ღია კვების ფაქტებს",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "გამოყენების პირობები და წვლილი",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "მე საკვების მწარმოებელი ვარ",
   "sign_up_page_producer_hint": "მწარმოებელი/ბრენდი",
   "sign_up_page_producer_error_empty": "გთხოვთ, შეიყვანოთ მწარმოებელი ან ბრენდის სახელი",
-  "sign_up_page_subscribe_checkbox": "მსურს გამოვიწერო Open Food Facts-ის საინფორმაციო ბიულეტენი (შეგიძლიათ ნებისმიერ დროს გააუქმოთ გამოწერა)",
   "sign_up_page_user_name_already_used": "მომხმარებლის სახელი უკვე არსებობს, გთხოვთ, აირჩიოთ სხვა მომხმარებლის სახელი.",
   "sign_up_page_email_already_exists": "უკვე არსებობს, შედით ანგარიშზე ან სცადეთ სხვა ელ. ფოსტით.",
   "sign_up_page_provide_valid_email": "გთხოვთ, მიუთითოთ მოქმედი ელექტრონული ფოსტის მისამართი.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "დახმარებისთვის მიმართეთ ჩვენს Slack არხზე",
   "support_via_forum": "დახმარება ითხოვეთ ჩვენს ფორუმზე",
-  "support_via_email": "გამოგვიგზავნეთ ელ.წერილი",
   "support_via_email_include_logs_dialog_title": "გსურთ აპლიკაციის ჟურნალების გაგზავნა?",
   "support_via_email_include_logs_dialog_body": "გსურთ, რომ აპლიკაციის ჟურნალები თქვენს ელფოსტას დანართში დაურთოთ?",
   "termsOfUse": "გამოყენების პირობები",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "ყველა Open Food Facts პროდუქტის კოდი ხელმისაწვდომია GitHub-ზე. თქვენ შეგიძლიათ ხელახლა გამოიყენოთ კოდი (ეს ღია კოდია) და დაგვეხმაროთ მის გაუმჯობესებაში ყველასთვის, მთელი პლანეტის მასშტაბით.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "შეგიძლიათ შეუერთდეთ Open Food Facts Slack-ის ჩატ ოთახს, რომელიც კითხვების დასმის სასურველი გზაა.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "DEV რეჟიმი?",
   "contribute_develop_dev_mode_subtitle": "გააქტიურეთ DEV რეჟიმი",
   "contribute_donate_title": "Donate",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "შემოწირულობა Open Food Facts-ისთვის",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "გთხოვთ, გაითვალისწინოთ, რომ შიდა ალფა ვერსიით შესაძლებელია მონაცემების სრული დაკარგვა და აპლიკაცია ნებისმიერ დროს გამოუსადეგარი გახდეს!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "დასასრულებელი პროდუქტები",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "მონაცემთა ბაზა პროექტის ბირთვს წარმოადგენს. მისი დახმარებით დახმარება ძალიან მარტივი და სწრაფია. შეგიძლიათ ჩამოტვირთოთ მობილური აპლიკაცია თქვენი ტელეფონისთვის და დაიწყოთ პროდუქტების დამატება ან გაუმჯობესება.\n\nმეორეს მხრივ, Open Food Facts-ის ვებსაიტი წვლილის შეტანის მრავალ გზას გთავაზობთ: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "თარგმნა",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts გლობალური პროექტია, რომელიც 160-ზე მეტი ქვეყნის პროდუქტებს შეიცავს. Open Food Facts ათობით ენაზეა ნათარგმნი და მუდმივად ცვალებადი შინაარსი აქვს.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "თარგმანები პროექტის ერთ-ერთი მთავარი ამოცანაა",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "შეიტანეთ თქვენი უნარები Open Food Facts-ში. შემოუერთდით უნარების ჯგუფს!",
-  "contribute_share_header": "გაუზიარეთ ღია კვების ფაქტები თქვენს მეგობრებს",
-  "@contribute_share_header": {},
   "contribute_share_content": "I wanted to let you know about the app I've been using, Open Food Facts, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it's free, does not require registration, and you can even help increase the number of products decyphered. Here's the link to get it for your phone: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "შედით თქვენს Open Food Facts ანგარიშზე, რათა მიიღოთ თქვენი წვლილის კრედიტი",
   "question_yes_button_accessibility_value": "უპასუხეთ კი-თი",
   "question_no_button_accessibility_value": "პასუხი არა-თი",
   "question_skip_button_accessibility_value": "გამოტოვეთ ეს კითხვა",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "შექმენით თქვენი ანგარიში და შემოუერთდით Open Food Facts-ის საზოგადოებას, რათა დაეხმაროთ საკვების შესახებ ცოდნის გაღრმავებას მთელ მსოფლიოში!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "შემოგვიერთდით",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "თქვენი პროფილი",
-  "myPreferences_profile_subtitle": "მართეთ თქვენი Open Food Facts-ის კონტრიბუტორის ანგარიში.",
   "myPreferences_settings_title": "აპლიკაციის პარამეტრები",
   "myPreferences_settings_subtitle": "ბნელი რეჟიმი, ენები…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "საკვების პრეფერენციები",
   "myPreferences_food_subtitle": "აირჩიეთ, საკვებთან დაკავშირებული რომელი ინფორმაციაა თქვენთვის ყველაზე მნიშვნელოვანი.",
   "myPreferences_food_compatibility_explainer": "აირჩიეთ თქვენთვის ყველაზე მნიშვნელოვანი ინფორმაცია საკვებთან დაკავშირებით, რათა დაახარისხოთ საკვები თქვენი პრეფერენციების მიხედვით, პირველ რიგში ნახოთ თქვენთვის საინტერესო ინფორმაცია და მიიღოთ თავსებადობის შეჯამება.",
-  "myPreferences_food_privacy": "ეს საკვების პრეფერენციები თქვენს მოწყობილობაზე რჩება და არ არის დაკავშირებული თქვენს Open Food Facts-ის კონტრიბუტორის ანგარიშთან, თუ ასეთი გაქვთ.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "თქვენ ახალი პროდუქტი იპოვეთ!",
   "@missing_product": {},
-  "add_product_take_photos": "ამ პროდუქტის Open Food Facts-ში დასამატებლად გადაუღეთ ფოტოები შეფუთვას",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "გთხოვთ, ჯერ რამდენიმე ფოტო გადაიღოთ. პროდუქტის დასრულება ყოველთვის შეგიძლიათ მოგვიანებით.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "მიიღეთ ის საკვების კატეგორიისა და ინგრედიენტების შევსებით",
   "new_product_desc_nova_unknown": "საკვების გადამუშავების დონე უცნობია",
   "new_product_title_pictures": "ახალი პროდუქტი",
-  "new_product_title_pictures_details": "გთხოვთ, გადაიღოთ შემდეგი ფოტოები და Open Food Facts-ის სისტემა დანარჩენს თავად დაადგენს!",
   "new_product_title_misc": "და რამდენიმე ძირითადი მონაცემი…",
   "new_product_done_msg": "გმადლობთ თქვენი წვლილისთვის „{username}“!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "ფოტოს სერვერზე ატვირთვა",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "წინა სურათი იტვირთება Open Food Facts-ზე",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "ინგრედიენტების სურათი იტვირთება Open Food Facts-ზე",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "კვებითი ღირებულების სურათი იტვირთება Open Food Facts-ზე",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "შეფუთვის სურათი იტვირთება Open Food Facts-ზე",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "სხვა სურათის ატვირთვა Open Food Facts-ზე",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "სურათი იტვირთება Open Food Facts-ზე",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "დაამატეთ დაკარგული ინგრედიენტები",
   "score_add_missing_packaging_image": "დაამატეთ დაკარგული შეფუთვის სურათი",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "კეთილი იყოს თქვენი მობრძანება Open Food Facts-ში",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**შტრიხკოდის სკანირება** ან\n**პროდუქტის ძიება**",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "ღია სისტემების პარამეტრები Open Food Facts-ისთვის",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "პროდუქტი ისტორიიდან წაიშალა",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "გამოგვყევით TikTok-ზე",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "გამოგვყევით ინსტაგრამზე",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "გამოგვყევით X-ზე (ყოფილი Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "გამოგვყევით Mastodon-ზე",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "ბლოგი",
   "faq": "ხშირად დასმული კითხვები",
-  "discover": "Discover",
   "how_to_contribute": "როგორ შევიტანოთ წვლილი",
   "hint_knowledge_panel_message": "ბარათის ნებისმიერ ნაწილზე შეხებით შეგიძლიათ მიიღოთ მეტი დეტალი იმის შესახებ, რასაც ხედავთ. სცადეთ ახლავე!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "გაიარეთ ავტორიზაცია ან დარეგისტრირდით, რათა შეუერთდეთ Open Food Facts-ის საზოგადოებას",
-  "user_profile_title_id_email": "Open Food Facts შესვლა: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "კეთილი იყოს თქვენი მობრძანება {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "ანგარიშის წაშლა",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "გამარჯობა, გთხოვთ, წაშალოთ ჩემი Open Food Facts ანგარიში: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "აპლიკაცია",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "ჩართვის შემთხვევაში, ავარიის შესახებ ანგარიშები ავტომატურად იგზავნება Open Food Facts-ის შეცდომების თვალთვალის სისტემაში, რათა შეცდომები გამოსწორდეს და ამით აპლიკაცია გაუმჯობესდეს.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "კატეგორია აკლია?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "იმ შემთხვევაში, თუ კატეგორია **ავტომატური შევსების რეჟიმში არ არის ხელმისაწვდომი**, თავისუფლად შეგიძლიათ მისი დამატება.\nეს დაგვეხმარება თქვენს ქვეყანაში ღია კვების ფაქტების გაუმჯობესებაში.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "სარდინები ზეითუნის ზეთში",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "პროდუქტის გვერდზე ფასების აპლიკაციის მალსახმობი",
-  "prices_app_button": "გადადით ფასების აპლიკაციაში",
-  "prices_website_button": "გახსენით Open Prices ვებსაიტზე",
   "prices_bulk_proof_upload_select": "დაამატეთ ფასების ეტიკეტები პირდაპირ გალერეიდან",
   "prices_bulk_proof_upload_warning": "სურათების არჩევის შემდეგ, მათ რედაქტირებას ვეღარ შეძლებთ!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "ღია ფასის დადასტურება",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{ჯერ არ არის მტკიცებულება} =1{მხოლოდ ერთი მტკიცებულება} other{ყველა {count} მტკიცებულება}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "დადასტურება",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "ვეთანხმები ღია კვების ფაქტებს ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "გამოყენების პირობები და წვლილი",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "ანალიტიკის ხატულა",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "გადახედეთ ამ პროდუქტს Open Food Facts-ზე: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "გადახედეთ ამ პროდუქტს Open Beauty Facts-ზე: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "გადახედეთ ამ პროდუქტს Open PetFood Facts-ზე: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "გადახედეთ ამ პროდუქტს Open Products Facts-ში: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "გადახედეთ ჩემს პროდუქტების სიას Open Food Facts-ზე: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "დახმარება OpenFoodFacts-თან დაკავშირებით",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "პროდუქტი რაც შეიძლება მალე განახლდება ფონზე.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "ყველა სურათი",
-  "selected_images": "შერჩეული სურათები",
   "product_card_remove_product_tooltip": "პროდუქტის წაშლა",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "განაახლეთ ადგილობრივი პროდუქტების მონაცემთა ბაზა Open Food Facts-ის უახლესი მონაცემებით",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "ხაზგარეშე პროდუქტის მონაცემების გასუფთავება",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "კეთილი იყოს თქვენი მობრძანება Open Food Facts-ში!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "რა არის Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts არის **თანამშრომლობითი**, **უფასო** და **ღია** მონაცემთა ბაზა მთელი მსოფლიოს საკვები პროდუქტების შესახებ.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "ქულა ულტრა დამუშავებული საკვების თავიდან ასაცილებლად",
   "guide_open_food_facts_scores_arg3_title": "ქულა პლანეტისთვის",
   "guide_open_food_facts_share_link": "https://world-ka.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "კეთილი იყოს თქვენი მობრძანება ღია შინაური ცხოველების საკვების ფაქტებზე!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "რა არის Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts-ი ჩვენს მისიას ჩვენს ბეწვიან მეგობრებზეც აფართოებს! ეს არის **კატების, ძაღლების და სხვა კომპანიონებისთვის განკუთვნილი შინაური ცხოველების საკვების მონაცემთა ბაზა**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "შენიშვნა ქულების დაგროვების შესახებ",
   "guide_open_pet_food_facts_scores_paragraph1": "შინაური ცხოველების საკვების შეფასების სისტემის შემუშავება **ამჟამად პრიორიტეტული არ არის**. მეთოდოლოგია რთული იქნება, რადგან კვებითი მოთხოვნილებები მნიშვნელოვნად განსხვავდება სახეობების, ასაკისა და ჯანმრთელობის მდგომარეობის მიხედვით. ჩვენ ჯერ ვერ ვიპოვეთ დამოუკიდებელი სამეცნიერო ჯგუფი, რომელსაც შეუძლია ასეთი შეფასების შემუშავება.",
   "guide_open_pet_food_facts_share_link": "https://world-ka.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "კეთილი იყოს თქვენი მობრძანება ღია სილამაზის ფაქტებში!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "რა არის Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts არის **კოსმეტიკური პროდუქტების** კოლაბორაციული მონაცემთა ბაზა.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "შეაგროვეთ ფასების ეტიკეტების ფოტოები დერეფნებში",
   "guide_open_prices_how_arg2_title": "შეაგროვეთ ქვითრების ფოტოები",
   "guide_open_prices_why_title": "რატომ აკეთებს ამას Open Food Facts?",
-  "guide_open_prices_why_paragraph1": "ფასების შესახებ ინფორმაცია უმნიშვნელოვანესია კვების სისტემების გასაგებად. ეს საკვების ღირებულების გასაგებად და ჯანსაღი კვების ხელშეწყობის მთავარი ფაქტორია. ფასების შესახებ მონაცემების გახსნა მკვლევარებისთვის, ჟურნალისტებისა და მოქალაქეებისთვის გაუადვილებს **უკეთესად გაიგონ, თუ როგორ იცვლება საკვების ფასები გეოგრაფიულად და დროში**.",
   "guide_open_prices_why_arg1_title": "ფასების ევოლუციის თვალყურის დევნება დროთა განმავლობაში",
   "guide_open_prices_why_arg1_text": "ნახეთ **ფასების ევოლუცია**: შემცირებული ინფლაცია, იაფფასიანი ინფლაცია, ჩვენ შეგვიძლია მათი ერთად თვალყურის დევნება!",
   "guide_open_prices_why_arg2_title": "შეადარეთ ფასები თქვენს მახლობლად",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "მე საცალო მოვაჭრე ვარ და მსურს ფასებში წვლილი შევიტანო. როგორ შემიძლია ამის გაკეთება?",
   "guide_open_prices_retailers_paragraph1": "ფასების შესახებ ინფორმაციის მიწოდება ჩვენი API-ის გამოყენებით შეგიძლიათ.\nთუ გსურთ ფასების მასშტაბურად გაზიარება, გთხოვთ, დაგვიკავშირდეთ მისამართზე prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "კეთილი იყოს თქვენი მობრძანება Open Products Facts-ში!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "რა არის ღია პროდუქტების ფაქტები?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts არის უზარმაზარი, ღია მონაცემთა ბაზა **შტრიხკოდის მქონე ნებისმიერი პროდუქტისთვის, რომელიც არ არის საკვები, კოსმეტიკური ან შინაური ცხოველების საკვები**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "უი!",
-  "carousel_unsupported_text": "სკანირებული შტრიხკოდი არ არის მხარდაჭერილი Open Food Facts-ის მიერ!",
   "carousel_error_header": "შეცდომა!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "ღია საკვების ფაქტების პროექტი",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Contribute",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts არის საკვები პროდუქტების მონაცემთა ბაზა, **შექმნილი ყველასთვის და ყველასთვის**.\nმისი გამოყენება შეგიძლიათ საკვების უკეთესი არჩევანის გასაკეთებლად და რადგან ეს **ღია მონაცემებია**, ნებისმიერს შეუძლია **მისი ხელახლა გამოყენება ნებისმიერი მიზნით**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "კონფიდენციალურობის პოლიტიკა",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "ახალი პროდუქტები, რომლებიც დავამატე Open Food Facts-ში",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "პროდუქტები, რომლებიც უნდა დავასრულო",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "წვლილი შეიტანეთ პროექტში",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "მარტივი გზები, რათა დავეხმაროთ Open Food Facts-ს",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "ქულების მეთოდოლოგიები, დახმარება და სხვა პროექტის შესახებ",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Factsს ლაბორატორიები",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "ანგარიში",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "თქვენს ენაზე გადმოიტანეთ Open Food Facts",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "დარეგისტრირდით აპლიკაციის ალფა ვერსიაში",
   "@preferences_contribute_enroll_alpha": {},

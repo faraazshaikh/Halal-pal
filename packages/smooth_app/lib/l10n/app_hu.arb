@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Üdvözli az Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Az Open Food Facts egy helyi közösségek által működtetett globális nonprofit szervezet.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Tekintse meg az Ön preferenciáinak megfelelő élelmiszeradatokat.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "A szerver nem válaszol! A következő linken nyithat hibajelentést.",
   "@user_management": {},
-  "sign_in_text": "A közreműködései mentéséhez jelentkezzen be az OpenFoodFacts fiókjába",
   "incorrect_credentials": "Helytelen felhasználónév vagy jelszó.",
   "password_lost_incorrect_credentials": "Ez az e-mailcím vagy felhasználónév nem létezik. Ellenőrizze a hitelesítési adatait.",
   "password_lost_server_unavailable": "Jelenleg lassulást tapasztalunk a szervereinken, amiért elnézést kérünk. Kérjük, próbálja meg később újra.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Ehhez a funkcióhoz be kell jelentkeznie.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Segítsen az Open Food Facts fejlesztésében az Ön országában",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Kijelentkezés",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Jelszó megerősítése",
   "sign_up_page_confirm_password_error_empty": "Erősítse meg a jelszavát",
   "sign_up_page_confirm_password_error_invalid": "A jelszavak nem egyeznek",
-  "sign_up_page_agree_text": "Egyetértek az Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "felhasználási és hozzájárulási feltételeivel",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://hu.openfoodfacts.org/donate-to-open-food-facts",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Élelmiszergyártó vagyok",
   "sign_up_page_producer_hint": "Gyártó/márka",
   "sign_up_page_producer_error_empty": "Adjon meg egy gyártói vagy márkanevet",
-  "sign_up_page_subscribe_checkbox": "Szeretnék feliratkozni az Open Food Facts hírlevélre (bármikor leiratkozhat róla)",
   "sign_up_page_user_name_already_used": "A felhasználónév már létezik. Válasszon másik felhasználónevet.",
   "sign_up_page_email_already_exists": "már létezik, jelentkezzen be a fiókba, vagy próbálja meg másik e-mail címmel.",
   "sign_up_page_provide_valid_email": "Valódi email címet adjon meg.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Kérjen segítséget Slack csatornánkon.",
   "support_via_forum": "Kérjen segítséget a fórumonkon",
-  "support_via_email": "Küldjön nekünk emailt",
   "support_via_email_include_logs_dialog_title": "Elküldi az alkalmazásnaplókat?",
   "support_via_email_include_logs_dialog_body": "Szeretné csatolni az alkalmazás naplófájlját az e-mail mellékleteként?",
   "termsOfUse": "Felhasználási feltételek",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Minden Open Food Facts projekt forráskódja elérhető a GitHubon. Szívesen látjuk, ha újrafelhasználja a kódot (nyílt forráskódú), segít nekünk fejleszteni, mindenki számára, az egész bolygón.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Csatlakozhat az Open Food Facts Slack csevegőszobához, amely a kérdések feltevésének kedvelt módja.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "Fejlesztői mód?",
   "contribute_develop_dev_mode_subtitle": "Fejlesztői mód aktiválása",
   "contribute_donate_title": "Adományozás",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Adományozzon az Open Food Facts számára",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Vegye figyelembe, hogy a belső alfa verzióval a teljes adatvesztés is előfordulhat, és az alkalmazás bármikor használhatatlanná válhat!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Kiegészítendő termékek",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Az adatbázis a projekt magja. Könnyen és nagyon gyorsan hozzá tud járulni. Letöltheti a mobilalkalmazást telefonjára, és megkezdheti a termékek hozzáadását vagy kiegészítését.\n\nAz OpenFoodFacts webhely pedig számos, további módot kínál a hozzájárulásra: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Fordítás",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Az OpenFoodFacts egy globális projekt, amely több mint 160 ország termékeit tartalmazza. Az OpenFoodFacts több tucat nyelvre van lefordítva, folyamatosan fejlődő tartalommal.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "A fordítás a projekt egyik legfontosabb feladatai közé tartozik",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Járuljon hozzá készségeivel az Open Food Factshez. Csatlakozzon a képességtárhoz!",
-  "contribute_share_header": "Ossza meg barátaival az OpenFoodFacts-et",
-  "@contribute_share_header": {},
   "contribute_share_content": "Szerettem volna, ha tudsz az általam használt Open Food Facts nevű alkalmazásról, amely lehetővé teszi, hogy személyre szabott módon megismerd az ételek egészségügyi és környezeti hatásait. A csomagoláson található vonalkódok beolvasásával működik. Nem utolsó sorban ingyenes, nem igényel regisztrációt, és még segíthetsz is növelni a benne lévő termékek számát. Erről a linkről töltheted le a telefonodra: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Jelentkezzen be az OpenFoodFacts fiókjába, hogy az Ön nevéhez kapcsolódjanak a hozzájárulásai",
   "question_yes_button_accessibility_value": "Válasz igennel",
   "question_no_button_accessibility_value": "Válasz nemmel",
   "question_skip_button_accessibility_value": "Kérdés kihagyása",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Hozzon létre fiókot, és csatlakozzon az OpenFoodFacts közösséghez, segítve az élelmiszerekkel kapcsolatos ismeretek bővítésében az egész világon!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Csatlakozzon",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Profilom",
-  "myPreferences_profile_subtitle": "Kezelje OpenFoodFacts-közreműködői fiókját.",
   "myPreferences_settings_title": "Alkalmazás beállításai",
   "myPreferences_settings_subtitle": "Sötét mód, nyelvek…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Élelmiszer-preferenciák",
   "myPreferences_food_subtitle": "Válassza ki, hogy mely élelmiszerekkel kapcsolatos információk a legfontosabbak az Ön számára.",
   "myPreferences_food_compatibility_explainer": "Válassza ki, hogy az élelmiszerekkel kapcsolatban mely információk a legfontosabbak az Ön számára, hogy az élelmiszereket a preferenciái szerint rangsorolja, az Ön számára fontos információkat lássa elsőként, és kapjon egy megfelelőségi összefoglalót.",
-  "myPreferences_food_privacy": "Ezek az élelmiszer-preferenciák az Ön készülékén maradnak, és nem kapcsolódnak az Open Food Facts közreműködői fiókjához, ha rendelkezik ilyennel.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Új terméket talált!",
   "@missing_product": {},
-  "add_product_take_photos": "Készítsen fotókat a csomagolásról, hogy hozzáadhassa a terméket a Open Food Factshez",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Először készítsen néhány fényképet. A terméket később bármikor kiegészítheti.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Termékinformációk hozzáadása",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Az élelmiszerkategória és az összetevők kitöltésével megtudhatja",
   "new_product_desc_nova_unknown": "Az élelmiszer-feldolgozottság szintje ismeretlen",
   "new_product_title_pictures": "Új termék",
-  "new_product_title_pictures_details": "Készítse el az alábbi fotókat, és az Open Food Facts motorja elvégzi a többi munkát!",
   "new_product_title_misc": "És pár alapvető adat…",
   "new_product_done_msg": "Köszönjük a közreműködését, {username}!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Fénykép feltöltése a szerverre",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Szemből készült kép feltöltése Open Food Factsre",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Összetevők képének feltöltése Open Food Factsre",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Tápérték kép feltöltése Open Food Factsre",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Csomagolás képének feltöltése Open Food Factsre",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "További kép feltöltése Open Food Factsre",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Kép feltöltése Open Food Factsre",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Hiányzó összetevők hozzáadása",
   "score_add_missing_packaging_image": "Hiányzó csomagolási kép hozzáadása",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Üdvözli az Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Olvasson le** egy vonalkódot vagy\n**keressen** rá egy termékre",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "A rendszer Open Food Factsre vonatkozó beállításainak megnyitása",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Termék eltávolítva az előzményekből",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Kövess minket TikTokon",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Kövessen minket Instagramon",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Kövessen minket X-en (korábban Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Kövess minket a Mastodonon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blog",
   "faq": "GYIK",
-  "discover": "Felfedezés",
   "how_to_contribute": "Hogyan járulhat hozzá",
   "hint_knowledge_panel_message": "A kártya bármelyik részére koppintva további részleteket tudhat meg a látottakról. Próbálja ki most!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Jelentkezzen be vagy regisztráljon, és csatlakozzon az Open Food Facts közösséghez",
-  "user_profile_title_id_email": "Open Food Facts bejelentkezés: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Üdvözlünk, {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Fiók törlése",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Üdvözlöm, kérem, törölje Open Food Facts fiókomat: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Alkalmazás",
   "settings_app_data": "Adatvédelem és megfigyelés",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Ha engedélyezve van, a rendszer automatikusan elküldi az összeomlási jelentéseket az Open Food Facts hibakövető rendszerébe, így a hibák kijavíthatók, és ezáltal fejlődik az alkalmazás.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Névtelen adatok küldése",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "Ha engedélyezve van, az alkalmazás használatával kapcsolatban néhány névtelen információt elküldünk az Open Food Facts szerverekre, hogy megértsük, hogyan és mennyi funkciót használ, azok fejlesztése céljából.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Hiányzik egy kategória?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Ha egy kategóriát **nem kínál fel az automatikus kiegészítés**, nyugodtan adja hozzá.\nEz segít nekünk az Open Food Facts fejlesztésében az Ön országában.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Szardínia olívaolajban",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Árak alkalmazásra mutató gomb a termékoldalon",
-  "prices_app_button": "Tovább az Árak appba",
-  "prices_website_button": "Megnyitás az Open Prices weboldalán",
   "prices_bulk_proof_upload_select": "Árcédulák hozzáadása a galériából",
   "prices_bulk_proof_upload_warning": "Miután kiválasztotta a képeket, nem fogja tudni szerkeszteni őket!",
   "prices_bulk_proof_upload_warning_ai": "A mesterséges intelligencia a bizonyításaidon fog futni az árak kinyeréséhez.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Bizonylat megnyitása",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural,=0{Még nincs bizonylat} =1{Csak egy bizonylat} other{{count} bizonylat}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Megerősítés",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Elfogadom az Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "felhasználási és hozzájárulási feltételeivel",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Analytics ikon",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Nézd meg ezt a terméket az Open Food Facts oldalán: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Nézd meg ezt a terméket az Open Beauty Facts oldalán: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Nézd meg ezt a terméket az Open PetFood Facts oldalán: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Nézd meg ezt a terméket az Open Products Facts oldalán: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Nézd meg a terméklistámat az Open Food Facts oldalán: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Új kép készítése",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "OpenFoodFacts segítségkérés",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "A termék a lehető leghamarabb frissül a háttérben.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Összes kép",
-  "selected_images": "Kiválasztott képek",
   "product_card_remove_product_tooltip": "Termék eltávolítása",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Frissítse a helyi termékadatbázist az Open Food Facts legfrissebb adataival",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Offline termékadatok törlése",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Üdvözli az Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Mi az az Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Az Open Food Facts egy **együttműködésen alapuló**, **ingyenes** és **nyílt** adatbázis, amely a világ minden tájáról származó élelmiszertermékeket tartalmaz.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Egy pontszám az ultrafeldolgozott élelmiszerek elkerülésére",
   "guide_open_food_facts_scores_arg3_title": "Egy pont a bolygónak",
   "guide_open_food_facts_share_link": "https://world-hu.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Üdvözöli az Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Mi az az Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Az Open Pet Food Facts kiterjeszti küldetésünket szőrös barátainkra! Ez egy **macskák, kutyák és más társak számára készült állateledel-termékek adatbázisa**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Megjegyzés a pontozásról",
   "guide_open_pet_food_facts_scores_paragraph1": "Egy állateledel pontozási rendszerének kidolgozása **jelenleg nem prioritás**. A módszertan összetett lenne, mivel a táplálkozási igények fajonként, koronként és egészségi állapotonként nagymértékben eltérnek. Még nem találtunk független tudományos csapatot, amely képes lenne ilyen pontozást kidolgozni.",
   "guide_open_pet_food_facts_share_link": "https://world-hu.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Üdvözli az Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Mi az az Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Az Open Beauty Facts **kozmetikai termékek** kollaboratív adatbázisa.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Gyűjtsön fotókat az árcédulákról a polcokon",
   "guide_open_prices_how_arg2_title": "Gyűjtse össze a nyugták fotóit",
   "guide_open_prices_why_title": "Miért csinálja ezt az Open Food Facts?",
-  "guide_open_prices_why_paragraph1": "Az árinformációk kiemelkedően fontosak az élelmiszerrendszerek megértéséhez. Kulcsfontosságú tényezők az élelmiszerek költségeinek megértésében és az egészségesebb étrend előmozdításában. Az áradatok megnyitása megkönnyíti a kutatók, újságírók és polgárok számára, hogy **jobban megértsék az élelmiszerárak földrajzi és időbeli változását**.",
   "guide_open_prices_why_arg1_title": "Az árak időbeli alakulásának nyomon követése",
   "guide_open_prices_why_arg1_text": "Nézze meg az **árak alakulását**: zsugorodási infláció, olcsósítási infláció, együtt nyomon követhetjük őket!",
   "guide_open_prices_why_arg2_title": "Hasonlítsa össze az árakat a közelében",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "Kiskereskedő vagyok, és szeretnék hozzájárulni az árakhoz. Hogyan tehetem ezt meg?",
   "guide_open_prices_retailers_paragraph1": "Az árakhoz az API-nkon keresztül is hozzájárulhat.\nHa nagyobb mennyiségben szeretne árakat megadni, kérjük, vegye fel velünk a kapcsolatot a prices@openfoodfacts.org címen.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Üdvözöli az Open Products Facts!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Mi az az Open Products Facts?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Az Open Products Facts egy hatalmas, nyílt adatbázis, amely olyan **vonalkóddal ellátott termékekre vonatkozik, amelyek nem élelmiszerek, kozmetikumok vagy állateledelek**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Hoppá!",
-  "carousel_unsupported_text": "A leolvasott vonalkódot az Open Food Facts nem támogatja!",
   "carousel_error_header": "Hiba!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Az Open Food Facts projekt",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Hozzájárulás",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Jogi közlemény",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Az Open Food Facts élelmiszeripari termékek adatbázisa, amelyet **mindenki készít, mindenki számára**. Használhatja jobb ételválasztásra, és mivel **nyílt adatról** van szó, bárki **bármilyen célra felhasználhatja**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Adatvédelmi Irányelvek",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Új termékek, amiket hozzáadtam az Open Food Facts oldalhoz",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Termékek, amiket el kell végeznem",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Közreműködés a projektben",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Az Open Food Facts segítésének egyszerű módjai",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Pontozási módszerek, segítség és további információk a projektről",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Fiók",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Segítsen az Open Food Facts lefordításában",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Regisztráljon az alkalmazás alfa verziójára",
   "@preferences_contribute_enroll_alpha": {},

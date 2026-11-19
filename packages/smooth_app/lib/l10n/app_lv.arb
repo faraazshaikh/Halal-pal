@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Atvērtās cenas",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Laipni lūdzam vietnē Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "“Open Food Facts” ir globāla bezpeļņas organizācija, ko atbalsta vietējās kopienas.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Skatiet pārtikas datus, kas atbilst jūsu vēlmēm.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Nav servera atbildes! Varat atvērt problēmu, izmantojot šo saiti.",
   "@user_management": {},
-  "sign_in_text": "Pierakstieties savā Open Food Facts kontā, lai saglabātu savu ieguldījumu.",
   "incorrect_credentials": "Nepareizs lietotājvārds vai parole.",
   "password_lost_incorrect_credentials": "Šis e-pasts vai lietotājvārds neeksistē. Lūdzu, pārbaudiet savus akreditācijas datus.",
   "password_lost_server_unavailable": "Atvainojamies par to, ka mūsu serveros pašlaik ir palēnināšanās. Lūdzu, mēģiniet vēlreiz vēlāk.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Lai izmantotu šo funkciju, jums ir jāpiesakās.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Palīdziet uzlabot Open Food Facts savā valstī",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Izrakstīties",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Apstiprināt paroli",
   "sign_up_page_confirm_password_error_empty": "Lūdzu, apstipriniet paroli",
   "sign_up_page_confirm_password_error_invalid": "Paroles nesakrīt",
-  "sign_up_page_agree_text": "Es piekrītu atklātajiem pārtikas faktiem",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "lietošanas noteikumi un ieguldījums",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Esmu pārtikas ražotājs",
   "sign_up_page_producer_hint": "Ražotājs/zīmols",
   "sign_up_page_producer_error_empty": "Lūdzu, ievadiet ražotāja vai zīmola nosaukumu",
-  "sign_up_page_subscribe_checkbox": "Es vēlos abonēt Open Food Facts jaunumus (no abonēšanas varat atteikties jebkurā laikā).",
   "sign_up_page_user_name_already_used": "Lietotājvārds jau pastāv, lūdzu, izvēlieties citu lietotājvārdu.",
   "sign_up_page_email_already_exists": "jau pastāv, piesakieties kontā vai mēģiniet ar citu e-pastu.",
   "sign_up_page_provide_valid_email": "Lūdzu, norādiet derīgu e-pasta adresi.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Lūdziet palīdzību mūsu Slack kanālā",
   "support_via_forum": "Lūdziet palīdzību mūsu forumā",
-  "support_via_email": "Sūtiet mums e-pastu",
   "support_via_email_include_logs_dialog_title": "Vai sūtīt lietotņu žurnālus?",
   "support_via_email_include_logs_dialog_body": "Vai vēlaties e-pasta pielikumā iekļaut lietojumprogrammu žurnālus?",
   "termsOfUse": "Izmantošanas noteikumi",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Visu Open Food Facts produktu kods ir pieejams vietnē GitHub. Jūs varat atkārtoti izmantot kodu (tas ir atvērtā koda) un palīdzēt mums to uzlabot ikvienam uz visas planētas.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Jūs varat pievienoties Open Food Facts Slack tērzētavai, kas ir vēlamais veids, kā uzdot jautājumus.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "Izstrādātāja režīms?",
   "contribute_develop_dev_mode_subtitle": "Aktivizējiet DEV režīmu",
   "contribute_donate_title": "Ziedot",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Ziedojiet vietnei Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Lūdzu, ņemiet vērā, ka, izmantojot iekšējo alfa versiju, ir iespējams pilnīgs datu zudums, un lietotne jebkurā laikā var kļūt nelietojama!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Produkta nosaukums jāpabeidz",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Datubāze ir projekta pamatā. Tajā palīdzēt ir vienkārši un ļoti ātri. Varat lejupielādēt mobilo lietotni savam tālrunim un sākt pievienot vai uzlabot produktus.\n\nNo otras puses, Open Food Facts tīmekļa vietne piedāvā daudzus veidus, kā sniegt savu ieguldījumu: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Tulkot",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "“Open Food Facts” ir globāls projekts, kurā ir iekļauti produkti no vairāk nekā 160 valstīm. “Open Food Facts” tiek tulkots desmitiem valodu, un tā saturs tiek pastāvīgi atjaunināts.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Tulkojumi ir viens no projekta galvenajiem uzdevumiem",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Piedalieties Open Food Facts tīmekļa vietnē, lai dalītos savās prasmēs. Pievienojieties prasmju kopienai!",
-  "contribute_share_header": "Dalieties ar Open Food Facts ar draugiem",
-  "@contribute_share_header": {},
   "contribute_share_content": "Vēlējos pastāstīt par lietotni Open Food Facts, ko lietoju, kas ļauj personalizētā veidā iegūt informāciju par pārtikas ietekmi uz veselību un vidi. Tā darbojas, skenējot svītrkodus uz iepakojuma. Visbeidzot, tā ir bez maksas, tai nav nepieciešama reģistrācija, un jūs pat varat palīdzēt palielināt atšifrēto produktu skaitu. Šeit ir saite, lai to lejupielādētu savā tālrunī: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Pierakstieties savā Open Food Facts kontā, lai saņemtu atzinību par savu ieguldījumu.",
   "question_yes_button_accessibility_value": "Atbildēt ar jā",
   "question_no_button_accessibility_value": "Atbilde ar nē",
   "question_skip_button_accessibility_value": "Izlaist šo jautājumu",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Izveidojiet savu kontu un pievienojieties Open Food Facts kopienai, lai palīdzētu veidot zināšanas par pārtiku visā pasaulē!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Pievienojieties mums",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Jūsu profils",
-  "myPreferences_profile_subtitle": "Pārvaldiet savu Open Food Facts līdzstrādnieka kontu.",
   "myPreferences_settings_title": "Lietotnes iestatījumi",
   "myPreferences_settings_subtitle": "Tumšais režīms, Valodas…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Pārtikas preferences",
   "myPreferences_food_subtitle": "Izvēlieties, kura informācija par pārtiku jums ir vissvarīgākā.",
   "myPreferences_food_compatibility_explainer": "Izvēlieties, kāda informācija par pārtiku jums ir vissvarīgākā, lai klasificētu pārtiku atbilstoši savām vēlmēm, vispirms redzētu informāciju, kas jūs interesē, un saņemtu saderības kopsavilkumu.",
-  "myPreferences_food_privacy": "Šīs pārtikas preferences paliek jūsu ierīcē un nav saistītas ar jūsu Open Food Facts līdzstrādnieka kontu, ja jums tāds ir.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Jūs atradāt jaunu produktu!",
   "@missing_product": {},
-  "add_product_take_photos": "Lai pievienotu šo produktu vietnei Open Food Facts, nofotografējiet iepakojumu.",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Lūdzu, vispirms uzņemiet dažas fotogrāfijas. Produktu vienmēr varat pabeigt vēlāk.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Pievienojiet informāciju par produktu",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Iegūstiet to, aizpildot pārtikas kategoriju un sastāvdaļas",
   "new_product_desc_nova_unknown": "Pārtikas pārstrādes līmenis nav zināms",
   "new_product_title_pictures": "Jauns produkts",
-  "new_product_title_pictures_details": "Lūdzu, uzņemiet tālāk norādītās fotogrāfijas, un Open Food Facts dzinējs varēs paveikt pārējo!",
   "new_product_title_misc": "Un daži pamatdati…",
   "new_product_done_msg": "Paldies par jūsu ieguldījumu “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Fotoattēla augšupielāde serverī",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Priekšējā attēla augšupielāde vietnē Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Sastāvdaļu attēla augšupielāde vietnē Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Uzturvērtības attēla augšupielāde vietnē Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Iepakojuma attēla augšupielāde vietnē Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Augšupielādējot citu attēlu vietnē Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Attēla augšupielāde vietnē Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Pievienojiet trūkstošās sastāvdaļas",
   "score_add_missing_packaging_image": "Pievienot trūkstošo iepakojuma attēlu",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Laipni lūdzam vietnē Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Noskenējiet** svītrkodu vai\n**meklējiet** produktu",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Atvērto sistēmu iestatījumi pakalpojumam Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Produkts noņemts no vēstures",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Sekojiet mums TikTok platformā",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Sekojiet mums Instagramā",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Sekojiet mums vietnē X (agrāk Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Sekojiet mums Mastodonā",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blogs",
   "faq": "Bieži uzdotie jautājumi",
-  "discover": "Atklāj",
   "how_to_contribute": "Kā sniegt ieguldījumu",
   "hint_knowledge_panel_message": "Varat pieskarties jebkurai kartītes daļai, lai iegūtu sīkāku informāciju par redzēto. Izmēģiniet tūlīt!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Pierakstieties vai reģistrējieties, lai pievienotos Open Food Facts kopienai",
-  "user_profile_title_id_email": "Open Food Facts pieteikšanās: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Laipni lūgti {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Dzēst kontu",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Sveiki, lūdzu, izdzēsiet manu Open Food Facts kontu: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Pieteikums",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Ja šī opcija ir iespējota, avāriju ziņojumi tiek automātiski iesniegti Open Food Facts kļūdu izsekošanas sistēmai, lai kļūdas varētu novērst un tādējādi uzlabot lietotni.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Trūkstoša kategorija?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Ja kategorija **automātiskajā pabeigšanā nav pieejama**, droši pievienojiet to jebkurā gadījumā.\nTas mums palīdzēs uzlabot Open Food Facts jūsu valstī.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Sardīnes olīveļļā",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Saīsne uz lietotni Cenas produkta lapā",
-  "prices_app_button": "Dodieties uz lietotni Cenas",
-  "prices_website_button": "Atvērt vietnē Open Prices",
   "prices_bulk_proof_upload_select": "Pievienojiet cenu zīmes tieši no galerijas",
   "prices_bulk_proof_upload_warning": "Kad attēli būs atlasīti, tos vairs nevarēs rediģēt!",
   "prices_bulk_proof_upload_warning_ai": "Mākslīgais intelekts (AI) darbosies ar jūsu pierādījumiem, lai iegūtu cenas.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Atvērt cenu pierādījumu",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Vēl nav pierādījumu} =1{Tikai viens pierādījums} other{Visi {count} pierādījumi}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Apstiprināt",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Es piekrītu atklātajiem pārtikas faktiem ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "lietošanas noteikumi un ieguldījums",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Analītikas ikona",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Apskatiet šo produktu vietnē Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Apskatiet šo produktu vietnē Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Apskatiet šo produktu vietnē Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Apskatiet šo produktu vietnē Open Products Facts: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Apskatiet manu produktu sarakstu vietnē Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Palīdzība ar OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Produkts tiks atjaunināts fonā, cik drīz vien iespējams.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Visi attēli",
-  "selected_images": "Atlasītie attēli",
   "product_card_remove_product_tooltip": "Noņemt produktu",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Atjauniniet vietējo produktu datubāzi ar jaunākajiem datiem no Open Food Facts.",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Notīrīt bezsaistes produktu datus",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Laipni lūdzam vietnē Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Kas ir Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "“Open Food Facts” ir **sadarbības**, **bezmaksas** un **atvērta** pārtikas produktu datubāze no visas pasaules.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Vērtējums, lai izvairītos no īpaši pārstrādātiem pārtikas produktiem",
   "guide_open_food_facts_scores_arg3_title": "Vērtējums planētai",
   "guide_open_food_facts_share_link": "https://world-lv.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Laipni lūdzam vietnē Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Kas ir Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "“Open Pet Food Facts” paplašina mūsu misiju, iekļaujot mūsu pūkainos draugus! Tā ir **mājdzīvnieku barības produktu datubāze kaķiem, suņiem un citiem mājdzīvniekiem**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Piezīme par punktu skaitīšanu",
   "guide_open_pet_food_facts_scores_paragraph1": "Mājdzīvnieku barības vērtēšanas sistēmas izstrāde **pašlaik nav prioritāte**. Metodoloģija būtu sarežģīta, jo uztura vajadzības ievērojami atšķiras atkarībā no sugas, vecuma un veselības stāvokļa. Mēs vēl neesam atraduši neatkarīgu zinātnisku komandu, kas spētu izstrādāt šādu vērtēšanas sistēmu.",
   "guide_open_pet_food_facts_share_link": "https://world-lv.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Laipni lūdzam vietnē Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Kas ir Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "“Open Beauty Facts” ir **kosmētikas līdzekļu** sadarbības datubāze.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Savāciet cenu zīmju fotoattēlus ejās",
   "guide_open_prices_how_arg2_title": "Savāciet čeku fotoattēlus",
   "guide_open_prices_why_title": "Kāpēc Open Food Facts to dara?",
-  "guide_open_prices_why_paragraph1": "Informācija par cenām ir ārkārtīgi svarīga, lai izprastu pārtikas sistēmas. Tas ir galvenais faktors pārtikas izmaksu izpratnē un veselīgāka uztura veicināšanā. Sākotnējie cenu dati ir veids, kā atvieglot pētniekiem, žurnālistiem un pilsoņiem **labāku izpratni par to, kā pārtikas cenas mainās ģeogrāfiski un laikā**.",
   "guide_open_prices_why_arg1_title": "Sekojiet līdzi cenu attīstībai laika gaitā",
   "guide_open_prices_why_arg1_text": "Skatiet **cenu evolūciju**: sarukšanas inflācija, lētas inflācijas tendence, mēs varam tām izsekot kopā!",
   "guide_open_prices_why_arg2_title": "Salīdziniet cenas jūsu tuvumā",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "Esmu mazumtirgotājs un vēlos sniegt ieguldījumu cenu veidošanā. Kā es to varu izdarīt?",
   "guide_open_prices_retailers_paragraph1": "Jūs varat sniegt savu ieguldījumu cenu noteikšanā, izmantojot mūsu API.\nJa vēlaties sniegt savu ieguldījumu cenu noteikšanā plašā mērogā, lūdzu, sazinieties ar mums pa e-pastu prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Laipni lūdzam Open Products Facts vietnē!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Kas ir atklātie produktu fakti?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "“Open Products Facts” ir milzīga, atvērta datubāze **jebkuram produktam ar svītrkodu, kas nav pārtika, kosmētika vai mājdzīvnieku barība**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Ups!",
-  "carousel_unsupported_text": "Open Food Facts neatbalsta skenēto svītrkodu!",
   "carousel_error_header": "Kļūda!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Atvērto pārtikas faktu projekts",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Veicināt / atbalstīt",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Tiesību pieminēšana",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "“Open Food Facts” ir pārtikas produktu datubāze, **ko izveidojuši visi, ikvienam**.\nTo var izmantot, lai izdarītu labākas izvēles attiecībā uz pārtiku, un, tā kā tie ir **atvērtie dati**, ikviens tos var **atkārtoti izmantot jebkādiem mērķiem**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Privātuma politika",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Jauni produkti, ko pievienoju vietnei Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Produkti, kas man jāpabeidz",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Piedalīties projektā",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Vienkārši veidi, kā palīdzēt Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Vērtēšanas metodoloģijas, palīdzība un cita informācija par projektu",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts laboratorijas",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Konts",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Open Food Facts jūsu valodā",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Reģistrējieties lietotnes alfa versijai",
   "@preferences_contribute_enroll_alpha": {},

@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Bei Zilizofunguliwa",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Karibu kwa Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts ni shirika lisilo la faida la kimataifa linaloendeshwa na jumuiya za wenyeji.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Tazama data ya chakula inayohusiana na mapendeleo yako.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Hakuna jibu la seva! Unaweza kufungua suala kwa kiungo kifuatacho.",
   "@user_management": {},
-  "sign_in_text": "Ingia katika akaunti yako ya Open Food Facts ili kuhifadhi michango yako",
   "incorrect_credentials": "Jina la mtumiaji au nenosiri si sahihi.",
   "password_lost_incorrect_credentials": "Barua pepe hii au jina la mtumiaji halipo. Tafadhali angalia stakabadhi zako.",
   "password_lost_server_unavailable": "Kwa sasa tunakumbwa na kushuka kwa kasi kwa seva zetu na tunaomba radhi kwa hilo. Tafadhali jaribu tena baadaye.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Kwa kipengele hicho tunahitaji uingie.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Saidia kuboresha Open Food Facts katika nchi yako",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Ondoka",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Thibitisha Nenosiri",
   "sign_up_page_confirm_password_error_empty": "Tafadhali thibitisha nenosiri",
   "sign_up_page_confirm_password_error_invalid": "Manenosiri hayalingani",
-  "sign_up_page_agree_text": "Ninakubali Ukweli wa Chakula Huria",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "masharti ya matumizi na mchango",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Mimi ni mzalishaji wa chakula",
   "sign_up_page_producer_hint": "Mtayarishaji/chapa",
   "sign_up_page_producer_error_empty": "Tafadhali weka mzalishaji au jina la biashara",
-  "sign_up_page_subscribe_checkbox": "Ningependa kujiandikisha kwa jarida la Open Food Facts (Unaweza kujiondoa kutoka kwalo wakati wowote)",
   "sign_up_page_user_name_already_used": "Jina la mtumiaji tayari lipo, tafadhali chagua jina lingine la mtumiaji.",
   "sign_up_page_email_already_exists": "tayari ipo, ingia kwenye akaunti au jaribu na barua pepe nyingine.",
   "sign_up_page_provide_valid_email": "Tafadhali toa barua pepe halali.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Omba usaidizi katika kituo chetu cha Slack",
   "support_via_forum": "Omba msaada kwenye jukwaa letu",
-  "support_via_email": "Tutumie barua pepe",
   "support_via_email_include_logs_dialog_title": "Ungependa kutuma kumbukumbu za programu?",
   "support_via_email_include_logs_dialog_body": "Je, ungependa kujumuisha kumbukumbu za maombi kwenye kiambatisho cha barua pepe yako?",
   "termsOfUse": "Masharti ya matumizi",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Nambari ya kila bidhaa ya Open Food Facts inapatikana kwenye GitHub. Unakaribishwa kutumia tena msimbo (ni chanzo huria) na utusaidie kuuboresha, kwa kila mtu, kwenye sayari yote.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Unaweza kujiunga na mazungumzo ya Open Food Facts Slack ambayo ndiyo njia inayopendelewa ya kuuliza maswali.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "Hali ya DEV?",
   "contribute_develop_dev_mode_subtitle": "Washa Hali ya DEV",
   "contribute_donate_title": "Donate",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Changia Kufungua Ukweli wa Chakula",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Bidhaa kukamilika",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Hifadhidata ndio msingi wa mradi. Ni rahisi na haraka sana kusaidia. Unaweza kupakua programu ya simu kwa simu yako, na kuanza kuongeza au kuboresha bidhaa.\n\nKwa upande mwingine, tovuti ya Open Food Facts inatoa njia nyingi za kuchangia: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Tafsiri",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts ni mradi wa kimataifa, unaojumuisha bidhaa kutoka zaidi ya nchi 160. Ukweli wa Chakula cha Open hutafsiriwa katika lugha kadhaa, na maudhui yanayobadilika kila mara.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Tafsiri ni moja wapo ya kazi kuu za mradi",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Changia ujuzi wako kwa Open Food Facts. Jiunge na bwawa la ujuzi!",
-  "contribute_share_header": "Shiriki Ukweli wa Chakula cha Open na marafiki zako",
-  "@contribute_share_header": {},
   "contribute_share_content": "Nilitaka kukujulisha kuhusu programu ambayo nimekuwa nikitumia, Ukweli wa Chakula cha Open, ambayo hukuruhusu kupata athari za kiafya na mazingira za chakula chako, kwa njia iliyobinafsishwa. Inafanya kazi kwa kuchanganua misimbopau kwenye kifurushi. Hatimaye ni bure, hauhitaji usajili, na unaweza hata kusaidia kuongeza idadi ya bidhaa decyphered. Hiki hapa ni kiungo cha kuipata kwa simu yako: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Ingia katika akaunti yako ya Open Food Facts ili upate mkopo kwa michango yako",
   "question_yes_button_accessibility_value": "Jibu na ndiyo",
   "question_no_button_accessibility_value": "Jibu kwa hapana",
   "question_skip_button_accessibility_value": "Ruka swali hili",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Fungua akaunti yako na ujiunge na jumuiya ya Open Food Facts ili kusaidia kujenga ujuzi wa chakula duniani kote!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Jiunge nasi",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Wasifu wako",
-  "myPreferences_profile_subtitle": "Dhibiti akaunti yako ya mchangiaji wa Open Food Facts.",
   "myPreferences_settings_title": "Mipangilio ya Programu",
   "myPreferences_settings_subtitle": "Hali nyeusi, Lugha…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Mapendeleo ya Chakula",
   "myPreferences_food_subtitle": "Chagua ni taarifa gani kuhusu chakula muhimu zaidi kwako.",
   "myPreferences_food_compatibility_explainer": "Chagua ni taarifa gani kuhusu chakula muhimu zaidi kwako, ili kupanga chakula kulingana na mapendeleo yako, angalia maelezo unayojali kwanza, na upate muhtasari wa uoanifu.",
-  "myPreferences_food_privacy": "Mapendeleo hayo ya chakula hukaa kwenye kifaa chako, na hayahusiani na akaunti yako ya mchangiaji wa Ukweli wa Chakula Huria ikiwa unayo.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Umepata bidhaa mpya!",
   "@missing_product": {},
-  "add_product_take_photos": "Piga picha za kifurushi ili kuongeza bidhaa hii kwenye Ukweli wa Chakula cha Open",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Tafadhali piga picha kadhaa kwanza. Unaweza kukamilisha bidhaa wakati wowote baadaye.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Ipate kwa kujaza kategoria ya chakula na viungo",
   "new_product_desc_nova_unknown": "Kiwango cha usindikaji wa chakula hakijulikani",
   "new_product_title_pictures": "Bidhaa mpya",
-  "new_product_title_pictures_details": "Tafadhali piga picha zifuatazo na injini ya Open Food Facts inaweza kusuluhisha zingine!",
   "new_product_title_misc": "Na baadhi ya data msingi…",
   "new_product_done_msg": "Asante kwa mchango wako “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Inapakia picha kwenye seva",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Inapakia picha ya mbele kwa Fungua Ukweli wa Chakula",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Inapakia picha ya viungo kwa Fungua Ukweli wa Chakula",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Inapakia picha ya lishe kwa Fungua Ukweli wa Chakula",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Inapakia picha ya kifungashio kwa Fungua Ukweli wa Chakula",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Inapakia picha nyingine kwa Fungua Ukweli wa Chakula",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Inapakia picha kwenye Fungua Ukweli wa Chakula",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Ongeza viungo vilivyokosekana",
   "score_add_missing_packaging_image": "Ongeza picha ya kifungashio ambayo haipo",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Karibu kwa Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Changanua** msimbo pau au\n**tafuta** bidhaa",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Fungua mipangilio ya mifumo ya Ukweli wa Chakula Huria",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Bidhaa imeondolewa kwenye historia",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Tufuate kwenye TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Tufuate kwenye Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Tufuate kwenye X (zamani Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Tufuate kwenye Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blogu",
   "faq": "Maswali Yanayoulizwa Mara kwa Mara",
-  "discover": "Gundua",
   "how_to_contribute": "Jinsi ya Kuchangia",
   "hint_knowledge_panel_message": "Unaweza kugonga sehemu yoyote ya kadi ili kupata maelezo zaidi kuhusu unachokiona. Ijaribu sasa!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Ingia au ujisajili ili ujiunge na jumuiya ya Open Food Facts",
-  "user_profile_title_id_email": "Kuingia kwa Open Food Facts: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Karibu {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Futa akaunti",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Hujambo, tafadhali futa akaunti yangu ya Open Food Facts: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Maombi",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Ikiwashwa, ripoti za kuacha kufanya kazi huwasilishwa kiotomatiki kwenye mfumo wa kufuatilia makosa ya Open Food Facts, ili hitilafu ziweze kurekebishwa na hivyo kuboresha programu.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Kategoria inakosa?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Iwapo kategoria haipatikani katika kukamilisha kiotomatiki**, jisikie huru kuiongeza hata hivyo.\nHii itatusaidia kuboresha Ukweli wa Chakula Huria katika nchi yako.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Sardini katika mafuta",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Njia ya mkato ya programu ya Bei kwenye ukurasa wa bidhaa",
-  "prices_app_button": "Nenda kwenye programu ya Bei",
-  "prices_website_button": "Fungua kwenye tovuti ya Bei Fungua",
   "prices_bulk_proof_upload_select": "Ongeza lebo za bei moja kwa moja kutoka kwa ghala",
   "prices_bulk_proof_upload_warning": "Ukishachagua picha, hutaweza kuzihariri!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Fungua uthibitisho wa bei",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Bado hakuna uthibitisho} =1{Ushahidi mmoja tu} other{All {count} uthibitisho}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Thibitisha",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Ninakubali Ukweli wa Chakula Huria ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "masharti ya matumizi na mchango",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Aikoni ya uchanganuzi",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Tazama bidhaa hii kwenye Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Tazama bidhaa hii kwenye Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Tazama bidhaa hii kwenye Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Tazama bidhaa hii kwenye Ukweli wa Bidhaa Huria: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Tazama orodha yangu ya bidhaa kwenye Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Msaada na OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Bidhaa itasasishwa chinichini haraka iwezekanavyo.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Picha Zote",
-  "selected_images": "Picha Zilizochaguliwa",
   "product_card_remove_product_tooltip": "Ondoa bidhaa",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Sasisha hifadhidata ya bidhaa za ndani kwa data ya hivi punde kutoka Ukweli wa Open Food",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Futa data ya bidhaa nje ya mtandao",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Karibu kwenye Ukweli wa Chakula Huria!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Open Food Facts ni nini?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts ni **hifadhi data shirikishi**, **bila malipo**, na **wazi** ya bidhaa za chakula kutoka duniani kote.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Alama ya kuepuka vyakula vilivyosindikwa zaidi",
   "guide_open_food_facts_scores_arg3_title": "Alama kwa sayari",
   "guide_open_food_facts_share_link": "https://world-sw.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Karibu kwa Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Open Pet Food Facts ni nini?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts huongeza dhamira yetu kwa marafiki wetu wenye manyoya! Ni **database ya bidhaa za vyakula vipenzi vya paka, mbwa na wenza wengine**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Ujumbe juu ya kufunga bao",
   "guide_open_pet_food_facts_scores_paragraph1": "Kutengeneza mfumo wa alama kwa chakula cha wanyama kipenzi **sio kipaumbele kwa sasa**. Mbinu hiyo itakuwa ngumu, kwani mahitaji ya lishe hutofautiana sana kulingana na spishi, umri, na hali ya afya. Bado hatujapata timu yoyote ya kisayansi inayojitegemea, inayoweza kutengeneza alama kama hiyo.",
   "guide_open_pet_food_facts_share_link": "https://world-sw.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Karibu kwenye Fungua Ukweli wa Urembo!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Open Beauty Facts ni nini?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Fungua Ukweli wa Urembo ni hifadhidata shirikishi ya **bidhaa za vipodozi**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Kusanya picha za lebo za bei kwenye njia",
   "guide_open_prices_how_arg2_title": "Kusanya picha za risiti",
   "guide_open_prices_why_title": "Kwa nini Open Food Facts inafanya hivi?",
-  "guide_open_prices_why_paragraph1": "Taarifa za bei ni muhimu sana kuelewa mifumo ya chakula. Ni jambo muhimu katika kuelewa gharama ya chakula na kukuza lishe bora. Kufungua data ya bei ni njia ya kurahisisha watafiti, wanahabari, na wananchi **kuwa na ufahamu bora wa jinsi bei za vyakula zinavyotofautiana kijiografia na kwa wakati**.",
   "guide_open_prices_why_arg1_title": "Fuatilia mabadiliko ya bei kwa wakati",
   "guide_open_prices_why_arg1_text": "Angalia **mabadiliko ya bei**: kushuka kwa bei, bei nafuu, tunaweza kuzifuatilia pamoja!",
   "guide_open_prices_why_arg2_title": "Linganisha bei zilizo karibu nawe",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "I'm a retailer and I want to contribute prices. How can I do that?",
   "guide_open_prices_retailers_paragraph1": "Unaweza kuchangia bei kwa kutumia API yetu.\nIwapo ungependa kuchangia bei kwa kiwango kikubwa, tafadhali wasiliana nasi kwa prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Karibu kwenye Fungua Ukweli wa Bidhaa!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Ukweli wa Bidhaa Huria ni nini?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Fungua Ukweli wa Bidhaa ni hifadhidata kubwa, iliyo wazi ya **bidhaa yoyote iliyo na msimbopau, ambayo si chakula, vipodozi au chakula cha kipenzi**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Lo!",
-  "carousel_unsupported_text": "Msimbopau uliochanganuliwa hautumiki kwa Open Food Facts!",
   "carousel_error_header": "Hitilafu!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Mradi wa Open Food Facts",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Contribute",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts ni hifadhidata ya bidhaa za chakula **iliyoundwa na kila mtu, kwa kila mtu**. Unaweza kuitumia kufanya chaguo bora zaidi za chakula, na kwa vile ni **data wazi**, mtu yeyote anaweza **kuitumia tena kwa madhumuni yoyote**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Sera ya faragha",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Bidhaa mpya nilizoongeza kwenye Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Bidhaa ninazohitaji kukamilisha",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Changia kwenye mradi",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Njia rahisi za kusaidia Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Mbinu za alama, usaidizi, na zaidi kuhusu mradi",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Akaunti",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Leta Open Food Facts kwa lugha yako",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Jiandikishe katika toleo la alpha la programu",
   "@preferences_contribute_enroll_alpha": {},

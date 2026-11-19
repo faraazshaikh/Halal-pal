@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Vítejte v Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts je globální nezisková organizace tvořená místními komunitami.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Podívejte se na údaje o jídle relevantní pro vaše preference.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Žádná odpověď serveru! Problém můžete nahlásit pomocí následujícího odkazu.",
   "@user_management": {},
-  "sign_in_text": "Pro uložení vašich příspěvků se přihlaste ke svému účtu Open Food Facts",
   "incorrect_credentials": "Nesprávné uživatelské jméno nebo heslo.",
   "password_lost_incorrect_credentials": "Tento e-mail nebo uživatelské jméno neexistuje. Zkontrolujte prosím své přihlašovací údaje.",
   "password_lost_server_unavailable": "Momentálně dochází ke zpomalení na našich serverech a omlouváme se za to. Prosím zkuste to znovu později.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Pro tuto funkci potřebujeme, abyste se přihlásili.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Pomozte vylepšit Open Food Facts ve vaší zemi",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Odhlásit",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Potvrzení hesla",
   "sign_up_page_confirm_password_error_empty": "Potvrďte prosím heslo",
   "sign_up_page_confirm_password_error_invalid": "Hesla se neshodují",
-  "sign_up_page_agree_text": "Souhlasím s Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "podmínky použití a příspěvek",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Jsem výrobce potravin",
   "sign_up_page_producer_hint": "Výrobce/značka",
   "sign_up_page_producer_error_empty": "Zadejte výrobce nebo název značky",
-  "sign_up_page_subscribe_checkbox": "Chci se přihlásit k odběru newsletteru Open Food Facts (můžete se kdykoli odhlásit)",
   "sign_up_page_user_name_already_used": "Uživatelské jméno již existuje, zvolte prosím jiné uživatelské jméno.",
   "sign_up_page_email_already_exists": "již existuje, přihlaste se k účtu nebo zkuste jiný e-mail.",
   "sign_up_page_provide_valid_email": "Zadejte platnou e-mailovou adresu.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Požádejte o pomoc na našem kanálu Slack",
   "support_via_forum": "Požádejte o pomoc na našem fóru",
-  "support_via_email": "Pošlete nám e-mail",
   "support_via_email_include_logs_dialog_title": "Odeslat protokoly aplikace?",
   "support_via_email_include_logs_dialog_body": "Přejete si zahrnout protokoly aplikace do přílohy vašeho e-mailu?",
   "termsOfUse": "Podmínky použití",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Kód pro každý produkt Open Food Facts je k dispozici na GitHubu. Můžete znovu použít kód (je to open source) a pomoci nám jej vylepšit, pro každého na celé planetě.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Můžete se připojit k chatovací místnosti Open Food Facts Slack, což je preferovaný způsob, jak klást otázky.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "DEV režim?",
   "contribute_develop_dev_mode_subtitle": "Aktivovat DEV režim",
   "contribute_donate_title": "Podpořit",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Přispějte na Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Vezměte prosím na vědomí, že s interní alfa verzí je možná úplná ztráta dat a aplikace se může kdykoli stát nepoužitelnou!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Nedokončené",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Databáze je jádrem projektu. Pomoci je snadné a velmi rychlé. Můžete si stáhnout mobilní aplikaci pro svůj telefon a začít přidávat nebo vylepšovat produkty.\n\nNa druhou stranu webová stránka Open Food Facts nabízí mnoho způsobů, jak přispět: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Přeložit",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts je globální projekt, který obsahuje produkty z více než 160 zemí. Open Food Facts je přeložena do desítek jazyků s neustále se vyvíjejícím obsahem.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Překlady jsou jedním z klíčových úkolů projektu",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Přispějte svými dovednostmi do Open Food Facts. Připojte se k fondu dovedností!",
-  "contribute_share_header": "Sdílejte Open Food Facts se svými přáteli",
-  "@contribute_share_header": {},
   "contribute_share_content": "Chtěl jsem vám dát vědět o aplikaci, kterou používám, Open Food Facts, která vám umožňuje personalizovaným způsobem získat informace o dopadech vašeho jídla na zdraví a životní prostředí. Funguje naskenováním čárových kódů na obalu. Konečně je to zdarma, nevyžaduje registraci a dokonce můžete pomoci zvýšit počet dešifrovaných produktů. Zde je odkaz, jak jej získat pro váš telefon: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Přihlaste se ke svému účtu Open Food Facts a získejte kredit za vaše příspěvky",
   "question_yes_button_accessibility_value": "Odpovězte ano",
   "question_no_button_accessibility_value": "Odpovězte ne",
   "question_skip_button_accessibility_value": "Přeskočit tuto otázku",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Vytvořte si účet a připojte se ke komunitě Open Food Facts a pomozte tak budovat znalosti o potravinách po celém světě!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Připojte se k nám",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Váš profil",
-  "myPreferences_profile_subtitle": "Spravujte svůj účet přispěvatele Open Food Facts.",
   "myPreferences_settings_title": "Nastavení aplikace",
   "myPreferences_settings_subtitle": "Tmavý režim, Jazyky…",
   "myPreferences_not_configured_yet": "Zatím jste nenastavili žádné předvolby.",
   "myPreferences_food_title": "Předvolby jídla",
   "myPreferences_food_subtitle": "Vyberte si, které informace o jídle jsou pro vás nejdůležitější.",
   "myPreferences_food_compatibility_explainer": "Vyberte si, na kterých informacích o potravinách vám nejvíce záleží, abyste mohli seřadit potraviny podle svých preferencí, prohlédněte si informace, které vás zajímají, jako první a získejte přehled kompatibility.",
-  "myPreferences_food_privacy": "Tyto preference jídla zůstanou ve vašem zařízení a nejsou spojeny s vaším účtem přispěvatele Open Food Facts, pokud jej máte.",
   "myPreferences_beauty_title": "Předvolby kosmetiky",
   "myPreferences_beauty_subtitle": "Vyberte si, které informace o kosmetických produktech jsou pro vás nejdůležitější.",
   "myPreferences_product_title": "Předvolby pro ostatní produkty",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Našli jste nový produkt!",
   "@missing_product": {},
-  "add_product_take_photos": "Vyfoťte obal a přidejte tento produkt do Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Nejprve prosím udělejte nějaké fotky. Produkt můžete vždy dokončit později.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Přidat informace o produktu",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Získejte ji vyplněním kategorie potravin a složek",
   "new_product_desc_nova_unknown": "Neznámá úroveň průmyslového zpracování potraviny",
   "new_product_title_pictures": "Pojďme udělat pár fotek!",
-  "new_product_title_pictures_details": "Udělejte prosím následující fotky a nástroj Open Food Facts dokáže vyřešit zbytek!",
   "new_product_title_misc": "A pár základních údajů…",
   "new_product_done_msg": "Děkujeme za váš příspěvek, {username}!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Nahrávání fotografie na server",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Nahrávání předního obrázku do Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Nahrávání obrázku přísad do Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Nahrávání obrázku výživových údajů do Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Nahrávání obrázku balení do Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Nahrání jiného obrázku do Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Nahrávání obrázku do Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Přidejte chybějící přísady",
   "score_add_missing_packaging_image": "Přidat chybějící obrázek obalu",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Vítejte v Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Naskenujte** čárový kód nebo\n**vyhledejte** produkt",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Otevřít systémová nastavení pro Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Produkt byl odstraněn z historie",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Sledujte nás na TikToku",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Sledujte nás na Instagramu",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Sledujte nás na X (dříve Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Sledujte nás na Mastodonu",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blog",
   "faq": "Často kladené otázky",
-  "discover": "Zjistit víc",
   "how_to_contribute": "Jak přispět",
   "hint_knowledge_panel_message": "Klepnutím na kteroukoli část karty získáte další podrobnosti o tom, co vidíte. Vyzkoušejte to teď!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Přihlaste se nebo se zaregistrujte a připojte se ke komunitě Open Food Facts",
-  "user_profile_title_id_email": "Open Food Facts přihlášení: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Vítejte {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Smazat účet",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Dobrý den, smažte prosím můj účet Open Food Facts: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Aplikace",
   "settings_app_data": "Soukromí a monitorování",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Pokud je tato možnost povolena, zprávy o selhání se automaticky odesílají do systému sledování chyb Open Food Facts, aby bylo možné opravit chyby a vylepšit tak aplikaci.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Hlásit využívání funkcí",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "Pokud je povoleno, některé anonymní informace o používání aplikace a jejích funkcích budou odeslány na server Open Food Facts, abychom mohli aplikaci dále vylepšovat.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Chybí kategorie?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "V případě, že kategorie **není dostupná v automatickém doplňování**, klidně ji i tak přidejte.\nTo nám pomůže vylepšit Open Food Facts ve vaší zemi.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Sardinky v olivovém oleji",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Zástupce pro aplikaci Ceny na produktové stránce",
-  "prices_app_button": "Přejít do aplikace Ceny",
-  "prices_website_button": "Otevřít na webu Open Prices",
   "prices_bulk_proof_upload_select": "Přidejte cenovky přímo z galerie",
   "prices_bulk_proof_upload_warning": "Jakmile vyberete obrázky, nebudete je moci upravovat!",
   "prices_bulk_proof_upload_warning_ai": "Umělá inteligence poběží na základě vašich dokladů, aby extrahovala ceny.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Otevřený doklad o ceně",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{No proof yet} =1{Only one proof} other{All {count} proofs}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Potvrdit",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Souhlasím s Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "podmínky použití a příspěvek",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Ikona analytiky",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Podívejte se na tento produkt na Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Podívejte se na tento produkt na Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Podívejte se na tento produkt na Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Podívejte se na tento produkt na Open Food Facts: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Podívejte se na můj seznam produktů na Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Zachytit nový",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Pomoc s OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Produkt bude aktualizován na pozadí co nejdříve.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Všechny obrázky",
-  "selected_images": "Vybrané obrázky",
   "product_card_remove_product_tooltip": "Odstranit produkt",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Aktualizujte místní databázi produktů nejnovějšími údaji z Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Vymažte offline produktová data",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Vítejte na Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Co je to Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts je **kolaborativní**, **bezplatná** a **otevřená** databáze potravinářských produktů z celého světa.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Skóre, jak se vyhnout ultrazpracovaným potravinám",
   "guide_open_food_facts_scores_arg3_title": "Skóre pro planetu",
   "guide_open_food_facts_share_link": "https://world-cs.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Vítejte v Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Co je Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts rozšiřuje naši misi na naše chlupaté přátele! Je to **databáze krmiv pro kočky, psy a další domácí mazlíčky**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Poznámka k bodování",
   "guide_open_pet_food_facts_scores_paragraph1": "Vývoj systému hodnocení krmiv pro domácí mazlíčky **není v současné době prioritou**. Metodika by byla složitá, protože nutriční potřeby se značně liší podle druhu, věku a zdravotního stavu. Zatím jsme nenašli žádný nezávislý vědecký tým, který by byl schopen takové hodnocení vyvinout.",
   "guide_open_pet_food_facts_share_link": "https://world-cs.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Vítejte na Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Co je to Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts je kooperativní databáze **kosmetických produktů**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Sbírejte fotografie cenovek v uličkách",
   "guide_open_prices_how_arg2_title": "Sbírejte fotografie účtenek",
   "guide_open_prices_why_title": "Proč to Open Food Facts dělá?",
-  "guide_open_prices_why_paragraph1": "Informace o cenách jsou pro pochopení potravinových systémů zásadní. Jsou klíčovým faktorem pro pochopení nákladů na potraviny a pro podporu zdravějšího stravování. Uvolnění cenových dat je způsobem, jak usnadnit výzkumníkům, novinářům a občanům **lepší pochopení toho, jak se ceny potravin mění geograficky a v čase**.",
   "guide_open_prices_why_arg1_title": "Sledujte vývoj cen v čase",
   "guide_open_prices_why_arg1_text": "Podívejte se na **vývoj cen**: smrskflace, cheapflace, můžeme je sledovat společně!",
   "guide_open_prices_why_arg2_title": "Porovnejte ceny ve vašem okolí",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "Jsem maloobchodník a chci přispět cenami. Jak to mohu udělat?",
   "guide_open_prices_retailers_paragraph1": "Ceny můžete zadávat pomocí našeho API.\nPokud chcete zadávat ceny ve velkém měřítku, kontaktujte nás prosím na adrese prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Vítejte na Open Products Facts!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Co je to Open Products Facts?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts je rozsáhlá otevřená databáze pro **jakýkoli produkt s čárovým kódem, který není potravinou, kosmetickým přípravkem ani krmivem pro domácí zvířata**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Jejda!",
-  "carousel_unsupported_text": "Naskenovaný čárový kód není podporován Open Food Facts!",
   "carousel_error_header": "Chyba!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Projekt Otevřená fakta o jídle",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Přispět",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Právní zmínky",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts je databáze potravinářských výrobků **vytvořená každým, pro každého**.\nMůžete ji použít k lepšímu výběru potravin a protože se jedná o **otevřená data**, kdokoli je může **znovu použít k jakémukoli účelu**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Zásady ochrany osobních údajů",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Nové produkty, které jsem přidal/a do Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Produkty, které potřebuji dokončit",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Přispějte k projektu",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Jednoduché způsoby, jak pomoci Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Metodiky hodnocení, pomoc a další informace o projektu",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Účet",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Přineste Open Food Facts do svého jazyka",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Zaregistrujte se do alfa verze aplikace",
   "@preferences_contribute_enroll_alpha": {},

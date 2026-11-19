@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "欢迎使用 Open Food Facts！",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts 是一个由当地社区推动的全球性非营利组织。",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "查看和您的偏好有关的食品数据。",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "服务器无响应！您可以使用以下链接反馈问题。",
   "@user_management": {},
-  "sign_in_text": "登录您的 Open Food Facts 账号以保存您的贡献",
   "incorrect_credentials": "用户名或密码错误。",
   "password_lost_incorrect_credentials": "此电子邮件或用户名不存在。请检查您的登录信息。",
   "password_lost_server_unavailable": "我们的服务器目前速度缓慢，对此我们深表歉意。请稍后重试。",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "您需要登录才可以使用该功能",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "帮助改善您所在国家/地区的 Open Food Facts",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "登出",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "确认密码",
   "sign_up_page_confirm_password_error_empty": "请确认密码",
   "sign_up_page_confirm_password_error_invalid": "密码不相符",
-  "sign_up_page_agree_text": "我同意 Open Food Facts ",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "使用条款和贡献",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "我是食品生产商",
   "sign_up_page_producer_hint": "生产商/品牌",
   "sign_up_page_producer_error_empty": "请输入生产商或品牌名称",
-  "sign_up_page_subscribe_checkbox": "我想订阅 Open Food Facts 的最新动态（您可以随时取消订阅）",
   "sign_up_page_user_name_already_used": "该用户名已存在，请选择一个不同的用户名。",
   "sign_up_page_email_already_exists": "已存在。登录该账号或尝试其他电子邮件地址。",
   "sign_up_page_provide_valid_email": "请提供一个有效的电子邮箱地址。",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "在我们的 Slack 频道寻求帮助",
   "support_via_forum": "在我们的社区上寻求帮助",
-  "support_via_email": "给我们发送电子邮件",
   "support_via_email_include_logs_dialog_title": "发送应用日志?",
   "support_via_email_include_logs_dialog_body": "您是否希望在电子邮件附件中包含应用程序日志?",
   "termsOfUse": "使用条款",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "所有 Open Food Facts 产品的代码均可在 GitHub 上获取。欢迎您复用代码（代码为开源），并帮助我们改进，造福全球所有人。",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "您可以加入 Open Food Facts Slack 聊天室，这是提问的首选方式。",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "开发模式？",
   "contribute_develop_dev_mode_subtitle": "启用开发者模式",
   "contribute_donate_title": "捐赠",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "捐助 Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "请注意，使用内部 alpha 版本，可能会完全丢失数据，并且应用程序可能随时无法使用！",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "待完成的产品",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "数据库是该项目的核心。它简单易用，快速提供帮助。您可以下载手机应用程序，开始添加或改进产品。\n\n另一方面，Open Food Facts 网站提供了多种贡献方式：",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "翻译",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts 是一个全球项目，涵盖来自 160 多个国家的产品。Open Food Facts 已被翻译成数十种语言，内容也不断更新。",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "翻译是项目的关键任务之一",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "为 Open Food Facts 贡献你的技能。加入技能库！",
-  "contribute_share_header": "与朋友分享 Open Food Facts",
-  "@contribute_share_header": {},
   "contribute_share_content": "我想介绍一下我一直在用的一款应用——Open Food Facts，它能让你以个性化的方式了解食物对健康和环境的影响。它的工作原理是扫描包装上的条形码。它完全免费，无需注册，你甚至可以帮助增加了解产品的数量。以下是手机应用下载链接：https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "登录您的 Open Food Facts 帐户，获取您的贡献值",
   "question_yes_button_accessibility_value": "回答“是”",
   "question_no_button_accessibility_value": "回答“否”",
   "question_skip_button_accessibility_value": "跳过该题",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "创建您的帐户并加入 Open Food Facts 社区，帮助在世界各地建立食品知识！",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "加入我们",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "您的个人信息",
-  "myPreferences_profile_subtitle": "管理您的 Open Food Facts 贡献者帐户。",
   "myPreferences_settings_title": "应用设置",
   "myPreferences_settings_subtitle": "黑暗模式，语言…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "食物偏好",
   "myPreferences_food_subtitle": "选择对您最重要的食物信息.",
   "myPreferences_food_compatibility_explainer": "选择对您而言最重要的食品信息，以便根据您的个人偏好对食品排序、优先展示您关注的内容，并获取匹配度摘要。",
-  "myPreferences_food_privacy": "这些偏好设置仅保存在您的设备中，不会与您的 Open Food Facts 贡献者账户关联（若您有的话）。",
   "myPreferences_beauty_title": "化妆品偏好",
   "myPreferences_beauty_subtitle": "选择对您而言最重要的化妆品信息。",
   "myPreferences_product_title": "其他产品偏好",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "你发现了一件新产品！",
   "@missing_product": {},
-  "add_product_take_photos": "拍摄包装照片，将此产品添加到 Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "请您先拍几张照片，你可以在以后完成操作",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "添加产品信息",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "通过填写食品类别和配料获得它",
   "new_product_desc_nova_unknown": "食品加工水平未知",
   "new_product_title_pictures": "添加产品",
-  "new_product_title_pictures_details": "请拍摄以下照片，Open Food Facts 引擎可以解决剩下的问题！",
   "new_product_title_misc": "还有一些基本数据…",
   "new_product_done_msg": "感谢您的贡献“{username}”！",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "正在向服务器上传照片",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "将正面图片上传至 Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "将食材图片上传至 Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "将营养成分图片上传至 Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "将包装图片上传至 Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "上传其他图片至 Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "将图片上传至 Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "添加缺失的成分",
   "score_add_missing_packaging_image": "添加缺失的包装照片",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "欢迎使用 Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "扫描条形码或\n搜索产品",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "开放食品事实的开放系统设置",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "已从历史记录中删除该产品",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "在 TikTok 上关注我们",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "在 Instagram 上关注我们",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "在 X（原 Twitter）上关注我们",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "在 Mastodon 上关注我们",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "博客",
   "faq": "常见问题",
-  "discover": "发现",
   "how_to_contribute": "如何贡献数据",
   "hint_knowledge_panel_message": "点击卡片任意部分获取更多信息。立即尝试！",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "登录或注册加入 Open Food Facts 社区",
-  "user_profile_title_id_email": "Open Food Facts 登录： {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "欢迎 {id}！",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "删除账号",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "您好，请删除我的 Open Food Facts 帐户： {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "应用程序",
   "settings_app_data": "功能和崩溃监控",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "启用后，崩溃报告会自动提交给 Open Food Facts 的错误跟踪系统，以便修复错误并改进应用程序。",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "向我们报告功能使用情况",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "启用后，有关功能使用情况的严格匿名信息将发送至 Open Food Facts 服务器，以便我们了解功能的使用情况，从而改进功能。",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "缺少类别？",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "如果某个类别**在自动完成中不可用**，请随意添加。\n这将帮助我们改进您所在国家/地区的 Open Food Facts。",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "橄榄油浸沙丁鱼",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "产品页面上的“价格”应用快捷方式",
-  "prices_app_button": "前往价格应用",
-  "prices_website_button": "在公开价格网站上打开",
   "prices_bulk_proof_upload_select": "直接从图库添加价格标签",
   "prices_bulk_proof_upload_warning": "一旦你选择了图片，就无法编辑它们了！",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "公开价格证明",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{暂无证据} =1{仅有一个证据} other{所有证据 {count}}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "确认",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "我同意 Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "使用条款和贡献",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "分析图标",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "请在 Open Food Facts 上查看此产品： {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "请在 Open Beauty Facts 上查看这款产品： {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "请在 Open PetFood Facts 上查看此产品： {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "请查看 Open Products Facts 上的这款产品： {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "请查看我在 Open Food Facts 上的产品列表： {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "拍一张新照片",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "帮助 OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "产品将尽快在后台更新。",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "所有图像",
-  "selected_images": "选定图片",
   "product_card_remove_product_tooltip": "移除产品",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "使用 Open Food Facts 的最新数据更新本地产品数据库",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "清除离线产品数据",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "欢迎来到开放食品真相！",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "什么是Open Food Facts？",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts 是一个**协作式**、**免费**、**开放**的全球食品数据库。",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "避免食用超加工食品的评分",
   "guide_open_food_facts_scores_arg3_title": "为地球打分",
   "guide_open_food_facts_share_link": "https://world-zh.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "欢迎来到“公开宠物食品真相”！",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "什么是“Open Pet Food Facts”？",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts 将我们的使命扩展到了毛茸茸的朋友们！这是一个**猫、狗和其他伴侣动物的宠物食品产品数据库**。",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "关于评分的说明",
   "guide_open_pet_food_facts_scores_paragraph1": "目前，开发宠物食品评分系统**并非当务之急**。因为不同物种、年龄和健康状况的宠物营养需求差异很大，所以评分方法会非常复杂。我们尚未找到任何能够开发此类评分系统的独立科研团队。",
   "guide_open_pet_food_facts_share_link": "https://world-en.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "欢迎来到Open Beauty Facts！",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "什么是“Open Beauty Facts”？",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts 是一个关于**化妆品**的协作数据库。",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "收集过道中的价格标签照片",
   "guide_open_prices_how_arg2_title": "收集收据照片。",
   "guide_open_prices_why_title": "Open Food Facts为什么要这样做？",
-  "guide_open_prices_why_paragraph1": "价格信息对于理解食品体系至关重要。它是了解食品成本和促进健康饮食的关键因素。公开价格数据能够帮助研究人员、记者和公众更轻松地了解食品价格在不同地区和时间上的变化。",
   "guide_open_prices_why_arg1_title": "追踪价格随时间的变化",
   "guide_open_prices_why_arg1_text": "看看价格的**演变**：缩水式通胀、廉价式通胀，我们可以一起追踪它们！",
   "guide_open_prices_why_arg2_title": "比较您附近的商品价格",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "I'm a retailer and I want to contribute prices. How can I do that?",
   "guide_open_prices_retailers_paragraph1": "您可以使用我们的 API 贡献价格信息。\n如果您想大规模贡献价格信息，请通过 prices@openfoodfacts.org 与我们联系。",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "欢迎来到开放产品资讯！",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "什么是开放产品信息？",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts 是一个庞大的开放数据库，其中包含**任何带有条形码的产品，但不包括食品、化妆品或宠物食品**。",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "哎呀！",
-  "carousel_unsupported_text": "扫描的条形码不受 Open Food Facts 支持！",
   "carousel_error_header": "错误！",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "开放食品事实项目",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "贡献",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "法务信息",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts 是一个食品产品数据库，**由每个人创建，为每个人服务**。\n您可以使用它来做出更好的食物选择，而且由于它是**开放数据**，任何人都可以**将其重新用于任何目的**。",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "隐私政策",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "我添加到 Open Food Facts 的新产品",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "我需要完成的产品",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "为项目做出贡献",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "帮助Open Food Facts的简单方法",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "评分方法、帮助以及有关项目的更多信息",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts实验室",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "账户",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "将 Open Food Facts 引入您的语言",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "注册该应用程序的 alpha 版本",
   "@preferences_contribute_enroll_alpha": {},

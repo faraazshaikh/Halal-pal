@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "திறந்த விலைகள்",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "திறந்த உணவு உண்மைகளுக்கு வருக.",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "ஓபன் ஃபுட் ஃபேக்ட்ஸ் என்பது உள்ளூர் சமூகங்களால் இயக்கப்படும் உலகளாவிய இலாப நோக்கற்ற அமைப்பாகும்.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "உங்கள் விருப்பங்களுக்கு பொருத்தமான உணவுத் தரவைப் பார்க்கவும்.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "சேவையக பதில் இல்லை! பின்வரும் இணைப்பைப் பயன்படுத்தி நீங்கள் ஒரு சிக்கலைத் தொடங்கலாம்.",
   "@user_management": {},
-  "sign_in_text": "உங்கள் பங்களிப்புகளைச் சேமிக்க உங்கள் Open Food Facts கணக்கில் உள்நுழையவும்.",
   "incorrect_credentials": "தவறான பயனர்பெயர் அல்லது கடவுச்சொல்.",
   "password_lost_incorrect_credentials": "இந்த மின்னஞ்சல் முகவரி அல்லது பயனர்பெயர் இல்லை. உங்கள் சான்றுகளைச் சரிபார்க்கவும்.",
   "password_lost_server_unavailable": "எங்கள் சேவையகங்களில் தற்போது மந்தநிலை ஏற்பட்டுள்ளது, அதற்காக நாங்கள் வருந்துகிறோம். தயவுசெய்து பின்னர் மீண்டும் முயற்சிக்கவும்.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "அந்த அம்சத்திற்கு நீங்கள் உள்நுழைய வேண்டும்.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "உங்கள் நாட்டில் Open Food Facts உண்மைகளை மேம்படுத்த உதவுங்கள்.",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "வெளியேறு",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "கடவுச்சொல்லை உறுதிப்படுத்தவும்",
   "sign_up_page_confirm_password_error_empty": "கடவுச்சொல்லை உறுதிப்படுத்தவும்.",
   "sign_up_page_confirm_password_error_invalid": "கடவுச்சொற்கள் பொருந்தவில்லை.",
-  "sign_up_page_agree_text": "திறந்த உணவு உண்மைகளை நான் ஒப்புக்கொள்கிறேன்.",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "பயன்பாட்டு விதிமுறைகள் மற்றும் பங்களிப்பு",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "நான் ஒரு உணவு தயாரிப்பாளர்.",
   "sign_up_page_producer_hint": "தயாரிப்பாளர்/பிராண்ட்",
   "sign_up_page_producer_error_empty": "தயவுசெய்து ஒரு தயாரிப்பாளர் அல்லது ஒரு பிராண்ட் பெயரை உள்ளிடவும்.",
-  "sign_up_page_subscribe_checkbox": "நான் திறந்த உணவு உண்மைகள் செய்திமடலுக்கு குழுசேர விரும்புகிறேன் (நீங்கள் எந்த நேரத்திலும் அதிலிருந்து குழுவிலகலாம்)",
   "sign_up_page_user_name_already_used": "பயனர் பெயர் ஏற்கனவே உள்ளது, தயவுசெய்து வேறு பயனர்பெயரைத் தேர்வுசெய்க.",
   "sign_up_page_email_already_exists": "ஏற்கனவே உள்ளது, கணக்கில் உள்நுழையவும் அல்லது வேறு மின்னஞ்சலைப் பயன்படுத்தி முயற்சிக்கவும்.",
   "sign_up_page_provide_valid_email": "சரியான மின்னஞ்சல் முகவரியை வழங்கவும்.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "எங்கள் ஸ்லாக் சேனலில் உதவி கேளுங்கள்.",
   "support_via_forum": "உதவிக்கு எங்கள் மன்றத்தை நாடவும்",
-  "support_via_email": "எங்களுக்கு ஒரு மின்னஞ்சல் அனுப்புங்கள்.",
   "support_via_email_include_logs_dialog_title": "ஆப் பதிவுகளை அனுப்பவா?",
   "support_via_email_include_logs_dialog_body": "உங்கள் மின்னஞ்சலில் இணைப்பில் பயன்பாட்டுப் பதிவுகளைச் சேர்க்க விரும்புகிறீர்களா?",
   "termsOfUse": "பயன்பாட்டு விதிமுறைகள்",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "ஒவ்வொரு Open Food Facts தயாரிப்புக்கான குறியீடும் GitHub இல் கிடைக்கிறது. இந்தக் குறியீட்டை மீண்டும் பயன்படுத்தவும் (இது திறந்த மூலமாகும்) மேலும், உலகம் முழுவதும் உள்ள அனைவருக்கும் அதை மேம்படுத்த எங்களுக்கு உதவவும் உங்களை வரவேற்கிறோம்.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "நீங்கள் ஓபன் ஃபுட் ஃபேக்ட்ஸ் ஸ்லாக் அரட்டை அறையில் சேரலாம், இது கேள்விகளைக் கேட்க விருப்பமான வழியாகும்.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "DEV பயன்முறையா?",
   "contribute_develop_dev_mode_subtitle": "DEV பயன்முறையை இயக்கவும்",
   "contribute_donate_title": "நன்கொடை",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "திறந்த உணவு உண்மைகளுக்கு நன்கொடை அளிக்கவும்",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "உள் ஆல்பா பதிப்பில், தரவு முழுமையாக இழக்க நேரிடும் என்பதையும், எந்த நேரத்திலும் பயன்பாடு பயன்படுத்த முடியாததாகிவிடும் என்பதையும் ஒப்புக்கொள்ளுங்கள்!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "முடிக்க வேண்டிய தயாரிப்புகள்",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "இந்தத் திட்டத்தின் மையக் கருத்துத் தரவுத்தளம். இது உதவுவது எளிதானது மற்றும் மிக விரைவானது. உங்கள் தொலைபேசிக்கான மொபைல் செயலியைப் பதிவிறக்கம் செய்து, தயாரிப்புகளைச் சேர்க்க அல்லது மேம்படுத்தத் தொடங்கலாம்.\n\nமறுபுறம், ஓபன் ஃபுட் ஃபேக்ட்ஸ் வலைத்தளம் பங்களிக்க பல வழிகளை வழங்குகிறது: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "மொழிபெயர்",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "ஓபன் ஃபுட் ஃபேக்ட்ஸ் என்பது 160க்கும் மேற்பட்ட நாடுகளின் தயாரிப்புகளைக் கொண்ட ஒரு உலகளாவிய திட்டமாகும். ஓபன் ஃபுட் ஃபேக்ட்ஸ் என்பது டஜன் கணக்கான மொழிகளில் மொழிபெயர்க்கப்பட்டுள்ளது, தொடர்ந்து வளர்ந்து வரும் உள்ளடக்கத்துடன்.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "மொழிபெயர்ப்புகள் திட்டத்தின் முக்கிய பணிகளில் ஒன்றாகும்.",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Open Food Factsக்கு உங்கள் திறமைகளைப் பங்களிக்கவும். திறன் குழுவில் சேருங்கள்!",
-  "contribute_share_header": "உணவு பற்றிய திறந்த உண்மைகளை உங்கள் நண்பர்களுடன் பகிர்ந்து கொள்ளுங்கள்.",
-  "@contribute_share_header": {},
   "contribute_share_content": "நான் பயன்படுத்தி வரும் Open Food Facts என்ற செயலியைப் பற்றி உங்களுக்குத் தெரிவிக்க விரும்பினேன். இது உங்கள் உணவின் ஆரோக்கியம் மற்றும் சுற்றுச்சூழல் பாதிப்புகளை தனிப்பயனாக்கப்பட்ட முறையில் பெற உங்களை அனுமதிக்கிறது. இது பேக்கேஜிங்கில் உள்ள பார்கோடுகளை ஸ்கேன் செய்வதன் மூலம் செயல்படுகிறது. இறுதியாக இது இலவசம், பதிவு தேவையில்லை, மேலும் டிசைஃபர் செய்யப்பட்ட பொருட்களின் எண்ணிக்கையை அதிகரிக்கவும் நீங்கள் உதவலாம். உங்கள் தொலைபேசியில் இதைப் பெறுவதற்கான இணைப்பு இங்கே: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "உங்கள் பங்களிப்புகளுக்கு கிரெடிட்டைப் பெற உங்கள் Open Food Facts கணக்கில் உள்நுழையவும்.",
   "question_yes_button_accessibility_value": "ஆம் என்று பதிலளிக்கவும்",
   "question_no_button_accessibility_value": "இல்லை என்று பதிலளிக்கவும்",
   "question_skip_button_accessibility_value": "இந்தக் கேள்வியைத் தவிர்.",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "உலகம் முழுவதும் உணவு அறிவை வளர்க்க உதவ, உங்கள் கணக்கை உருவாக்கி, திறந்த உணவு உண்மைகள் சமூகத்தில் சேருங்கள்!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "எங்களுடன் சேருங்கள்",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "உங்கள் சுயவிவரம்",
-  "myPreferences_profile_subtitle": "உங்கள் திறந்த உணவு உண்மைகள் பங்களிப்பாளர் கணக்கை நிர்வகிக்கவும்.",
   "myPreferences_settings_title": "பயன்பாட்டு அமைப்புகள்",
   "myPreferences_settings_subtitle": "இருண்ட பயன்முறை, மொழிகள்…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "உணவு விருப்பத்தேர்வுகள்",
   "myPreferences_food_subtitle": "உணவு பற்றிய எந்தத் தகவல் உங்களுக்கு மிகவும் முக்கியமானது என்பதைத் தேர்வுசெய்யவும்.",
   "myPreferences_food_compatibility_explainer": "உங்கள் விருப்பங்களுக்கு ஏற்ப உணவை தரவரிசைப்படுத்த, முதலில் நீங்கள் அக்கறை கொள்ளும் தகவலைப் பார்த்து, பொருந்தக்கூடிய சுருக்கத்தைப் பெற, உணவைப் பற்றிய எந்தத் தகவல் உங்களுக்கு மிகவும் முக்கியமானது என்பதைத் தேர்வுசெய்யவும்.",
-  "myPreferences_food_privacy": "அந்த உணவு விருப்பத்தேர்வுகள் உங்கள் சாதனத்திலேயே இருக்கும், மேலும் உங்களிடம் Open Food Facts பங்களிப்பாளர் கணக்கு இருந்தால் அதனுடன் தொடர்புடையதாக இருக்காது.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "நீங்கள் ஒரு புதிய தயாரிப்பைக் கண்டுபிடித்தீர்கள்!",
   "@missing_product": {},
-  "add_product_take_photos": "இந்த தயாரிப்பை Open Food Facts இல் சேர்க்க, பேக்கேஜிங்கின் புகைப்படங்களை எடுக்கவும்.",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "முதலில் சில புகைப்படங்களை எடுத்துக் கொள்ளுங்கள். நீங்கள் எப்போதும் தயாரிப்பை பின்னர் முடிக்கலாம்.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "உணவு வகை மற்றும் பொருட்களை நிரப்புவதன் மூலம் அதைப் பெறுங்கள்.",
   "new_product_desc_nova_unknown": "உணவு பதப்படுத்தும் நிலை தெரியவில்லை",
   "new_product_title_pictures": "புதிய தயாரிப்பு",
-  "new_product_title_pictures_details": "பின்வரும் புகைப்படங்களை எடுங்கள், மீதமுள்ளவற்றை Open Food Facts எஞ்சின் சரிசெய்யும்!",
   "new_product_title_misc": "மேலும் சில அடிப்படைத் தரவு…",
   "new_product_done_msg": "உங்கள் பங்களிப்புக்கு நன்றி “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "புகைப்படத்தை சேவையகத்தில் பதிவேற்றுகிறது",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "திறந்த உணவு உண்மைகளுக்கு முன் படத்தை பதிவேற்றுகிறது",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "உணவு உண்மைகள் திறந்தநிலையில் பொருட்களின் படத்தை பதிவேற்றுகிறது",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "ஊட்டச்சத்து படத்தை திறந்த உணவு உண்மைகளில் பதிவேற்றுகிறது",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "திறந்த உணவு உண்மைகளுக்கு பேக்கேஜிங் படத்தை பதிவேற்றுதல்",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "திறந்த உணவு உண்மைகளுக்கு மற்றொரு படத்தை பதிவேற்றுகிறது",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "திறந்த உணவு உண்மைகளுக்கு படத்தை பதிவேற்றுகிறது",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "விடுபட்ட பொருட்களைச் சேர்க்கவும்",
   "score_add_missing_packaging_image": "விடுபட்ட பேக்கேஜிங் படத்தைச் சேர்க்கவும்",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "திறந்த உணவு உண்மைகளுக்கு வருக.",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**பார்கோடை ஸ்கேன்** அல்லது\n**ஒரு பொருளைத் தேடுங்கள்**",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "திறந்த உணவு உண்மைகளுக்கான திறந்த அமைப்பு அமைப்புகள்",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "வரலாற்றிலிருந்து தயாரிப்பு நீக்கப்பட்டது",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "TikTok-இல் எங்களைப் பின்தொடரவும்",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "எங்களை Instagram இல் பின்தொடரவும்",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "X இல் (முன்னர் ட்விட்டர்) எங்களைப் பின்தொடருங்கள்.",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "மாஸ்டோடனில் எங்களைப் பின்தொடருங்கள்",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "வலைப்பதிவு",
   "faq": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
-  "discover": "Discover",
   "how_to_contribute": "பங்களிப்பது எப்படி",
   "hint_knowledge_panel_message": "நீங்கள் பார்ப்பதைப் பற்றிய கூடுதல் விவரங்களைப் பெற, கார்டின் எந்தப் பகுதியையும் தட்டலாம். இப்போதே முயற்சிக்கவும்!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "திறந்த உணவு உண்மைகள் சமூகத்தில் சேர உள்நுழையவும் அல்லது பதிவு செய்யவும்.",
-  "user_profile_title_id_email": "Open Food Facts உள்நுழைவு: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "வரவேற்கிறோம் {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "கணக்கை நீக்கு",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "வணக்கம், தயவுசெய்து எனது திறந்த உணவு உண்மைகள் கணக்கை நீக்கவும்: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "விண்ணப்பம்",
   "settings_app_data": "அம்சங்கள் & செயலிழப்பு கண்காணிப்பு",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "இயக்கப்பட்டால், செயலிழப்பு அறிக்கைகள் தானாகவே Open Food Facts இன் பிழை கண்காணிப்பு அமைப்பில் சமர்ப்பிக்கப்படும், இதனால் பிழைகள் சரிசெய்யப்பட்டு செயலிழப்பை மேம்படுத்த முடியும்.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "அம்சத்தின் பயன்பாட்டை எங்களுக்குத் தெரிவிக்கவும்",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "இயக்கப்பட்டால், அம்சத்தைப் பயன்படுத்துவது தொடர்பான கண்டிப்பாக அநாமதேயத் தகவல்கள், ஓபன் ஃபுட் ஃபேக்ட்ஸ் சர்வர்களுக்கு அனுப்பப்படும், இதன் மூலம் அம்சங்களை மேம்படுத்தும் வகையில் அம்சங்கள் எவ்வாறு பயன்படுத்தப்படுகின்றன என்பதை நாம் புரிந்து கொள்ள முடியும். இல்லையெனில், 0 ஐடி அனுப்பப்படும்.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "வகை இல்லையா?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "ஒரு வகை **தானியங்கி நிரப்புதலில்** கிடைக்கவில்லை என்றால், அதை எப்படியும் சேர்க்க தயங்க வேண்டாம்.\nஇது உங்கள் நாட்டில் திறந்த உணவு உண்மைகளை மேம்படுத்த எங்களுக்கு உதவும்.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "ஆலிவ் எண்ணெயில் மத்தி",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "தயாரிப்பு பக்கத்தில் விலைகள் பயன்பாட்டிற்கான குறுக்குவழி",
-  "prices_app_button": "விலைகள் பயன்பாட்டிற்குச் செல்லவும்",
-  "prices_website_button": "திறந்த விலைகள் வலைத்தளத்தில் திறக்கவும்",
   "prices_bulk_proof_upload_select": "கேலரியில் இருந்து நேரடியாக விலைக் குறிச்சொற்களைச் சேர்க்கவும்.",
   "prices_bulk_proof_upload_warning": "படங்களைத் தேர்ந்தெடுத்த பிறகு, அவற்றைத் திருத்த முடியாது!",
   "prices_bulk_proof_upload_warning_ai": "விலைகளைப் பிரித்தெடுக்க AI உங்கள் ஆதாரங்களில் இயங்கும்.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "திறந்த விலைச் சான்று",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{இன்னும் ஆதாரம் இல்லை} =1{ஒரே ஒரு ஆதாரம்} other{அனைத்தும் {count} ஆதாரங்கள்}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "உறுதிப்படுத்தவும்",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "திறந்த உணவு உண்மைகளை நான் ஒப்புக்கொள்கிறேன். ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "பயன்பாட்டு விதிமுறைகள் மற்றும் பங்களிப்பு",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "பகுப்பாய்வு ஐகான்",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "இந்த தயாரிப்பை திறந்த உணவு உண்மைகளில் பாருங்கள்: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "இந்த தயாரிப்பை Open Beauty Facts இல் பாருங்கள்: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "இந்த தயாரிப்பை ஓபன் பெட்ஃபுட் உண்மைகளில் பாருங்கள்: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "இந்த தயாரிப்பை திறந்த தயாரிப்புகள் உண்மைகளில் பாருங்கள்: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "திறந்த உணவு உண்மைகளில் எனது தயாரிப்புகளின் பட்டியலைப் பாருங்கள்: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "OpenFoodFacts தொடர்பான உதவி",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "தயாரிப்பு விரைவில் பின்னணியில் புதுப்பிக்கப்படும்.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "அனைத்து படங்களும்",
-  "selected_images": "தேர்ந்தெடுக்கப்பட்ட படங்கள்",
   "product_card_remove_product_tooltip": "தயாரிப்பை அகற்று",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "திறந்த உணவு உண்மைகளிலிருந்து சமீபத்திய தரவுகளுடன் உள்ளூர் தயாரிப்பு தரவுத்தளத்தைப் புதுப்பிக்கவும்.",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "ஆஃப்லைன் தயாரிப்பு தரவை அழி",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "திறந்த உணவு உண்மைகளுக்கு வருக!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Open Food Facts என்றால் என்ன?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts என்பது உலகம் முழுவதிலுமிருந்து வரும் உணவுப் பொருட்களின் **கூட்டுறவு**, **இலவச** மற்றும் **திறந்த** தரவுத்தளமாகும்.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "மிகவும் பதப்படுத்தப்பட்ட உணவுகளைத் தவிர்ப்பதற்கான மதிப்பெண்",
   "guide_open_food_facts_scores_arg3_title": "கிரகத்திற்கான மதிப்பெண்",
   "guide_open_food_facts_share_link": "https://world-ta.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "திறந்த செல்லப்பிராணி உணவு உண்மைகளுக்கு வருக!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Open Pet Food Facts என்றால் என்ன?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts எங்கள் பணியை எங்கள் ரோம நண்பர்களுக்கும் விரிவுபடுத்துகின்றன! இது **பூனைகள், நாய்கள் மற்றும் பிற தோழர்களுக்கான செல்லப்பிராணி உணவுப் பொருட்களின் தரவுத்தளமாகும்**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "மதிப்பெண் பற்றிய குறிப்பு",
   "guide_open_pet_food_facts_scores_paragraph1": "செல்லப்பிராணி உணவுக்கான மதிப்பெண் முறையை உருவாக்குவது **தற்போது முன்னுரிமை இல்லை**. ஊட்டச்சத்து தேவைகள் இனம், வயது மற்றும் சுகாதார நிலையைப் பொறுத்து பெரிதும் மாறுபடும் என்பதால், இந்த முறை சிக்கலானதாக இருக்கும். அத்தகைய மதிப்பெண்ணை உருவாக்கக்கூடிய எந்தவொரு சுயாதீன அறிவியல் குழுவையும் நாங்கள் இதுவரை கண்டுபிடிக்கவில்லை.",
   "guide_open_pet_food_facts_share_link": "https://world-ta.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "திறந்த அழகு உண்மைகளுக்கு வருக!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Open Beauty Facts என்றால் என்ன?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts என்பது **ஒப்பனை பொருட்கள்** இன் கூட்டு தரவுத்தளமாகும்.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "வரிசைகளில் விலைக் குறிச்சொற்களின் புகைப்படங்களைச் சேகரிக்கவும்.",
   "guide_open_prices_how_arg2_title": "ரசீதுகளின் புகைப்படங்களைச் சேகரிக்கவும்",
   "guide_open_prices_why_title": "Open Food Facts ஏன் இதைச் செய்கிறது?",
-  "guide_open_prices_why_paragraph1": "உணவு முறைகளைப் புரிந்துகொள்வதற்கு விலைத் தகவல் மிக முக்கியமானது. உணவின் விலையைப் புரிந்துகொள்வதிலும் ஆரோக்கியமான உணவுமுறைகளை ஊக்குவிப்பதிலும் இது ஒரு முக்கிய காரணியாகும். விலைத் தரவைத் திறப்பது, ஆராய்ச்சியாளர்கள், பத்திரிகையாளர்கள் மற்றும் குடிமக்கள் **புவியியல் ரீதியாகவும் காலத்திலும் உணவு விலைகள் எவ்வாறு மாறுபடுகின்றன என்பதைப் பற்றி நன்கு புரிந்துகொள்ள** எளிதாக்கும் ஒரு வழியாகும்.",
   "guide_open_prices_why_arg1_title": "காலப்போக்கில் விலைகளின் பரிணாம வளர்ச்சியைக் கண்காணிக்கவும்",
   "guide_open_prices_why_arg1_text": "**விலைகளின் பரிணாம வளர்ச்சியை** பாருங்கள்: சுருக்கப் பணவீக்கம், மலிவான பணவீக்கம், நாம் அவற்றை ஒன்றாகக் கண்காணிக்கலாம்!",
   "guide_open_prices_why_arg2_title": "உங்களுக்கு அருகிலுள்ள விலைகளை ஒப்பிடுக",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "நான் ஒரு சில்லறை விற்பனையாளர், விலைகளைப் பங்களிக்க விரும்புகிறேன். அதை நான் எப்படி செய்வது?",
   "guide_open_prices_retailers_paragraph1": "எங்கள் API ஐப் பயன்படுத்தி நீங்கள் விலைகளைப் பங்களிக்கலாம்.\nநீங்கள் அளவில் விலைகளைப் பங்களிக்க விரும்பினால், தயவுசெய்து prices@openfoodfacts.org என்ற மின்னஞ்சல் முகவரியில் எங்களைத் தொடர்பு கொள்ளவும்.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "திறந்த தயாரிப்புகள் உண்மைகளுக்கு வருக!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "திறந்த தயாரிப்புகள் உண்மைகள் என்றால் என்ன?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "ஓபன் ப்ராடக்ட்ஸ் ஃபேக்ட்ஸ் என்பது **பார்கோடு உள்ள எந்தவொரு தயாரிப்புக்கும், இது உணவு, அழகுசாதனப் பொருட்கள் அல்லது செல்லப்பிராணி உணவு** அல்லாத ஒரு பெரிய, திறந்த தரவுத்தளமாகும்.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "அச்சச்சோ!",
-  "carousel_unsupported_text": "ஸ்கேன் செய்யப்பட்ட பார்கோடு திறந்த உணவு உண்மைகளால் ஆதரிக்கப்படவில்லை!",
   "carousel_error_header": "பிழை!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "திறந்த உணவு உண்மைகள் திட்டம்",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Contribute",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts என்பது அனைவராலும், அனைவருக்கும்** உருவாக்கப்பட்ட உணவுப் பொருட்களின் தரவுத்தளமாகும். சிறந்த உணவுத் தேர்வுகளைச் செய்ய நீங்கள் இதைப் பயன்படுத்தலாம், மேலும் இது **திறந்த தரவு** என்பதால், யார் வேண்டுமானாலும் எந்த நோக்கத்திற்காகவும் இதை மீண்டும் பயன்படுத்தலாம்**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "தனியுரிமைக் கொள்கை",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Open Food Facts உண்மைகளில் நான் சேர்த்த புதிய தயாரிப்புகள்",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "நான் முடிக்க வேண்டிய தயாரிப்புகள்",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "திட்டத்திற்கு பங்களிக்கவும்",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Open Food Factsக்க உதவும் எளிய வழிகள்",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "திட்டத்தைப் பற்றிய மதிப்பெண் முறைகள், உதவி மற்றும் பல.",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts ஆய்வகங்கள்",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "கணக்கு",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Open Food Facts உண்மைகளை உங்கள் மொழியில் கொண்டு வாருங்கள்.",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "பயன்பாட்டின் ஆல்பா பதிப்பில் பதிவுசெய்யவும்",
   "@preferences_contribute_enroll_alpha": {},

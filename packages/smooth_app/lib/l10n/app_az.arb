@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Open Food Facts Xoş Gəlmisiniz",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts yerli icmalar tərəfindən dəstəklənən qlobal qeyri-kommersiya təşkilatıdır.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Seçimlərinizə uyğun qida məlumatlarına baxın.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Server cavabı yoxdur! Aşağıdakı link ilə problem aça bilərsiniz.",
   "@user_management": {},
-  "sign_in_text": "Töhfələrinizi saxlamaq üçün Açıq Qida Faktları hesabınıza daxil olun",
   "incorrect_credentials": "Yanlış istifadəçi adı və ya parol.",
   "password_lost_incorrect_credentials": "Bu e-poçt və ya istifadəçi adı mövcud deyil. Zəhmət olmasa, etimadnamənizi yoxlayın.",
   "password_lost_server_unavailable": "Hazırda serverlərimizdə yavaşlama müşahidə olunur və buna görə üzr istəyirik. Zəhmət olmasa, daha sonra yenidən cəhd edin.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Bu funksiya üçün daxil olmağınız lazımdır.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Ölkənizdə Open Food Facts-i təkmilləşdirməyə kömək edin",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Çıxış",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Şifrəni Təsdiqləyin",
   "sign_up_page_confirm_password_error_empty": "Şifrəni təsdiqləyin",
   "sign_up_page_confirm_password_error_invalid": "Parollar uyğun gəlmir",
-  "sign_up_page_agree_text": "Açıq Qida Faktları ilə razıyam",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "istifadə şərtləri və töhfə",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Mən qida istehsalçısıyam",
   "sign_up_page_producer_hint": "İstehsalçı/brend",
   "sign_up_page_producer_error_empty": "Zəhmət olmasa, istehsalçı və ya brend adını daxil edin",
-  "sign_up_page_subscribe_checkbox": "Açıq Qida Faktları bülleteninə abunə olmaq istəyirəm (İstədiyiniz vaxt abunəlikdən çıxa bilərsiniz)",
   "sign_up_page_user_name_already_used": "İstifadəçi adı artıq mövcuddur, zəhmət olmasa, başqa istifadəçi adı seçin.",
   "sign_up_page_email_already_exists": "hesab artıq mövcuddursa, hesaba daxil olun və ya başqa bir e-poçtla cəhd edin.",
   "sign_up_page_provide_valid_email": "Zəhmət olmasa, etibarlı bir e-poçt ünvanı təqdim edin.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Slack kanalımızda kömək istəyin",
   "support_via_forum": "Forumumuzda kömək istəyin",
-  "support_via_email": "Bizə e-poçt göndərin",
   "support_via_email_include_logs_dialog_title": "Tətbiq qeydləri göndərilsin?",
   "support_via_email_include_logs_dialog_body": "Tətbiq qeydlərini e-poçtunuza əlavə edilmiş hissəyə daxil etmək istəyirsiniz?",
   "termsOfUse": "İstifadə şərtləri",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Hər bir Open Food Facts məhsulunun kodu GitHub-da mövcuddur. Koddan (açıq mənbəlidir) yenidən istifadə edə və onu bütün planetdəki hər kəs üçün təkmilləşdirməyimizə kömək edə bilərsiniz.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Sual vermək üçün ən çox istifadə edilən Open Food Facts Slack söhbət otağına qoşula bilərsiniz.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "DEV Rejimi?",
   "contribute_develop_dev_mode_subtitle": "DEV rejimini aktivləşdirin",
   "contribute_donate_title": "Donate",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Açıq Qida Faktlarına ianə edin",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Daxili alfa versiyası ilə məlumatların tamamilə itirilməsinin mümkün olduğunu və tətbiqin istənilən vaxt istifadəyə yararsız hala düşə biləcəyini nəzərə alın!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Tamamlanacaq məhsullar",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Verilənlər bazası layihənin əsasını təşkil edir. Kömək etmək asandır və çox tezdir. Telefonunuz üçün mobil tətbiqi yükləyə və məhsullar əlavə etməyə və ya təkmilləşdirməyə başlaya bilərsiniz.\n\nDigər tərəfdən, Open Food Facts veb saytı töhfə vermək üçün bir çox yol təklif edir: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Tərcümə et",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Açıq Qida Faktları 160-dan çox ölkədən məhsulları özündə birləşdirən qlobal bir layihədir. Açıq Qida Faktları daim inkişaf edən məzmunla onlarla dilə tərcümə olunur.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Tərcümələr layihənin əsas vəzifələrindən biridir",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Bacarıqlarınızı Open Food Facts-ə töhfə verin. Bacarıq hovuzuna qoşulun!",
-  "contribute_share_header": "Açıq Qida Faktlarını Dostlarınızla Paylaşın",
-  "@contribute_share_header": {},
   "contribute_share_content": "I wanted to let you know about the app I've been using, Open Food Facts, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it's free, does not require registration, and you can even help increase the number of products decyphered. Here's the link to get it for your phone: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Töhfələriniz üçün kredit almaq üçün Açıq Qida Faktları hesabınıza daxil olun",
   "question_yes_button_accessibility_value": "Bəli ilə cavab verin",
   "question_no_button_accessibility_value": "Xeyr ilə cavab verin",
   "question_skip_button_accessibility_value": "Bu sualı atlayın",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Hesabınızı yaradın və bütün dünyada qida biliklərinin artırılmasına kömək etmək üçün Açıq Qida Faktları icmasına qoşulun!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Bizə qoşulun",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Profiliniz",
-  "myPreferences_profile_subtitle": "Açıq Qida Faktları töhfəçi hesabınızı idarə edin.",
   "myPreferences_settings_title": "Tətbiq Parametrləri",
   "myPreferences_settings_subtitle": "Qaranlıq rejim, Dillər…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Yemək Seçimləri",
   "myPreferences_food_subtitle": "Qida ilə bağlı hansı məlumatların sizin üçün ən vacib olduğunu seçin.",
   "myPreferences_food_compatibility_explainer": "Qida haqqında hansı məlumatların sizin üçün ən vacib olduğunu seçin ki, qidaları seçimlərinizə görə sıralayasınız, əvvəlcə maraqlandığınız məlumata baxın və uyğunluq xülasəsini əldə edin.",
-  "myPreferences_food_privacy": "Həmin qida seçimləri cihazınızda qalır və əgər varsa, Açıq Qida Faktları töhfəçi hesabınızla əlaqələndirilmir.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Yeni bir məhsul tapdınız!",
   "@missing_product": {},
-  "add_product_take_photos": "Bu məhsulu Açıq Qida Faktlarına əlavə etmək üçün qablaşdırmanın şəkillərini çəkin",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Əvvəlcə bir neçə şəkil çəkin. Məhsulu həmişə daha sonra tamamlaya bilərsiniz.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Qida kateqoriyasını və tərkib hissələrini dolduraraq əldə edin",
   "new_product_desc_nova_unknown": "Qida emalı səviyyəsi məlum deyil",
   "new_product_title_pictures": "Yeni məhsul",
-  "new_product_title_pictures_details": "Zəhmət olmasa, aşağıdakı şəkilləri çəkin və Open Food Facts mühərriki qalanını həll edə bilər!",
   "new_product_title_misc": "Və bəzi əsas məlumatlar…",
   "new_product_done_msg": "“{username}” töhfəniz üçün təşəkkür edirik!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Şəkil serverə yüklənir",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Ön şəkli Open Food Facts-a yükləyir",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Tərkib hissələrinin şəkli Open Food Facts-a yüklənir",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Qidalanma şəkli Open Food Facts-a yüklənir",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Qablaşdırma şəkli Open Food Facts-a yüklənir",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Open Food Facts-a digər şəkil yüklənir",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Şəkil Open Food Facts-a yüklənir",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Yarımçıq tərkib hissələrini əlavə edin",
   "score_add_missing_packaging_image": "Çatışmayan qablaşdırma şəklini əlavə edin",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Açıq Qida Faktlarına Xoş Gəlmisiniz",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Barkodu skan edin** və ya\nməhsulu **axtarın**",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Açıq Qida Faktları üçün Açıq Sistem Parametrləri",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Məhsul tarixçədən silindi",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Bizi TikTok-da izləyin",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Bizi İnstaqramda izləyin",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Bizi X-də (əvvəllər Twitter) izləyin",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Bizi Mastodon-da izləyin",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Bloq",
   "faq": "Tez-tez verilən suallar",
-  "discover": "Kəşf et",
   "how_to_contribute": "Necə töhfə vermək olar",
   "hint_knowledge_panel_message": "Gördükləriniz haqqında daha çox məlumat əldə etmək üçün kartın istənilən hissəsinə toxuna bilərsiniz. İndi sınayın!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Açıq Qida Faktları icmasına qoşulmaq üçün daxil olun və ya qeydiyyatdan keçin",
-  "user_profile_title_id_email": "Open Food Facts girişi: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Xoş gəlmisiniz {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Hesabı silin",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Salam, xahiş edirəm Open Food Facts hesabımı silin: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Tətbiq",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Aktivləşdirildikdə, xəta hesabatları avtomatik olaraq Open Food Facts-ın xəta izləmə sisteminə göndərilir ki, xətalar düzəldilə və tətbiq təkmilləşdirilə bilsin.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Kateqoriya çatışmır?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Əgər kateqoriya avtomatik tamamlamada mövcud deyilsə, onu əlavə etməkdən çəkinməyin.\nBu, ölkənizdə Açıq Qida Faktlarını təkmilləşdirməyimizə kömək edəcək.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Zeytun yağında sardina",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Məhsul səhifəsində Qiymətlər tətbiqinə qısa yol",
-  "prices_app_button": "Qiymətlər tətbiqinə keçin",
-  "prices_website_button": "Open Prices saytında açın",
   "prices_bulk_proof_upload_select": "Qiymət etiketlərini birbaşa qalereyadan əlavə edin",
   "prices_bulk_proof_upload_warning": "Şəkilləri seçdikdən sonra onları redaktə edə bilməyəcəksiniz!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Açıq qiymət sübutu",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Hələlik sübut yoxdur} =1{Yalnız bir sübut} other{Hamısı {count} sübutlar}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Təsdiqləyin",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Açıq Qida Faktları ilə razıyam ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "istifadə şərtləri və töhfə",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Analitika ikonası",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Bu məhsula Open Food Facts saytında nəzər yetirin: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Bu məhsula Open Beauty Facts saytında nəzər yetirin: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Bu məhsula Open PetFood Facts saytında nəzər yetirin: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Bu məhsula Açıq Məhsullar Faktlarında nəzər yetirin: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Açıq Qida Faktları bölməsindəki məhsul siyahıma nəzər yetirin: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "OpenFoodFacts ilə bağlı kömək",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Məhsul ən qısa zamanda arxa planda yenilənəcək.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Bütün Şəkillər",
-  "selected_images": "Seçilmiş Şəkillər",
   "product_card_remove_product_tooltip": "Məhsulu silin",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Yerli məhsul məlumat bazasını Open Food Facts-dan ən son məlumatlarla yeniləyin",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Oflayn məhsul məlumatlarını silin",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Açıq Qida Faktlarına Xoş Gəlmisiniz!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Open Food Facts nədir?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts dünyanın hər yerindən qida məhsullarının **əməkdaşlıq**, **pulsuz** və **açıq** verilənlər bazasıdır.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Ultra emal olunmuş qidalardan qaçınmaq üçün bir bal",
   "guide_open_food_facts_scores_arg3_title": "Planet üçün bir xal",
   "guide_open_food_facts_share_link": "https://world-az.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Açıq Ev Heyvanları Yeməyi Faktlarına xoş gəlmisiniz!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Open Pet Food Facts nədir?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts missiyamızı tüklü dostlarımıza da şamil edir! Bu, **pişiklər, itlər və digər yoldaşlar üçün ev heyvanları yemi məhsullarının məlumat bazasıdır**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Qol vurmaqla bağlı qeyd",
   "guide_open_pet_food_facts_scores_paragraph1": "Ev heyvanları üçün yem üçün bal sistemi hazırlamaq **hazırda prioritet deyil**. Metodologiya mürəkkəb olardı, çünki qidalanma ehtiyacları növlərə, yaşa və sağlamlıq vəziyyətinə görə çox dəyişir. Hələ ki, belə bir bal hazırlaya bilən müstəqil elmi qrup tapmamışıq.",
   "guide_open_pet_food_facts_share_link": "https://world-az.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Açıq Gözəllik Faktlarına xoş gəlmisiniz!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Open Beauty Facts nədir?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts, **kosmetik məhsulların** birgə verilənlər bazasıdır.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Dəhlizlərdə qiymət etiketlərinin şəkillərini toplayın",
   "guide_open_prices_how_arg2_title": "Qəbzlərin şəkillərini toplayın",
   "guide_open_prices_why_title": "Niyə Open Food Facts bunu edir?",
-  "guide_open_prices_why_paragraph1": "Qiymət məlumatları qida sistemlərini anlamaq üçün çox vacibdir. Bu, qidanın qiymətini anlamaqda və daha sağlam pəhrizləri təşviq etməkdə əsas amildir. Açılış qiymət məlumatları tədqiqatçılar, jurnalistlər və vətəndaşlar üçün qida qiymətlərinin coğrafi və zaman baxımından necə dəyişdiyini daha yaxşı başa düşməyi asanlaşdıran bir yoldur.",
   "guide_open_prices_why_arg1_title": "Zamanla qiymətlərin təkamülünü izləyin",
   "guide_open_prices_why_arg1_text": "Qiymətlərin **təkamülünə** baxın: kiçilmə, ucuzlaşma, onları birlikdə izləyə bilərik!",
   "guide_open_prices_why_arg2_title": "Yaxınlığınızdakı qiymətləri müqayisə edin",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "I'm a retailer and I want to contribute prices. How can I do that?",
   "guide_open_prices_retailers_paragraph1": "API-mizdən istifadə edərək qiymətlər təklif edə bilərsiniz.\nƏgər miqyaslı qiymətlər təklif etmək istəyirsinizsə, zəhmət olmasa, prices@openfoodfacts.org ünvanı vasitəsilə bizimlə əlaqə saxlayın.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Açıq Məhsullar Faktlarına Xoş Gəlmisiniz!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Açıq Məhsullar Faktları Nədir?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Açıq Məhsullar Faktları, qida, kosmetika və ya ev heyvanları üçün yem olmayan, barkodlu istənilən məhsul üçün geniş, açıq verilənlər bazasıdır.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Ups!",
-  "carousel_unsupported_text": "Skan edilmiş barkod Open Food Facts tərəfindən dəstəklənmir!",
   "carousel_error_header": "Xəta!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Open Food Facts layihəsi",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Contribute",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts **hər kəs tərəfindən, hamı üçün** hazırlanmış qida məhsulları məlumat bazasıdır.\nSiz ondan daha yaxşı qida seçimləri etmək üçün istifadə edə bilərsiniz və **açıq məlumat** olduğundan, hər kəs **istənilən məqsəd üçün** təkrar istifadə edə bilər.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Məxfilik siyasəti",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Open Food Facts-a əlavə etdiyim yeni məhsullar",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Tamamlamalı olduğum məhsullar",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Layihəyə töhfə verin",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Open Food Facts na kömək etməyin sadə yolları",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Hesab metodologiyaları, yardım və layihə haqqında daha çox",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Laboratoriyaları",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Hesab",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Open Food Facts dilinizə gətirin",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Proqramın alfa versiyasında qeydiyyatdan keçin",
   "@preferences_contribute_enroll_alpha": {},

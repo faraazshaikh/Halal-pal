@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Åpne priser",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Velkommen til Åpne matfakta",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts er en global ideell organisasjon drevet av lokalsamfunn.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Se matdataene som er relevante for dine preferanser.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Ingen serverrespons! Du kan åpne et problem med følgende lenke.",
   "@user_management": {},
-  "sign_in_text": "Logg inn på Open Food Facts-kontoen din for å lagre bidragene dine",
   "incorrect_credentials": "Feil brukernavn eller passord.",
   "password_lost_incorrect_credentials": "Denne e-postadressen eller brukernavnet finnes ikke. Vennligst sjekk påloggingsinformasjonen din.",
   "password_lost_server_unavailable": "Vi opplever for tiden nedgang på serverne våre, og vi beklager dette. Prøv igjen senere.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "For den funksjonen må du logge inn.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Hjelp med å forbedre Open Food Facts i landet ditt",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Logg ut",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Bekreft passord",
   "sign_up_page_confirm_password_error_empty": "Vennligst bekreft passordet",
   "sign_up_page_confirm_password_error_invalid": "Passordene samsvarer ikke",
-  "sign_up_page_agree_text": "Jeg godtar Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "bruksvilkår og bidrag",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Jeg er en matprodusent",
   "sign_up_page_producer_hint": "Produsent/merke",
   "sign_up_page_producer_error_empty": "Vennligst skriv inn en produsent eller et merkenavn",
-  "sign_up_page_subscribe_checkbox": "Jeg vil gjerne abonnere på nyhetsbrevet fra Open Food Facts (du kan når som helst melde deg av)",
   "sign_up_page_user_name_already_used": "Brukernavnet finnes allerede, vennligst velg et annet brukernavn.",
   "sign_up_page_email_already_exists": "finnes allerede, logg inn på kontoen eller prøv med en annen e-postadresse.",
   "sign_up_page_provide_valid_email": "Vennligst oppgi en gyldig e-postadresse.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Be om hjelp i Slack-kanalen vår",
   "support_via_forum": "Be om hjelp på forumet vårt",
-  "support_via_email": "Send oss en e-post",
   "support_via_email_include_logs_dialog_title": "Send applogger?",
   "support_via_email_include_logs_dialog_body": "Ønsker du å legge ved applikasjonslogger som vedlegg i e-posten din?",
   "termsOfUse": "Bruksvilkår",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Koden for alle Open Food Facts-produkter er tilgjengelig på GitHub. Du er velkommen til å gjenbruke koden (den er åpen kildekode) og hjelpe oss med å forbedre den, for alle, på hele planeten.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Du kan bli med i Open Food Facts Slack-chatten, som er den foretrukne måten å stille spørsmål på.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "DEV-modus?",
   "contribute_develop_dev_mode_subtitle": "Aktiver DEV-modus",
   "contribute_donate_title": "Donate",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Doner til Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Vær oppmerksom på at med den interne alfaversjonen er fullstendig tap av data mulig, og appen kan bli ubrukelig når som helst!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Produkter som skal fullføres",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Databasen er kjernen i prosjektet. Det er enkelt og raskt å hjelpe. Du kan laste ned mobilappen til telefonen din og begynne å legge til eller forbedre produkter.\n\nPå den annen side tilbyr nettstedet Open Food Facts mange måter å bidra på: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Oversett",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts er et globalt prosjekt som inneholder produkter fra mer enn 160 land. Open Food Facts er oversatt til en rekke språk, med innhold i stadig utvikling.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Oversettelser er en av prosjektets hovedoppgaver",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Bidra med ferdighetene dine til Open Food Facts. Bli med i ferdighetspoolen!",
-  "contribute_share_header": "Del Åpne matfakta med vennene dine",
-  "@contribute_share_header": {},
   "contribute_share_content": "Jeg ville fortelle deg om appen jeg har brukt, Open Food Facts, som lar deg få informasjon om helse- og miljøpåvirkningen av maten din på en personlig måte. Den fungerer ved å skanne strekkodene på emballasjen. Den er gratis, krever ikke registrering, og du kan til og med bidra til å øke antallet produkter som dekrypteres. Her er lenken for å laste den ned til telefonen din: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Logg inn på Open Food Facts-kontoen din for å få kreditt for bidragene dine",
   "question_yes_button_accessibility_value": "Svar med ja",
   "question_no_button_accessibility_value": "Svar med nei",
   "question_skip_button_accessibility_value": "Hopp over dette spørsmålet",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Opprett din konto og bli med i Open Food Facts-fellesskapet for å bidra til å bygge matkunnskap over hele verden!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Bli med oss",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Din profil",
-  "myPreferences_profile_subtitle": "Administrer din Open Food Facts-bidragsyterkonto.",
   "myPreferences_settings_title": "Appinnstillinger",
   "myPreferences_settings_subtitle": "Mørk modus, Språk…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Matpreferanser",
   "myPreferences_food_subtitle": "Velg hvilken informasjon om mat som er viktigst for deg.",
   "myPreferences_food_compatibility_explainer": "Velg hvilken informasjon om mat som er viktigst for deg, for å rangere mat i henhold til dine preferanser, se informasjonen du bryr deg om først, og få et kompatibilitetssammendrag.",
-  "myPreferences_food_privacy": "Disse matpreferansene forblir på enheten din, og er ikke knyttet til din Open Food Facts-bidragsyterkonto hvis du har en.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Du har funnet et nytt produkt!",
   "@missing_product": {},
-  "add_product_take_photos": "Ta bilder av emballasjen for å legge til dette produktet i Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Ta noen bilder først. Du kan alltids fullføre produktet senere.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Få det ved å fylle ut matkategorien og ingrediensene",
   "new_product_desc_nova_unknown": "Matforedlingsnivå ukjent",
   "new_product_title_pictures": "Nytt produkt",
-  "new_product_title_pictures_details": "Ta følgende bilder, så kan Open Food Facts-motoren finne ut av resten!",
   "new_product_title_misc": "Og noen grunnleggende data…",
   "new_product_done_msg": "Takk for bidraget ditt «{username}»!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Laster opp bilde til serveren",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Laster opp frontbilde til Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Laster opp ingrediensbilde til Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Laster opp ernæringsbilde til Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Laster opp emballasjebilde til Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Laster opp et annet bilde til Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Laster opp bilde til Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Legg til manglende ingredienser",
   "score_add_missing_packaging_image": "Legg til manglende emballasjebilde",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Velkommen til Åpne matfakta",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Skann** en strekkode eller\n**søk** etter et produkt",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Åpne systeminnstillinger for Åpne matfakta",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Produkt fjernet fra historikken",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Følg oss på TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Følg oss på Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Følg oss på X (tidligere Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Følg oss på Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blogg",
   "faq": "Vanlige spørsmål",
-  "discover": "Utforsk",
   "how_to_contribute": "Hvordan bidra",
   "hint_knowledge_panel_message": "Du kan trykke på hvilken som helst del av kortet for å få mer informasjon om hva du ser. Prøv det nå!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Logg inn eller registrer deg for å bli med i Open Food Facts-fellesskapet",
-  "user_profile_title_id_email": "Open Food Facts-innlogging: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Velkommen {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Slett konto",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Hei, vennligst slett Open Food Facts-kontoen min: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Søknad",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Når det er aktivert, sendes krasjrapporter automatisk til Open Food Facts' feilsporingssystem, slik at feil kan rettes og dermed forbedre appen.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Mangler kategori?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Hvis en kategori **ikke er tilgjengelig i autofullføring**, kan du gjerne legge den til likevel.\nDette vil hjelpe oss med å forbedre Open Food Facts i landet ditt.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Sardiner i olivenolje",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Snarvei til Priser-appen på produktsiden",
-  "prices_app_button": "Gå til Priser-appen",
-  "prices_website_button": "Åpne på nettsiden for Open Prices",
   "prices_bulk_proof_upload_select": "Legg til prislapper direkte fra galleriet",
   "prices_bulk_proof_upload_warning": "Når du har valgt bilder, kan du ikke redigere dem!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Åpen prisbevis",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Ingen bevis ennå} =1{Bare ett bevis} other{Alle {count} bevis}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Bekrefte",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Jeg godtar Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "bruksvilkår og bidrag",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Analytics-ikon",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Ta en titt på dette produktet på Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Ta en titt på dette produktet på Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Ta en titt på dette produktet på Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Ta en titt på dette produktet på Åpne produktfakta: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Ta en titt på produktlisten min på Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Hjelp med OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Produktet vil bli oppdatert i bakgrunnen så snart som mulig.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Alle bilder",
-  "selected_images": "Utvalgte bilder",
   "product_card_remove_product_tooltip": "Fjern produktet",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Oppdater den lokale produktdatabasen med de nyeste dataene fra Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Fjern produktdata frakoblet",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Velkommen til Åpne matfakta!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Hva er Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts er en **samarbeidsbasert**, **gratis** og **åpen** database med matvarer fra hele verden.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "En poengsum for å unngå ultraprosessert mat",
   "guide_open_food_facts_scores_arg3_title": "En poengsum for planeten",
   "guide_open_food_facts_share_link": "https://world-no.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Velkommen til Åpne fakta om kjæledyrmat!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Hva er Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts utvider vårt oppdrag til våre pelskledde venner! Det er en **database med kjæledyrfôrprodukter for katter, hunder og andre følgesvenner**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "En merknad om poengberegning",
   "guide_open_pet_food_facts_scores_paragraph1": "Å utvikle et poengsystem for kjæledyrfôr **er ikke en prioritet akkurat nå**. Metodikken ville være kompleks, ettersom ernæringsbehovene varierer sterkt etter art, alder og helsetilstand. Vi har ennå ikke funnet noe uavhengig vitenskapelig team som er i stand til å utvikle en slik poengsum.",
   "guide_open_pet_food_facts_share_link": "https://world-no.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Velkommen til Åpne skjønnhetsfakta!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Hva er Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts er en samarbeidende database med **kosmetikkprodukter**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Samle bilder av prislapper i gangene",
   "guide_open_prices_how_arg2_title": "Samle bilder av kvitteringer",
   "guide_open_prices_why_title": "Hvorfor gjør Open Food Facts dette?",
-  "guide_open_prices_why_paragraph1": "Prisinformasjon er av største betydning for å forstå matsystemer. Det er en nøkkelfaktor for å forstå kostnadene ved mat og for å fremme sunnere kosthold. Å åpne prisdata er en måte å gjøre det enklere for forskere, journalister og innbyggere å **få en bedre forståelse av hvordan matprisene varierer geografisk og over tid**.",
   "guide_open_prices_why_arg1_title": "Spor prisutviklingen over tid",
   "guide_open_prices_why_arg1_text": "Se **prisutviklingen**: krympeinflasjon, billiginflasjon, vi kan spore dem sammen!",
   "guide_open_prices_why_arg2_title": "Sammenlign priser i nærheten av deg",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "Jeg er en forhandler og ønsker å bidra med priser. Hvordan kan jeg gjøre det?",
   "guide_open_prices_retailers_paragraph1": "Du kan bidra med priser ved å bruke API-et vårt.\nHvis du ønsker å bidra med priser i stor skala, kan du ta kontakt med oss på prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Velkommen til fakta om åpne produkter!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Hva er fakta om åpne produkter?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts er en massiv, åpen database for **alle produkter med strekkode, som ikke er mat, kosmetikk eller dyrefôr**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Ups!",
-  "carousel_unsupported_text": "Strekkoden som skannes støttes ikke av Open Food Facts!",
   "carousel_error_header": "Feil!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Åpne matfakta-prosjektet",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Contribute",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts er en database med matvarer **laget av alle, for alle**.\nDu kan bruke den til å ta bedre matvalg, og siden den er **åpne data**, kan hvem som helst **gjenbruke den til ethvert formål**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Personvernerklæring",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Nye produkter jeg har lagt til i Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Produkter jeg må fullføre",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Bidra til prosjektet",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Enkle måter å hjelpe på Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Poengmetoder, hjelp og mer om prosjektet",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Konto",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Få Open Food Facts på språket ditt",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Registrer deg i alfaversjonen av appen",
   "@preferences_contribute_enroll_alpha": {},

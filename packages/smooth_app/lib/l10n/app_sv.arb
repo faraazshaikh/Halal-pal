@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Välkommen till Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts är en global ideell verksamhet som drivs av lokala intressegrupper.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Se de matdata som är relevanta för dina önskemål.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Inget serversvar! Du kan rapportera ett problem med följande länk.",
   "@user_management": {},
-  "sign_in_text": "Logga in på ditt Open Food Fact-konto för att spara dina bidrag",
   "incorrect_credentials": "Felaktigt användarnamn eller lösenord.",
   "password_lost_incorrect_credentials": "Denna e-postadress eller användarnamn finns inte. Vänligen kontrollera dina uppgifter.",
   "password_lost_server_unavailable": "Vi upplever för närvarande nedgångar på våra servrar och vi ber om ursäkt för det. Försök igen senare.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "För den funktionen behöver du logga in.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Hjälp till att förbättra Open Food Facts i ditt land",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Logga ut",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Bekräfta Lösenord",
   "sign_up_page_confirm_password_error_empty": "Vänligen bekräfta ditt lösenord",
   "sign_up_page_confirm_password_error_invalid": "Lösenorden matchar inte",
-  "sign_up_page_agree_text": "Jag samtycker till Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "användarvillkor och bidrag",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Jag är en livsmedelsproducent",
   "sign_up_page_producer_hint": "Producent/märke",
   "sign_up_page_producer_error_empty": "Ange en producent eller ett varumärke",
-  "sign_up_page_subscribe_checkbox": "Jag vill prenumerera på Open Food Facts-nyhetsbrevet (du kan avsluta prenumerationen när som helst)",
   "sign_up_page_user_name_already_used": "Användarnamnet finns redan, välj ett annat användarnamn.",
   "sign_up_page_email_already_exists": "finns redan, logga in på kontot eller försök med en annan e-post.",
   "sign_up_page_provide_valid_email": "Ange en giltig e-postadress.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Be om hjälp i vår Slack-kanal",
   "support_via_forum": "Be om hjälp på vårt forum",
-  "support_via_email": "Skicka ett e-postmeddelande till oss",
   "support_via_email_include_logs_dialog_title": "Skicka apploggar?",
   "support_via_email_include_logs_dialog_body": "Vill du bifoga applikationsloggar som bilaga till din e-post?",
   "termsOfUse": "Användningsvillkor",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Koden för alla Open Food Facts-produkter finns på GitHub. Du är välkommen att återanvända koden (den är öppen källkod) och hjälpa oss att förbättra den för alla på hela planeten.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Du kan gå med i Open Food Facts Slack-chattrummet, det är det föredragna sättet att ställa frågor.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "DEV-läge?",
   "contribute_develop_dev_mode_subtitle": "Aktivera DEV-läget",
   "contribute_donate_title": "Donera",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Donera till Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Vänligen observera att med den interna alfaversionen är fullständig dataförlust möjlig, och appen kan bli oanvändbar när som helst!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Produkter att slutföra",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Databasen är projektets kärna. Det är enkelt och går snabbt att hjälpa till. Du kan ladda ner mobilappen till din telefon och börja lägga till eller förbättra produkter.\n\nOpen Food Facts-webbplatsen erbjuder dessutom många sätt att bidra: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Översätt",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts är ett globalt projekt som innehåller produkter från mer än 160 länder. Open Food Facts översätts till dussintals språk, med innehåll som ständigt förändras.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Översättningar är ett av projektets viktigaste uppgifter",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Bidra med dina färdigheter till Open Food Facts. Gå med i kunskapspoolen!",
-  "contribute_share_header": "Dela Open Food Facts med dina vänner",
-  "@contribute_share_header": {},
   "contribute_share_content": "Jag ville tipsa er om appen jag använder, Open Food Facts, som låter er få information om er mats hälso- och miljöpåverkan på ett personligt sätt. Den fungerar genom att skanna streckkoderna på förpackningen. Den är dessutom gratis, kräver ingen registrering och ni kan till och med bidra till att öka antalet dechiffrerade produkter. Här är länken för att ladda ner den till er telefon: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Logga in på ditt Open Food Facts-konto för att få erkännande för dina bidrag",
   "question_yes_button_accessibility_value": "Svara med ja",
   "question_no_button_accessibility_value": "Svara med nej",
   "question_skip_button_accessibility_value": "Hoppa över den här frågan",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Skapa ditt konto och gå med i Open Food Facts-communityn för att hjälpa till att bygga upp matkunskap över hela världen!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Anslut till oss",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Din profil",
-  "myPreferences_profile_subtitle": "Hantera ditt medverkandekonto i Open Food Facts.",
   "myPreferences_settings_title": "Appinställningar",
   "myPreferences_settings_subtitle": "Mörkt läge, Språk…",
   "myPreferences_not_configured_yet": "Du har inte angett någon preferens än.",
   "myPreferences_food_title": "Matpreferenser",
   "myPreferences_food_subtitle": "Välj vilken information om mat som är viktigast för dig.",
   "myPreferences_food_compatibility_explainer": "Välj vilken information om livsmedel som är viktigast för dig för att rangordna livsmedel enligt dina preferenser, se den viktigaste informationen först och få en sammanfattning av kompatibiliteten.",
-  "myPreferences_food_privacy": "Dessa livsmedelspreferenser finns kvar på din enhet och kopplas inte till ditt medverkandekonto i Open Food Facts, om du har ett.",
   "myPreferences_beauty_title": "Preferenser för kosmetika",
   "myPreferences_beauty_subtitle": "Välj vilken information om kosmetikprodukter som är viktigast för dig.",
   "myPreferences_product_title": "Preferenser för andra produkter",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Du har hittat en ny produkt!",
   "@missing_product": {},
-  "add_product_take_photos": "Ta bilder på förpackningen för att lägga till den här produkten i Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Ta gärna några bilder först. Du kan alltid komplettera produkten senare.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Lägg till produktinformation",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Beräkna den genom att ange livsmedelskategori och ingredienser",
   "new_product_desc_nova_unknown": "Livsmedelsbearbetningsnivå okänd",
   "new_product_title_pictures": "Ny produkt",
-  "new_product_title_pictures_details": "Ta följande bilder så kan Open Food Facts-motorn fixa resten!",
   "new_product_title_misc": "Och lite grundläggande data…",
   "new_product_done_msg": "Tack för ditt bidrag “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Laddar upp fotot till servern",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Laddar upp en bild av framsidan till Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Laddar upp ingrediensbild till Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Laddar upp näringsbild till Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Laddar upp förpackningsbild till Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Laddar upp annan bild till Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Laddar upp bild till Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Lägg till saknade ingredienser",
   "score_add_missing_packaging_image": "Lägg till saknad förpackningsbild",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Välkommen till Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Skanna** en streckkod eller\n**sök** efter en produkt",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Öppna systeminställningar för Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Produkt borttagen från historik",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Följ oss på TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Följ oss på Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Följ oss på X (tidigare Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Följ oss på Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blogg",
   "faq": "FAQ",
-  "discover": "Upptäck",
   "how_to_contribute": "Hur man bidrar",
   "hint_knowledge_panel_message": "Du kan trycka på valfri del av kortet för att få mer information om vad du ser. Prova det nu!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Logga in eller registrera dig för att gå med i Open Food Facts-gemenskapen",
-  "user_profile_title_id_email": "Open Food Facts-inloggning: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Välkommen {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Radera konto",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Hej, vänligen radera mitt Open Food Facts-konto: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Applikation",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "När detta är aktiverat skickas kraschrapporter automatiskt till Open Food Facts-felspårningssystem, så att buggar kan åtgärdas och appen därmed förbättras.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Skicka anonym data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "När detta är aktiverat skickas helt anonym information om funktionsanvändningen till Open Food Facts-servrarna, så att vi kan förstå hur funktionerna används och förbättra dem. Annars skickas identifieraren 0.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Saknad kategori?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Om en kategori **inte är tillgänglig i autokomplettering**, lägg gärna till den ändå.\nDetta hjälper oss att förbättra Open Food Facts i ditt land.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Sardiner i olivolja",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Genväg till Open Prices-appen på produktsidan",
-  "prices_app_button": "Gå till Priser-appen",
-  "prices_website_button": "Öppna på webbplatsen för Open Prices",
   "prices_bulk_proof_upload_select": "Lägg till prislappar direkt från galleriet",
   "prices_bulk_proof_upload_warning": "När du har valt bilder kan du inte redigera dem!",
   "prices_bulk_proof_upload_warning_ai": "AI kommer att använda dina bevis för att extrahera priser.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Öppna prisunderlag",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Inget underlag än} =1{Endast ett underlag} other{Alla {count} underlag}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Bekräfta",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Jag godkänner Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "användarvillkor och bidrag",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Analytics-ikon",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Ta en titt på den här produkten på Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Ta en titt på den här produkten på Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Ta en titt på den här produkten på Open Pet Food Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Ta en titt på den här produkten på Open Products Facts: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Ta en titt på min produktlista på Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Hjälp med Open Food Facts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Produkten kommer att uppdateras i bakgrunden så snart som möjligt.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Alla bilder",
-  "selected_images": "Valda bilder",
   "product_card_remove_product_tooltip": "Ta bort produkt",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Uppdatera den lokala produktdatabasen med den senaste informationen från Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Rensa offlineproduktdata",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Välkommen till Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Vad är Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts är en **gemensamt uppbyggd**, **fri** och **öppen** databas med livsmedelsprodukter från hela världen.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Ett betyg som hjälper dig att undvika ultrabearbetad mat",
   "guide_open_food_facts_scores_arg3_title": "Ett betyg för planeten",
   "guide_open_food_facts_share_link": "https://world-sv.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Välkommen till Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Vad är Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts utvidgar vårt uppdrag till våra pälsklingar! Det är en **databas över djurfoderprodukter för katter, hundar och andra sällskapsdjur**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "En kommentar om betygssystemet",
   "guide_open_pet_food_facts_scores_paragraph1": "Att utveckla ett betygssystem för djurfoder **är inte en prioritet just nu**. Metodiken skulle vara komplex, eftersom näringsbehoven varierar kraftigt beroende på art, ålder och hälsotillstånd. Vi har ännu inte hittat något oberoende vetenskapligt team som kan utveckla ett sådant betyg.",
   "guide_open_pet_food_facts_share_link": "https://world-sv.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Välkommen till Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Vad är Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts är en **samarbetsdatabas över kosmetiska produkter**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Ta foton på prislappar i butiksgångarna",
   "guide_open_prices_how_arg2_title": "Ta foton på kvitton",
   "guide_open_prices_why_title": "Varför gör Open Food Facts detta?",
-  "guide_open_prices_why_paragraph1": "Prisinformation är av yttersta vikt för att förstå livsmedelssystem. Det är en nyckelfaktor för att förstå kostnaden för mat och för att främja hälsosammare kostvanor. Att öppna prisdata är ett sätt att göra det lättare för forskare, journalister och medborgare att **få en bättre förståelse för hur livsmedelspriserna varierar geografiskt och över tid**.",
   "guide_open_prices_why_arg1_title": "Följ prisutvecklingen över tid",
   "guide_open_prices_why_arg1_text": "Se **prisutvecklingen**: krympinflation, billiginflation, vi kan följa dem tillsammans!",
   "guide_open_prices_why_arg2_title": "Jämför priser nära dig",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "Jag är en återförsäljare och jag vill bidra med priser. Hur kan jag göra det?",
   "guide_open_prices_retailers_paragraph1": "Du kan bidra med priser genom att använda vårt API.\nOm du vill bidra med priser i stor skala, vänligen kontakta oss på prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Välkommen till Open Products Facts!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Vad är Open Products Facts?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts är en omfattande, öppen databas för **alla streckkodsförsedda produkter som inte är livsmedel, kosmetika eller djurfoder**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Hoppsan!",
-  "carousel_unsupported_text": "Streckkoden som skannades stöds inte av Open Food Facts!",
   "carousel_error_header": "Fel!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Projektet Open Food Facts",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Bidra",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Juridiska omnämnanden",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts är en databas med livsmedelsprodukter som **byggs upp av alla, för alla**.\nDu kan använda den för att göra bättre matval, och eftersom uppgifterna är **öppna data** kan vem som helst **återanvända dem för vilket ändamål som helst**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Integritetspolicy",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Nya produkter jag har lagt till i Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Produkter jag behöver komplettera",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Bidra till projektet",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Enkla sätt att hjälpa till Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Poängsättningsmetoder, hjälp och mer om projektet",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Konto",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Gör Open Food Facts tillgängligt på ditt språk",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Registrera dig för alfaversionen av appen",
   "@preferences_contribute_enroll_alpha": {},

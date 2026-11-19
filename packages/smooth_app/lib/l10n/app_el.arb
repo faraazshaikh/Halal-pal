@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Καλώς ήρθατε στο Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Το Open Food Facts είναι ένας παγκόσμιος μη κερδοσκοπικός οργανισμός που υποστηρίζεται από τις τοπικές κοινότητες.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Δείτε τα δεδομένα τροφίμων που σχετίζονται με τις προτιμήσεις σας.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Καμία απάντηση από διακομιστή! Μπορείτε να ανοίξετε ένα ζήτημα με τον παρακάτω σύνδεσμο.",
   "@user_management": {},
-  "sign_in_text": "Συνδεθείτε στον λογαριασμό σας Open Food Facts για να αποθηκεύσετε τις συνεισφορές σας",
   "incorrect_credentials": "Λάθος όνομα χρήστη ή κωδικός πρόσβασης.",
   "password_lost_incorrect_credentials": "Αυτό το email ή όνομα χρήστη δεν υπάρχει. Ελέγξτε τα διαπιστευτήριά σας.",
   "password_lost_server_unavailable": "Αυτήν τη στιγμή αντιμετωπίζουμε καθυστερήσεις στους διακομιστές μας και ζητάμε συγγνώμη για αυτό. Δοκιμάστε ξανά αργότερα.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Για αυτήν τη δυνατότητα, πρέπει να συνδεθείτε.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Βοηθήστε στη βελτίωση των Open Food Facts στη χώρα σας",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Αποσύνδεση",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Επιβεβαίωση Κωδικού Πρόσβασης",
   "sign_up_page_confirm_password_error_empty": "Επιβεβαιώστε τον κωδικό πρόσβασης",
   "sign_up_page_confirm_password_error_invalid": "Οι κωδικοί πρόσβασης δεν ταιριάζουν",
-  "sign_up_page_agree_text": "Συμφωνώ με το Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "τους όρους χρήσης και συνεισφοράς",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Είμαι παραγωγός τροφίμων",
   "sign_up_page_producer_hint": "Παραγωγός/επωνυμία",
   "sign_up_page_producer_error_empty": "Εισαγάγετε έναν παραγωγό ή μια επωνυμία",
-  "sign_up_page_subscribe_checkbox": "Θα ήθελα να εγγραφώ στο ενημερωτικό δελτίο Open Food Facts (Μπορείτε να διαγραφείτε από αυτό ανά πάσα στιγμή)",
   "sign_up_page_user_name_already_used": "Το όνομα χρήστη υπάρχει ήδη, επιλέξτε άλλο όνομα χρήστη.",
   "sign_up_page_email_already_exists": "υπάρχει ήδη, συνδεθείτε στον λογαριασμό ή δοκιμάστε με άλλο email.",
   "sign_up_page_provide_valid_email": "Παρακαλώ δώστε μια έγκυρη διεύθυνση email.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Ζητήστε βοήθεια στο κανάλι μας στο Slack",
   "support_via_forum": "Ζητήστε βοήθεια στο φόρουμ μας",
-  "support_via_email": "Στείλτε μας e-mail",
   "support_via_email_include_logs_dialog_title": "Αποστολή αρχείων καταγραφής;",
   "support_via_email_include_logs_dialog_body": "Θέλετε να συμπεριλάβετε τα αρχεία καταγραφής της εφαρμογής σαν συνημμένο στο email;",
   "termsOfUse": "Όροι χρήσης",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Ο κώδικας για κάθε προϊόν του Open Food Facts είναι διαθέσιμος στο GitHub. Μπορείτε να χρησιμοποιήσετε ξανά τον κώδικα (είναι ανοιχτού κώδικα) και να μας βοηθήσετε να τον βελτιώσουμε, για όλους, σε όλο τον πλανήτη.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Μπορείτε να εγγραφείτε στο Open Food Facts Slack chatroom που είναι ο προτιμώμενος τρόπος για να κάνετε ερωτήσεις.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "Λειτουργία DEV;",
   "contribute_develop_dev_mode_subtitle": "Ενεργοποίηση Λειτουργίας DEV",
   "contribute_donate_title": "Κάντε Δωρεά",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Δωρεά στο Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Παρακαλούμε κατανοήστε ότι με την εσωτερική έκδοση alpha, η πλήρης απώλεια δεδομένων είναι πιθανή και η εφαρμογή μπορεί να γίνει άχρηστη ανά πάσα στιγμή!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Προϊόντα προς ολοκλήρωση",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Η βάση δεδομένων είναι ο πυρήνας του έργου. Είναι εύκολο και πολύ γρήγορο να βοηθήσετε. Μπορείτε να κάνετε λήψη της εφαρμογής για κινητά και να αρχίσετε να προσθέτετε ή να βελτιώνετε προϊόντα.\n\nΕκτός αυτού, ο ιστότοπος Open Food Facts προσφέρει πολλούς τρόπους συνεισφοράς: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Μετάφραση",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Το Open Food Facts είναι ένα παγκόσμιο έργο, που περιλαμβάνει προϊόντα από περισσότερες από 160 χώρες. Το Open Food Facts μεταφράζεται σε δεκάδες γλώσσες, με συνεχώς εξελισσόμενο περιεχόμενο.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Οι μεταφράσεις είναι ένα από τα βασικά καθήκοντα του έργου",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Συνεισφέρετε τις δεξιότητές σας στα Open Food Facts. Εγγραφείτε στο skill pool!",
-  "contribute_share_header": "Μοιραστείτε τα Open Food Facts με τους φίλους σας",
-  "@contribute_share_header": {},
   "contribute_share_content": "Ήθελα να σας ενημερώσω για την εφαρμογή που χρησιμοποιώ, το Open Food Facts, η οποία σας επιτρέπει να μαθαίνετε τις επιπτώσεις των τροφίμων σας στην υγεία και το περιβάλλον, με εξατομικευμένο τρόπο. Λειτουργεί σαρώνοντας τους γραμμωτούς κώδικες στη συσκευασία. Τέλος, είναι δωρεάν, δεν απαιτεί εγγραφή και μπορείτε ακόμη και να αυξήσετε τον αριθμό των προϊόντων που αποκρυπτογραφούνται. Ο σύνδεσμος για να το αποκτήσετε για το τηλέφωνό σας: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Συνδεθείτε στον λογαριασμό σας στο Open Food Facts για να λάβετε εύσημα για τις συνεισφορές σας",
   "question_yes_button_accessibility_value": "Απαντήστε με ναι",
   "question_no_button_accessibility_value": "Απαντήστε με όχι",
   "question_skip_button_accessibility_value": "Παράλειψη αυτής της ερώτησης",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Δημιουργήστε τον λογαριασμό σας και εγγραφείτε στην κοινότητα Open Food Facts για να βοηθήσετε στην οικοδόμηση γνώσεων για τα τρόφιμα σε όλο τον κόσμο!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Γίνετε μέλος",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Το Προφίλ Σας",
-  "myPreferences_profile_subtitle": "Διαχειριστείτε τον λογαριασμό συνεργάτη Open Food Facts.",
   "myPreferences_settings_title": "Ρυθμίσεις Εφαρμογής",
   "myPreferences_settings_subtitle": "Σκοτεινή λειτουργία, Γλώσσες…",
   "myPreferences_not_configured_yet": "Δεν έχετε ορίσει ακόμα κάποια προτίμηση.",
   "myPreferences_food_title": "Διατροφικές Προτιμήσεις",
   "myPreferences_food_subtitle": "Επιλέξτε ποιες πληροφορίες σχετικά με τα τρόφιμα έχουν μεγαλύτερη σημασία για εσάς.",
   "myPreferences_food_compatibility_explainer": "Επιλέξτε ποιες πληροφορίες σχετικά με τα τρόφιμα έχουν μεγαλύτερη σημασία για εσάς, προκειμένου να ταξινομηθούν τα τρόφιμα σύμφωνα με τις προτιμήσεις σας, να εμφανιστούν πρώτα οι πληροφορίες που σας ενδιαφέρουν και να λάβετε περίληψη συμβατότητας.",
-  "myPreferences_food_privacy": "Αυτές οι προτιμήσεις τροφίμων παραμένουν στη συσκευή σας και δεν συσχετίζονται με τον λογαριασμό συνεργάτη σας στο Open Food Facts, εάν έχετε.",
   "myPreferences_beauty_title": "Προτιμήσεις για καλλυντικά",
   "myPreferences_beauty_subtitle": "Επιλέξτε ποιες πληροφορίες σχετικά με τα καλλυντικά προϊόντα έχουν μεγαλύτερη σημασία για εσάς.",
   "myPreferences_product_title": "Προτιμήσεις για άλλα προϊόντα",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Βρήκατε ένα νέο προϊόν!",
   "@missing_product": {},
-  "add_product_take_photos": "Τραβήξτε φωτογραφίες της συσκευασίας για να προσθέσετε αυτό το προϊόν στο Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Παρακαλώ τραβήξτε πρώτα κάποιες φωτογραφίες. Μπορείτε πάντα να ολοκληρώσετε το προϊόν αργότερα.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Προσθέστε πληροφορίες προϊόντος",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Αποκτήστε το συμπληρώνοντας την κατηγορία τροφίμων και τα συστατικά",
   "new_product_desc_nova_unknown": "Άγνωστο επίπεδο επεξεργασίας τροφίμων",
   "new_product_title_pictures": "Νέο προϊόν",
-  "new_product_title_pictures_details": "Παρακαλώ τραβήξτε τις παρακάτω φωτογραφίες και η μηχανή Open Food Facts θα κάνει τα υπόλοιπα!",
   "new_product_title_misc": "Και μερικά βασικά δεδομένα…",
   "new_product_done_msg": "Ευχαριστούμε για τη συνεισφορά σας \"{username}\"!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Μεταφόρτωση φωτογραφίας στον διακομιστή",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Μεταφόρτωση μπροστινής εικόνας στο Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Μεταφόρτωση εικόνας συστατικών στο Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Μεταφόρτωση εικόνας διατροφής στο Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Μεταφόρτωση εικόνας συσκευασίας στο Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Μεταφόρτωση άλλης εικόνας στο Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Μεταφόρτωση εικόνας στο Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Προσθήκη συστατικών που λείπουν",
   "score_add_missing_packaging_image": "Προσθήκη εικόνας συσκευασίας που λείπει",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Καλώς ήρθατε στο Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Σάρωση** γραμμικού κώδικα ή\n**αναζήτηση** για ένα προϊόν",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Ανοίξτε τις ρυθμίσεις συστήματος για Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Το προϊόν αφαιρέθηκε από το ιστορικό",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Ακολουθήστε μας στο TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Ακολουθήστε μας στο Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Ακολουθήστε μας στο X (πρώην Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Ακολουθήστε μας στο Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Ιστολόγιο",
   "faq": "Συχνές ερωτήσεις",
-  "discover": "Ανακαλύψτε",
   "how_to_contribute": "Πώς να Συνεισφέρετε",
   "hint_knowledge_panel_message": "Μπορείτε να πατήσετε σε οποιοδήποτε μέρος της κάρτας για περισσότερες λεπτομέρειες σχετικά με το τι βλέπετε. Δοκιμάστε το τώρα!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Συνδεθείτε ή εγγραφείτε για να γίνετε μέλος στην κοινότητα Open Food Facts",
-  "user_profile_title_id_email": "Open Food Facts σύνδεση: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Καλώς ήρθατε {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Διαγραφή λογαριασμού",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Γεια σας, διαγράψτε τον λογαριασμό μου Open Food Facts: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Εφαρμογή",
   "settings_app_data": "Χαρακτηριστικά & Παρακολούθηση σφαλμάτων",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Όταν είναι ενεργό, οι αναφορές σφαλμάτων υποβάλλονται αυτόματα στο σύστημα εντοπισμού σφαλμάτων του Open Food Facts, έτσι ώστε τα σφάλματα να μπορούν να διορθωθούν και συνεπώς να βελτιωθεί η εφαρμογή.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Αποστολή ανώνυμων δεδομένων",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "Όταν ενεργοποιηθεί, οι αυστηρά ανώνυμες πληροφορίες σχετικά με τη χρήση λειτουργιών θα αποστέλλονται στους διακομιστές Open Food Facts, ώστε να κατανοήσουμε πώς χρησιμοποιούνται οι λειτουργίες για τη βελτίωσή τους. Διαφορετικά, θα σταλεί ένα αναγνωριστικό 0.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Λείπει κατηγορία;",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Σε περίπτωση που μια κατηγορία **δεν είναι διαθέσιμη στην αυτόματη συμπλήρωση**, μη διστάσετε να την προσθέσετε ούτως ή άλλως.\nΑυτό θα μας βοηθήσει να βελτιώσουμε τα Open Food Facts στη χώρα σας.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Σαρδέλες σε ελαιόλαδο",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Συντόμευση στην εφαρμογή Τιμές στη σελίδα προϊόντος",
-  "prices_app_button": "Μεταβείτε στην εφαρμογή Τιμές",
-  "prices_website_button": "Ανοιχτό στον ιστότοπο Open Prices",
   "prices_bulk_proof_upload_select": "Προσθήκη ετικετών τιμών απευθείας από τη συλλογή",
   "prices_bulk_proof_upload_warning": "Μόλις επιλέξετε εικόνες, δεν θα μπορείτε να τις επεξεργαστείτε!",
   "prices_bulk_proof_upload_warning_ai": "Η Τεχνητή Νοημοσύνη θα εκτελεί τις δοκιμές σας για να εξάγει τιμές.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Άνοιγμα απόδειξης τιμής",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Καμία απόδειξη ακόμα} =1{Μόνο μία απόδειξη} other{Και οι {count} αποδείξεις}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Επιβεβαίωση",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Συμφωνώ με το Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "τους όρους χρήσης και συνεισφοράς",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Εικονίδιο Analytics",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Ρίξτε μια ματιά σε αυτό το προϊόν στο Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Ρίξτε μια ματιά σε αυτό το προϊόν στο Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Ρίξτε μια ματιά σε αυτό το προϊόν στο Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Ρίξτε μια ματιά σε αυτό το προϊόν στο Open Products Facts: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Ρίξτε μια ματιά στη λίστα των προϊόντων μου στο Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Λήψη νέας φωτογραφίας",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Βοήθεια με το OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Το προϊόν θα ενημερωθεί στο παρασκήνιο το συντομότερο δυνατό.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Όλες Οι Εικόνες",
-  "selected_images": "Επιλεγμένες εικόνες",
   "product_card_remove_product_tooltip": "Αφαίρεση προϊόντος",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Ενημερώστε την τοπική βάση δεδομένων προϊόντων με τα πιο πρόσφατα δεδομένα από το Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Εκκαθάριση των χωρίς σύνδεση δεδομένων προϊόντων",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Καλώς ορίσατε στο Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Τι είναι το Open Food Facts;",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Το Open Food Facts είναι μια **συνεργατική**, **δωρεάν** και **ανοιχτή** βάση δεδομένων με προϊόντα διατροφής από όλο τον κόσμο.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Μια βαθμολογία για την αποφυγή υπερεπεξεργασμένων τροφίμων",
   "guide_open_food_facts_scores_arg3_title": "Βαθμολογία για τον πλανήτη",
   "guide_open_food_facts_share_link": "https://world-el.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Καλώς ορίσατε στο Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Τι είναι το Open Pet Food Facts;",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Το Open Pet Food Facts επεκτείνει την αποστολή μας στους τετράποδους φίλους μας! Είναι μια **βάση δεδομένων με προϊόντα τροφής για κατοικίδια για γάτες, σκύλους και άλλους συντροφικούς φίλους**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Μια σημείωση για τη βαθμολογία",
   "guide_open_pet_food_facts_scores_paragraph1": "Η ανάπτυξη ενός συστήματος βαθμολόγησης για τις τροφές για κατοικίδια **δεν αποτελεί προτεραιότητα προς το παρόν**. Η μεθοδολογία θα ήταν πολύπλοκη, καθώς οι διατροφικές ανάγκες ποικίλλουν σημαντικά ανά είδος, ηλικία και κατάσταση υγείας. Δεν έχουμε βρει ακόμη κάποια ανεξάρτητη επιστημονική ομάδα, ικανή να αναπτύξει μια τέτοια βαθμολογία.",
   "guide_open_pet_food_facts_share_link": "https://world-el.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Καλώς ορίσατε στο Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Τι είναι το Open Beauty Facts;",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Το Open Beauty Facts είναι μια συνεργατική βάση δεδομένων **καλλυντικών προϊόντων**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Συλλέξτε φωτογραφίες από τις ετικέτες τιμών στους διαδρόμους",
   "guide_open_prices_how_arg2_title": "Συλλέξτε φωτογραφίες αποδείξεων",
   "guide_open_prices_why_title": "Γιατί το κάνει αυτό το Open Food Facts;",
-  "guide_open_prices_why_paragraph1": "Οι πληροφορίες για τις τιμές είναι ύψιστης σημασίας για την κατανόηση των συστημάτων τροφίμων. Αποτελούν βασικό παράγοντα για την κατανόηση του κόστους των τροφίμων και την προώθηση πιο υγιεινών διατροφών. Τα δεδομένα τιμών είναι ένας τρόπος για να διευκολυνθούν οι ερευνητές, οι δημοσιογράφοι και οι πολίτες να **κατανοήσουν καλύτερα τον τρόπο με τον οποίο οι τιμές των τροφίμων ποικίλλουν γεωγραφικά και χρονικά**.",
   "guide_open_prices_why_arg1_title": "Παρακολουθήστε την εξέλιξη των τιμών με την πάροδο του χρόνου",
   "guide_open_prices_why_arg1_text": "Δείτε την **εξέλιξη των τιμών**: shrinkflation, cheapflation, μπορούμε να τα παρακολουθήσουμε μαζί!",
   "guide_open_prices_why_arg2_title": "Συγκρίνετε τιμές κοντά σας",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "Είμαι λιανοπωλητής και θέλω να συνεισφέρω στις τιμές. Πώς μπορώ να το κάνω αυτό;",
   "guide_open_prices_retailers_paragraph1": "Μπορείτε να συνεισφέρετε τιμές χρησιμοποιώντας το API μας.\nΕάν θέλετε να συνεισφέρετε τιμές σε κλίμακα, επικοινωνήστε μαζί μας στη διεύθυνση prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Καλώς ορίσατε στο Open Products Facts!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Τι είναι το Open Products Facts;",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Το Open Products Facts είναι μια τεράστια, ανοιχτή βάση δεδομένων για **οποιοδήποτε προϊόν με γραμμωτό κώδικα, το οποίο δεν είναι τρόφιμο, καλλυντικό ή τροφή για κατοικίδια**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Ουπς!",
-  "carousel_unsupported_text": "Ο γραμμωτός κώδικας που σαρώθηκε δεν υποστηρίζεται από το Open Food Facts!",
   "carousel_error_header": "Σφάλμα!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Το έργο Open Food Facts",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Συμβάλλετε",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Νομικές αναφορές",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Το Open Food Facts είναι μια βάση δεδομένων τροφίμων **που δημιουργήθηκε από όλους, για όλους**.\nΜπορείτε να τη χρησιμοποιήσετε για να κάνετε καλύτερες επιλογές τροφίμων και, καθώς πρόκειται για **ανοιχτά δεδομένα**, ο καθένας μπορεί να την **επαναχρησιμοποιήσει για οποιονδήποτε σκοπό**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Πολιτική απορρήτου",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Νέα προϊόντα που πρόσθεσα στο Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Προϊόντα που πρέπει να ολοκληρώσω",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Συνεισφέρετε στο έργο",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Απλοί τρόποι για να βοηθήσετε το Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Μεθοδολογίες βαθμολόγησης, βοήθεια και πολλά άλλα σχετικά με το έργο",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Εργαστήρια Open Food Facts",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Λογαριασμός",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Φέρτε το Open Food Facts στη γλώσσα σας",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Εγγραφείτε στην έκδοση alpha της εφαρμογής",
   "@preferences_contribute_enroll_alpha": {},

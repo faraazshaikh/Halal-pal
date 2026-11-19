@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "খোলা দাম",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "ওপেন ফুড ফ্যাক্টসে আপনাকে স্বাগতম",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "ওপেন ফুড ফ্যাক্টস স্থানীয় সম্প্রদায় দ্বারা পরিচালিত একটি বিশ্বব্যাপী অলাভজনক প্রতিষ্ঠান।",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "আপনার পছন্দসই খাবার সংশ্লিষ্ট তথ্যাবলি দেখুন।",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "সার্ভারের কোনও প্রতিক্রিয়া নেই! আপনি নিম্নলিখিত লিঙ্কটি ব্যবহার করে একটি সমস্যা খুলতে পারেন।",
   "@user_management": {},
-  "sign_in_text": "আপনার অবদান সংরক্ষণ করতে আপনার ওপেন ফুড ফ্যাক্টস অ্যাকাউন্টে সাইন ইন করুন।",
   "incorrect_credentials": "আপনি ভুল ইউজারনেম অথবা পাসওয়ার্ড দিয়েছেন।",
   "password_lost_incorrect_credentials": "এই ইমেল বা ব্যবহারকারীর নামটি বিদ্যমান নেই। অনুগ্রহ করে আপনার শংসাপত্রগুলি পরীক্ষা করুন।",
   "password_lost_server_unavailable": "আমাদের সার্ভারে বর্তমানে স্লোডাউন হচ্ছে এবং এর জন্য আমরা ক্ষমাপ্রার্থী। অনুগ্রহ করে পরে আবার চেষ্টা করুন।",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "এই বৈশিষ্ট্যটির জন্য আপনাকে সাইন ইন করতে হবে।",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "আপনার দেশে Open Food Facts উন্নত করতে সাহায্য করুন",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "সাইন আউট করুন",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "পাসওয়ার্ড নিশ্চিত করুন",
   "sign_up_page_confirm_password_error_empty": "দয়া করে পাসওয়ার্ডটি নিশ্চিত করুন।",
   "sign_up_page_confirm_password_error_invalid": "পাসওয়ার্ড মিলছে না।",
-  "sign_up_page_agree_text": "আমি ওপেন ফুড ফ্যাক্টসের সাথে একমত।",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "ব্যবহারের শর্তাবলী এবং অবদান",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "আমি একজন খাদ্য উৎপাদক।",
   "sign_up_page_producer_hint": "প্রযোজক/ব্র্যান্ড",
   "sign_up_page_producer_error_empty": "অনুগ্রহ করে একটি প্রযোজক বা একটি ব্র্যান্ডের নাম লিখুন।",
-  "sign_up_page_subscribe_checkbox": "আমি ওপেন ফুড ফ্যাক্টস নিউজলেটার সাবস্ক্রাইব করতে চাই (আপনি যেকোনো সময় এটি থেকে সদস্যতা ত্যাগ করতে পারেন)",
   "sign_up_page_user_name_already_used": "ব্যবহারকারীর নামটি ইতিমধ্যেই বিদ্যমান, অনুগ্রহ করে অন্য একটি ব্যবহারকারীর নাম বেছে নিন।",
   "sign_up_page_email_already_exists": "ইতিমধ্যেই বিদ্যমান, অ্যাকাউন্টে লগইন করুন অথবা অন্য ইমেল দিয়ে চেষ্টা করুন।",
   "sign_up_page_provide_valid_email": "অনুগ্রহ করে একটি বৈধ ইমেল ঠিকানা প্রদান করুন।",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "আমাদের স্ল্যাক চ্যানেলে সাহায্যের জন্য জিজ্ঞাসা করুন",
   "support_via_forum": "আমাদের ফোরামে সাহায্যের জন্য জিজ্ঞাসা করুন",
-  "support_via_email": "আমাদের একটি ই-মেইল পাঠান",
   "support_via_email_include_logs_dialog_title": "অ্যাপ লগ পাঠাবেন?",
   "support_via_email_include_logs_dialog_body": "আপনি কি আপনার ইমেলের সাথে সংযুক্তিতে অ্যাপ্লিকেশন লগ অন্তর্ভুক্ত করতে চান?",
   "termsOfUse": "ব্যবহারের শর্তাবলী",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "প্রতিটি ওপেন ফুড ফ্যাক্টস পণ্যের কোড GitHub-এ পাওয়া যায়। আপনি কোডটি পুনঃব্যবহার করতে পারেন (এটি ওপেন সোর্স) এবং এটিকে উন্নত করতে আমাদের সাহায্য করতে পারেন, সকলের জন্য, সমগ্র গ্রহের জন্য।",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "আপনি ওপেন ফুড ফ্যাক্টস স্ল্যাক চ্যাটরুমে যোগ দিতে পারেন যা প্রশ্ন জিজ্ঞাসা করার পছন্দের উপায়।",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "DEV মোড?",
   "contribute_develop_dev_mode_subtitle": "DEV মোড সক্রিয় করুন",
   "contribute_donate_title": "Donate",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "খাদ্য তথ্য খুলতে দান করুন",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "অনুগ্রহ করে স্বীকার করুন যে অভ্যন্তরীণ আলফা সংস্করণের সাথে, ডেটা সম্পূর্ণরূপে হারিয়ে যেতে পারে এবং অ্যাপটি যেকোনো সময় ব্যবহারের অযোগ্য হয়ে যেতে পারে!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "যেসব পণ্য সম্পন্ন করতে হবে",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "ডাটাবেস হল এই প্রকল্পের মূল বিষয়। এটি সাহায্য করা সহজ এবং খুব দ্রুত। আপনি আপনার ফোনের জন্য মোবাইল অ্যাপটি ডাউনলোড করতে পারেন এবং পণ্য যোগ করা বা উন্নত করা শুরু করতে পারেন।\n\nঅন্যদিকে, ওপেন ফুড ফ্যাক্টস ওয়েবসাইট অবদান রাখার অনেক উপায় অফার করে: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "অনুবাদ করুন",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "ওপেন ফুড ফ্যাক্টস একটি বিশ্বব্যাপী প্রকল্প, যেখানে ১৬০ টিরও বেশি দেশের পণ্য রয়েছে। ওপেন ফুড ফ্যাক্টস কয়েক ডজন ভাষায় অনুবাদ করা হয়, যার বিষয়বস্তু ক্রমাগত পরিবর্তিত হচ্ছে।",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "অনুবাদ প্রকল্পের অন্যতম প্রধান কাজ।",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Open Food Facts-এ আপনার দক্ষতা অবদান রাখুন। স্কিল পুলে যোগদান করুন!",
-  "contribute_share_header": "আপনার বন্ধুদের সাথে খোলা খাবারের তথ্য শেয়ার করুন",
-  "@contribute_share_header": {},
   "contribute_share_content": "আমি আপনাকে ওপেন ফুড ফ্যাক্টস অ্যাপটি সম্পর্কে জানাতে চাই, যা আপনাকে আপনার খাবারের স্বাস্থ্য এবং পরিবেশগত প্রভাবগুলি ব্যক্তিগতকৃত উপায়ে পেতে দেয়। এটি প্যাকেজিংয়ের বারকোডগুলি স্ক্যান করে কাজ করে। অবশেষে এটি বিনামূল্যে, নিবন্ধনের প্রয়োজন হয় না এবং আপনি ডিসাইফার করা পণ্যের সংখ্যা বাড়াতেও সাহায্য করতে পারেন। আপনার ফোনে এটি পেতে এখানে লিঙ্কটি রয়েছে: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "আপনার অবদানের জন্য ক্রেডিট পেতে আপনার ওপেন ফুড ফ্যাক্টস অ্যাকাউন্টে সাইন ইন করুন।",
   "question_yes_button_accessibility_value": "হ্যাঁ দিয়ে উত্তর দিন",
   "question_no_button_accessibility_value": "না দিয়ে উত্তর দিন",
   "question_skip_button_accessibility_value": "এই প্রশ্নটি এড়িয়ে যান",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "আপনার অ্যাকাউন্ট তৈরি করুন এবং ওপেন ফুড ফ্যাক্টস কমিউনিটিতে যোগদান করুন যাতে সারা বিশ্বে খাদ্য জ্ঞান তৈরিতে সাহায্য করতে পারেন!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "আমাদের সাথে যোগদান করুন",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "আপনার প্রোফাইল",
-  "myPreferences_profile_subtitle": "আপনার ওপেন ফুড ফ্যাক্টস অবদানকারী অ্যাকাউন্ট পরিচালনা করুন।",
   "myPreferences_settings_title": "অ্যাপ সেটিংস",
   "myPreferences_settings_subtitle": "ডার্ক মোড, ভাষা…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "খাবারের পছন্দ",
   "myPreferences_food_subtitle": "খাবার সম্পর্কে কোন তথ্য আপনার কাছে সবচেয়ে গুরুত্বপূর্ণ তা বেছে নিন।",
   "myPreferences_food_compatibility_explainer": "আপনার পছন্দ অনুসারে খাবারের র‌্যাঙ্কিং করার জন্য, খাবার সম্পর্কে কোন তথ্য আপনার কাছে সবচেয়ে গুরুত্বপূর্ণ তা বেছে নিন, প্রথমে আপনার গুরুত্বপূর্ণ তথ্য দেখুন এবং একটি সামঞ্জস্যপূর্ণ সারাংশ পান।",
-  "myPreferences_food_privacy": "সেই খাবারের পছন্দগুলি আপনার ডিভাইসে থাকে এবং যদি আপনার ওপেন ফুড ফ্যাক্টস অবদানকারী অ্যাকাউন্ট থাকে তবে সেগুলির সাথে সম্পর্কিত নয়।",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "তুমি একটি নতুন পণ্য খুঁজে পেয়েছ!",
   "@missing_product": {},
-  "add_product_take_photos": "এই পণ্যটি Open Food Facts-এ যোগ করতে প্যাকেজিংয়ের ছবি তুলুন।",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "প্রথমে কিছু ছবি তুলুন। আপনি পরে যেকোনো সময় পণ্যটি সম্পূর্ণ করতে পারেন।",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "খাদ্য বিভাগ এবং উপাদান পূরণ করে এটি পান",
   "new_product_desc_nova_unknown": "খাদ্য প্রক্রিয়াকরণের স্তর অজানা",
   "new_product_title_pictures": "নতুন পণ্য",
-  "new_product_title_pictures_details": "অনুগ্রহ করে নিচের ছবিগুলো তুলুন, Open Food Facts ইঞ্জিন বাকিটা ঠিক করে ফেলবে!",
   "new_product_title_misc": "এবং কিছু মৌলিক তথ্য…",
   "new_product_done_msg": "আপনার অবদানের জন্য ধন্যবাদ “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "সার্ভারে ছবি আপলোড করা হচ্ছে",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "ওপেন ফুড ফ্যাক্টস-এ সামনের ছবিটি আপলোড করা হচ্ছে",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "ওপেন ফুড ফ্যাক্টস-এ উপাদানের ছবি আপলোড করা হচ্ছে",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "ওপেন ফুড ফ্যাক্টস-এ পুষ্টির ছবি আপলোড করা হচ্ছে",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "ওপেন ফুড ফ্যাক্টস-এ প্যাকেজিং ছবি আপলোড করা হচ্ছে",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Open Food Facts-এ অন্য ছবি আপলোড করা হচ্ছে",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "ওপেন ফুড ফ্যাক্টস-এ ছবি আপলোড করা হচ্ছে",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "অনুপস্থিত উপাদান যোগ করুন",
   "score_add_missing_packaging_image": "অনুপস্থিত প্যাকেজিং ছবি যোগ করুন",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "ওপেন ফুড ফ্যাক্টস-এ স্বাগতম",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**বারকোড স্ক্যান করুন** অথবা\nপণ্যের জন্য **অনুসন্ধান** করুন",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "ওপেন ফুড ফ্যাক্টসের জন্য সিস্টেম সেটিংস খুলুন",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "ইতিহাস থেকে পণ্যটি সরানো হয়েছে",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "টিকটকে আমাদের অনুসরণ করুন",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "ইনস্টাগ্রামে আমাদের অনুসরণ করুন",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "X (পূর্বে টুইটার) এ আমাদের অনুসরণ করুন।",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "মাস্টোডনে আমাদের অনুসরণ করুন",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "ব্লগ",
   "faq": "প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী",
-  "discover": "আবিষ্কার করো",
   "how_to_contribute": "কীভাবে অবদান রাখবেন",
   "hint_knowledge_panel_message": "আপনি যা দেখছেন তার সম্পর্কে আরও বিশদ জানতে কার্ডের যেকোনো অংশে ট্যাপ করতে পারেন। এখনই চেষ্টা করে দেখুন!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "ওপেন ফুড ফ্যাক্টস কমিউনিটিতে যোগদানের জন্য সাইন-ইন করুন অথবা সাইন-আপ করুন।",
-  "user_profile_title_id_email": "Open Food Facts লগইন: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "স্বাগতম {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "অ্যাকাউন্ট মুছুন",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "হ্যালো, দয়া করে আমার ওপেন ফুড ফ্যাক্টস অ্যাকাউন্টটি মুছে ফেলুন: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "আবেদন",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "সক্রিয় করা হলে, ক্র্যাশ রিপোর্টগুলি স্বয়ংক্রিয়ভাবে ওপেন ফুড ফ্যাক্টসের ত্রুটি ট্র্যাকিং সিস্টেমে জমা দেওয়া হয়, যাতে বাগগুলি ঠিক করা যায় এবং এইভাবে অ্যাপটিকে উন্নত করা যায়।",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "বিভাগটি অনুপস্থিত?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "যদি কোনও বিভাগ **স্বয়ংক্রিয়ভাবে** উপলব্ধ না থাকে, তাহলে নির্দ্বিধায় এটি যোগ করুন।\nএটি আপনার দেশে ওপেন ফুড ফ্যাক্টস উন্নত করতে আমাদের সাহায্য করবে।",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "জলপাই তেলে সার্ডিন",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "পণ্য পৃষ্ঠায় মূল্য অ্যাপের শর্টকাট",
-  "prices_app_button": "প্রাইস অ্যাপে যান",
-  "prices_website_button": "ওপেন প্রাইস ওয়েবসাইটে খুলুন",
   "prices_bulk_proof_upload_select": "গ্যালারি থেকে সরাসরি মূল্য ট্যাগ যোগ করুন",
   "prices_bulk_proof_upload_warning": "একবার ছবি নির্বাচন করলে, আপনি আর সেগুলি সম্পাদনা করতে পারবেন না!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "খোলা দামের প্রমাণ",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{এখনও কোন প্রমাণ নেই} =1{শুধুমাত্র একটি প্রমাণ} other{সব {count} প্রমাণ}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "নিশ্চিত করুন",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "আমি ওপেন ফুড ফ্যাক্টসের সাথে একমত। ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "ব্যবহারের শর্তাবলী এবং অবদান",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "অ্যানালিটিক্স আইকন",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "ওপেন ফুড ফ্যাক্টস-এ এই পণ্যটি দেখুন: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "ওপেন বিউটি ফ্যাক্টস-এ এই পণ্যটি দেখুন: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "ওপেন পেটফুড ফ্যাক্টস-এ এই পণ্যটি দেখুন: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "ওপেন প্রোডাক্টস ফ্যাক্টস-এ এই পণ্যটি দেখুন: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "ওপেন ফুড ফ্যাক্টস-এ আমার পণ্যের তালিকাটি দেখুন: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "OpenFoodFacts-এর ব্যাপারে সাহায্য করুন",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "পণ্যটি যত তাড়াতাড়ি সম্ভব ব্যাকগ্রাউন্ডে আপডেট করা হবে।",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "সব ছবি",
-  "selected_images": "নির্বাচিত ছবি",
   "product_card_remove_product_tooltip": "পণ্যটি সরান",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "ওপেন ফুড ফ্যাক্টস থেকে সর্বশেষ তথ্য দিয়ে স্থানীয় পণ্য ডাটাবেস আপডেট করুন।",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "অফলাইন পণ্য ডেটা সাফ করুন",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "ওপেন ফুড ফ্যাক্টসে স্বাগতম!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Open Food Facts কী?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts হল বিশ্বজুড়ে খাদ্য পণ্যের একটি **সহযোগী**, **বিনামূল্যে**, এবং **উন্মুক্ত** ডাটাবেস।",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "অতি-প্রক্রিয়াজাত খাবার এড়িয়ে চলার জন্য একটি স্কোর",
   "guide_open_food_facts_scores_arg3_title": "গ্রহের জন্য একটি স্কোর",
   "guide_open_food_facts_share_link": "https://world-bn.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "ওপেন পেট ফুড ফ্যাক্টস-এ স্বাগতম!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Open Pet Food Facts কী?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts আমাদের লক্ষ্যকে আমাদের পশমী বন্ধুদের কাছে প্রসারিত করে! এটি বিড়াল, কুকুর এবং অন্যান্য সঙ্গীদের জন্য পোষা প্রাণীর খাদ্য পণ্যের **ডাটাবেস**।",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "স্কোরিং সম্পর্কে একটি নোট",
   "guide_open_pet_food_facts_scores_paragraph1": "পোষা প্রাণীর খাবারের জন্য একটি স্কোরিং সিস্টেম তৈরি করা **এখনই অগ্রাধিকার নয়**। পদ্ধতিটি জটিল হবে, কারণ প্রজাতি, বয়স এবং স্বাস্থ্যগত অবস্থার উপর নির্ভর করে পুষ্টির চাহিদা ব্যাপকভাবে পরিবর্তিত হয়। আমরা এখনও পর্যন্ত এমন কোনও স্বাধীন বৈজ্ঞানিক দল খুঁজে পাইনি যা এই ধরণের স্কোর তৈরি করতে সক্ষম।",
   "guide_open_pet_food_facts_share_link": "https://world-bn.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "ওপেন বিউটি ফ্যাক্টসে স্বাগতম!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Open Beauty Facts কী?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts হল **প্রসাধনী পণ্য** এর একটি সহযোগী ডাটাবেস।",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "আইলে মূল্য ট্যাগের ছবি সংগ্রহ করুন",
   "guide_open_prices_how_arg2_title": "রসিদের ছবি সংগ্রহ করুন",
   "guide_open_prices_why_title": "Open Food Facts কেন এটা করছে?",
-  "guide_open_prices_why_paragraph1": "খাদ্য ব্যবস্থা বোঝার জন্য মূল্য তথ্য অত্যন্ত গুরুত্বপূর্ণ। খাদ্যের দাম বোঝার এবং স্বাস্থ্যকর খাদ্যাভ্যাস প্রচারের ক্ষেত্রে এটি একটি গুরুত্বপূর্ণ বিষয়। মূল্য তথ্য খোলার মাধ্যমে গবেষক, সাংবাদিক এবং নাগরিকদের জন্য **ভৌগোলিকভাবে এবং সময়ের সাথে সাথে খাদ্যের দাম কীভাবে পরিবর্তিত হয় তা আরও ভালভাবে বোঝা সহজ হয়**।",
   "guide_open_prices_why_arg1_title": "সময়ের সাথে সাথে দামের বিবর্তন ট্র্যাক করুন",
   "guide_open_prices_why_arg1_text": "**দামের বিবর্তন** দেখুন: সঙ্কোচন, সস্তা মূল্যস্ফীতি, আমরা একসাথে এগুলো ট্র্যাক করতে পারি!",
   "guide_open_prices_why_arg2_title": "আপনার কাছাকাছি দামের তুলনা করুন",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "I'm a retailer and I want to contribute prices. How can I do that?",
   "guide_open_prices_retailers_paragraph1": "আপনি আমাদের API ব্যবহার করে মূল্য অবদান রাখতে পারেন।\nআপনি যদি স্কেলে মূল্য অবদান রাখতে চান, তাহলে অনুগ্রহ করে prices@openfoodfacts.org ঠিকানায় আমাদের সাথে যোগাযোগ করুন।",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "ওপেন প্রোডাক্টস ফ্যাক্টসে স্বাগতম!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "ওপেন প্রোডাক্টস ফ্যাক্টস কী?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "ওপেন প্রোডাক্টস ফ্যাক্টস হল **বারকোডযুক্ত যেকোনো পণ্যের জন্য একটি বিশাল, উন্মুক্ত ডাটাবেস, যা খাদ্য, প্রসাধনী বা পোষা প্রাণীর খাবার নয়**।",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "উফ!",
-  "carousel_unsupported_text": "স্ক্যান করা বারকোডটি ওপেন ফুড ফ্যাক্টস দ্বারা সমর্থিত নয়!",
   "carousel_error_header": "ত্রুটি!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "ওপেন ফুড ফ্যাক্টস প্রকল্প",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "সহযগীতা",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts হল একটি খাদ্য পণ্যের ডাটাবেস যা **সবার জন্য, সবার দ্বারা তৈরি**।\nআপনি এটি ব্যবহার করে আরও ভালো খাবারের পছন্দ করতে পারেন, এবং যেহেতু এটি **ওপেন ডেটা**, তাই যে কেউ **যেকোনো উদ্দেশ্যে এটি পুনরায় ব্যবহার করতে** পারে।",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "গোপনীয়তা নীতি",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Open Food Facts-এ আমার যোগ করা নতুন পণ্য",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "আমার যেসব পণ্য সম্পূর্ণ করতে হবে",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "প্রকল্পে অবদান রাখুন",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Open Food Facts সাহায্য করার সহজ উপায়",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "প্রকল্প সম্পর্কে স্কোর পদ্ধতি, সাহায্য এবং আরও অনেক কিছু",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts ল্যাব খুলুন",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "হিসাব",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "আপনার ভাষায় Open Food Facts আনুন",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "অ্যাপটির আলফা সংস্করণে নথিভুক্ত করুন",
   "@preferences_contribute_enroll_alpha": {},

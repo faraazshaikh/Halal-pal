@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "مرحبًا بكم في موقع Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts هي منظمة عالمية غير ربحية مدعومة من المجتمعات المحلية.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "اطلع على بيانات الطعام ذات الصلة بتفضيلاتك.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "لا يوجد استجابة من الخادم! يمكنك فتح مشكلة باستخدام الرابط التالي.",
   "@user_management": {},
-  "sign_in_text": "قم بتسجيل الدخول إلى حساب Open Food Facts الخاص بك لحفظ مساهماتك",
   "incorrect_credentials": "اسم المستخدم أو كلمة المرور غير صحيحة.",
   "password_lost_incorrect_credentials": "هذا البريد الإلكتروني أو اسم المستخدم غير موجود. يُرجى التحقق من بيانات اعتمادك.",
   "password_lost_server_unavailable": "نواجه حاليًا تباطؤًا في خوادمنا، ونعتذر عن ذلك. يُرجى المحاولة لاحقًا.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "للحصول على هذه الميزة، نحتاج منك تسجيل الدخول.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "ساعد في تحسين Open Food Facts في بلدك",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "تسجيل الخروج",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "تأكيد كلمة المرور",
   "sign_up_page_confirm_password_error_empty": "برجاء تأكيد كلمة المرور",
   "sign_up_page_confirm_password_error_invalid": "كلمة السر غير مطابقة",
-  "sign_up_page_agree_text": "أوافق على حقائق الغذاء المفتوحة",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "شروط الاستخدام والمساهمة",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "أنا منتج للغذاء",
   "sign_up_page_producer_hint": "المنتِج / العلامة التجارية",
   "sign_up_page_producer_error_empty": "برجاء إدخال اسم منتِج أو اسم علامة تجارية",
-  "sign_up_page_subscribe_checkbox": "أرغب في الاشتراك في النشرة الإخبارية Open Food Facts (يمكنك إلغاء الاشتراك فيها في أي وقت)",
   "sign_up_page_user_name_already_used": "اسم المستخدم موجود بالفعل، يرجى اختيار اسم مستخدم آخر.",
   "sign_up_page_email_already_exists": "موجود بالفعل، قم بتسجيل الدخول إلى الحساب أو حاول باستخدام بريد إلكتروني آخر.",
   "sign_up_page_provide_valid_email": "يرجى تقديم عنوان بريد إلكتروني صالح.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "طلب المساعدة في قناتنا على Slack",
   "support_via_forum": "اطلب المساعدة في منتدانا",
-  "support_via_email": "ارسل لنا بريد إلكتروني",
   "support_via_email_include_logs_dialog_title": "إرسال سجلات التطبيق؟",
   "support_via_email_include_logs_dialog_body": "هل ترغب في تضمين سجلات التطبيق في المرفقات ببريدك الإلكتروني؟",
   "termsOfUse": "شروط الاستخدام",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "كود جميع منتجات Open Food Facts متاح على GitHub. نرحب بك لإعادة استخدام الكود (إنه مفتوح المصدر) ومساعدتنا في تحسينه، للجميع في جميع أنحاء العالم.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "يمكنك الانضمام إلى غرفة الدردشة الخاصة بـ Open Food Facts على Slack وهي الطريقة المفضلة لطرح الأسئلة.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "وضع DEV؟",
   "contribute_develop_dev_mode_subtitle": "تفعيل وضع DEV",
   "contribute_donate_title": "تبرع",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "التبرع لـ Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "يرجى العلم أنه مع الإصدار ألفا الداخلي، من الممكن فقدان البيانات بالكامل، وقد يصبح التطبيق غير قابل للاستخدام في أي وقت!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "مُنتجات مراد إكمالها",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "قاعدة البيانات هي جوهر المشروع. المساعدة سهلة وسريعة جدًا. يمكنك تنزيل تطبيق الهاتف المحمول على هاتفك، والبدء بإضافة المنتجات أو تحسينها.\n\nمن ناحية أخرى، يوفر موقع Open Food Facts العديد من طرق المساهمة: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "ترجم",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "حقائق الغذاء المفتوحة مشروع عالمي، يضم منتجات من أكثر من 160 دولة. تُرجمت حقائق الغذاء المفتوحة إلى عشرات اللغات، ويتطور محتواها باستمرار.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "الترجمات هي إحدى المهام الرئيسية للمشروع",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "ساهم بمهاراتك في \"Open Food Facts\". انضم إلى فريقنا!",
-  "contribute_share_header": "شارك حقائق الطعام المفتوحة مع أصدقائك",
-  "@contribute_share_header": {},
   "contribute_share_content": "أردتُ أن أخبركم عن تطبيق Open Food Facts الذي أستخدمه، والذي يُمكّنكم من معرفة الآثار الصحية والبيئية لغذائكم، بطريقة شخصية. يعمل التطبيق عن طريق مسح الباركود الموجود على العبوة. وأخيرًا، التطبيق مجاني ولا يتطلب تسجيلًا، ويُمكنكم حتى من زيادة عدد المنتجات التي تُفك رموزها. إليكم رابط تحميله على هاتفكم: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "قم بتسجيل الدخول إلى حساب Open Food Facts الخاص بك للحصول على رصيد لمساهماتك",
   "question_yes_button_accessibility_value": "أجب بنعم",
   "question_no_button_accessibility_value": "الإجابة بـ لا",
   "question_skip_button_accessibility_value": "تخطي هذا السؤال",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "قم بإنشاء حسابك وانضم إلى مجتمع Open Food Facts للمساعدة في بناء المعرفة الغذائية في جميع أنحاء العالم!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "انضم إلينا",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "صفحتك الشخصية",
-  "myPreferences_profile_subtitle": "قم بإدارة حساب المساهم الخاص بك في Open Food Facts.",
   "myPreferences_settings_title": "إعدادات التطبيق",
   "myPreferences_settings_subtitle": "الوضع الداكن، اللغات…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "أضف تفضيلات غذائية",
   "myPreferences_food_subtitle": "اختر المعلومات التي تهمك أكثر عن الطعام.",
   "myPreferences_food_compatibility_explainer": "اختر المعلومات الغذائية الأكثر أهمية بالنسبة لك، لتصنيف الطعام حسب تفضيلاتك، واطلع على المعلومات التي تهمك أولًا، واحصل على ملخص التوافق.",
-  "myPreferences_food_privacy": "تبقى هذه التفضيلات الغذائية على جهازك، وليست مرتبطة بحساب مساهمك في Open Food Facts، إن كان لديك حساب.",
   "myPreferences_beauty_title": "تفضيلات مستحضرات التجميل",
   "myPreferences_beauty_subtitle": "اختر ما هي المعلومات عن منتجات مستحضرات التجميل التي تهمك أكثر من غيرها.",
   "myPreferences_product_title": "تفضيلات المنتجات الأخرى",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "لقد وجدت منتجا جديدا!",
   "@missing_product": {},
-  "add_product_take_photos": "التقط صورًا للتغليف لإضافة هذا المنتج إلى حقائق الطعام المفتوحة",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "يرجى التقاط بعض الصور أولاً. يمكنك إكمال المنتج لاحقًا.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "إضافة معلومات عن المنتج",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "احصل عليه عن طريق ملء فئة الطعام والمكونات",
   "new_product_desc_nova_unknown": "مستوى معالجة الطعام غير معروف",
   "new_product_title_pictures": "منتج جديد",
-  "new_product_title_pictures_details": "يرجى التقاط الصور التالية وسيتمكن محرك Open Food Facts من معرفة الباقي!",
   "new_product_title_misc": "وبعض البيانات الأساسية…",
   "new_product_done_msg": "شكرًا على مساهمتك “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "تحميل الصورة على الخادم",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "تحميل الصورة الأمامية إلى Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "تحميل صورة المكونات إلى Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "تحميل صورة التغذية إلى Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "تحميل صورة التغليف إلى Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "تحميل صورة أخرى إلى Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "تحميل الصورة إلى Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "أضف المكونات المفقودة",
   "score_add_missing_packaging_image": "إضافة صورة التغليف المفقودة",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "مرحباً بكم في حقائق الطعام المفتوحة",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**امسح** الرمز الشريطي أو\n**ابحث** عن منتج",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "إعدادات النظام المفتوحة لـ Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "تم إزالة المنتج من السجل",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "تابعونا على تيك توك",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "تابعونا على الانستغرام",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "تابعونا على X (تويتر سابقًا)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "تابعونا على ماستودون",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "مدونة",
   "faq": "الأسئلة المتكررة",
-  "discover": "إكتشف",
   "how_to_contribute": "كيفية المساهمة",
   "hint_knowledge_panel_message": "يمكنك النقر على أي جزء من البطاقة للحصول على مزيد من التفاصيل حول ما تراه. جرّبها الآن!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "قم بتسجيل الدخول أو الاشتراك للانضمام إلى مجتمع Open Food Facts",
-  "user_profile_title_id_email": "تسجيل الدخول إلى Open Food Facts: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "مرحباً {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "حذف الحساب",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "مرحبًا، يُرجى حذف حسابي في Open Food Facts: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "طلب",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "عند تمكين هذه الميزة، يتم إرسال تقارير الأعطال تلقائيًا إلى نظام تتبع الأخطاء الخاص بـ Open Food Facts، بحيث يمكن إصلاح الأخطاء وبالتالي تحسين التطبيق.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "الفئة المفقودة؟",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "في حالة عدم توفر فئة **في الإكمال التلقائي**، فلا تتردد في إضافتها على أي حال.\nسيساعدنا هذا في تحسين حقائق الطعام المفتوحة في بلدك.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "السردين في زيت الزيتون",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "اختصار لتطبيق الأسعار على صفحة المنتج",
-  "prices_app_button": "انتقل إلى تطبيق الأسعار",
-  "prices_website_button": "افتح على موقع الأسعار المفتوحة",
   "prices_bulk_proof_upload_select": "أضف علامات الأسعار مباشرة من المعرض",
   "prices_bulk_proof_upload_warning": "بمجرد تحديد الصور، لن تتمكن من تحريرها!",
   "prices_bulk_proof_upload_warning_ai": "سيقوم الذكاء الاصطناعي بتشغيل بياناتك لاستخراج الأسعار.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "دليل السعر المفتوح",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{لا يوجد دليل حتى الآن} =1{دليل واحد فقط} other{جميع {count} الأدلة}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "يتأكد",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "أوافق على حقائق الغذاء المفتوحة ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "شروط الاستخدام والمساهمة",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "عربية",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "ألق نظرة على هذا المنتج على Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "ألقي نظرة على هذا المنتج على Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "ألق نظرة على هذا المنتج على Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "ألق نظرة على هذا المنتج على حقائق المنتجات المفتوحة: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "ألق نظرة على قائمة المنتجات الخاصة بي على Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Help with Open Food Facts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "سيتم تحديث المنتج في الخلفية بأسرع ما يمكن.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "جميع الصور",
-  "selected_images": "صور مختارة",
   "product_card_remove_product_tooltip": "إزالة المنتج",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "تحديث قاعدة بيانات المنتجات المحلية بأحدث البيانات من Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "مسح بيانات المنتج غير المتصلة بالإنترنت",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "مرحباً بكم في حقائق الغذاء المفتوحة!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "ما هو Open Food Facts؟",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts عبارة عن قاعدة بيانات **تعاونية** و**مجانية** و**مفتوحة** للمنتجات الغذائية من جميع أنحاء العالم.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "نتيجة لتجنب الأطعمة شديدة المعالجة",
   "guide_open_food_facts_scores_arg3_title": "نتيجة للكوكب",
   "guide_open_food_facts_share_link": "https://world-ar.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "مرحباً بكم في حقائق طعام الحيوانات الأليفة المفتوحة!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "ما هو Open Pet Food Facts؟",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts يُوسّع نطاق مهمتنا لتشمل أصدقاءنا من الحيوانات الأليفة! إنها **قاعدة بيانات لمنتجات طعام الحيوانات الأليفة للقطط والكلاب وغيرها من الحيوانات الأليفة**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "ملاحظة حول التسجيل",
   "guide_open_pet_food_facts_scores_paragraph1": "تطوير نظام تقييم لأغذية الحيوانات الأليفة **ليس أولويةً حاليًا**. ستكون منهجيته معقدة، إذ تختلف الاحتياجات الغذائية اختلافًا كبيرًا باختلاف الأنواع والأعمار والحالات الصحية. لم نجد حتى الآن فريقًا علميًا مستقلًا قادرًا على تطوير مثل هذا التقييم.",
   "guide_open_pet_food_facts_share_link": "https://world-ar.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "مرحباً بكم في حقائق الجمال المفتوحة!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "ما هو Open Beauty Facts؟",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts عبارة عن قاعدة بيانات تعاونية لمنتجات التجميل.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "جمع صور لعلامات الأسعار في الممرات",
   "guide_open_prices_how_arg2_title": "جمع صور الإيصالات",
   "guide_open_prices_why_title": "لماذا تقوم Open Food Facts بهذا؟",
-  "guide_open_prices_why_paragraph1": "تُعد معلومات الأسعار بالغة الأهمية لفهم النظم الغذائية. فهي عامل أساسي في فهم تكلفة الغذاء وتعزيز اتباع أنظمة غذائية صحية. تُسهّل بيانات الأسعار الافتتاحية على الباحثين والصحفيين والمواطنين فهم كيفية اختلاف أسعار الغذاء جغرافيًا وزمنيًا بشكل أفضل.",
   "guide_open_prices_why_arg1_title": "تتبع تطور الأسعار بمرور الوقت",
   "guide_open_prices_why_arg1_text": "انظر إلى **تطور الأسعار**: التضخم الانكماشي، والتضخم الرخيص، يمكننا تتبعهما معًا!",
   "guide_open_prices_why_arg2_title": "قارن الأسعار بالقرب منك",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "أنا بائع تجزئة وأرغب في المساهمة في تحديد الأسعار. كيف يمكنني فعل ذلك؟",
   "guide_open_prices_retailers_paragraph1": "يمكنك المساهمة في الأسعار باستخدام واجهة برمجة التطبيقات الخاصة بنا.\nإذا كنت ترغب في المساهمة في الأسعار على نطاق واسع، فيرجى التواصل معنا على prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "مرحباً بكم في حقائق المنتجات المفتوحة!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "ما هي حقائق المنتجات المفتوحة؟",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "حقائق المنتجات المفتوحة عبارة عن قاعدة بيانات ضخمة مفتوحة لأي منتج يحمل رمزًا شريطيًا، وهو ليس طعامًا أو مستحضر تجميل أو طعامًا للحيوانات الأليفة.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "اوبس!",
-  "carousel_unsupported_text": "لا يدعم Open Food Facts الرمز الشريطي الممسوح ضوئيًا!",
   "carousel_error_header": "خطأ!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "مشروع حقائق الغذاء المفتوحة",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "المساهمة",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "لمحات قانونية",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts عبارة عن قاعدة بيانات لمنتجات الأغذية **أنشأها الجميع، من أجل الجميع**.\nيمكنك استخدامها لاتخاذ خيارات غذائية أفضل، وبما أنها **بيانات مفتوحة**، يمكن لأي شخص **إعادة استخدامها لأي غرض**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "سياسة الخصوصية",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "المنتجات الجديدة التي أضفتها إلى Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "المنتجات التي أحتاج إلى إكمالها",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "المساهمة في المشروع",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "طرق بسيطة للمساعدة في Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "منهجيات التقييم والمساعدة والمزيد حول المشروع",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "مختبرات Open Food Facts",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "الحساب",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "جلب Open Food Facts إلى لغتك",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "التسجيل في النسخة التجريبية للتطبيق",
   "@preferences_contribute_enroll_alpha": {},

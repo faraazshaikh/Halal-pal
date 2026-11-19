@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Mirë se vini në Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts është një organizatë jofitimprurëse globale e mundësuar nga komunitetet lokale.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Shihni te dhenat ushqimore qe jane te rendesishme lidhur me pelqyeshmerite tuaja.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Nuk ka përgjigje nga serveri! Mund të hapni një problem me lidhjen e mëposhtme.",
   "@user_management": {},
-  "sign_in_text": "Hyni në llogarinë tuaj Open Food Facts për të ruajtur kontributet tuaja",
   "incorrect_credentials": "Emri i perdoruesit ose fjalekalimi i pasakte",
   "password_lost_incorrect_credentials": "Ky email ose emër përdoruesi nuk ekziston. Ju lutemi kontrolloni kredencialet tuaja.",
   "password_lost_server_unavailable": "Aktualisht po përjetojmë ngadalësime në serverat tanë dhe kërkojmë ndjesë për këtë. Ju lutemi provoni përsëri më vonë.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Për atë veçori na duhet të identifikoheni.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Ndihmoni në përmirësimin e Open Food Facts në vendin tuaj",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Dilni",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Konfirmoni fjalekalimin.",
   "sign_up_page_confirm_password_error_empty": "Ju lutem konfirmoni fjalekalimin.",
   "sign_up_page_confirm_password_error_invalid": "Fjalekalimet nuk perputhen",
-  "sign_up_page_agree_text": "Pajtohem me Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "kushtet e përdorimit dhe kontributit",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Une jam nje prodhues ushqimor.",
   "sign_up_page_producer_hint": "Prodhuesi/marka",
   "sign_up_page_producer_error_empty": "Ju lutemi shkruani një prodhues ose një emër marke",
-  "sign_up_page_subscribe_checkbox": "Do të doja të abonohesha në buletinin informativ Open Food Facts (Mund të çregjistroheni prej tij në çdo kohë)",
   "sign_up_page_user_name_already_used": "Emri i përdoruesit ekziston tashmë, ju lutemi zgjidhni një emër përdoruesi tjetër.",
   "sign_up_page_email_already_exists": "ekziston tashmë, hyni në llogari ose provoni me një email tjetër.",
   "sign_up_page_provide_valid_email": "Ju lutemi të jepni një adresë të vlefshme email-i.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Kerkoni ndihme ne kanalin tone Slack.",
   "support_via_forum": "Kërkoni ndihmë në forumin tonë",
-  "support_via_email": "Na dërgoni një email",
   "support_via_email_include_logs_dialog_title": "Të dërgohen regjistrat e aplikacionit?",
   "support_via_email_include_logs_dialog_body": "A dëshironi të përfshini regjistrat e aplikacioneve si bashkëngjitje në emailin tuaj?",
   "termsOfUse": "Kushtet e përdorimit",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Kodi për çdo produkt të Open Food Facts është i disponueshëm në GitHub. Ju mirëpresim ta ripërdorni kodin (është me burim të hapur) dhe të na ndihmoni ta përmirësojmë atë, për të gjithë, në të gjithë planetin.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Mund të bashkoheni me dhomën e bisedës Open Food Facts Slack, e cila është mënyra e preferuar për të bërë pyetje.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "Modaliteti DEV?",
   "contribute_develop_dev_mode_subtitle": "Aktivizoni Modalitetin DEV",
   "contribute_donate_title": "Donate",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Dhuro për Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Ju lutemi të pranoni se me versionin alfa të brendshëm, humbja e plotë e të dhënave është e mundur dhe aplikacioni mund të bëhet i papërdorshëm në çdo kohë!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Produkte që duhen përfunduar",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Baza e të dhënave është thelbi i projektit. Është e lehtë dhe shumë e shpejtë për t'ju ndihmuar. Mund të shkarkoni aplikacionin celular për telefonin tuaj dhe të filloni të shtoni ose përmirësoni produktet.\n\nNga ana tjetër, faqja e internetit Open Food Facts ofron shumë mënyra për të kontribuar: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "PERKTHE",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts është një projekt global, që përmban produkte nga më shumë se 160 vende. Open Food Facts është përkthyer në dhjetëra gjuhë, me përmbajtje që evoluon vazhdimisht.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Perkthimet jane nje nga detyrat kyce te projektit.",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Kontribuoni aftësitë tuaja në Open Food Facts. Bashkohuni me grupin e aftësive!",
-  "contribute_share_header": "Ndani Fakte Ushqimore të Hapura me miqtë tuaj",
-  "@contribute_share_header": {},
   "contribute_share_content": "I wanted to let you know about the app I've been using, Open Food Facts, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it's free, does not require registration, and you can even help increase the number of products decyphered. Here's the link to get it for your phone: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Hyni në llogarinë tuaj Open Food Facts për të marrë kredite për kontributet tuaja",
   "question_yes_button_accessibility_value": "Përgjigju me po",
   "question_no_button_accessibility_value": "Përgjigju me jo",
   "question_skip_button_accessibility_value": "Anashkalojeni këtë pyetje",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Krijo llogarinë tënde dhe bashkohu me komunitetin Open Food Facts për të ndihmuar në ndërtimin e njohurive ushqimore në të gjithë botën!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Bashkohuni me ne",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Profili juaj",
-  "myPreferences_profile_subtitle": "Menaxhoni llogarinë tuaj të kontribuesit në Open Food Facts.",
   "myPreferences_settings_title": "Parametrat e aplikacionit",
   "myPreferences_settings_subtitle": "Modaliteti i errët, Gjuhët…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Preferencat ushqimore",
   "myPreferences_food_subtitle": "Zgjidhni cfare informacioni rreth ushqimit eshte me i rendesishmi per ju.",
   "myPreferences_food_compatibility_explainer": "Zgjidhni se cili informacion në lidhje me ushqimin ka më shumë rëndësi për ju, në mënyrë që të renditni ushqimin sipas preferencave tuaja, shikoni informacionin që ju intereson së pari dhe merrni një përmbledhje të përputhshmërisë.",
-  "myPreferences_food_privacy": "Ato preferenca ushqimore mbeten në pajisjen tuaj dhe nuk shoqërohen me llogarinë tuaj të kontribuesit në Open Food Facts, nëse keni një të tillë.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Ju gjetet nje produkt te ri!",
   "@missing_product": {},
-  "add_product_take_photos": "Bëni foto të paketimit për ta shtuar këtë produkt në Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Ju lutemi bëni disa foto më parë. Gjithmonë mund ta përfundoni produktin më vonë.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Merrni atë duke plotësuar kategorinë e ushqimit dhe përbërësit",
   "new_product_desc_nova_unknown": "Niveli i përpunimit të ushqimit i panjohur",
   "new_product_title_pictures": "Produkt i ri",
-  "new_product_title_pictures_details": "Ju lutem bëni fotot e mëposhtme dhe motori i Open Food Facts mund të zgjidhë pjesën tjetër!",
   "new_product_title_misc": "Dhe disa të dhëna bazë…",
   "new_product_done_msg": "Faleminderit për kontributin tuaj “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Duke ngarkuar foton në server",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Duke ngarkuar imazhin e përparmë te Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Duke ngarkuar imazhin e përbërësve në Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Duke ngarkuar imazhin e të ushqyerit në Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Duke ngarkuar imazhin e paketimit në Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Duke ngarkuar një imazh tjetër në Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Duke ngarkuar imazhin te Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Shto perberesit e munguar.",
   "score_add_missing_packaging_image": "Shto imazhin e paketimit që mungon",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Mirë se vini në Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Skano** një barkod ose\n**kërko** për një produkt",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Cilësimet e sistemeve të hapura për Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Produkti u hoq nga historiku",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Na ndiqni në TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Na ndiqni në Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Na ndiqni në X (më parë Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Na ndiqni në Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blog",
   "faq": "Pyetje të shpeshta",
-  "discover": "Zbulo",
   "how_to_contribute": "Si të kontribuoni",
   "hint_knowledge_panel_message": "Mund të prekësh çdo pjesë të kartës për të marrë më shumë detaje rreth asaj që sheh. Provoje tani!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Hyni ose regjistrohuni për t'u bashkuar me komunitetin Open Food Facts",
-  "user_profile_title_id_email": "Hyrja në Open Food Facts: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Mirë se vini {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Fshi llogarinë",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Përshëndetje, ju lutem fshini llogarinë time të Open Food Facts: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Aplikacioni",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Kur aktivizohet, raportet e rrëzimeve i dërgohen automatikisht sistemit të gjurmimit të gabimeve të Open Food Facts, në mënyrë që defektet të mund të rregullohen dhe kështu të përmirësohet aplikacioni.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Mungon kategoria?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Në rast se një kategori **nuk është e disponueshme në autocomplete**, mos ngurroni ta shtoni atë gjithsesi.\nKjo do të na ndihmojë të përmirësojmë Open Food Facts në vendin tuaj.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Sardele në vaj ulliri",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Shkurtore për aplikacionin Çmimet në faqen e produktit",
-  "prices_app_button": "Shko te aplikacioni Çmimet",
-  "prices_website_button": "Hapur në faqen e internetit të Çmimeve të Hapura",
   "prices_bulk_proof_upload_select": "Shtoni etiketat e çmimeve direkt nga galeria",
   "prices_bulk_proof_upload_warning": "Pasi të keni zgjedhur imazhet, nuk do të jeni në gjendje t'i modifikoni ato!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Provë e hapur e çmimit",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Ende pa prova} =1{Vetëm një provë} other{Të gjitha {count} provat}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Konfirmo",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Pajtohem me Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "kushtet e përdorimit dhe kontributit",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Ikona e Analitikës",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Hidhini një sy këtij produkti në Open Food Facts: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Hidhini një sy këtij produkti në Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Hidhini një sy këtij produkti në Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Hidhini një sy këtij produkti në Fakte mbi Produktet e Hapura: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Hidhini një sy listës sime të produkteve në Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Ndihmë me OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Produkti do të përditësohet në sfond sa më shpejt të jetë e mundur.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Të gjitha imazhet",
-  "selected_images": "Imazhe të zgjedhura",
   "product_card_remove_product_tooltip": "Hiq produktin",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Përditësoni bazën e të dhënave të produkteve lokale me të dhënat më të fundit nga Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Fshi të dhënat e produktit jashtë linje",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Mirë se vini në Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Çfarë është Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts është një bazë të dhënash **bashkëpunuese**, **falas** dhe **e hapur** e produkteve ushqimore nga e gjithë bota.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Një pikëzim për të shmangur ushqimet ultra të përpunuara",
   "guide_open_food_facts_scores_arg3_title": "Një rezultat për planetin",
   "guide_open_food_facts_share_link": "https://world-sq.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Mirë se vini në Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Çfarë është Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts e zgjeron misionin tonë edhe tek miqtë tanë me qime! Është një **bazë të dhënash me produkte ushqimore për kafshë shtëpiake për macet, qentë dhe shokë të tjerë**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Një shënim mbi shënimin",
   "guide_open_pet_food_facts_scores_paragraph1": "Zhvillimi i një sistemi vlerësimi për ushqimin e kafshëve shtëpiake **nuk është përparësi tani për tani**. Metodologjia do të ishte komplekse, pasi nevojat ushqyese ndryshojnë shumë sipas specieve, moshës dhe gjendjes shëndetësore. Ne ende nuk kemi gjetur ndonjë ekip shkencor të pavarur, të aftë për të zhvilluar një vlerësim të tillë.",
   "guide_open_pet_food_facts_share_link": "https://world-sq.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Mirë se vini në Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Çfarë është Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts është një bazë të dhënash bashkëpunuese e **produkteve kozmetike**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Mblidhni foto të etiketave të çmimeve në korridore",
   "guide_open_prices_how_arg2_title": "Mblidhni foto të faturave",
   "guide_open_prices_why_title": "Pse po e bën këtë Open Food Facts?",
-  "guide_open_prices_why_paragraph1": "Informacioni mbi çmimet është me rëndësi të madhe për të kuptuar sistemet ushqimore. Është një faktor kyç në kuptimin e kostos së ushqimit dhe për të promovuar dieta më të shëndetshme. Hapja e të dhënave të çmimeve është një mënyrë për ta bërë më të lehtë për studiuesit, gazetarët dhe qytetarët që **të kenë një kuptim më të mirë se si ndryshojnë çmimet e ushqimeve gjeografikisht dhe në kohë**.",
   "guide_open_prices_why_arg1_title": "Ndiqni evolucionin e çmimeve me kalimin e kohës",
   "guide_open_prices_why_arg1_text": "Shikoni **evolucionin e çmimeve**: inflacioni i tkurrur, inflacioni i lirë, mund t'i ndjekim së bashku!",
   "guide_open_prices_why_arg2_title": "Krahasoni çmimet pranë jush",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "I'm a retailer and I want to contribute prices. How can I do that?",
   "guide_open_prices_retailers_paragraph1": "Ju mund të kontribuoni me çmime duke përdorur API-në tonë.\nNëse dëshironi të kontribuoni me çmime në shkallë të gjerë, ju lutemi të na kontaktoni në prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Mirë se vini në Fakte mbi Produktet e Hapura!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Çfarë janë Fakte mbi Produktet e Hapura?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts është një bazë të dhënash masive dhe e hapur për **çdo produkt me barkod, i cili nuk është ushqim, kozmetikë ose ushqim për kafshët shtëpiake**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Ups!",
-  "carousel_unsupported_text": "Barkodi i skanuar nuk mbështetet nga Open Food Facts!",
   "carousel_error_header": "Gabim!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Projekti i Fakte të Hapura Ushqimore",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Contribute",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts është një bazë të dhënash për produktet ushqimore **e krijuar nga të gjithë, për të gjithë**.\nMund ta përdorni për të bërë zgjedhje më të mira ushqimore, dhe meqenëse është **e dhënë e hapur**, kushdo mund ta **ripërdorë atë për çdo qëllim**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Politika e privatësisë",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Produkte të reja që shtova te Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Produktet që duhet të përfundoj",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Kontribuoni në projekt",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Mënyra të thjeshta për të ndihmuar Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Metodologjitë e pikëzimit, ndihmë dhe më shumë rreth projektit",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Llogari",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Sillni Open Food Facts në gjuhën tuaj",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Regjistrohuni në versionin alfa të aplikacionit",
   "@preferences_contribute_enroll_alpha": {},

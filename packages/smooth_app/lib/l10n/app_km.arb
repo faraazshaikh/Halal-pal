@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "តម្លៃបើកចំហ",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "សូមស្វាគមន៍មកកាន់ Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts គឺជាអង្គការមិនស្វែងរកប្រាក់ចំណេញសកលដែលដំណើរការដោយសហគមន៍ក្នុងស្រុក។",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "មើលទិន្នន័យអាហារដែលពាក់ព័ន្ធនឹងចំណូលចិត្តរបស់អ្នក។",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "គ្មានការឆ្លើយតបពីម៉ាស៊ីនមេទេ! អ្នកអាចនឹងបើកបញ្ហាជាមួយតំណភ្ជាប់ខាងក្រោម។",
   "@user_management": {},
-  "sign_in_text": "ចូលទៅក្នុងគណនី Open Food Facts របស់អ្នក ដើម្បីរក្សាទុកការចូលរួមចំណែករបស់អ្នក",
   "incorrect_credentials": "ឈ្មោះ​អ្នកប្រើប្រាស់ ឬ​ពាក្យសម្ងាត់​មិន​ត្រឹមត្រូវ។",
   "password_lost_incorrect_credentials": "អ៊ីមែល ឬឈ្មោះអ្នកប្រើប្រាស់នេះមិនមានទេ។ សូមពិនិត្យមើលព័ត៌មានបញ្ជាក់អត្តសញ្ញាណរបស់អ្នក។",
   "password_lost_server_unavailable": "យើងកំពុងជួបប្រទះនឹងការធ្លាក់ចុះល្បឿននៅលើម៉ាស៊ីនមេរបស់យើង ហើយយើងសូមអភ័យទោសចំពោះបញ្ហានេះ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "សម្រាប់មុខងារនោះ យើងត្រូវការឱ្យអ្នកចូល។",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "ជួយកែលម្អ Open Food Facts នៅក្នុងប្រទេសរបស់អ្នក",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "ចាកចេញ",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "បញ្ជាក់ពាក្យសម្ងាត់",
   "sign_up_page_confirm_password_error_empty": "សូមបញ្ជាក់ពាក្យសម្ងាត់",
   "sign_up_page_confirm_password_error_invalid": "ពាក្យសម្ងាត់មិនត្រូវគ្នាទេ",
-  "sign_up_page_agree_text": "ខ្ញុំយល់ព្រមតាម Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "លក្ខខណ្ឌនៃការប្រើប្រាស់ និងការចូលរួមចំណែក",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "ខ្ញុំជាអ្នកផលិតអាហារ",
   "sign_up_page_producer_hint": "ក្រុមហ៊ុនផលិត/ម៉ាកយីហោ",
   "sign_up_page_producer_error_empty": "សូមបញ្ចូលឈ្មោះអ្នកផលិត ឬឈ្មោះម៉ាក",
-  "sign_up_page_subscribe_checkbox": "ខ្ញុំចង់ជាវព្រឹត្តិប័ត្រព័ត៌មាន Open Food Facts (អ្នកអាចឈប់ជាវវានៅពេលណាក៏បាន)",
   "sign_up_page_user_name_already_used": "ឈ្មោះអ្នកប្រើប្រាស់នេះមានរួចហើយ សូមជ្រើសរើសឈ្មោះអ្នកប្រើប្រាស់ផ្សេងទៀត។",
   "sign_up_page_email_already_exists": "មានរួចហើយ សូមចូលទៅក្នុងគណនី ឬសាកល្បងជាមួយអ៊ីមែលផ្សេងទៀត។",
   "sign_up_page_provide_valid_email": "សូមផ្តល់អាសយដ្ឋានអ៊ីមែលដែលត្រឹមត្រូវ។",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "សុំជំនួយនៅក្នុងឆានែល Slack របស់យើង",
   "support_via_forum": "ស្នើសុំជំនួយនៅលើវេទិការបស់យើង",
-  "support_via_email": "ផ្ញើអ៊ីមែលមកយើង",
   "support_via_email_include_logs_dialog_title": "ផ្ញើកំណត់ហេតុកម្មវិធី?",
   "support_via_email_include_logs_dialog_body": "តើអ្នកចង់បញ្ចូលកំណត់ហេតុកម្មវិធីនៅក្នុងឯកសារភ្ជាប់ជាមួយអ៊ីមែលរបស់អ្នកដែរឬទេ?",
   "termsOfUse": "លក្ខខណ្ឌនៃការប្រើប្រាស់",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "កូដសម្រាប់ផលិតផល Open Food Facts នីមួយៗអាចរកបាននៅលើ GitHub។ អ្នកត្រូវបានស្វាគមន៍ក្នុងការប្រើប្រាស់កូដឡើងវិញ (វាជាប្រភពបើកចំហ) ហើយជួយយើងកែលម្អវា សម្រាប់មនុស្សគ្រប់គ្នា នៅលើភពផែនដីទាំងមូល។",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "អ្នកអាចចូលរួមបន្ទប់ជជែក Open Food Facts Slack ដែលជាវិធីដែលពេញចិត្តក្នុងការសួរសំណួរ។",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "របៀបអភិវឌ្ឍន៍?",
   "contribute_develop_dev_mode_subtitle": "ធ្វើឱ្យរបៀប DEV សកម្ម",
   "contribute_donate_title": "បរិច្ចាគ",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "បរិច្ចាគទៅ Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "សូមទទួលស្គាល់ថា ជាមួយនឹងកំណែអាល់ហ្វាផ្ទៃក្នុង ការបាត់បង់ទិន្នន័យទាំងស្រុងគឺអាចធ្វើទៅបាន ហើយកម្មវិធីនេះអាចនឹងក្លាយទៅជាមិនអាចប្រើបាននៅពេលណាក៏បាន!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "ផលិតផលដែលត្រូវបញ្ចប់",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "មូលដ្ឋានទិន្នន័យគឺជាស្នូលនៃគម្រោង។ វាងាយស្រួល និងរហ័សក្នុងការជួយ។ អ្នកអាចទាញយកកម្មវិធីទូរស័ព្ទសម្រាប់ទូរស័ព្ទរបស់អ្នក ហើយចាប់ផ្តើមបន្ថែម ឬកែលម្អផលិតផល។\n\nម្យ៉ាងវិញទៀត គេហទំព័រ Open Food Facts ផ្តល់ជូននូវវិធីជាច្រើនដើម្បីចូលរួមចំណែក៖ ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "បកប្រែ",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts គឺជាគម្រោងសកលមួយ ដែលមានផលិតផលមកពីជាង 160 ប្រទេស។ Open Food Facts ត្រូវបានបកប្រែជាភាសារាប់សិប ជាមួយនឹងខ្លឹមសារដែលវិវត្តឥតឈប់ឈរ។",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "ការបកប្រែគឺជាកិច្ចការសំខាន់មួយនៃគម្រោង",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "ចូលរួមចំណែកជំនាញរបស់អ្នកទៅក្នុង Open Food Facts។ ចូលរួមក្រុមជំនាញ!",
-  "contribute_share_header": "ចែករំលែកការពិតអំពីអាហារបើកចំហជាមួយមិត្តភក្តិរបស់អ្នក",
-  "@contribute_share_header": {},
   "contribute_share_content": "I wanted to let you know about the app I've been using, Open Food Facts, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it's free, does not require registration, and you can even help increase the number of products decyphered. Here's the link to get it for your phone: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "ចូលទៅក្នុងគណនី Open Food Facts របស់អ្នក ដើម្បីទទួលបានក្រេឌីតសម្រាប់ការរួមចំណែករបស់អ្នក",
   "question_yes_button_accessibility_value": "ឆ្លើយថាបាទ/ចាស៎",
   "question_no_button_accessibility_value": "ឆ្លើយថាទេ",
   "question_skip_button_accessibility_value": "រំលងសំណួរនេះ",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "បង្កើតគណនីរបស់អ្នក ហើយចូលរួមសហគមន៍ Open Food Facts ដើម្បីជួយកសាងចំណេះដឹងអំពីម្ហូបអាហារនៅទូទាំងពិភពលោក!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "ចូលរួមជាមួយយើង",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "ប្រវត្តិរូបរបស់អ្នក",
-  "myPreferences_profile_subtitle": "គ្រប់គ្រងគណនីអ្នកចូលរួម Open Food Facts របស់អ្នក។",
   "myPreferences_settings_title": "ការកំណត់កម្មវិធី",
   "myPreferences_settings_subtitle": "មុខងារងងឹត, ភាសា…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "ចំណង់ចំណូលចិត្តអាហារ",
   "myPreferences_food_subtitle": "ជ្រើសរើសព័ត៌មានអំពីអាហារដែលសំខាន់បំផុតសម្រាប់អ្នក។",
   "myPreferences_food_compatibility_explainer": "ជ្រើសរើសព័ត៌មានអំពីអាហារដែលសំខាន់បំផុតសម្រាប់អ្នក ដើម្បីចាត់ថ្នាក់អាហារតាមចំណូលចិត្តរបស់អ្នក មើលព័ត៌មានដែលអ្នកយកចិត្តទុកដាក់ជាមុនសិន និងទទួលបានសេចក្តីសង្ខេបអំពីភាពឆបគ្នា។",
-  "myPreferences_food_privacy": "ចំណូលចិត្តអាហារទាំងនោះនៅតែមាននៅលើឧបករណ៍របស់អ្នក ហើយមិនត្រូវបានភ្ជាប់ជាមួយគណនីអ្នកចូលរួម Open Food Facts របស់អ្នកទេ ប្រសិនបើអ្នកមាន។",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "អ្នកបានរកឃើញផលិតផលថ្មីមួយហើយ!",
   "@missing_product": {},
-  "add_product_take_photos": "ថតរូបការវេចខ្ចប់ ដើម្បីបន្ថែមផលិតផលនេះទៅក្នុង Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "សូមថតរូបមួយចំនួនជាមុនសិន។ អ្នកអាចបញ្ចប់ផលិតផលនៅពេលក្រោយបាន។",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "ទទួលបានវាដោយបំពេញប្រភេទអាហារ និងគ្រឿងផ្សំ",
   "new_product_desc_nova_unknown": "កម្រិតកែច្នៃអាហារមិនស្គាល់",
   "new_product_title_pictures": "ផលិតផលថ្មី",
-  "new_product_title_pictures_details": "សូមថតរូបខាងក្រោម ហើយម៉ាស៊ីន Open Food Facts អាចដោះស្រាយអ្វីៗដែលនៅសល់បាន!",
   "new_product_title_misc": "និងទិន្នន័យមូលដ្ឋានមួយចំនួន…",
   "new_product_done_msg": "សូមអរគុណចំពោះការចូលរួមចំណែករបស់អ្នក “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "កំពុងផ្ទុកឡើងរូបថតទៅម៉ាស៊ីនបម្រើ",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "កំពុងផ្ទុកឡើងរូបភាពខាងមុខទៅ Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "កំពុងផ្ទុកឡើងរូបភាពគ្រឿងផ្សំទៅ Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "កំពុងផ្ទុកឡើងរូបភាពអាហារូបត្ថម្ភទៅកាន់ Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "កំពុងផ្ទុកឡើងរូបភាពវេចខ្ចប់ទៅ Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "កំពុងផ្ទុកឡើងរូបភាពផ្សេងទៀតទៅ Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "កំពុងផ្ទុកឡើងរូបភាពទៅ Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "បន្ថែមគ្រឿងផ្សំដែលបាត់",
   "score_add_missing_packaging_image": "បន្ថែមរូបភាពវេចខ្ចប់ដែលបាត់",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "សូមស្វាគមន៍មកកាន់ Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**ស្កេន** បាកូដ ឬ\n**ស្វែងរក** ផលិតផល",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "បើកការកំណត់ប្រព័ន្ធសម្រាប់ Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "ផលិតផលត្រូវបានដកចេញពីប្រវត្តិ",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "តាមដានពួកយើងនៅលើ TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "តាមដានពួកយើងនៅលើ Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "តាមដានពួកយើងនៅលើ X (ពីមុន Twitter)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "តាមដានពួកយើងនៅលើ Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "ប្លុក",
   "faq": "សំណួរដែលសួរញឹកញាប់",
-  "discover": "ស្វែងរក",
   "how_to_contribute": "របៀបចូលរួមចំណែក",
   "hint_knowledge_panel_message": "អ្នកអាចប៉ះលើផ្នែកណាមួយនៃកាត ដើម្បីទទួលបានព័ត៌មានលម្អិតបន្ថែមអំពីអ្វីដែលអ្នកឃើញ។ សាកល្បងវាឥឡូវនេះ!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "ចូល ឬចុះឈ្មោះដើម្បីចូលរួមសហគមន៍ Open Food Facts",
-  "user_profile_title_id_email": "ការចូលគណនី Open Food Facts: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "សូមស្វាគមន៍ {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "លុបគណនី",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "សួស្តី សូមលុបគណនី Open Food Facts របស់ខ្ញុំចេញ៖ {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "ពាក្យសុំ",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "នៅពេលបើកដំណើរការ របាយការណ៍គាំងត្រូវបានដាក់ជូនដោយស្វ័យប្រវត្តិទៅប្រព័ន្ធតាមដានកំហុសរបស់ Open Food Facts ដើម្បីឱ្យកំហុសអាចត្រូវបានជួសជុល និងកែលម្អកម្មវិធី។",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "បាត់ប្រភេទ?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "ក្នុងករណីដែលប្រភេទណាមួយមិនមាននៅក្នុងការបំពេញដោយស្វ័យប្រវត្តិទេ សូមមេត្តាបន្ថែមវាទៅ។\nនេះនឹងជួយយើងកែលម្អ Open Food Facts នៅក្នុងប្រទេសរបស់អ្នក។",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "ត្រីសាឌីនក្នុងប្រេងអូលីវ",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "ផ្លូវកាត់ទៅកាន់កម្មវិធីតម្លៃនៅលើទំព័រផលិតផល",
-  "prices_app_button": "ចូលទៅកាន់កម្មវិធីតម្លៃ",
-  "prices_website_button": "បើកនៅលើគេហទំព័រ Open Prices",
   "prices_bulk_proof_upload_select": "បន្ថែមស្លាកតម្លៃដោយផ្ទាល់ពីវិចិត្រសាល",
   "prices_bulk_proof_upload_warning": "នៅពេលដែលអ្នកបានជ្រើសរើសរូបភាពរួចហើយ អ្នកនឹងមិនអាចកែសម្រួលវាបានទេ!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "ភស្តុតាងតម្លៃបើកចំហ",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{មិនទាន់មានភស្តុតាងនៅឡើយទេ} =1{មានតែភស្តុតាងមួយប៉ុណ្ណោះ} other{ទាំងអស់ {count} ភស្តុតាង}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "បញ្ជាក់",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "ខ្ញុំយល់ព្រមតាម Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "លក្ខខណ្ឌនៃការប្រើប្រាស់ និងការចូលរួមចំណែក",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "រូបតំណាងវិភាគ",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "សូមក្រឡេកមើលផលិតផលនេះនៅលើ Open Food Facts៖ {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "សូមក្រឡេកមើលផលិតផលនេះនៅលើ Open Beauty Facts៖ {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "សូមក្រឡេកមើលផលិតផលនេះនៅលើ Open PetFood Facts៖ {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "សូមក្រឡេកមើលផលិតផលនេះនៅលើ Open Products Facts៖ {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "សូមក្រឡេកមើលបញ្ជីផលិតផលរបស់ខ្ញុំនៅលើ Open Food Facts៖ {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "ជំនួយជាមួយ OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "ផលិតផលនឹងត្រូវបានធ្វើបច្ចុប្បន្នភាពនៅផ្ទៃខាងក្រោយឱ្យបានឆាប់តាមដែលអាចធ្វើទៅបាន។",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "រូបភាពទាំងអស់",
-  "selected_images": "រូបភាពដែលបានជ្រើសរើស",
   "product_card_remove_product_tooltip": "លុបផលិតផលចេញ",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យផលិតផលក្នុងស្រុកជាមួយនឹងទិន្នន័យចុងក្រោយបំផុតពី Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "សម្អាតទិន្នន័យផលិតផលក្រៅបណ្តាញ",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "សូមស្វាគមន៍មកកាន់ Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "តើ Open Food Facts ជាអ្វី?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts គឺជាមូលដ្ឋានទិន្នន័យ **សហការ** ឥតគិតថ្លៃ** និង **បើកចំហ** នៃផលិតផលម្ហូបអាហារមកពីជុំវិញពិភពលោក។",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "ពិន្ទុដើម្បីជៀសវាងអាហារកែច្នៃខ្លាំងពេក",
   "guide_open_food_facts_scores_arg3_title": "ពិន្ទុសម្រាប់ភពផែនដី",
   "guide_open_food_facts_share_link": "https://world-km.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "សូមស្វាគមន៍មកកាន់ Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "តើអ្វីទៅជា Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts ពង្រីកបេសកកម្មរបស់យើងដល់មិត្តភក្តិរោមរបស់យើង! វាគឺជា **មូលដ្ឋានទិន្នន័យនៃផលិតផលអាហារសត្វចិញ្ចឹមសម្រាប់ឆ្មា ឆ្កែ និងដៃគូផ្សេងទៀត**។",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "កំណត់ចំណាំអំពីការរាប់ពិន្ទុ",
   "guide_open_pet_food_facts_scores_paragraph1": "ការបង្កើតប្រព័ន្ធដាក់ពិន្ទុសម្រាប់អាហារសត្វចិញ្ចឹម **មិនមែនជាអាទិភាពនៅពេលនេះទេ**។ វិធីសាស្រ្តនឹងមានភាពស្មុគស្មាញ ដោយសារតម្រូវការអាហារូបត្ថម្ភខុសគ្នាយ៉ាងខ្លាំងទៅតាមប្រភេទសត្វ អាយុ និងស្ថានភាពសុខភាព។ យើងមិនទាន់បានរកឃើញក្រុមវិទ្យាសាស្ត្រឯករាជ្យណាមួយដែលអាចបង្កើតពិន្ទុបែបនេះនៅឡើយទេ។",
   "guide_open_pet_food_facts_share_link": "https://world-km.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "សូមស្វាគមន៍មកកាន់ Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "តើ Open Beauty Facts ជាអ្វី?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts គឺជាមូលដ្ឋានទិន្នន័យសហការនៃ **ផលិតផលគ្រឿងសម្អាង**។",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "ប្រមូលរូបថតនៃស្លាកតម្លៃនៅតាមច្រកផ្លូវ",
   "guide_open_prices_how_arg2_title": "ប្រមូលរូបថតនៃបង្កាន់ដៃ",
   "guide_open_prices_why_title": "ហេតុអ្វីបានជា Open Food Facts ធ្វើបែបនេះ?",
-  "guide_open_prices_why_paragraph1": "ព័ត៌មានតម្លៃមានសារៈសំខាន់បំផុតក្នុងការយល់ដឹងអំពីប្រព័ន្ធម្ហូបអាហារ។ វាជាកត្តាសំខាន់ក្នុងការយល់ដឹងអំពីតម្លៃម្ហូបអាហារ និងដើម្បីលើកកម្ពស់របបអាហារដែលមានសុខភាពល្អ។ ការបើកទិន្នន័យតម្លៃគឺជាមធ្យោបាយមួយដើម្បីធ្វើឱ្យវាកាន់តែងាយស្រួលសម្រាប់អ្នកស្រាវជ្រាវ អ្នកសារព័ត៌មាន និងប្រជាពលរដ្ឋក្នុងការ **មានការយល់ដឹងកាន់តែច្បាស់អំពីរបៀបដែលតម្លៃម្ហូបអាហារប្រែប្រួលទៅតាមភូមិសាស្ត្រ និងពេលវេលា**។",
   "guide_open_prices_why_arg1_title": "តាមដានការវិវត្តនៃតម្លៃតាមពេលវេលា",
   "guide_open_prices_why_arg1_text": "សូមមើល **ការវិវត្តន៍នៃតម្លៃ**៖ ការធ្លាក់ចុះតម្លៃ (shrinkflation) ការធ្លាក់ចុះតម្លៃថោក (cheapflation) យើងអាចតាមដានពួកវាជាមួយគ្នាបាន!",
   "guide_open_prices_why_arg2_title": "ប្រៀបធៀបតម្លៃនៅជិតអ្នក",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "I'm a retailer and I want to contribute prices. How can I do that?",
   "guide_open_prices_retailers_paragraph1": "អ្នកអាចចូលរួមចំណែកតម្លៃដោយប្រើ API របស់យើង។\nប្រសិនបើអ្នកចង់ចូលរួមចំណែកតម្លៃក្នុងទ្រង់ទ្រាយធំ សូមទាក់ទងមកយើងខ្ញុំតាមរយៈអ៊ីមែល prices@openfoodfacts.org។",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "សូមស្វាគមន៍មកកាន់ Open Products Facts!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "តើ​អ្វី​ទៅ​ជា​ Open Products Facts?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts គឺជាមូលដ្ឋានទិន្នន័យបើកចំហដ៏ធំមួយសម្រាប់ **ផលិតផលណាមួយដែលមានបាកូដ ដែលមិនមែនជាអាហារ គ្រឿងសំអាង ឬចំណីសត្វចិញ្ចឹម**។",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "អូ!",
-  "carousel_unsupported_text": "បាកូដដែលបានស្កេនមិនត្រូវបានគាំទ្រដោយ Open Food Facts ទេ!",
   "carousel_error_header": "កំហុស!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "គម្រោង Open Food Facts",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Contribute",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts គឺ​ជា​មូលដ្ឋាន​ទិន្នន័យ​ផលិតផល​អាហារ **ដែល​បង្កើត​ឡើង​ដោយ​អ្នក​រាល់​គ្នា​សម្រាប់​អ្នក​រាល់​គ្នា**។\nអ្នក​អាច​ប្រើ​វា​ដើម្បី​ធ្វើ​ការ​ជ្រើសរើស​អាហារ​បាន​កាន់​តែ​ប្រសើរ ហើយ​ដូច​ដែល​វា​ជា **ទិន្នន័យ​បើក​ចំហ** អ្នក​ណា​ក៏​អាច **ប្រើ​វា​ឡើង​វិញ​ក្នុង​គោល​បំណង​ណា​មួយ**។",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "គោលការណ៍ឯកជនភាព",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "ផលិតផលថ្មីដែលខ្ញុំបានបញ្ចូលទៅក្នុង Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "ផលិតផលដែលខ្ញុំត្រូវការដើម្បីបំពេញ",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "រួមចំណែកដល់គម្រោង",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "វិធីសាមញ្ញដើម្បីជួយ Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "ពិន្ទុវិធីសាស្រ្ត ជំនួយ និងច្រើនទៀតអំពីគម្រោង",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "គណនី",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "នាំយក Open Food Facts ទៅកាន់ភាសារបស់អ្នក",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "ចុះឈ្មោះក្នុងកំណែអាល់ហ្វារបស់កម្មវិធី",
   "@preferences_contribute_enroll_alpha": {},

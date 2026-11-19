@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "ಬೆಲೆಗಳನ್ನು ತೆರೆಯಿರಿ",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್‌ಗೆ ಸುಸ್ವಾಗತ",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಸ್ಥಳೀಯ ಸಮುದಾಯಗಳಿಂದ ನಡೆಸಲ್ಪಡುವ ಜಾಗತಿಕ ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿದೆ.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "ನಿಮ್ಮ ಆದ್ಯತೆಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಆಹಾರ ಡೇಟಾವನ್ನು ನೋಡಿ.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "ಸರ್ವರ್ ಪ್ರತಿಕ್ರಿಯೆ ಇಲ್ಲ! ಈ ಕೆಳಗಿನ ಲಿಂಕ್ ಬಳಸಿ ನೀವು ಸಮಸ್ಯೆಯನ್ನು ತೆರೆಯಬಹುದು.",
   "@user_management": {},
-  "sign_in_text": "ನಿಮ್ಮ ಕೊಡುಗೆಗಳನ್ನು ಉಳಿಸಲು ನಿಮ್ಮ ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.",
   "incorrect_credentials": "ತಪ್ಪಾದ ಬಳಕೆದಾರಹೆಸರು ಅಥವಾ ಪಾಸ್‌ವರ್ಡ್.",
   "password_lost_incorrect_credentials": "ಈ ಇಮೇಲ್ ಅಥವಾ ಬಳಕೆದಾರಹೆಸರು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ರುಜುವಾತುಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.",
   "password_lost_server_unavailable": "ನಮ್ಮ ಸರ್ವರ್‌ಗಳು ಪ್ರಸ್ತುತ ನಿಧಾನಗತಿಯಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿವೆ ಮತ್ತು ಅದಕ್ಕಾಗಿ ನಾವು ಕ್ಷಮೆಯಾಚಿಸುತ್ತೇವೆ. ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "ಆ ವೈಶಿಷ್ಟ್ಯಕ್ಕಾಗಿ ನೀವು ಸೈನ್ ಇನ್ ಮಾಡಬೇಕಾಗಿದೆ.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "ನಿಮ್ಮ ದೇಶದಲ್ಲಿ Open Food Facts ಅನ್ನು ಸುಧಾರಿಸಲು ಸಹಾಯ ಮಾಡಿ",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "ಸೈನ್ ಔಟ್ ಮಾಡಿ",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ದೃಢೀಕರಿಸಿ",
   "sign_up_page_confirm_password_error_empty": "ದಯವಿಟ್ಟು ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ದೃಢೀಕರಿಸಿ.",
   "sign_up_page_confirm_password_error_invalid": "ಪಾಸ್‌ವರ್ಡ್‌ಗಳು ಹೊಂದಿಕೆಯಾಗುತ್ತಿಲ್ಲ.",
-  "sign_up_page_agree_text": "ನಾನು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಗೆ ಒಪ್ಪುತ್ತೇನೆ.",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "ಬಳಕೆಯ ನಿಯಮಗಳು ಮತ್ತು ಕೊಡುಗೆಗಳು",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "ನಾನು ಆಹಾರ ಉತ್ಪಾದಕ.",
   "sign_up_page_producer_hint": "ನಿರ್ಮಾಪಕ/ಬ್ರ್ಯಾಂಡ್",
   "sign_up_page_producer_error_empty": "ದಯವಿಟ್ಟು ನಿರ್ಮಾಪಕರು ಅಥವಾ ಬ್ರ್ಯಾಂಡ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ.",
-  "sign_up_page_subscribe_checkbox": "ನಾನು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಸುದ್ದಿಪತ್ರಕ್ಕೆ ಚಂದಾದಾರರಾಗಲು ಬಯಸುತ್ತೇನೆ (ನೀವು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಅದರಿಂದ ಅನ್‌ಸಬ್‌ಸ್ಕ್ರೈಬ್ ಮಾಡಬಹುದು)",
   "sign_up_page_user_name_already_used": "ಬಳಕೆದಾರಹೆಸರು ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ, ದಯವಿಟ್ಟು ಬೇರೊಂದು ಬಳಕೆದಾರಹೆಸರನ್ನು ಆರಿಸಿ.",
   "sign_up_page_email_already_exists": "ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ, ಖಾತೆಗೆ ಲಾಗಿನ್ ಮಾಡಿ ಅಥವಾ ಬೇರೆ ಇಮೇಲ್ ಮೂಲಕ ಪ್ರಯತ್ನಿಸಿ.",
   "sign_up_page_provide_valid_email": "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಒದಗಿಸಿ.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "ನಮ್ಮ ಸ್ಲಾಕ್ ಚಾನಲ್‌ನಲ್ಲಿ ಸಹಾಯ ಕೇಳಿ",
   "support_via_forum": "ನಮ್ಮ ವೇದಿಕೆಯಲ್ಲಿ ಸಹಾಯವನ್ನು ಕೇಳಿ",
-  "support_via_email": "ನಮಗೆ ಇ-ಮೇಲ್ ಕಳುಹಿಸಿ",
   "support_via_email_include_logs_dialog_title": "ಆ್ಯಪ್ ಲಾಗ್‌ಗಳನ್ನು ಕಳುಹಿಸುವುದೇ?",
   "support_via_email_include_logs_dialog_body": "ನಿಮ್ಮ ಇಮೇಲ್‌ಗೆ ಲಗತ್ತಿನಲ್ಲಿ ಅಪ್ಲಿಕೇಶನ್ ಲಾಗ್‌ಗಳನ್ನು ಸೇರಿಸಲು ನೀವು ಬಯಸುವಿರಾ?",
   "termsOfUse": "ಬಳಕೆಯ ನಿಯಮಗಳು",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "ಪ್ರತಿಯೊಂದು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಉತ್ಪನ್ನದ ಕೋಡ್ GitHub ನಲ್ಲಿ ಲಭ್ಯವಿದೆ. ಕೋಡ್ ಅನ್ನು ಮರುಬಳಕೆ ಮಾಡಲು ನಿಮಗೆ ಸ್ವಾಗತ (ಇದು ಓಪನ್ ಸೋರ್ಸ್) ಮತ್ತು ಪ್ರಪಂಚದಾದ್ಯಂತದ ಎಲ್ಲರಿಗೂ ಅದನ್ನು ಸುಧಾರಿಸಲು ನಮಗೆ ಸಹಾಯ ಮಾಡಿ.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "ನೀವು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಸ್ಲಾಕ್ ಚಾಟ್‌ರೂಮ್‌ಗೆ ಸೇರಬಹುದು, ಇದು ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಲು ಆದ್ಯತೆಯ ಮಾರ್ಗವಾಗಿದೆ.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "DEV ಮೋಡ್?",
   "contribute_develop_dev_mode_subtitle": "DEV ಮೋಡ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ",
   "contribute_donate_title": "ಕಾಣಿಕೆ",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್‌ಗಳಿಗೆ ದೇಣಿಗೆ ನೀಡಿ",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "ಆಂತರಿಕ ಆಲ್ಫಾ ಆವೃತ್ತಿಯೊಂದಿಗೆ, ಡೇಟಾದ ಸಂಪೂರ್ಣ ನಷ್ಟ ಸಾಧ್ಯ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ನಿಷ್ಪ್ರಯೋಜಕವಾಗಬಹುದು ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ಒಪ್ಪಿಕೊಳ್ಳಿ!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "ಉತ್ಪನ್ನಗಳು ಪೂರ್ಣಗೊಳ್ಳಬೇಕು",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "ಡೇಟಾಬೇಸ್ ಯೋಜನೆಯ ಮೂಲಾಧಾರವಾಗಿದೆ. ಇದು ಸಹಾಯ ಮಾಡಲು ಸುಲಭ ಮತ್ತು ತುಂಬಾ ತ್ವರಿತವಾಗಿದೆ. ನೀವು ನಿಮ್ಮ ಫೋನ್‌ಗಾಗಿ ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು ಮತ್ತು ಉತ್ಪನ್ನಗಳನ್ನು ಸೇರಿಸಲು ಅಥವಾ ಸುಧಾರಿಸಲು ಪ್ರಾರಂಭಿಸಬಹುದು.\n\nಮತ್ತೊಂದೆಡೆ, ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ವೆಬ್‌ಸೈಟ್ ಕೊಡುಗೆ ನೀಡಲು ಹಲವು ಮಾರ್ಗಗಳನ್ನು ನೀಡುತ್ತದೆ: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "ಅನುವಾದಿಸಿ",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಒಂದು ಜಾಗತಿಕ ಯೋಜನೆಯಾಗಿದ್ದು, 160 ಕ್ಕೂ ಹೆಚ್ಚು ದೇಶಗಳ ಉತ್ಪನ್ನಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಅನ್ನು ನಿರಂತರವಾಗಿ ವಿಕಸನಗೊಳ್ಳುತ್ತಿರುವ ವಿಷಯದೊಂದಿಗೆ ಡಜನ್ಗಟ್ಟಲೆ ಭಾಷೆಗಳಿಗೆ ಅನುವಾದಿಸಲಾಗಿದೆ.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "ಅನುವಾದಗಳು ಯೋಜನೆಯ ಪ್ರಮುಖ ಕಾರ್ಯಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ.",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Open Food Facts ಗೆ ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳನ್ನು ಕೊಡುಗೆ ನೀಡಿ. ಕೌಶಲ್ಯ ಪೂಲ್‌ಗೆ ಸೇರಿ!",
-  "contribute_share_header": "ನಿಮ್ಮ ಸ್ನೇಹಿತರೊಂದಿಗೆ ಮುಕ್ತ ಆಹಾರ ಸಂಗತಿಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ",
-  "@contribute_share_header": {},
   "contribute_share_content": "I wanted to let you know about the app I've been using, Open Food Facts, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it's free, does not require registration, and you can even help increase the number of products decyphered. Here's the link to get it for your phone: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "ನಿಮ್ಮ ಕೊಡುಗೆಗಳಿಗೆ ಕ್ರೆಡಿಟ್ ಪಡೆಯಲು ನಿಮ್ಮ ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.",
   "question_yes_button_accessibility_value": "ಹೌದು ಎಂದು ಉತ್ತರಿಸಿ",
   "question_no_button_accessibility_value": "ಇಲ್ಲ ಎಂಬ ಉತ್ತರದೊಂದಿಗೆ ಉತ್ತರಿಸಿ",
   "question_skip_button_accessibility_value": "ಈ ಪ್ರಶ್ನೆಯನ್ನು ಬಿಟ್ಟುಬಿಡಿ",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "ಪ್ರಪಂಚದಾದ್ಯಂತ ಆಹಾರ ಜ್ಞಾನವನ್ನು ಬೆಳೆಸಲು ಸಹಾಯ ಮಾಡಲು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ರಚಿಸಿ ಮತ್ತು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಸಮುದಾಯಕ್ಕೆ ಸೇರಿ!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್",
-  "myPreferences_profile_subtitle": "ನಿಮ್ಮ ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಕೊಡುಗೆದಾರರ ಖಾತೆಯನ್ನು ನಿರ್ವಹಿಸಿ.",
   "myPreferences_settings_title": "ಅಪ್ಲಿಕೇಶನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
   "myPreferences_settings_subtitle": "ಡಾರ್ಕ್ ಮೋಡ್, ಭಾಷೆಗಳು…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "ಆಹಾರ ಆದ್ಯತೆಗಳು",
   "myPreferences_food_subtitle": "ಆಹಾರದ ಬಗ್ಗೆ ನಿಮಗೆ ಯಾವ ಮಾಹಿತಿ ಹೆಚ್ಚು ಮುಖ್ಯ ಎಂಬುದನ್ನು ಆರಿಸಿ.",
   "myPreferences_food_compatibility_explainer": "ನಿಮ್ಮ ಆದ್ಯತೆಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ಆಹಾರವನ್ನು ಶ್ರೇಣೀಕರಿಸಲು, ನೀವು ಕಾಳಜಿವಹಿಸುವ ಮಾಹಿತಿಯನ್ನು ಮೊದಲು ನೋಡಿ ಮತ್ತು ಹೊಂದಾಣಿಕೆಯ ಸಾರಾಂಶವನ್ನು ಪಡೆಯಲು, ಆಹಾರದ ಬಗ್ಗೆ ನಿಮಗೆ ಯಾವ ಮಾಹಿತಿಯು ಹೆಚ್ಚು ಮುಖ್ಯವಾಗಿದೆ ಎಂಬುದನ್ನು ಆರಿಸಿ.",
-  "myPreferences_food_privacy": "ಆ ಆಹಾರ ಆದ್ಯತೆಗಳು ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಉಳಿಯುತ್ತವೆ ಮತ್ತು ನೀವು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಕೊಡುಗೆದಾರರ ಖಾತೆಯನ್ನು ಹೊಂದಿದ್ದರೆ ಅವು ನಿಮ್ಮೊಂದಿಗೆ ಸಂಬಂಧ ಹೊಂದಿರುವುದಿಲ್ಲ.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "ನೀವು ಹೊಸ ಉತ್ಪನ್ನವನ್ನು ಕಂಡುಕೊಂಡಿದ್ದೀರಿ!",
   "@missing_product": {},
-  "add_product_take_photos": "ಈ ಉತ್ಪನ್ನವನ್ನು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್‌ಗೆ ಸೇರಿಸಲು ಪ್ಯಾಕೇಜಿಂಗ್‌ನ ಫೋಟೋಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ.",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "ದಯವಿಟ್ಟು ಮೊದಲು ಕೆಲವು ಫೋಟೋಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ. ನೀವು ಯಾವಾಗಲೂ ಉತ್ಪನ್ನವನ್ನು ನಂತರ ಪೂರ್ಣಗೊಳಿಸಬಹುದು.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Add product information",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "ಆಹಾರ ವರ್ಗ ಮತ್ತು ಪದಾರ್ಥಗಳನ್ನು ಭರ್ತಿ ಮಾಡುವ ಮೂಲಕ ಅದನ್ನು ಪಡೆಯಿರಿ.",
   "new_product_desc_nova_unknown": "ಆಹಾರ ಸಂಸ್ಕರಣಾ ಮಟ್ಟ ತಿಳಿದಿಲ್ಲ",
   "new_product_title_pictures": "ಹೊಸ ಉತ್ಪನ್ನ",
-  "new_product_title_pictures_details": "ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನ ಫೋಟೋಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ, Open Food Facts ಎಂಜಿನ್ ಉಳಿದದ್ದನ್ನು ಕೆಲಸ ಮಾಡುತ್ತದೆ!",
   "new_product_title_misc": "ಮತ್ತು ಕೆಲವು ಮೂಲಭೂತ ಡೇಟಾ…",
   "new_product_done_msg": "“{username}” ಕೊಡುಗೆಗೆ ಧನ್ಯವಾದಗಳು!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "ಸರ್ವರ್‌ಗೆ ಫೋಟೋ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್‌ಗೆ ಮುಂಭಾಗದ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್‌ಗಳಿಗೆ ಪದಾರ್ಥಗಳ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್‌ಗಳಿಗೆ ಪೌಷ್ಟಿಕಾಂಶದ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್‌ಗಳಿಗೆ ಪ್ಯಾಕೇಜಿಂಗ್ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್‌ಗಳಿಗೆ ಇತರ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್‌ಗಳಿಗೆ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "ಕಾಣೆಯಾದ ಪದಾರ್ಥಗಳನ್ನು ಸೇರಿಸಿ",
   "score_add_missing_packaging_image": "ಕಾಣೆಯಾದ ಪ್ಯಾಕೇಜಿಂಗ್ ಚಿತ್ರವನ್ನು ಸೇರಿಸಿ",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್‌ಗೆ ಸುಸ್ವಾಗತ",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**ಬಾರ್‌ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ ಅಥವಾ\nಉತ್ಪನ್ನಕ್ಕಾಗಿ **ಹುಡುಕಿ**",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್‌ಗಳಿಗಾಗಿ ಓಪನ್ ಸಿಸ್ಟಮ್ಸ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "ಉತ್ಪನ್ನವನ್ನು ಇತಿಹಾಸದಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "ಟಿಕ್‌ಟಾಕ್‌ನಲ್ಲಿ ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Instagram ನಲ್ಲಿ ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "X (ಹಿಂದೆ ಟ್ವಿಟರ್) ನಲ್ಲಿ ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "ಮಾಸ್ಟೋಡಾನ್‌ನಲ್ಲಿ ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "ಬ್ಲಾಗ್",
   "faq": "ಪದೇ ಪದೇ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳು",
-  "discover": "ಅನ್ವೇಷಿಸಿ",
   "how_to_contribute": "ಕೊಡುಗೆ ನೀಡುವುದು ಹೇಗೆ",
   "hint_knowledge_panel_message": "ನೀವು ನೋಡುವುದರ ಕುರಿತು ಹೆಚ್ಚಿನ ವಿವರಗಳನ್ನು ಪಡೆಯಲು ಕಾರ್ಡ್‌ನ ಯಾವುದೇ ಭಾಗವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಬಹುದು. ಈಗಲೇ ಪ್ರಯತ್ನಿಸಿ!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಸಮುದಾಯಕ್ಕೆ ಸೇರಲು ಸೈನ್-ಇನ್ ಮಾಡಿ ಅಥವಾ ಸೈನ್ ಅಪ್ ಮಾಡಿ.",
-  "user_profile_title_id_email": "Open Food Facts ಲಾಗಿನ್: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "ಸ್ವಾಗತ {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "ಖಾತೆಯನ್ನು ಅಳಿಸಿ",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "ನಮಸ್ಕಾರ, ದಯವಿಟ್ಟು ನನ್ನ ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಖಾತೆಯನ್ನು ಅಳಿಸಿ: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "ಅಪ್ಲಿಕೇಶನ್",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ, ಕ್ರ್ಯಾಶ್ ವರದಿಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್‌ನ ದೋಷ ಟ್ರ್ಯಾಕಿಂಗ್ ವ್ಯವಸ್ಥೆಗೆ ಸಲ್ಲಿಸಲಾಗುತ್ತದೆ, ಇದರಿಂದ ದೋಷಗಳನ್ನು ಸರಿಪಡಿಸಬಹುದು ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಸುಧಾರಿಸಬಹುದು.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "ವರ್ಗ ಕಾಣೆಯಾಗಿದೆಯೇ?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "ಒಂದು ವೇಳೆ ಯಾವುದೇ ವರ್ಗವು **ಸ್ವಯಂಪೂರ್ಣತೆಯಲ್ಲಿ** ಲಭ್ಯವಿಲ್ಲದಿದ್ದರೆ, ಅದನ್ನು ಹೇಗಾದರೂ ಸೇರಿಸಲು ಮುಕ್ತವಾಗಿರಿ.\nಇದು ನಿಮ್ಮ ದೇಶದಲ್ಲಿ ಮುಕ್ತ ಆಹಾರ ಸಂಗತಿಗಳನ್ನು ಸುಧಾರಿಸಲು ನಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "ಆಲಿವ್ ಎಣ್ಣೆಯಲ್ಲಿ ಸಾರ್ಡೀನ್ಗಳು",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "ಉತ್ಪನ್ನ ಪುಟದಲ್ಲಿ ಬೆಲೆಗಳ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಶಾರ್ಟ್‌ಕಟ್",
-  "prices_app_button": "ಬೆಲೆಗಳ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಹೋಗಿ",
-  "prices_website_button": "ಓಪನ್ ಪ್ರೈಸಸ್ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ",
   "prices_bulk_proof_upload_select": "ಗ್ಯಾಲರಿಯಿಂದ ನೇರವಾಗಿ ಬೆಲೆ ಟ್ಯಾಗ್‌ಗಳನ್ನು ಸೇರಿಸಿ",
   "prices_bulk_proof_upload_warning": "ನೀವು ಚಿತ್ರಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ನಂತರ, ಅವುಗಳನ್ನು ಸಂಪಾದಿಸಲು ನಿಮಗೆ ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ!",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "ಮುಕ್ತ ಬೆಲೆ ಪುರಾವೆ",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{ಇನ್ನೂ ಪುರಾವೆ ಇಲ್ಲ} =1{ಒಂದೇ ಒಂದು ಪುರಾವೆ} other{ಎಲ್ಲಾ {count} ಪುರಾವೆಗಳು}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "ದೃಢೀಕರಿಸಿ",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "ನಾನು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಗೆ ಒಪ್ಪುತ್ತೇನೆ. ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "ಬಳಕೆಯ ನಿಯಮಗಳು ಮತ್ತು ಕೊಡುಗೆಗಳು",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "ವಿಶ್ಲೇಷಣೆ ಐಕಾನ್",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "ಈ ಉತ್ಪನ್ನವನ್ನು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ನಲ್ಲಿ ನೋಡಿ: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "ಓಪನ್ ಬ್ಯೂಟಿ ಫ್ಯಾಕ್ಟ್‌ಗಳಲ್ಲಿ ಈ ಉತ್ಪನ್ನವನ್ನು ನೋಡಿ: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "ಓಪನ್ ಪೆಟ್‌ಫುಡ್‌ನಲ್ಲಿ ಈ ಉತ್ಪನ್ನವನ್ನು ನೋಡಿ: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "ಈ ಉತ್ಪನ್ನವನ್ನು ಓಪನ್ ಪ್ರಾಡಕ್ಟ್ಸ್ ಫ್ಯಾಕ್ಟ್ಸ್ ನಲ್ಲಿ ನೋಡಿ: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್‌ನಲ್ಲಿ ನನ್ನ ಉತ್ಪನ್ನಗಳ ಪಟ್ಟಿಯನ್ನು ನೋಡಿ: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "ಓಪನ್‌ಫುಡ್‌ಫ್ಯಾಕ್ಟ್ಸ್‌ನೊಂದಿಗೆ ಸಹಾಯ",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "ಉತ್ಪನ್ನವನ್ನು ಆದಷ್ಟು ಬೇಗ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ನವೀಕರಿಸಲಾಗುತ್ತದೆ.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "ಎಲ್ಲಾ ಚಿತ್ರಗಳು",
-  "selected_images": "ಆಯ್ಕೆ ಮಾಡಿದ ಚಿತ್ರಗಳು",
   "product_card_remove_product_tooltip": "ಉತ್ಪನ್ನ ತೆಗೆದುಹಾಕಿ",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್‌ಗಳಿಂದ ಇತ್ತೀಚಿನ ಡೇಟಾದೊಂದಿಗೆ ಸ್ಥಳೀಯ ಉತ್ಪನ್ನ ಡೇಟಾಬೇಸ್ ಅನ್ನು ನವೀಕರಿಸಿ.",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "ಆಫ್‌ಲೈನ್ ಉತ್ಪನ್ನ ಡೇಟಾವನ್ನು ತೆರವುಗೊಳಿಸಿ",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್‌ಗೆ ಸುಸ್ವಾಗತ!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Open Food Facts ಎಂದರೇನು?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts ಎಂಬುದು ಪ್ರಪಂಚದಾದ್ಯಂತದ ಆಹಾರ ಉತ್ಪನ್ನಗಳ **ಸಹಕಾರಿ**, **ಉಚಿತ** ಮತ್ತು **ಮುಕ್ತ** ಡೇಟಾಬೇಸ್ ಆಗಿದೆ.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "ಅತಿ-ಸಂಸ್ಕರಿಸಿದ ಆಹಾರಗಳನ್ನು ತಪ್ಪಿಸಲು ಒಂದು ಸ್ಕೋರ್",
   "guide_open_food_facts_scores_arg3_title": "ಗ್ರಹಕ್ಕೆ ಒಂದು ಸ್ಕೋರ್",
   "guide_open_food_facts_share_link": "https://world-kn.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "ಓಪನ್ ಪೆಟ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್‌ಗೆ ಸುಸ್ವಾಗತ!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Open Pet Food Facts ಎಂದರೇನು?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts ನಮ್ಮ ಧ್ಯೇಯವನ್ನು ನಮ್ಮ ರೋಮದಿಂದ ಕೂಡಿದ ಸ್ನೇಹಿತರಿಗೆ ವಿಸ್ತರಿಸುತ್ತದೆ! ಇದು **ಬೆಕ್ಕುಗಳು, ನಾಯಿಗಳು ಮತ್ತು ಇತರ ಸಹಚರರಿಗೆ ಸಾಕುಪ್ರಾಣಿ ಆಹಾರ ಉತ್ಪನ್ನಗಳ ಡೇಟಾಬೇಸ್**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "ಅಂಕಗಳಿಕೆಯ ಕುರಿತು ಒಂದು ಟಿಪ್ಪಣಿ",
   "guide_open_pet_food_facts_scores_paragraph1": "ಸಾಕುಪ್ರಾಣಿಗಳ ಆಹಾರಕ್ಕಾಗಿ ಸ್ಕೋರಿಂಗ್ ವ್ಯವಸ್ಥೆಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸುವುದು **ಸದ್ಯಕ್ಕೆ ಆದ್ಯತೆಯಲ್ಲ**. ಪೌಷ್ಠಿಕಾಂಶದ ಅಗತ್ಯಗಳು ಜಾತಿ, ವಯಸ್ಸು ಮತ್ತು ಆರೋಗ್ಯ ಸ್ಥಿತಿಯಿಂದ ಬಹಳ ವ್ಯತ್ಯಾಸಗೊಳ್ಳುವುದರಿಂದ ವಿಧಾನವು ಸಂಕೀರ್ಣವಾಗಿರುತ್ತದೆ. ಅಂತಹ ಸ್ಕೋರ್ ಅನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲು ಸಾಧ್ಯವಾಗುವ ಯಾವುದೇ ಸ್ವತಂತ್ರ ವೈಜ್ಞಾನಿಕ ತಂಡವನ್ನು ನಾವು ಇನ್ನೂ ಕಂಡುಕೊಂಡಿಲ್ಲ.",
   "guide_open_pet_food_facts_share_link": "https://world-kn.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "ಓಪನ್ ಬ್ಯೂಟಿ ಫ್ಯಾಕ್ಟ್ಸ್‌ಗೆ ಸುಸ್ವಾಗತ!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Open Beauty Facts ಎಂದರೇನು?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts ಎಂಬುದು **ಕಾಸ್ಮೆಟಿಕ್ ಉತ್ಪನ್ನಗಳ** ಸಹಯೋಗದ ಡೇಟಾಬೇಸ್ ಆಗಿದೆ.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "ನಡುದಾರಿಗಳಲ್ಲಿ ಬೆಲೆ ಟ್ಯಾಗ್‌ಗಳ ಫೋಟೋಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ.",
   "guide_open_prices_how_arg2_title": "ರಶೀದಿಗಳ ಫೋಟೋಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ",
   "guide_open_prices_why_title": "Open Food Facts ಹೀಗೆ ಏಕೆ ಮಾಡುತ್ತಿದೆ?",
-  "guide_open_prices_why_paragraph1": "ಆಹಾರ ವ್ಯವಸ್ಥೆಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಬೆಲೆ ಮಾಹಿತಿಯು ಅತ್ಯಂತ ಮಹತ್ವದ್ದಾಗಿದೆ. ಆಹಾರದ ಬೆಲೆಯನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವಲ್ಲಿ ಮತ್ತು ಆರೋಗ್ಯಕರ ಆಹಾರಕ್ರಮವನ್ನು ಉತ್ತೇಜಿಸುವಲ್ಲಿ ಇದು ಪ್ರಮುಖ ಅಂಶವಾಗಿದೆ. ಬೆಲೆ ಡೇಟಾವನ್ನು ತೆರೆಯುವುದು ಸಂಶೋಧಕರು, ಪತ್ರಕರ್ತರು ಮತ್ತು ನಾಗರಿಕರಿಗೆ **ಭೌಗೋಳಿಕವಾಗಿ ಮತ್ತು ಸಮಯದಲ್ಲಿ ಆಹಾರದ ಬೆಲೆಗಳು ಹೇಗೆ ಬದಲಾಗುತ್ತವೆ ಎಂಬುದರ ಬಗ್ಗೆ ಉತ್ತಮ ತಿಳುವಳಿಕೆಯನ್ನು ಹೊಂದಲು** ಸುಲಭಗೊಳಿಸುವ ಒಂದು ಮಾರ್ಗವಾಗಿದೆ.",
   "guide_open_prices_why_arg1_title": "ಕಾಲಾನಂತರದಲ್ಲಿ ಬೆಲೆಗಳ ವಿಕಾಸವನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ",
   "guide_open_prices_why_arg1_text": "**ಬೆಲೆಗಳ ವಿಕಸನ** ನೋಡಿ: ಕುಗ್ಗುವಿಕೆ, ಅಗ್ಗದ ಹಣದುಬ್ಬರ, ನಾವು ಅವುಗಳನ್ನು ಒಟ್ಟಿಗೆ ಟ್ರ್ಯಾಕ್ ಮಾಡಬಹುದು!",
   "guide_open_prices_why_arg2_title": "ನಿಮ್ಮ ಹತ್ತಿರದ ಬೆಲೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡಿ",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "I'm a retailer and I want to contribute prices. How can I do that?",
   "guide_open_prices_retailers_paragraph1": "ನಮ್ಮ API ಬಳಸಿಕೊಂಡು ನೀವು ಬೆಲೆಗಳನ್ನು ಕೊಡುಗೆ ನೀಡಬಹುದು.\nನೀವು ಪ್ರಮಾಣದಲ್ಲಿ ಬೆಲೆಗಳನ್ನು ಕೊಡುಗೆ ನೀಡಲು ಬಯಸಿದರೆ, ದಯವಿಟ್ಟು prices@openfoodfacts.org ನಲ್ಲಿ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "ಮುಕ್ತ ಉತ್ಪನ್ನಗಳ ಸಂಗತಿಗಳಿಗೆ ಸುಸ್ವಾಗತ!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "ಮುಕ್ತ ಉತ್ಪನ್ನಗಳ ಸಂಗತಿಗಳು ಎಂದರೇನು?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "ಓಪನ್ ಪ್ರಾಡಕ್ಟ್ಸ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಎಂಬುದು ಆಹಾರ, ಸೌಂದರ್ಯವರ್ಧಕ ಅಥವಾ ಸಾಕುಪ್ರಾಣಿಗಳ ಆಹಾರವಲ್ಲದ **ಬಾರ್‌ಕೋಡ್ ಹೊಂದಿರುವ ಯಾವುದೇ ಉತ್ಪನ್ನಕ್ಕೆ** ಒಂದು ಬೃಹತ್, ಮುಕ್ತ ಡೇಟಾಬೇಸ್ ಆಗಿದೆ.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "ಓಹ್!",
-  "carousel_unsupported_text": "ಸ್ಕ್ಯಾನ್ ಮಾಡಿದ ಬಾರ್‌ಕೋಡ್ ಅನ್ನು ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ!",
   "carousel_error_header": "ದೋಷ!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "ಓಪನ್ ಫುಡ್ ಫ್ಯಾಕ್ಟ್ಸ್ ಯೋಜನೆ",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Contribute",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Legal mentions",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts ಎಂಬುದು ಆಹಾರ ಉತ್ಪನ್ನಗಳ ಡೇಟಾಬೇಸ್ ಆಗಿದೆ **ಎಲ್ಲರಿಂದ, ಎಲ್ಲರಿಗೂ** ತಯಾರಿಸಲ್ಪಟ್ಟಿದೆ.\nಉತ್ತಮ ಆಹಾರ ಆಯ್ಕೆಗಳನ್ನು ಮಾಡಲು ನೀವು ಇದನ್ನು ಬಳಸಬಹುದು, ಮತ್ತು ಇದು **ಓಪನ್ ಡೇಟಾ** ಆಗಿರುವುದರಿಂದ, ಯಾರಾದರೂ ಇದನ್ನು ಯಾವುದೇ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮರುಬಳಕೆ ಮಾಡಬಹುದು**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "ಗೌಪ್ಯತಾ ನೀತಿ",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Open Food Facts ಗೆ ನಾನು ಸೇರಿಸಿದ ಹೊಸ ಉತ್ಪನ್ನಗಳು",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "ನಾನು ಪೂರ್ಣಗೊಳಿಸಬೇಕಾದ ಉತ್ಪನ್ನಗಳು",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "ಯೋಜನೆಗೆ ಕೊಡುಗೆ ನೀಡಿ",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Open Food Facts ಗೆ ಸಹಾಯ ಮಾಡುವ ಸರಳ ಮಾರ್ಗಗಳು",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "ಯೋಜನೆಯ ಕುರಿತು ಸ್ಕೋರ್ ವಿಧಾನಗಳು, ಸಹಾಯ ಮತ್ತು ಇನ್ನಷ್ಟು",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts ಲ್ಯಾಬ್ಸ್",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "ಖಾತೆ",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Open Food Facts ಅನ್ನು ನಿಮ್ಮ ಭಾಷೆಗೆ ತನ್ನಿ",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "ಅಪ್ಲಿಕೇಶನ್‌ನ ಆಲ್ಫಾ ಆವೃತ್ತಿಯಲ್ಲಿ ನೋಂದಾಯಿಸಿ",
   "@preferences_contribute_enroll_alpha": {},

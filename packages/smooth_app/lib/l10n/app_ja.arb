@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Open Food Factsへようこそ",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts は、地域社会によって運営される世界的な非営利団体です。",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "あなたの好みに関連する食品データを確認する。",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "サーバーからの応答がありません。次のリンクから問題を報告してください。",
   "@user_management": {},
-  "sign_in_text": "Open Food Factsアカウントにログインして投稿を保存しましょう",
   "incorrect_credentials": "ユーザー名またはパスワードが間違っています。",
   "password_lost_incorrect_credentials": "このメールアドレスまたはユーザー名は存在しません。認証情報を確認してください。",
   "password_lost_server_unavailable": "現在、サーバーの速度低下が発生しており、お詫び申し上げます。後でもう一度試してください。",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "その機能を使用するには、サインインが必要です。",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "あなたの国のOpen Food Factsの改善にご協力ください",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "サインアウト",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "パスワード再確認",
   "sign_up_page_confirm_password_error_empty": "パスワードの確認をしてください",
   "sign_up_page_confirm_password_error_invalid": "パスワードが一致しません",
-  "sign_up_page_agree_text": "私はオープンフードファクトに同意します",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "利用と貢献規約",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "私は食品生産者です",
   "sign_up_page_producer_hint": "生産者/ブランド",
   "sign_up_page_producer_error_empty": "生産者またはブランド名を入力してください",
-  "sign_up_page_subscribe_checkbox": "Open Food Factsニュースレターを購読します（いつでも購読を解除できます）",
   "sign_up_page_user_name_already_used": "このユーザー名は既に存在します。別のユーザー名を入力してください。",
   "sign_up_page_email_already_exists": "既に存在します。アカウントにログインするか、別のメールアドレスをお試しください。",
   "sign_up_page_provide_valid_email": "有効なメールアドレスを入力してください。",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Slackチャンネルで質問する",
   "support_via_forum": "フォーラムで助けを求める",
-  "support_via_email": "私たちにメールを送信",
   "support_via_email_include_logs_dialog_title": "アプリのログを送信しますか？",
   "support_via_email_include_logs_dialog_body": "メールの添付ファイルにアプリのログを含めますか？",
   "termsOfUse": "利用規約",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Open Food Facts のすべての製品のコードは GitHub で公開されています。コードはオープンソースなので、ぜひ再利用して、地球上のすべての人々のために改善にご協力ください。",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "質問をする場合は、Open Food Facts Slack チャットルームに参加することをお勧めします。",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "開発者モード？",
   "contribute_develop_dev_mode_subtitle": "開発者モードを有効にする",
   "contribute_donate_title": "寄付",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Open Food Factsに寄付する",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "内部アルファ版では、データが完全に失われる可能性があり、アプリはいつでも使用できなくなる可能性があることをご了承ください!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "完了が必要な製品",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "データベースはプロジェクトの中核です。簡単に、そして迅速に貢献できます。スマートフォン用のモバイルアプリをダウンロードして、商品の追加や改善を始めましょう。\n\n一方、Open Food Factsのウェブサイトでは、様々な方法で貢献できます。 ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "翻訳",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Factsは、160カ国以上の製品を網羅するグローバルプロジェクトです。Open Food Factsは数十の言語に翻訳されており、コンテンツは常に進化しています。",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "翻訳はプロジェクトの重要なタスクの1つです",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "スキルをOpen Food Factsに貢献しましょう。スキルプールに参加しましょう！",
-  "contribute_share_header": "Open Food Factsを友達と共有しましょう",
-  "@contribute_share_header": {},
   "contribute_share_content": "私が使っているアプリ「Open Food Facts」についてお知らせします。このアプリは、食品の健康や環境への影響を、個人に合わせて調べることができます。パッケージのバーコードをスキャンするだけで使えます。無料、登録も不要で、解読対象製品の数を増やすことにも貢献できます。スマートフォン用のダウンロードリンクはこちらです：https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Open Food Factsアカウントにログインして、貢献度を評価されましょう",
   "question_yes_button_accessibility_value": "「はい」で回答",
   "question_no_button_accessibility_value": "No で回答",
   "question_skip_button_accessibility_value": "この質問をスキップ",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "アカウントを作成して Open Food Facts コミュニティに参加し、世界中で食品に関する知識の構築に貢献しましょう。",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "参加する",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "あなたのプロフィール",
-  "myPreferences_profile_subtitle": "Open Food Facts 貢献者アカウントを管理します。",
   "myPreferences_settings_title": "アプリ設定",
   "myPreferences_settings_subtitle": "ダークモード、言語…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "食品の好み",
   "myPreferences_food_subtitle": "あなたにとって最も重要な食品に関する情報を選択してください。",
   "myPreferences_food_compatibility_explainer": "食品に関する最も重要な情報を選択すると、あなたの好みに応じて食品がランク付けされ、関心のある情報が最初に表示され、相性の概要が表示されます。",
-  "myPreferences_food_privacy": "これらの食品の好みはデバイスに保存され、Open Food Facts寄稿者アカウント（お持ちの場合）には関連付けられません。",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "新しい製品を見つけました！",
   "@missing_product": {},
-  "add_product_take_photos": "パッケージの写真を撮って、この商品をOpen Food Factsに追加しましょう",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "最初に何枚か画像を撮ってください。後でいつでも製品を完成させることができます。",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "製品情報を追加する",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "食品カテゴリーと材料を入力して入手",
   "new_product_desc_nova_unknown": "食品加工レベル不明",
   "new_product_title_pictures": "写真を撮りましょう！",
-  "new_product_title_pictures_details": "以下の写真を撮ってください。あとは Open Food Facts エンジンが計算します。",
   "new_product_title_misc": "そしていくつかの基本データ…",
   "new_product_done_msg": "ご協力ありがとうございます。「{username}」！",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "サーバーに画像をアップロードしています",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Open Food Factsにフロント画像をアップロードしています",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Open Food Factsに原材料画像をアップロードしています",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Open Food Factsに栄養画像をアップロードしています",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Open Food Factsにパッケージ画像をアップロードしています",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Open Food Factsに他の画像をアップロードしています",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Open Food Factsに画像をアップロードしています",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "不足している原材料を追加",
   "score_add_missing_packaging_image": "不足しているパッケージ画像を追加",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "オープンフードファクトへようこそ",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "バーコードを**スキャン**するか、製品を\n**検索**してください",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Open Food Factsのオープンシステム設定",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "履歴から削除された製品",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "TikTokでフォローしてください",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Instagram でフォロー",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "X (旧 Twitter) でフォローしてください",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "マストドンでフォローしてください",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "ブログ",
   "faq": "FAQ",
-  "discover": "見つける",
   "how_to_contribute": "貢献方法",
   "hint_knowledge_panel_message": "カードの任意の部分をタップすると、さらに詳細な情報を確認できます。試してみてください！",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Open Food Factsコミュニティに参加するには、サインインまたはサインアップしてください。",
-  "user_profile_title_id_email": "Open Food Factsログイン: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "{id} さん、ようこそ！",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "アカウントを削除",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "こんにちは。Open Food Factsのアカウントを削除してください: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "アプリケーション",
   "settings_app_data": "プライバシーと監視",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "有効にすると、クラッシュ レポートが Open Food Facts のエラー追跡システムに自動的に送信され、バグが修正されてアプリが改善されます。",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "カテゴリがありませんか?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "カテゴリが**オートコンプリートで利用できない**場合でも、自由に追加してください。\nこれは、あなたの国での Open Food Facts の改善に役立ちます。",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "オリーブオイル漬けイワシ",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "製品ページの価格アプリへのショートカット",
-  "prices_app_button": "価格アプリに移動",
-  "prices_website_button": "Open Pricesウェブサイトで開く",
   "prices_bulk_proof_upload_select": "ギャラリーから直接値札を追加",
   "prices_bulk_proof_upload_warning": "画像を選択すると、編集できなくなります。",
   "prices_bulk_proof_upload_warning_ai": "AI はあなたの証明に基づいて価格を抽出します。",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "オープン価格証明",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{まだ証明されていません} =1{証明は 1 つだけです} other{すべての {count} 証明があります}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "確定",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "私はオープンフードファクトに同意します ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "利用と貢献規約",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "分析アイコン",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Open Food Factsでこの製品をご覧ください: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Open Beauty Factsでこの製品をご覧ください: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Open PetFood Factsでこの製品をご覧ください: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Open Products Facts でこの製品をご覧ください: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Open Food Facts の私の製品リストをご覧ください: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "新しく撮影する",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "OpenFoodFactsのヘルプ",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "製品は可能な限り早くバックグラウンドで更新されます。",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "すべての画像",
-  "selected_images": "選択した画像",
   "product_card_remove_product_tooltip": "製品の削除",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Open Food Factsの最新データでローカル製品データベースを更新します",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "オフライン商品データを消去",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Open Food Facts へようこそ!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Open Food Factsとは何ですか?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts は、世界中の食品に関する**共同**的、**無料**、**オープン**なデータベースです。",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "超加工食品を避けるためのスコア",
   "guide_open_food_facts_scores_arg3_title": "地球のためのスコア",
   "guide_open_food_facts_share_link": "https://world-ja.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Open Pet Food Facts へようこそ!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Open Pet Food Factsとは何ですか?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts は、私たちの使命を愛するペットたちにまで広げます！**猫、犬、その他のペットのためのペットフード製品のデータベース**です。",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "スコアリングに関する注意",
   "guide_open_pet_food_facts_scores_paragraph1": "ペットフードのスコアリングシステムの開発は**現時点では優先事項ではありません**。栄養ニーズは種、年齢、健康状態によって大きく異なるため、その方法論は複雑になります。そのようなスコアを開発できる独立した科学チームはまだ見つかっていません。",
   "guide_open_pet_food_facts_share_link": "https://world-ja.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Open Beauty Facts へようこそ!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Open Beauty Factsとは何ですか?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts は、**化粧品** の共同データベースです。",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "通路にある値札の写真を集める",
   "guide_open_prices_how_arg2_title": "領収書の写真を集める",
   "guide_open_prices_why_title": "Open Food Facts はなぜこれを行っているのでしょうか?",
-  "guide_open_prices_why_paragraph1": "価格情報は、食料システムを理解する上で極めて重要です。食料コストを理解し、より健康的な食生活を促進する上で重要な要素です。価格データを公開することで、研究者、ジャーナリスト、そして一般市民は、**食料価格が地域や時間によってどのように変動するかをより深く理解**しやすくなります。",
   "guide_open_prices_why_arg1_title": "時間の経過に伴う価格の推移を追跡する",
   "guide_open_prices_why_arg1_text": "**価格の推移**をご覧ください: シュリンクフレーション、チープフレーション、これらを一緒に追跡できます!",
   "guide_open_prices_why_arg2_title": "お近くの価格を比較",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "私は小売業者です。価格設定に貢献したいのですが、どうすればよいですか？",
   "guide_open_prices_retailers_paragraph1": "当社の API を使用して価格を提供できます。\n大規模な価格を提供したい場合は、prices@openfoodfacts.org までご連絡ください。",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Open Products Facts へようこそ!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Open Products Facts とは何ですか?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts は、**食品、化粧品、ペットフード以外のバーコード付き製品** に関する大規模なオープン データベースです。",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "おっと！",
-  "carousel_unsupported_text": "スキャンされたバーコードは Open Food Facts ではサポートされていません。",
   "carousel_error_header": "エラー！",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "オープンフードファクトプロジェクト",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "貢献する",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "法的言及",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts は、**みんなが作った、みんなのための**食品データベースです。\nこれを使えば、より良い食品の選択ができるだけでなく、**オープン データ** なので、誰でも **どんな目的でも再利用** できます。",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "プライバシーポリシー",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Open Food Factsに追加した新製品",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "完了する必要がある製品",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "プロジェクトに貢献する",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Open Food Factsを支援する簡単な方法",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "スコアリングの方法論、ヘルプ、プロジェクトの詳細",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Factsラボ",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "アカウント",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Open Food Factsをあなたの言語で",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "アプリのアルファ版に登録する",
   "@preferences_contribute_enroll_alpha": {},

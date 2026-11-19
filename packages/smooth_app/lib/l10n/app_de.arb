@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Offene Preise",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Willkommen bei Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "OpenFoodFacts ist eine globale, gemeinnützige Organisation, die von lokalen Gemeinschaften getragen wird.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Lassen Sie sich die für Ihre Vorlieben relevanten Lebensmitteldaten anzeigen.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Keine Serverantwort! Sie können ein Problem unter dem folgenden Link melden.",
   "@user_management": {},
-  "sign_in_text": "Melden Sie sich bei Ihrem OpenFoodFacts Konto an, um Ihre Beiträge speichern zu können",
   "incorrect_credentials": "Ungültiger Benutzername oder Passwort.",
   "password_lost_incorrect_credentials": "Diese E-Mail-Adresse oder dieser Benutzername existiert nicht. Bitte überprüfen Sie Ihre Anmeldedaten.",
   "password_lost_server_unavailable": "Zurzeit kommt es auf unseren Servern zu Verzögerungen, für die wir uns entschuldigen. Bitte versuchen Sie es später noch einmal.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Für diese Funktion müssen Sie sich anmelden.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Helfen Sie mit, Open Food Facts in Ihrem Land zu verbessern",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Abmelden",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Passwort bestätigen",
   "sign_up_page_confirm_password_error_empty": "Bitte bestätigen Sie Ihr Passwort",
   "sign_up_page_confirm_password_error_invalid": "Passwörter stimmen nicht überein",
-  "sign_up_page_agree_text": "Ich stimme OpenFoodFacts zu",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "Nutzungsbedingungen von Open Food Facts zu",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://world-de.openfoodfacts.org/spenden",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Ich bin Lebensmittelproduzent",
   "sign_up_page_producer_hint": "Hersteller/Marke",
   "sign_up_page_producer_error_empty": "Bitte geben Sie einen Hersteller oder Markennamen ein",
-  "sign_up_page_subscribe_checkbox": "Ich möchte den Newsletter von OpenFoodFacts abonnieren (Er kann jederzeit wieder abbestellt werden)",
   "sign_up_page_user_name_already_used": "Der Benutzername existiert bereits. Bitte wählen Sie einen anderen Benutzernamen.",
   "sign_up_page_email_already_exists": "existiert bereits. Melden Sie sich bei diesem Konto an oder versuchen Sie es mit einer anderen E-Mail-Adresse.",
   "sign_up_page_provide_valid_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Bitte um Hilfe in unserem Slack-Kanal",
   "support_via_forum": "Bitten Sie um Hilfe in unserem Forum",
-  "support_via_email": "Senden Sie uns eine E-Mail",
   "support_via_email_include_logs_dialog_title": "Protokolle der App senden?",
   "support_via_email_include_logs_dialog_body": "Möchten Sie Ihrer E-Mail ein Protokoll der Anwendung als Anhang beifügen?",
   "termsOfUse": "Nutzungsbedingungen",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Der Code für jedes OpenFoodFacts Produkt ist auf GitHub verfügbar. Sie können den Code (Open Source) gerne wiederverwenden und uns dabei helfen, ihn für alle auf der ganzen Welt zu verbessern.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Du kannst dem Open Food Facts Slack Chatroom beitreten, was der bevorzugte Weg ist, Fragen zu stellen.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "Entwicklermodus?",
   "contribute_develop_dev_mode_subtitle": "Entwicklermodus aktivieren",
   "contribute_donate_title": "Spenden",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Spenden Sie an Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Bitte beachten Sie, dass bei der internen Alpha-Version ein vollständiger Datenverlust möglich ist und die App jederzeit unbrauchbar werden kann!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Zu vervollständigende Produkte",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "Die Datenbank ist der Kern des Projekts. Sie können einfach und schnell helfen. Sie können die mobile App für Ihr Telefon herunterladen und Produkte hinzufügen oder verbessern.\n\nAuf der anderen Seite bietet die OpenFoodFacts Website viele Möglichkeiten, einen Beitrag zu leisten: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Übersetzen",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Open Food Facts ist ein globales Projekt, das Produkte aus über 160 Länder enthält. OpenFoodFacts wird in eine Vielzahl von Sprachen, mit ständig wachsendem Inhalt übersetzt.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "Übersetzungen sind eine der Hauptaufgaben des Projekts",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Tragen Sie mit Ihren Fähigkeiten zu Open Food Facts bei. Treten Sie dem Kompetenzpool bei!",
-  "contribute_share_header": "Teilen Sie Open Food Facts mit Ihren Freunden",
-  "@contribute_share_header": {},
   "contribute_share_content": "Ich möchte Ihnen die App OpenFoodFacts vorstellen, mit der Sie die Gesundheits- und Umweltauswirkungen Ihrer Lebensmittel auf personalisierte Weise ermitteln können. Es funktioniert durch das Einlesen der Barcodes auf den Verpackungen. Es ist kostenlos, erfordert keine Registrierung und Sie können sogar dazu beitragen, die Zahl der entschlüsselten Produkte zu erhöhen. Hier ist der Link, über den Sie die Software für Ihr Handy erhalten: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "Melden Sie sich bei Ihrem Open Food Facts-Konto an, um eine Gutschrift für Ihre Beiträge zu erhalten",
   "question_yes_button_accessibility_value": "Mit „Ja” antworten",
   "question_no_button_accessibility_value": "Mit „Nein” antworten",
   "question_skip_button_accessibility_value": "Diese Frage überspringen",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Erstellen Sie Ihr Konto und treten Sie der Open Food Facts-Community bei, um das Wissen über Lebensmittel auf der ganzen Welt zu verbessern!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Machen Sie mit",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Mein Profil",
-  "myPreferences_profile_subtitle": "Verwalten Sie Ihr Open Food Facts Konto.",
   "myPreferences_settings_title": "App-Einstellungen",
   "myPreferences_settings_subtitle": "Dunkler Modus, Sprachen…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Lebensmittelvorlieben",
   "myPreferences_food_subtitle": "Wählen Sie aus, welche Informationen über Lebensmittel für Sie am wichtigsten sind.",
   "myPreferences_food_compatibility_explainer": "Wählen Sie aus, welche Informationen über Lebensmittel für Sie am wichtigsten sind, um Lebensmittel nach Ihren Vorlieben zu ordnen, die für Sie wichtigen Informationen zuerst zu sehen und eine Kompatibilitätsübersicht zu erhalten.",
-  "myPreferences_food_privacy": "Diese Lebensmittelpräferenzen verbleiben auf Ihrem Gerät und werden nicht mit Ihrem Open Food Facts-Mitarbeiterkonto verknüpft, falls Sie eines eingerichtet haben.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Sie haben eine neues Produkt gefunden!",
   "@missing_product": {},
-  "add_product_take_photos": "Fotografieren Sie die Verpackung, um dieses Produkt zu Open Food Facts hinzuzufügen",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Bitte nehmen Sie zuerst ein paar Fotos auf. Sie können das Produkt jederzeit zu einem späteren Zeitpunkt vervollständigen.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Produktinformation hinzufügen",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Sie erhalten ihn, indem Sie die Lebensmittelkategorie und die Zutaten eingeben",
   "new_product_desc_nova_unknown": "Grad der Lebensmittelverarbeitung unbekannt",
   "new_product_title_pictures": "Neues Produkt",
-  "new_product_title_pictures_details": "Bitte fotografieren Sie das Folgende und die Open Food Facts Engine erledigt den Rest!",
   "new_product_title_misc": "Und einige grundlegende Daten …",
   "new_product_done_msg": "„{username}”, vielen Dank für Ihr Mitwirken!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "Foto wird auf den Server hochgeladen",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "Foto der Vorderseite wird zu Open Food Facts hochgeladen",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Foto der Zutaten wird zu Open Food Facts hochgeladen",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "Foto der Nährwertangaben wird zu Open Food Facts hochgeladen",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "Foto der Verpackung wird zu Open Food Facts hochgeladen",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "Weiteres Foto wird zu Open Food Facts hochgeladen",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Foto wird zu Open Food Facts hochladen",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Fehlende Zutaten hinzufügen",
   "score_add_missing_packaging_image": "Fehlendes Foto der Verpackung hinzufügen",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Willkommen bei Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Scannen** eines Barcodes oder\n**Suchen** nach einem Produkt",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Einstellungen für offene Systeme für Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Produkt aus dem Verlauf entfernt",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Folgen Sie uns auf TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Folge uns bei Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Folge uns auf X (vormals Twitter)",
   "twitter_link": "https://twitter.com/openfoodfacts",
   "mastodon": "Folgen Sie uns auf Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blog",
   "faq": "Häufig gestellte Fragen",
-  "discover": "Entdecken",
   "how_to_contribute": "Wie Sie beitragen können",
   "hint_knowledge_panel_message": "Sie können auf einen beliebigen Teil tippen, um mehr Details zu sehen. Probieren Sie es jetzt aus!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Melden Sie sich an oder registrieren Sie sich, um der Open Food Facts-Community beizutreten",
-  "user_profile_title_id_email": "Open Food Facts-Anmeldung: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Herzlich Willkommen {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Konto löschen",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Hallo, bitte löschen Sie mein Open Food Facts-Konto: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Anwendung",
   "settings_app_data": "Datenschutz und Überwachung",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Wenn aktiviert, werden Absturzberichte automatisch an das Fehlerverfolgungssystem von Open Food Facts übermittelt, so dass Fehler behoben werden können und die App dadurch verbessert wird.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Anonyme Nutzungsdaten senden",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "Wenn aktiviert, werden einige anonyme Informationen über die App-Nutzung an die Server von Open Food Facts gesendet, damit wir verstehen können, wie und wie häufig einzelne Funktionen genutzt werden, um diese zu verbessern.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Fehlende Kategorie?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Sollte eine Kategorie **nicht in der Autovervollständigung** enthalten sein, können Sie sie trotzdem hinzufügen.\nDies wird uns helfen, Open Food Facts in Ihrem Land zu verbessern.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Sardinen in Olivenöl",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Verknüpfung zur Preise-App auf der Produktseite",
-  "prices_app_button": "Zur Preise-App wechseln",
-  "prices_website_button": "Auf der Website „Open Prices“ öffnen",
   "prices_bulk_proof_upload_select": "Preisschilder direkt aus der Galerie hinzufügen",
   "prices_bulk_proof_upload_warning": "Sobald Sie Fotos ausgewählt haben, können diese nicht mehr bearbeitet werden!",
   "prices_bulk_proof_upload_warning_ai": "KI prüft Ihre Nachweise, um Preise zu ermitteln.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Preisnachweis öffnen",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Noch kein Nachweis} =1{Nur ein Nachweis} other{Alle {count} Nachweise}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Bestätigen",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Ich akzeptiere die Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "Nutzungsbedingungen von Open Food Facts zu",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Analysesymbol",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Schauen Sie sich dieses Produkt auf Open Food Facts an: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Werfen Sie einen Blick auf dieses Produkt auf Open Beauty Facts: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Werfen Sie einen Blick auf dieses Produkt auf Open PetFood Facts: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Werfen Sie einen Blick auf dieses Produkt auf Open Products Facts: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Werfen Sie einen Blick auf meine Liste der Produkte auf Open Food Facts: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Neu erfassen",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Hilfe bei OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Das Produkt wird so schnell wie möglich im Hintergrund aktualisiert.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "Alle Fotos",
-  "selected_images": "Ausgewählte Fotos",
   "product_card_remove_product_tooltip": "Produkt entfernen",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Aktualisieren Sie die lokale Produktdatenbank mit den neuesten Daten von Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Offline-Produktdaten löschen",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Willkommen bei Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Was ist Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts ist eine **kollaborative**, **kostenlose** und **offene** Datenbank für Lebensmittelprodukte aus aller Welt.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Eine Punktzahl, um ultra-verarbeitete Lebensmittel zu vermeiden",
   "guide_open_food_facts_scores_arg3_title": "Eine Punktzahl für den Planeten",
   "guide_open_food_facts_share_link": "https://world-de.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Willkommen bei Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Was ist Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts erweitert unsere Mission auf unsere vierbeinigen Freunde! Es handelt sich um eine **Datenbank mit Tierfutterprodukten für Katzen, Hunde und andere Haustiere**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Eine Anmerkung zur Bewertung",
   "guide_open_pet_food_facts_scores_paragraph1": "Die Entwicklung eines Bewertungssystems für Tiernahrung **hat derzeit keine Priorität**. Die Methodik wäre komplex, da die Ernährungsbedürfnisse je nach Tierart, Alter und Gesundheitszustand sehr unterschiedlich sind. Wir haben noch kein unabhängiges wissenschaftliches Team gefunden, das in der Lage wäre, eine solche Bewertung zu entwickeln.",
   "guide_open_pet_food_facts_share_link": "https://world-de.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Willkommen bei Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Was ist Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts ist eine gemeinschaftliche Datenbank für **Kosmetikprodukte**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Sammeln Sie Fotos von Preisschildern in den Gängen",
   "guide_open_prices_how_arg2_title": "Fotos von Quittungen sammeln",
   "guide_open_prices_why_title": "Warum macht Open Food Facts das?",
-  "guide_open_prices_why_paragraph1": "Preisinformationen sind für das Verständnis von Lebensmittelsystemen von größter Bedeutung. Sie sind ein entscheidender Faktor, um die Kosten von Lebensmitteln zu verstehen und eine gesündere Ernährung zu fördern. Die Offenlegung von Preisdaten ist eine Möglichkeit, Forschern, Journalisten und Bürgern ein besseres Verständnis dafür zu vermitteln, wie sich Lebensmittelpreise geografisch und zeitlich unterscheiden.",
   "guide_open_prices_why_arg1_title": "Verfolgen Sie die Entwicklung der Preise im Zeitverlauf",
   "guide_open_prices_why_arg1_text": "Sehen Sie sich die **Preisentwicklung** an: Schrumpfungsinflation, Billiginflation – wir können sie gemeinsam verfolgen!",
   "guide_open_prices_why_arg2_title": "Vergleichen Sie Preise in Ihrer Nähe",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "Ich bin ein Einzelhändler und möchte Preise beisteuern. Wie kann ich das tun?",
   "guide_open_prices_retailers_paragraph1": "Sie können Preise über unsere API einstellen. Wenn Sie Preise in großem Umfang einstellen möchten, kontaktieren Sie uns bitte unter prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Willkommen bei Open Products Facts!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Was sind offene Produktdaten?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts ist eine riesige, offene Datenbank für **alle Produkte mit Barcode, die keine Lebensmittel, Kosmetika oder Tiernahrung sind**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Uuups!",
-  "carousel_unsupported_text": "Der eingelesene Strichcode wird von Open Food Facts nicht unterstützt!",
   "carousel_error_header": "Fehler!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Das Projekt „Open Food Facts“",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Mitwirken",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Rechtliche Hinweise",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts ist eine Datenbank für Lebensmittelprodukte, die **von allen für alle erstellt** wurde. Sie können sie nutzen, um bessere Entscheidungen beim Lebensmitteleinkauf zu treffen, und da es sich um **offene Daten** handelt, kann jeder sie **für beliebige Zwecke wiederverwenden**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Datenschutzrichtlinien",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Neue Produkte, die ich zu Open Food Facts hinzugefügt habe",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Produkte, die ich benötige, um die Aufgabe zu erledigen",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Zum Projekt beitragen",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Einfache Möglichkeiten, Open Food Facts zu unterstützen",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Bewertungsmethoden, Hilfe und weitere Informationen zum Projekt",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Open Food Facts Labs",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Konto",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Bringen Sie Open Food Facts in Ihre Sprache",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "Registrieren Sie sich für die Alpha-Version der App",
   "@preferences_contribute_enroll_alpha": {},

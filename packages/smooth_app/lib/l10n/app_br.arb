@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "Open Prices",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Degemer mat war Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts zo un aozadur hep pal kenwerzhel hollek ha renet gant kumuniezhioù lec'hel.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "Gwelet ar roadennoù boued a glot gant ho penndibaboù.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "Respont ebet gant ar servijer ! Gallout a rit digeriñ ur gudenn gant al liamm da-heul.",
   "@user_management": {},
-  "sign_in_text": "En em lugañ ouzh ho kont Open Food Facts evit enrollañ ho skoazelloù",
   "incorrect_credentials": "Anv implijer pe ger-tremen direizh.",
   "password_lost_incorrect_credentials": "N'eus ket eus ar postel pe an anv implijer-mañ. Gwiriit ho titouroù mar plij.",
   "password_lost_server_unavailable": "Emaomp o c'houzañv stankadennoù war hor servijerioù evit ar mare ha digarezit ac'hanomp evit se. Klaskit en-dro diwezhatoc'h mar plij.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "Evit an elfenn-se e rankomp en em lugañ.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "Sikour da wellaat an Open Food Facts en ho bro",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "Dilemel",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "Kadarnaat ar ger-tremen",
   "sign_up_page_confirm_password_error_empty": "Kadarnait ar ger-tremen mar plij",
   "sign_up_page_confirm_password_error_invalid": "Ne glot ket ar gerioù-tremen",
-  "sign_up_page_agree_text": "Asantiñ a ran gant Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "termenoù implij ha kenlabour",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://donate.openfoodfacts.org/",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "Produer boued on",
   "sign_up_page_producer_hint": "Produer/merk",
   "sign_up_page_producer_error_empty": "Lakait ur produer pe un anv merk",
-  "sign_up_page_subscribe_checkbox": "Fellout a rafe din en em enskrivañ d'ar c'heleier Open Food Facts (Gallout a rit en em enskrivañ dioutañ da bep mare)",
   "sign_up_page_user_name_already_used": "Bez' ez eus eus an anv implijer dija, dibabit un anv implijer all mar plij.",
   "sign_up_page_email_already_exists": "zo dija, kevreit ouzh ar gont pe klaskit gant ur postel all.",
   "sign_up_page_provide_valid_email": "Roit ur chomlec'h postel reizh mar plij.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "Goulenn sikour en hor chadenn Slack",
   "support_via_forum": "Goulenn sikour war hor forom",
-  "support_via_email": "Kasit ur postel deomp",
   "support_via_email_include_logs_dialog_title": "Kas marilhoù an arloadoù ?",
   "support_via_email_include_logs_dialog_body": "Ha fellout a ra deoc'h lakaat marilhoù an arloadoù stag ouzh ho postel ?",
   "termsOfUse": "Termenoù Implij",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "Ar c'hod evit pep produ Open Food Facts a c'haller kaout war GitHub. Degemeret oc'h da adimplijout ar c'hod (digor eo) ha sikour ac'hanomp da wellaat anezhañ, evit an holl, war ar blanedenn a-bezh.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Gallout a rit mont e-barzh ar sal flapañ Open Food Facts Slack, ar pezh a zo an doare gwellañ da sevel goulennoù.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "Mod DEV ?",
   "contribute_develop_dev_mode_subtitle": "Gweredekaat ar mod DEV",
   "contribute_donate_title": "Donate",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Roit arc'hant da Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "Anavezit mat e c'hall ar stumm alfa diabarzh koll roadennoù penn-da-benn, ha gallout a ra an arload dont da vezañ didalvoud da bep mare !",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Produioù da gas da benn",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "An diaz roadennoù eo diazez ar raktres. Aes ha buan-tre eo sikour. Gallout a rit pellgargañ an arload hezoug evit ho pellgomzer, ha kregiñ da ouzhpennañ pe da wellaat produioù.\n\nWar un dro e kinnig lec'hienn Open Food Facts meur a zoare da ginnig : ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "Treiñ",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "Ur raktres hollek eo Open Food Facts, ennañ produioù eus ouzhpenn 160 bro. Troet eo Open Food Facts e meur a yezh, gant endalc'hadoù o cheñch bepred.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "An troidigezhioù zo unan eus palioù pennañ ar raktres",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Kinnig ho skiant-prenet da Open Food Facts. Kemerit perzh er strollad barregezhioù !",
-  "contribute_share_header": "Rannit titouroù digor war ar boued gant ho mignoned",
-  "@contribute_share_header": {},
   "contribute_share_content": "I wanted to let you know about the app I've been using, Open Food Facts, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it's free, does not require registration, and you can even help increase the number of products decyphered. Here's the link to get it for your phone: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "En em lugañ ouzh ho kont Open Food Facts evit kaout kred evit ho skoazelloù",
   "question_yes_button_accessibility_value": "Respont gant ya",
   "question_no_button_accessibility_value": "Respont gant nann",
   "question_skip_button_accessibility_value": "Dilezel ar goulenn-mañ",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "Krouit ho kont ha kemerit perzh e kumuniezh Open Food Facts evit sikour da sevel anaoudegezh war ar boued dre ar bed a-bezh !",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "Deuit ganeomp",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Ho profil",
-  "myPreferences_profile_subtitle": "Merañ ho kont kenlabourerien Open Food Facts.",
   "myPreferences_settings_title": "Arventennoù an arload",
   "myPreferences_settings_subtitle": "Mod teñval, Yezhoù…",
   "myPreferences_not_configured_yet": "You haven't set any preference yet.",
   "myPreferences_food_title": "Gwellvezioù boued",
   "myPreferences_food_subtitle": "Dibabit peseurt titouroù diwar-benn ar boued a zo pouezusañ evidoc'h.",
   "myPreferences_food_compatibility_explainer": "Dibabit peseurt titouroù diwar-benn ar boued a zo pouezusañ evidoc'h, evit renkañ ar boued hervez ho c'hoantoù, gwelit an titouroù a blij deoc'h da gentañ, ha kaout un diverrañ eus ar c'hevredigezh.",
-  "myPreferences_food_privacy": "Chom a ra an dibaboù boued-se war ho trevnad, ha n'int ket liammet ouzh ho kont kenlabourer Open Food Facts ma'z eus unan ganeoc'h.",
   "myPreferences_beauty_title": "Preferences for cosmetics",
   "myPreferences_beauty_subtitle": "Choose what information about cosmetics products matters most to you.",
   "myPreferences_product_title": "Preferences for other products",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "Kavet hoc'h eus ur produ nevez !",
   "@missing_product": {},
-  "add_product_take_photos": "Tennañ luc'hskeudennoù eus ar pakad evit ouzhpennañ ar produ-mañ da Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Tennit fotoioù da gentañ mar plij. Gallout a rit bepred echuiñ ar produ diwezhatoc'h.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Ouzhpennañ titouroù ar produ",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "Kaout anezhañ en ur leuniañ ar rummad boued hag ar c'hementadoù",
   "new_product_desc_nova_unknown": "Dianav eo al live treuzfurmadur boued",
   "new_product_title_pictures": "Produ nevez",
-  "new_product_title_pictures_details": "Tennit al luc'hskeudennoù da-heul mar plij ha gallout a raio al lusker Open Food Facts ober war-dro ar peurrest !",
   "new_product_title_misc": "Ha roadennoù diazez zo…",
   "new_product_done_msg": "Trugarez evit ho skoazell “{username}”!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "O pellgargañ al luc'hskeudenn war ar servijer",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "O pellgargañ ar skeudenn a-raok war Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "Pellgargañ skeudenn ar c'hementadoù da Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "O pellgargañ ur skeudenn eus ar boued war Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "O pellgargañ skeudenn ar pakadoù war Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "O pellgargañ ur skeudenn all war Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "Pellgargañ ar skeudenn da Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "Ouzhpennañ elfennoù a vank",
   "score_add_missing_packaging_image": "Ouzhpennañ ur skeudenn pakadoù a vank",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "Degemer mat war Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "**Skannañ** ur c'hod barrennoù pe\n**klask** ur produ",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Digeriñ arventennoù ar reizhiad evit Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "Tennet eo bet ar produ diouzh an istor",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "Heuliit ac'hanomp war TikTok",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "Heuliit ac'hanomp war Instagram",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "Heuliit ac'hanomp war X (Twitter gwechall)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "Heuliit ac'hanomp war Mastodon",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blog",
   "faq": "FAQ",
-  "discover": "Dizoleiñ",
   "how_to_contribute": "Penaos kemer perzh",
   "hint_knowledge_panel_message": "Gallout a rit pouezañ war ne vern peseurt lodenn eus ar gartenn evit kaout muioc'h a ditouroù diwar-benn ar pezh a welit. Klaskit bremañ !",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "En em enskrivit pe lakait hoc'h anv evit mont e-barzh ar gumuniezh Open Food Facts",
-  "user_profile_title_id_email": "Kennaskañ Open Food Facts : {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "Degemer mat {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "Dilemel ar gont",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "Demat deoc'h, diverkit ma c'hont Open Food Facts mar plij : {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "Arload",
   "settings_app_data": "Privacy & monitoring",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Pa vez gweredekaet e vez kaset danevelloù fazioù ent emgefre da reizhiad heuliañ fazioù Open Food Facts, evit ma c'hallfe ar fazioù bezañ reizhet ha gwellaat an arload evel-se.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "Send anonymous data",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "When enabled, some anonymous information regarding app usage will be sent to the Open Food Facts servers, so that we can understand how and how much features are used in order to improve them.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "Rummad mankout ?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "Ma n'eo ket hegerz ur rummad en emgefre**, n'ho peus ket da c'houlenn ouzhpennañ anezhañ koulskoude.\nSikour a raio ac'hanomp da wellaat an Open Food Facts en ho bro.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "Sardined en eoul-olivez",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "Berradenn d'an arload Prizioù war bajenn ar produ",
-  "prices_app_button": "Mont d'an arload Prizioù",
-  "prices_website_button": "Digor war lec'hienn Open Prices",
   "prices_bulk_proof_upload_select": "Ouzhpennit tikedennoù prizioù war-eeun eus ar palier",
   "prices_bulk_proof_upload_warning": "Ur wech dibabet ar skeudennoù ganeoc'h, ne vo ket tu deoc'h o kemmañ !",
   "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "Prouenn priz digor",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, =0{Prouenn ebet c'hoazh} =1{Ur prouenn hepken} other{An holl {count} brouennoù}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "Kadarnaat",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "Asantiñ a ran gant Open Food Facts ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "termenoù implij ha kenlabour",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "Arouezenn an analizennoù",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Sellit ouzh ar produ-mañ war Open Food Facts : {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "Sellit ouzh ar produ-mañ war Open Beauty Facts : {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "Sellit ouzh ar produ-mañ war Open PetFood Facts : {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "Sellit ouzh ar produ-mañ war Open Products Facts : {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "Sellit ouzh ma roll produioù war Open Food Facts : {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "Capture New",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "Sikour gant OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "Hizivaet e vo ar produ en drekleur ar buanañ ar gwellañ.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "An holl skeudennoù",
-  "selected_images": "Skeudennoù dibabet",
   "product_card_remove_product_tooltip": "Dilemel ar produ",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Hizivaat diaz roadennoù ar produioù lec'hel gant ar roadennoù diwezhañ eus Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "Diverkañ roadennoù ar produ ezlinenn",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "Degemer mat e Open Food Facts !",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "Petra eo Open Food Facts ?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts zo un diaz roadennoù **kenlabourus**, **digoust** ha **digor** a broduioù boued eus ar bed a-bezh.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "Ur skor evit chom hep debriñ boued dreist-treuzfurmet",
   "guide_open_food_facts_scores_arg3_title": "Ur skor evit ar blanedenn",
   "guide_open_food_facts_share_link": "https://world-br.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Degemer mat war Open Pet Food Facts !",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "Petra eo Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts a astenn hor c'hefridi d'hor mignoned blevek ! Ur **diaz roadennoù boued loened-ti evit ar c'hizhier, ar c'hizhier hag ar c'hizhier all** eo.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "Un notenn diwar-benn ar poentoù",
   "guide_open_pet_food_facts_scores_paragraph1": "Sevel ur reizhiad priziañ evit boued al loened-ti **n'eo ket ur prioritez evit ar mare**. Kemplezh e vefe an doare-ober, rak disheñvel-tre eo an ezhommoù boued hervez ar spesadoù, an oad hag ar yec'hed. N'hon eus ket kavet c'hoazh skipailh skiantel dizalc'h ebet, gouest da sevel ur skor evel-se.",
   "guide_open_pet_food_facts_share_link": "https://world-br.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Degemer mat e Open Beauty Facts !",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "Petra eo Open Beauty Facts ?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts zo un diaz roadennoù kenlabourus a **produioù kosmetek**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "Dastum luc'hskeudennoù eus tikedennoù prizioù en trepasoù",
   "guide_open_prices_how_arg2_title": "Dastum luc'hskeudennoù ar resevoù",
   "guide_open_prices_why_title": "Perak e ra Open Food Facts kement-mañ ?",
-  "guide_open_prices_why_paragraph1": "An titouroù diwar-benn ar prizioù a zo pouezus-kenañ evit kompren ar reizhiadoù boued. Un elfenn bennañ eo evit kompren koust ar boued ha brudañ diedoù yac'hoc'h. Digeriñ roadennoù ar prizioù zo un doare da aesaat d'an enklaskerion, d'ar gazetennerien ha d'an dud **gompren gwelloc'h penaos e cheñch prizioù ar boued hervez an douaroniezh hag an amzer**.",
   "guide_open_prices_why_arg1_title": "Heuliañ emdroadur ar prizioù a-hed an amzer",
   "guide_open_prices_why_arg1_text": "Gwelet **emdroadur ar prizioù** : enflasion digreskiñ, enflasion marc'had-mat, gallout a reomp heuliañ anezho asambles !",
   "guide_open_prices_why_arg2_title": "Keñveriañ ar prizioù e-kichen ho ti",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "I'm a retailer and I want to contribute prices. How can I do that?",
   "guide_open_prices_retailers_paragraph1": "Gallout a rit kinnig prizioù dre implijout hon API.\nMar fell deoc'h kinnig prizioù war ar skalfad, kit e darempred ganeomp war prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "Degemer mat e Open Products Facts !",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "Petra eo Open Products Facts ?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts zo un diaz roadennoù bras ha digor evit **kement produ gant ur c'hod barrennoù, ha n'eo ket boued, kosmetik pe boued loened**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Oups !",
-  "carousel_unsupported_text": "N'eo ket skoret ar c'hod barrennoù skannet gant Open Food Facts !",
   "carousel_error_header": "Fazi!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "Ar raktres Open Food Facts",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "Kenoberiañ",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "Titouroù lezennel",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts zo un diaz roadennoù produioù boued **savet gant pep hini, evit pep hini**.\nGallout a rit implijout anezhañ evit dibab boued gwelloc'h, ha dre ma'z eo **roadennoù digor** e c'hall pep hini **adimplij anezhañ evit ne vern petra**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "Politikerezh prevezded",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "Produioù nevez am eus ouzhpennet da Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "Produioù am eus ezhomm da echuiñ",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "Kemer perzh er raktres",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "Doareoù simpl da sikour Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "Doareoù priziañ, skoazell, ha muioc'h c'hoazh diwar-benn ar raktres",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "Labouradegoù Open Food Facts",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "Kont",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "Degas Open Food Facts d'ho yezh",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "En em enskrivit e stumm alfa an arload",
   "@preferences_contribute_enroll_alpha": {},

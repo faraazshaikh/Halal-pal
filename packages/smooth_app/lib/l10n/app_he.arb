@@ -1,6 +1,4 @@
 {
-  "app_name": "Open Food Facts",
-  "open_prices": "מחירים פתוחים",
   "sep": "",
   "@sep": {
     "description": "Separator just before a colon (':'). Probably only populated in French and empty in other languages."
@@ -226,12 +224,6 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "ברוך בואך ל־Open Food Facts",
-  "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "Open Food Facts הוא ארגון כלל עולמי ללא מטרות רווח שמופעל על ידי קהילות מקומיות.",
-  "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
-  },
   "productDataUtility": "הצגת נתוני המזון שתואמים להעדפות שלך.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
@@ -246,7 +238,6 @@
   },
   "server_error_open_new_issue": "אין תגובה מהשרת! אפשר לדווח על תקלה דרך הקישור הבא.",
   "@user_management": {},
-  "sign_in_text": "ניתן להיכנס לחשבונך ב־Open Food Facts כדי לשמור את התרומות שלך",
   "incorrect_credentials": "שם משתמש או סיסמה שגויים.",
   "password_lost_incorrect_credentials": "כתובת הדוא״ל או שם המשתמש הזה אינם קיימים. נא לבדוק את פרטי הגישה שלך.",
   "password_lost_server_unavailable": "אנו חווים כעת האטות בשרתים שלנו ואנו מצרים על כך. נא לנסות שוב מאוחר יותר.",
@@ -275,10 +266,6 @@
   "sign_in_mandatory": "ליכולת הזאת עלינו לבקש ממך להיכנס.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
-  },
-  "help_improve_country": "לסייע בשיפור Open Food Facts במדינה שלך",
-  "@help_improve_country": {
-    "description": "label for a tile that is on the contribute tile"
   },
   "sign_out": "יציאה",
   "@sign_out": {
@@ -352,14 +339,6 @@
   "sign_up_page_confirm_password_hint": "אימות סיסמה",
   "sign_up_page_confirm_password_error_empty": "נא לאשר את הסיסמה",
   "sign_up_page_confirm_password_error_invalid": "הסיסמאות שונות זו מזו",
-  "sign_up_page_agree_text": "אני מסכים ל־Open Food Facts",
-  "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
-  },
-  "sign_up_page_terms_text": "תנאי השימוש והתרומה של Open Food Facts",
-  "@sign_up_page_terms_text": {
-    "description": "terms of use and contribution is preceded by sign_up_page_agree_text"
-  },
   "donate_url": "https://world-he.openfoodfacts.org/donate",
   "@donate_url": {
     "description": "Please insert the right url from the website here."
@@ -371,7 +350,6 @@
   "sign_up_page_producer_checkbox": "עיסוקי הוא ייצור מזון",
   "sign_up_page_producer_hint": "יצרן/מותג",
   "sign_up_page_producer_error_empty": "נא למלא יצרן או שם מותג",
-  "sign_up_page_subscribe_checkbox": "אשמח להירשם לקבוצת הדיוור של Open Food Facts (ניתן לצאת ממנה בכל רגע נתון)",
   "sign_up_page_user_name_already_used": "שם המשתמש כבר קיים, נא לבחור בשם משתמש אחר.",
   "sign_up_page_email_already_exists": "כבר קיים, יש להיכנס לחשבון או לנסות עם כתובת דוא״ל אחרת.",
   "sign_up_page_provide_valid_email": "נא לספק כתובת דוא״ל תקפה.",
@@ -422,7 +400,6 @@
   },
   "support_join_slack": "ניתן לבקש עזרה בערוץ ה־Slack שלנו",
   "support_via_forum": "בקשת עזרה בפורום שלנו",
-  "support_via_email": "לשלוח לנו דוא״ל",
   "support_via_email_include_logs_dialog_title": "לשלוח את יומני היישום?",
   "support_via_email_include_logs_dialog_body": "לצרף את יומני היישום להודעת הדוא״ל שלך?",
   "termsOfUse": "תנאי שימוש",
@@ -448,16 +425,10 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "הקוד של כל אחד ממוצרי Open Food Facts זמין ב־GitHub. אנו מזמינים אותך לגזור מהקוד הזה (הוא בקוד פתוח) ולסייע לשפר אותו, עבור כולם, בכל רחבי העולם.",
-  "@contribute_develop_text": {},
-  "contribute_develop_text_2": "ניתן להצטרף לחדר השיח של Open Food Facts ב־Slack שהיא הדרך המומלצת לשאול שאלות.",
-  "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "מצב למפתחים?",
   "contribute_develop_dev_mode_subtitle": "הפעלת המצב למפתחים",
   "contribute_donate_title": "תרומה",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "תרומה ל־Open Food Facts",
-  "@contribute_donate_header": {},
   "contribute_enroll_alpha_warning": "נא להכיר בזה שעם גרסת האלפא הפנימית הנתונים שלך יכולים להימחק לחלוטין ושהיישומון עשוי להיות בלתי שמיש לעתים!",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "מוצרים שדורשים השלמה",
@@ -468,8 +439,6 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "מסד הנתונים הוא ליבת המיזם. פשוט וקל מאוד לסייע בשיפורו. ניתן להוריד את היישומון לטלפון שלך ולהתחיל להוסיף ולשפר מוצרים.\n\nמצד שני, האתר של Open Food Facts מציע מגוון דרכים לתרום: ",
-  "@contribute_improve_text": {},
   "contribute_translate_header": "תרגום",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
@@ -482,13 +451,8 @@
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
-  "contribute_translate_text": "‏Open Food Facts הוא מיזם גלובלי שמכיל מוצרים מלמעלה מ־160 מדינות. Open Food Facts מתורגם לעשרות שפות עם תוכן שהולך ומצטבר.",
-  "@contribute_translate_text": {},
   "contribute_translate_text_2": "תרגומים הם אחת ממשימות המפתח של המיזם",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "מזמינים אותך לתרום את הכישורים שלך ל־Open Food Facts. מאגר הכשרונות מחכה רק לך!",
-  "contribute_share_header": "שיתוף Open Food Facts עם חברים",
-  "@contribute_share_header": {},
   "contribute_share_content": "רציתי לספר לך על יישומון שמותקן אצלי. Open Food Facts, שמאפשר לקבל את ההשפעות הבריאותיות והסביבתיות של המזון שלך, בדרך מותאמת אישית. הוא עובד עם סריקת ברקודים על האריזה. בסופו של דבר זה בחינם ולא נדרשת הרשמה ואפשר גם לסייע להגדיר את מספר המוצרים המפוענחים. הנה הקישור להורדה והתקנה בטלפון: https://openfoodfacts.app",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
@@ -517,7 +481,6 @@
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
   },
-  "question_sign_in_text": "כדאי להיכנס לחשבונך ב־Open Food Facts כדי לקבל הוקרה על התרומות שלך",
   "question_yes_button_accessibility_value": "לענות בכן",
   "question_no_button_accessibility_value": "לענות בלא",
   "question_skip_button_accessibility_value": "לדלג על השאלה הזאת",
@@ -527,23 +490,17 @@
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "מזמינים אותך ליצור חשבון ולהצטרף לקהילת Open Food Facts כדי לסייע בבניית מידע על מזון בכל רחבי העולם!",
-  "@account_create_message": {
-    "description": "The Message to be displayed if the user does not have an account and wants to contribute"
-  },
   "join_us": "הצטרפות אלינו",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "הפרופיל שלך",
-  "myPreferences_profile_subtitle": "ניהול חשבון התרומה שלך ב־Open Food Facts.",
   "myPreferences_settings_title": "הגדרות היישומון",
   "myPreferences_settings_subtitle": "מצב כהה, שפות…",
   "myPreferences_not_configured_yet": "לא הגדרת העדפה עדיין.",
   "myPreferences_food_title": "העדפות מזון",
   "myPreferences_food_subtitle": "נא לבחור איזה מידע על מזון הכי חשוב לך.",
   "myPreferences_food_compatibility_explainer": "נא לבחור איזה מידע על מזון מעניין אותך, כדי לדרג מזון לפי העדפותיך, לראות את המידע שמעניין אותך תחילה ולקבל תקציר תאימות.",
-  "myPreferences_food_privacy": "העדפות המזון האלו נשארות במכשיר שלך ואינן משויכות לחשבון התרומה שלך ל־Open Food Facts, אם יש לך חשבון כזה.",
   "myPreferences_beauty_title": "העדפות למוצרי טיפוח",
   "myPreferences_beauty_subtitle": "נא לבחור איזה מידע על מוצרי טיפוח הכי חשוב לך.",
   "myPreferences_product_title": "העדפות למוצרים אחרים",
@@ -701,8 +658,6 @@
   "@packaging_information_photo": {},
   "missing_product": "מצאת מוצר חדש!",
   "@missing_product": {},
-  "add_product_take_photos": "יש לצלם את האריזה כדי להוסיף את המוצר הזה ל־Open Food Facts",
-  "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "נא לצלם תחילה מספר תמונות. תמיד ניתן להשלים את המוצר בהמשך.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "הוספת פרטי מוצר",
@@ -819,7 +774,6 @@
   "new_product_subtitle_nova": "אפשר לגלות אותו על ידי מילוי קטגוריית המזון והרכיבים",
   "new_product_desc_nova_unknown": "רמת עיבוד המזון אינה ידועה",
   "new_product_title_pictures": "בואו נצלם קצת!",
-  "new_product_title_pictures_details": "נא לצלם את התמונות הבאות והמנוע של Open Food Facts ידאג לשאר!",
   "new_product_title_misc": "וכמה נתונים בסיסיים…",
   "new_product_done_msg": "תודה „{username}” על תרומתך!",
   "@new_product_done_msg": {
@@ -861,30 +815,6 @@
   "uploading_image": "התמונה נשלחת לשרת",
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
-  },
-  "uploading_image_type_front": "תמונת החזית נשלחת ל־Open Food Facts",
-  "@uploading_image_type_front": {
-    "description": "Message when a new front picture is being uploaded to the server"
-  },
-  "uploading_image_type_ingredients": "תמונת הרכיבים נשלחת ל־Open Food Facts",
-  "@uploading_image_type_ingredients": {
-    "description": "Message when a new ingredients picture is being uploaded to the server"
-  },
-  "uploading_image_type_nutrition": "תמונת הערכים התזונתיים נשלחת ל־Open Food Facts",
-  "@uploading_image_type_nutrition": {
-    "description": "Message when a new nutrition picture is being uploaded to the server"
-  },
-  "uploading_image_type_packaging": "תמונת האריזה נשלחת ל־Open Food Facts",
-  "@uploading_image_type_packaging": {
-    "description": "Message when a new packaging picture is being uploaded to the server"
-  },
-  "uploading_image_type_other": "תמונה אחרת נשלחת ל־Open Food Facts",
-  "@uploading_image_type_other": {
-    "description": "Message when a new other picture is being uploaded to the server"
-  },
-  "uploading_image_type_generic": "תמונה נשלחת ל־Open Food Facts",
-  "@uploading_image_type_generic": {
-    "description": "Message when a new picture is being uploaded to the server"
   },
   "score_add_missing_ingredients": "הוספת רכיבים חסרים",
   "score_add_missing_packaging_image": "הוספת תמונת אריזה חסרה",
@@ -1091,10 +1021,6 @@
   "@product_image_details_date_unknown": {
     "description": "Text to indicate the date of the image is unknown"
   },
-  "homepage_main_card_logo_description": "ברוך בואך ל־Open Food Facts",
-  "@homepage_main_card_logo_description": {
-    "description": "Description for accessibility of the Open Food Facts logo on the homepage"
-  },
   "homepage_main_card_subheading": "ניתן **לסרוק** ברקוד או\n**לחפש** מוצר",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
@@ -1288,10 +1214,6 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "פתיחת הגדרות המערכת עבור Open Food Facts",
-  "@native_app_description": {
-    "description": "Native App description in app settings"
-  },
   "product_removed_history": "המוצר הוסר מההיסטוריה",
   "@product_removed_history": {
     "description": "Product got removed from history"
@@ -1402,7 +1324,6 @@
   "tiktok": "לעקוב אחרינו בטיקטוק",
   "tiktok_link": "https://www.tiktok.com/@openfoodfacts",
   "instagram": "למעקב אחרינו באינסטגרם",
-  "instagram_link": "https://instagram.com/open.food.facts",
   "twitter": "למעקב אחרינו ב־X (לשעבר טוויטר)",
   "twitter_link": "https://www.twitter.com/openfoodfacts",
   "mastodon": "לעקוב אחרינו במסטודון",
@@ -1411,7 +1332,6 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "בלוג",
   "faq": "שו״ת",
-  "discover": "לגלות",
   "how_to_contribute": "כיצד לתרום",
   "hint_knowledge_panel_message": "ניתן לחלק בכל אחד מחלקי הכרטיס לקבלת פרטים נוספים על מה שמופיע. כדאי לנסות!",
   "@hint_knowledge_panel_message": {
@@ -1593,16 +1513,6 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "יש להיכנס או להירשם כדי להצטרף ל־Open Food Facts",
-  "user_profile_title_id_email": "כניסה ל־Open Food Facts‏: {email}",
-  "@user_profile_title_id_email": {
-    "description": "User login (when it's an email)",
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "user_profile_title_id_default": "ברוך בואך {id}!",
   "@user_profile_title_id_default": {
     "description": "User login (when it's an id)",
@@ -1615,15 +1525,6 @@
   "email_subject_account_deletion": "מחיקת חשבון",
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
-  },
-  "email_body_account_deletion": "היי, נא למחוק את החשבון שלי ב־Open Food Facts‏: {userId}",
-  "@email_body_account_deletion": {
-    "description": "Email body for an account deletion",
-    "placeholders": {
-      "userId": {
-        "type": "String"
-      }
-    }
   },
   "settings_app_app": "יישום",
   "settings_app_data": "פרטיות וניטור",
@@ -1657,15 +1558,10 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "כשהאפשרות פעילה, דוחות קריסה מוגשות אוטומטית למערכת מעקב השגיאות של Open Food Facts, כדי שניתן יהיה לתקן תקלות ובכך לשפר את היישומון.",
-  "@crash_reporting_toggle_subtitle": {
-    "description": "SubTitle for the Crash reporting toggle"
-  },
   "send_anonymous_data_toggle_title": "שליחת נתונים אלמוניים",
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "כאשר האפשרות פעילה, יישלח מידע אלמוני כלשהו בנוגע ליישומון אל השרתים של Open Food Facts כדי שנוכל להבין איך וכמה תכונות נמצאות בשימוש כדי לשפר אותן.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -2010,10 +1906,6 @@
   },
   "edit_product_form_item_categories_explanation_info2_title": "חסרה קטגוריה?",
   "@edit_product_form_item_categories_explanation_info2_title": {
-    "description": "Product edition - Categories - input explainer, part 2"
-  },
-  "edit_product_form_item_categories_explanation_info2_content": "In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve Open Food Facts in your country.",
-  "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
   "edit_product_form_item_categories_explanation_good_examples_1": "סרדינים בשמן זית",
@@ -2456,9 +2348,6 @@
       }
     }
   },
-  "prices_app_dev_mode_flag": "קיצור דרך ליישומון מחירים בעמוד המוצר",
-  "prices_app_button": "מעבר ליישומון המחירים",
-  "prices_website_button": "פתיחת אתר האינטרנט של Open Prices",
   "prices_bulk_proof_upload_select": "הוספת תגי מחיר ישירות מהגלריה",
   "prices_bulk_proof_upload_warning": "לאחר בחירת תמונות, לא ניתן יהיה לערוך אותן!",
   "prices_bulk_proof_upload_warning_ai": "בינה מלאכותית תרוץ על ההוכחות שלך כדי לחלץ מחירים.",
@@ -2641,10 +2530,6 @@
         "type": "String"
       }
     }
-  },
-  "prices_open_proof": "הוכחת מחיר פתוח",
-  "@prices_open_proof": {
-    "description": "Button to open a proof"
   },
   "prices_proofs_list_length_one_page": "{count,plural, two {כל {count} ההוכחות} many {כל {count} ההוכחות}=0{אין הוכחות עדיין} =1{הוכחה אחת בלבד} other{כל {count} ההוכחות}}",
   "@prices_proofs_list_length_one_page": {
@@ -2983,14 +2868,6 @@
   "edit_product_action_confirm": "אישור",
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
-  },
-  "signup_page_terms_of_use_line1": "נתתי ל־Open Food Facts את הסכמתי ",
-  "@signup_page_terms_of_use_line1": {
-    "description": "User consent for terms of use (line 1)"
-  },
-  "signup_page_terms_of_use_line2": "תנאי השימוש והתרומה של Open Food Facts",
-  "@signup_page_terms_of_use_line2": {
-    "description": "User consent for terms of use (line 2)"
   },
   "analytics_consent_image_semantic_label": "סמל ניתוח נתונים",
   "@analytics_consent_image_semantic_label": {
@@ -3360,51 +3237,6 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "  מזמינים אותך להסתכל על המוצר הזה ב־Open Food Facts‏: {url}",
-  "@share_product_text": {
-    "description": "The content which is send, when sharing a 'food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_beauty": "מזמינים אותך להסתכל על המוצר הזה ב־Open Beauty Facts‏: {url}",
-  "@share_product_text_beauty": {
-    "description": "The content which is send, when sharing a 'beauty' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_pet_food": "מזמינים אותך להסתכל על המוצר הזה ב־Open PetFood Facts‏: {url}",
-  "@share_product_text_pet_food": {
-    "description": "The content which is send, when sharing a 'pet food' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_text_product": "מזמינים אותך להסתכל על המוצר הזה ב־Open Products Facts‏: {url}",
-  "@share_product_text_product": {
-    "description": "The content which is send, when sharing a 'products' product",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
-  "share_product_list_text": "הנה רשימת המוצרים שלי ב־Open Food Facts‏: {url}",
-  "@share_product_list_text": {
-    "description": "The content which is send, when sharing a product list",
-    "placeholders": {
-      "url": {
-        "type": "String"
-      }
-    }
-  },
   "capture": "לצלם חדשה",
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
@@ -3489,10 +3321,6 @@
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
-  "help_with_openfoodfacts": "עזרה עם OpenFoodFacts",
-  "@help_with_openfoodfacts": {
-    "description": "Label for the email title"
-  },
   "product_task_background_schedule": "המוצר יעודכן ברקע בהקדם האפשרי.",
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
@@ -3506,7 +3334,6 @@
     "description": "Content for the dialog when no email client is installed on the device"
   },
   "all_images": "כל התמונות",
-  "selected_images": "תמונות נבחרות",
   "product_card_remove_product_tooltip": "הסרת מוצר",
   "@product_card_remove_product_tooltip": {
     "description": "Tooltip (message visible with a long-press) on a product item in the carousel"
@@ -3908,10 +3735,6 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "עדכון מסד הנתונים המקומי של המוצרים בנתונים העדכניים ביותר מ־Open Food Facts",
-  "@update_local_database_sub": {
-    "description": "Update the local product database with the latest data from server"
-  },
   "clear_local_database": "פינוי נתוני מוצרים באופן בלתי מקוון",
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
@@ -4213,10 +4036,6 @@
   "@guide_nova_share_link": {
     "comment": "Make sure the link exists before adding a translation"
   },
-  "guide_open_food_facts_title": "ברוך בואך ל־Open Food Facts!",
-  "@guide_open_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_food_facts_what_is_open_food_facts_title": "מה זה Open Food Facts?",
   "guide_open_food_facts_what_is_open_food_facts_paragraph1": "Open Food Facts is a **collaborative**, **free**, and **open** database of food products from around the world.",
   "@guide_open_food_facts_what_is_open_food_facts_paragraph1": {
@@ -4244,10 +4063,6 @@
   "guide_open_food_facts_scores_arg2_title": "A score to avoid ultra-processed foods",
   "guide_open_food_facts_scores_arg3_title": "A score for the planet",
   "guide_open_food_facts_share_link": "https://world-he.openfoodfacts.org/discover",
-  "guide_open_pet_food_facts_title": "Welcome to Open Pet Food Facts!",
-  "@guide_open_pet_food_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_title": "What is Open Pet Food Facts?",
   "guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": "Open Pet Food Facts extends our mission to our furry friends! It's a **database of pet food products for cats, dogs, and other companions**.",
   "@guide_open_pet_food_facts_what_is_open_pet_food_facts_paragraph1": {
@@ -4274,10 +4089,6 @@
   "guide_open_pet_food_facts_scores_title": "A note on scoring",
   "guide_open_pet_food_facts_scores_paragraph1": "Developing a scoring system for pet food **is not a priority right now**. The methodology would be complex, as nutritional needs vary greatly by species, age, and health condition. We haven’t found any independant scientific team yet, able to develop such a score.",
   "guide_open_pet_food_facts_share_link": "https://world-he.openpetfoodfacts.org/discover",
-  "guide_open_beauty_facts_title": "Welcome to Open Beauty Facts!",
-  "@guide_open_beauty_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_beauty_facts_what_is_open_beauty_facts_title": "What is Open Beauty Facts?",
   "guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": "Open Beauty Facts is a collaborative database of **cosmetic products**.",
   "@guide_open_beauty_facts_what_is_open_beauty_facts_paragraph1": {
@@ -4324,7 +4135,6 @@
   "guide_open_prices_how_arg1_title": "לאסוף תמונות של תוויות מחיר במעברים",
   "guide_open_prices_how_arg2_title": "לאסוף תמונות של קבלות",
   "guide_open_prices_why_title": "למה מיזם Open Food Facts עושה את זה?",
-  "guide_open_prices_why_paragraph1": "Price information is of paramount importance to understand food systems. It's a key factor in understanding the cost of food and to promote healthier diets. Opening price data is a way to make it easier for researchers, journalists, and citizens to **have a better understanding of how food prices vary geographically and in time**.",
   "guide_open_prices_why_arg1_title": "Track the evolution of prices over time",
   "guide_open_prices_why_arg1_text": "See the **evolution of prices**: shrinkflation, cheapflation, we can track them together!",
   "guide_open_prices_why_arg2_title": "השוואת מחירים בסביבה שלך",
@@ -4335,10 +4145,6 @@
   "guide_open_prices_retailers_title": "אני קמעונאי ואני רוצה לתרום מחירים. איך אפשר לעשות את זה?",
   "guide_open_prices_retailers_paragraph1": "You can contribute prices by using our API.\nIf you want to contribute prices at scale, please get in touch with us at prices@openfoodfacts.org.",
   "guide_open_prices_share_link": "https://prices.openfoodfacts.org/about",
-  "guide_open_products_facts_title": "ברוך בואך ל־Open Products Facts!",
-  "@guide_open_products_facts_title": {
-    "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
-  },
   "guide_open_products_facts_what_is_open_products_facts_title": "What is Open Products Facts?",
   "guide_open_products_facts_what_is_open_products_facts_paragraph1": "Open Products Facts is a massive, open database for **any product with a barcode, which is not food, cosmetic or pet food**.",
   "@guide_open_products_facts_what_is_open_products_facts_paragraph1": {
@@ -4581,7 +4387,6 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "אוווופס!",
-  "carousel_unsupported_text": "הברקוד שנסרק אינו נתמך על ידי Open Food Facts!",
   "carousel_error_header": "שגיאה!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -5038,10 +4843,6 @@
   "@preferences_prices_subtitle": {
     "description": "Subtitle for the prices preferences title"
   },
-  "preferences_card_project": "פרויקט עובדות המזון הפתוחות",
-  "@preferences_card_project": {
-    "description": "Title for the project preferences card"
-  },
   "preferences_contribute_title": "לתרום",
   "@preferences_contribute_title": {
     "description": "Title for the contribution preferences tile"
@@ -5153,10 +4954,6 @@
   "preferences_legal_mentions": "אזכורים משפטיים",
   "@preferences_legal_mentions": {
     "description": "Title for the preferences legal mentions card"
-  },
-  "preferences_legal_header": "Open Food Facts הוא מאגר מידע של מוצרי מזון **שנוצר על ידי כולם, עבור כולם**.\nניתן להשתמש בו כדי לבצע בחירות מזון טובות יותר, ומכיוון שמדובר ב**נתונים פתוחים**, כל אחד ואחת יכולים **לעשות בהם שימוש חוזר לכל מטרה**.",
-  "@preferences_legal_header": {
-    "description": "This is the same text as the Discover banner on the website. Please keep the ** syntax to make the text bold."
   },
   "preferences_privacy_policy": "מדיניות פרטיות",
   "@preferences_privacy_policy": {
@@ -5495,10 +5292,6 @@
   "@preferences_contributions_products_added_title": {
     "description": "Title for new products added tile"
   },
-  "preferences_contributions_new_products_subtitle": "מוצרים חדשים שהוספתי ל-Open Food Facts",
-  "@preferences_contributions_new_products_subtitle": {
-    "description": "Subtitle for new products added subtile"
-  },
   "preferences_contributions_to_be_completed_title": "מוצרים שאני צריך להשלים",
   "@preferences_contributions_to_be_completed_title": {
     "description": "Title for products to be completed tile"
@@ -5598,10 +5391,6 @@
   "preferences_page_contribute_project_title": "תרמו לפרויקט",
   "@preferences_page_contribute_project_title": {
     "description": "Title for the contribute to project navigation tile"
-  },
-  "preferences_page_contribute_project_subtitle": "דרכים פשוטות לעזור Open Food Facts",
-  "@preferences_page_contribute_project_subtitle": {
-    "description": "Subtitle for the contribute to project navigation tile"
   },
   "preferences_page_faq_subtitle": "מתודולוגיות ניקוד, עזרה ועוד על הפרויקט",
   "@preferences_page_faq_subtitle": {
@@ -5799,17 +5588,9 @@
   "@preferences_about_app_development_title": {
     "description": "Title for the development preferences card in about app section"
   },
-  "preferences_page_open_food_facts_labs_title": "מעבדות Open Food Facts",
-  "@preferences_page_open_food_facts_labs_title": {
-    "description": "Title for the Open Food Facts Labs navigation tile in preferences page"
-  },
   "preferences_root_account_title": "חשבון",
   "@preferences_root_account_title": {
     "description": "Title for the account preferences root"
-  },
-  "preferences_contribute_translate_header": "הביאו את Open Food Facts לשפה שלכם",
-  "@preferences_contribute_translate_header": {
-    "description": "Button label + pop up window title: Shows information about helping by translating"
   },
   "preferences_contribute_enroll_alpha": "הירשמו לגרסת אלפא של האפליקציה",
   "@preferences_contribute_enroll_alpha": {},
