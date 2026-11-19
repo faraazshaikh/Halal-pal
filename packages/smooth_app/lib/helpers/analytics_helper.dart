@@ -379,21 +379,10 @@ class AnalyticsHelper {
     DispatchSettings dispatchSettings = const DispatchSettings.persistent(),
   }) async {
     _packageInfo = await PackageInfo.fromPlatform();
-    if (screenshotMode) {
-      _setCrashReports(false);
-      _setAnalyticsReports(false);
-      return;
-    }
-    try {
-      await MatomoTracker.instance.initialize(
-        url: 'https://analytics.openfoodfacts.org/matomo.php',
-        siteId: '2',
-        visitorId: _visitorId,
-        dispatchSettings: dispatchSettings,
-      );
-    } catch (err) {
-      // With Hot Reload, this may trigger a late field already initialized
-    }
+    // Halal Pal never sends analytics: the tracker is deliberately left
+    // uninitialised, so every tracking call returns immediately.
+    _setCrashReports(false);
+    _setAnalyticsReports(false);
   }
 
   /// A visitor id should have a length of 16 characters.
