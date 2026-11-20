@@ -16,6 +16,14 @@ class CameraHelper {
     }
     _hasBackCamera = await _hasCamera(front: false);
     _hasFrontCamera = await _hasCamera(front: true);
+
+    // The camera query can come back empty or fail on some phones and
+    // installs, and then the app would hide the scanner without a word.
+    // A phone has a camera, so assume the back one is there: if the camera
+    // really is unusable, the scanner view itself reports it.
+    if (!_hasBackCamera! && !_hasFrontCamera!) {
+      _hasBackCamera = true;
+    }
   }
 
   /// A failing camera query means "no camera", not a failed app start.

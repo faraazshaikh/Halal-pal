@@ -15,7 +15,23 @@ class _BackCameraThrowsScanner extends MockedScanner {
   }
 }
 
+class _NoCameraAnswerScanner extends MockedScanner {
+  const _NoCameraAnswerScanner();
+
+  @override
+  Future<bool> hasCamera({required bool front}) async => false;
+}
+
 void main() {
+  test('an empty camera answer still shows the scanner', () async {
+    GlobalVars.barcodeScanner = const _NoCameraAnswerScanner();
+
+    await CameraHelper.init();
+
+    expect(CameraHelper.hasACamera, isTrue);
+    expect(CameraHelper.hasMoreThanOneCamera, isFalse);
+  });
+
   test('a throwing camera query counts as no camera', () async {
     GlobalVars.barcodeScanner = const _BackCameraThrowsScanner();
 
