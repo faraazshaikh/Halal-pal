@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
+import 'package:http/http.dart' as http;
 import 'package:matomo_tracker/matomo_tracker.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -377,6 +378,7 @@ class AnalyticsHelper {
   static Future<void> initMatomo(
     bool screenshotMode, {
     DispatchSettings dispatchSettings = const DispatchSettings.persistent(),
+    http.Client? httpClient,
   }) async {
     _packageInfo = await PackageInfo.fromPlatform();
     // Halal Pal never sends analytics. The tracker still has to be set up,
@@ -397,8 +399,15 @@ class AnalyticsHelper {
         dispatchSettings: const DispatchSettings.nonPersistent(),
         pingInterval: null,
         optOut: true,
+        httpClient: httpClient,
       );
       await MatomoTracker.instance.setOptOut(optOut: true);
+      // Opt-out stops anything being sent, but the tracker still lists page
+      // views in memory. Empty that list regularly so nothing builds up.
+      Timer.periodic(
+        const Duration(seconds: 30),
+        (_) => MatomoTracker.instance.dropActions(),
+      );
     } catch (_) {
       // Already initialised (hot reload).
     }

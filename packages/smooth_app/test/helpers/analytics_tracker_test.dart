@@ -1,9 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
 import 'package:matomo_tracker/matomo_tracker.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
+
+/// Counts every network request the tracker tries to make.
+class _CountingClient extends http.BaseClient {
+  int requests = 0;
+
+  @override
+  Future<http.StreamedResponse> send(http.BaseRequest request) async {
+    requests++;
+    return http.StreamedResponse(const Stream<List<int>>.empty(), 200);
+  }
+}
 
 /// A screen built like the real ones (History, the camera screen, ...): it
 /// reports its page view to the tracker when it opens.
@@ -49,7 +61,8 @@ void main() {
       reason: 'sanity check: this is the crash the fix removes',
     );
 
-    await AnalyticsHelper.initMatomo(false);
+    final _CountingClient client = _CountingClient();
+    await AnalyticsHelper.initMatomo(false, httpClient: client);
 
     expect(MatomoTracker.instance.initialized, isTrue);
     expect(
@@ -58,13 +71,23 @@ void main() {
       reason: 'Halal Pal must never record or send analytics',
     );
 
-    // What every screen does when it opens: must not throw, must record nothing.
+    // What every screen does when it opens: must not throw.
     MatomoTracker.instance.trackPageViewWithName(actionName: 'History');
     MatomoTracker.instance.trackEvent(
       eventInfo: EventInfo(category: 'c', action: 'a'),
     );
-    expect(MatomoTracker.instance.queue, isEmpty);
 
+    // Try to send everything that was recorded: nothing may leave the phone.
+    await MatomoTracker.instance.dispatchActions();
+    expect(
+      client.requests,
+      0,
+      reason: 'the tracker must not make any network request',
+    );
+
+    // Nothing may pile up in memory either.
+    MatomoTracker.instance.dropActions();
+    expect(MatomoTracker.instance.queue, isEmpty);
   });
 
   testWidgets('a screen with the tracking mixin builds after set-up', (

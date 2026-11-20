@@ -56,6 +56,14 @@ void main() {
     log('STAGE start: $name');
     try {
       await body();
+      final List<String> texts = find
+          .byType(Text)
+          .evaluate()
+          .map((Element e) => (e.widget as Text).data ?? '')
+          .where((String t) => t.trim().isNotEmpty)
+          .take(25)
+          .toList();
+      log('ON SCREEN after "$name": $texts');
       expectNoCrash(tester, name);
       log('STAGE ok: $name');
     } catch (error) {
@@ -76,6 +84,10 @@ void main() {
   testWidgets('every main screen opens without crashing', (
     WidgetTester tester,
   ) async {
+    // The app installs its own error screen; put the test framework's back at
+    // the end, or the framework reports the change as a failure.
+    final ErrorWidgetBuilder originalErrorBuilder = ErrorWidget.builder;
+    try {
     // Skip the first-run tour: the test is about the screens, not onboarding.
     SharedPreferences.setMockInitialValues(<String, Object>{
       'lastVisitedOnboardingPage': OnboardingPage.ONBOARDING_COMPLETE.index,
@@ -171,5 +183,8 @@ void main() {
       isEmpty,
       reason: 'these screens failed:\n${failures.join('\n')}',
     );
+    } finally {
+      ErrorWidget.builder = originalErrorBuilder;
+    }
   });
 }

@@ -173,6 +173,23 @@ jobs:
           retention-days: 14
           if-no-files-found: warn
 
+      # Keep the screenshots where they can be opened without a login: a
+      # pre-release (never shown as the latest download) replaced on every run.
+      - name: 🖼️ Attach evidence to the test-evidence pre-release
+        if: always() && github.ref == 'refs/heads/halalpal-rebrand'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          zip -qr emulator-evidence.zip evidence || true
+          NOTES="Screenshots and logs from the emulator smoke test of run ${{ github.run_number }} (commit ${GITHUB_SHA::7}). Not an app download."
+          if gh release view test-evidence >/dev/null 2>&1; then
+            gh release edit test-evidence --prerelease --notes "$NOTES"
+          else
+            gh release create test-evidence --prerelease --title "Test evidence" --notes "$NOTES" --target "$GITHUB_SHA"
+          fi
+          gh release upload test-evidence emulator-evidence.zip --clobber
+
   # Permanent download link, no login and no expiry:
   # https://github.com/faraazshaikh/halal-pal/releases/download/latest/HalalPal.apk
   # The download page links here, so visitors always get the newest build.
