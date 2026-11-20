@@ -42,6 +42,12 @@ GRANT_PID=$!
 ) &
 SHOT_PID=$!
 
+# Animations must be ON: the motion is what is being tested.
+for k in window_animation_scale transition_animation_scale animator_duration_scale; do
+  adb -s "$DEVICE" shell settings put global $k 1.0
+done
+echo "animation scales: $(adb -s "$DEVICE" shell settings get global animator_duration_scale) $(adb -s "$DEVICE" shell settings get global transition_animation_scale)" >> "$EVID/events.txt"
+
 # A screen recording of the test itself (so the motion can be checked frame
 # by frame). It starts once the app is running, in 170-second pieces.
 (

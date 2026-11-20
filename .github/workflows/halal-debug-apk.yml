@@ -161,7 +161,7 @@ jobs:
           arch: x86_64
           profile: pixel_6
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back emulated -camera-front emulated
-          disable-animations: true
+          disable-animations: false
           script: bash ci/emulator_smoke.sh
 
       - name: ⬆️ Upload evidence (screenshots, test log, app log)
