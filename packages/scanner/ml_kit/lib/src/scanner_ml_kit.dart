@@ -171,7 +171,22 @@ class _SmoothBarcodeScannerMLKitState extends State<_SmoothBarcodeScannerMLKit>
             MobileScanner(
               controller: _cameraController.controller,
               fit: BoxFit.cover,
-              errorBuilder: (_, _) => SCANNER_EMPTY_WIDGET,
+              // Show why the camera failed instead of a blank area.
+              errorBuilder: (BuildContext context, MobileScannerException error) =>
+                  ColoredBox(
+                    color: Colors.black,
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(24.0),
+                        child: Text(
+                          'Camera problem: ${error.errorCode.message}'
+                          '${error.errorDetails?.message != null ? '\n${error.errorDetails!.message}' : ''}',
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
               onDetect: (BarcodeCapture capture) async {
                 for (final Barcode barcode in capture.barcodes) {
                   final String? string = barcode.displayValue;

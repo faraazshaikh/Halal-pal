@@ -64,6 +64,11 @@
             android:name="flutterEmbedding"
             android:value="2" />
 
+        <!-- The camera preview showed up grey on some phones with Impeller. -->
+        <meta-data
+            android:name="io.flutter.embedding.android.EnableImpeller"
+            android:value="false" />
+
         <!-- Quick tile / setting (only available on Android 24+ / Nougat) -->
         <service
             android:name=".AppMainTile"
