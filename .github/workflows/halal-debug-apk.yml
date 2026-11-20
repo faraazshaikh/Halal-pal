@@ -8,6 +8,9 @@ on:
     branches:
       - halal-badge
       - halalpal-rebrand
+    # The download page lives in site/ and needs no app build.
+    paths-ignore:
+      - 'site/**'
 
 permissions:
   # contents: write lets the last step update the public 'latest' release.

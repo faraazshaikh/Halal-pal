@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halal Pal: scan a barcode, see Halal, Haram or Mushbooh</title>
+<meta name="description" content="Halal Pal is a free Android app. Scan a product barcode and see Halal, Haram or Mushbooh first, with the reason.">
+<meta name="theme-color" content="#2e7d32">
+<style>
+  :root {
+    --green: #2e7d32;
+    --green-dark: #1b5e20;
+    --red: #c62828;
+    --amber: #b36b00;
+    --grey: #616161;
+    --bg: #faf7ef;
+    --card: #ffffff;
+    --text: #1f2a1f;
+    --muted: #55605a;
+    --line: #e4dfd0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --green: #66bb6a;
+      --green-dark: #2e7d32;
+      --red: #ef6f6c;
+      --amber: #ffb74d;
+      --grey: #b0b0b0;
+      --bg: #101510;
+      --card: #1a211a;
+      --text: #eef2ee;
+      --muted: #a9b5ac;
+      --line: #2b352b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  header.hero {
+    background: #2e7d32;
+    color: #fff;
+    padding: 56px 0 48px;
+    text-align: center;
+  }
+  .logo {
+    width: 72px; height: 72px; border-radius: 20px;
+    background: #fff; color: #2e7d32;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 40px; font-weight: 800;
+    margin-bottom: 16px;
+  }
+  h1 { margin: 0 0 8px; font-size: 40px; line-height: 1.1; letter-spacing: -0.5px; }
+  .tagline { margin: 0 auto 28px; max-width: 30em; font-size: 19px; opacity: 0.95; }
+  .btn {
+    display: inline-block;
+    background: #fff; color: #1b5e20;
+    font-weight: 700; font-size: 18px;
+    padding: 14px 28px; border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  .btn:focus-visible, a:focus-visible { outline: 3px solid #ffb74d; outline-offset: 3px; }
+  .meta { margin: 14px 0 0; font-size: 14px; opacity: 0.9; }
+  main { padding: 8px 0 24px; }
+  section { margin: 32px 0; }
+  h2 { font-size: 24px; margin: 0 0 10px; letter-spacing: -0.2px; }
+  p { margin: 0 0 12px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 20px;
+  }
+  ol, ul { margin: 0; padding-left: 22px; }
+  li { margin: 8px 0; }
+  .verdicts { list-style: none; padding: 0; }
+  .verdicts li { display: flex; gap: 12px; align-items: flex-start; margin: 12px 0; }
+  .chip {
+    flex: none; min-width: 92px; text-align: center;
+    color: #fff; font-weight: 700; font-size: 14px;
+    border-radius: 999px; padding: 4px 12px;
+  }
+  .chip.halal { background: #2e7d32; }
+  .chip.haram { background: #c62828; }
+  .chip.mushbooh { background: #b36b00; }
+  .chip.nodata { background: #616161; }
+  .note { color: var(--muted); font-size: 15px; }
+  a { color: var(--green); }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 24px 0 40px;
+    color: var(--muted);
+    font-size: 15px;
+    text-align: center;
+  }
+  footer p { margin: 6px 0; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="logo" aria-hidden="true">&#10003;</div>
+    <h1>Halal Pal</h1>
+    <p class="tagline">Scan a barcode. See <strong>Halal, Haram or Mushbooh</strong> first, with the reason.</p>
+    <a class="btn" id="download" href="https://github.com/faraazshaikh/halal-pal/releases/download/latest/HalalPal.apk" rel="noopener">Download for Android</a>
+    <p class="meta" id="version">Version 1.0.0 &middot; Android 8 or newer &middot; about 80 MB</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>Available on Android only, for now</h2>
+    <p>Halal Pal is currently an Android app. There is no iPhone version yet.</p>
+    <div class="card">
+      <p><strong>iPhone users:</strong> Apple doesn&rsquo;t allow installing apps from a downloaded file, so I can&rsquo;t offer an iPhone version yet. It would need an Apple developer account and Apple&rsquo;s testing service, TestFlight. If you&rsquo;d like an iPhone version, email <a href="mailto:hello@intelisenselabs.com?subject=Halal%20Pal%20for%20iPhone">hello@intelisenselabs.com</a> and I&rsquo;ll tell you when it&rsquo;s ready. Until then, you can read the ingredient list on the pack yourself.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>How to install on Android</h2>
+    <div class="card">
+      <ol>
+        <li>Download the file and tap it. If Android asks, tap <strong>Settings</strong>, switch on <strong>Allow from this source</strong>, then go back.</li>
+        <li>If Play Protect shows a warning, tap <strong>More details</strong>, then <strong>Install anyway</strong>. It appears because the app isn&rsquo;t on the Play Store.</li>
+        <li>Open Halal Pal and allow the camera.</li>
+      </ol>
+    </div>
+    <p class="note" style="margin-top:12px">Every time you press Download you get the newest version. To update, download and install it again over the old one; your history stays.</p>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <p>Point the camera at a product barcode. The verdict shows first:</p>
+    <div class="card">
+      <ul class="verdicts">
+        <li><span class="chip halal">Halal</span><span>Green. No haram or doubtful ingredients found.</span></li>
+        <li><span class="chip haram">Haram</span><span>Red. Contains a haram ingredient. The ingredient and the reason are shown.</span></li>
+        <li><span class="chip mushbooh">Mushbooh</span><span>Amber. Doubtful, depends on the source. The ingredient and reason are shown.</span></li>
+        <li><span class="chip nodata">No data</span><span>Grey. No ingredient list, so check the pack yourself.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our aim</h2>
+    <p>Halal Pal will keep being developed. Every update aims to make it more accurate and quicker to use, to help Muslim brothers and sisters eat halal with confidence.</p>
+  </section>
+
+  <section>
+    <h2>Please know</h2>
+    <div class="card">
+      <ul>
+        <li>It is a helper based on the ingredient list, not a religious ruling or a halal certificate. If you&rsquo;re unsure, check the pack for a halal mark or ask a scholar.</li>
+        <li>It reads English ingredient lists only for now. Other languages are planned.</li>
+        <li>Found a wrong result? Tap <strong>Report an issue with this product</strong> in the app, or email <a href="mailto:hello@intelisenselabs.com">hello@intelisenselabs.com</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>No account, no ads, no analytics, no crash reporting. Your scan history stays on your phone. To fetch a product, the app sends its barcode to Open Food Facts.</p>
+  </section>
+
+  <section>
+    <h2>Credits</h2>
+    <p>Product data comes from <a href="https://world.openfoodfacts.org/legal" rel="noopener">Open Food Facts</a> under the <a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener">Open Database License (ODbL)</a>. Halal Pal is not affiliated with Open Food Facts.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Halal Pal is a service offered by <a href="https://intellisenselabs.com/">Intellisense Labs</a></p>
+  </div>
+</footer>
+
+<script>
+// Shows the exact version of the build people will get, straight from the
+// latest release. If this fails the static text above stays.
+(function () {
+  try {
+    fetch('https://api.github.com/repos/faraazshaikh/halal-pal/releases/tags/latest', {
+      headers: { 'Accept': 'application/vnd.github+json' }
+    })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d || !d.name) return;
+        var m = /(\d+\.\d+\.\d+) \(build (\d+)\)/.exec(d.name);
+        var asset = (d.assets || [])[0];
+        var mb = asset ? Math.round(asset.size / 1048576) : 80;
+        var when = asset && asset.updated_at
+          ? new Date(asset.updated_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+          : '';
+        if (!m) return;
+        document.getElementById('version').textContent =
+          'Version ' + m[1] + ' (build ' + m[2] + ')' + (when ? ' · updated ' + when : '') +
+          ' · Android 8 or newer · about ' + mb + ' MB';
+      })
+      .catch(function () {});
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
