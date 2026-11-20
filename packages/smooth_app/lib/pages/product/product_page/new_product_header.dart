@@ -369,11 +369,15 @@ class _ProductCompatibilityScore extends StatelessWidget {
 
 enum ProductPageTransition {
   standard,
-  slideUp;
+  slideUp,
+
+  /// The page grows out of the card that was tapped (see [CardOrigin]).
+  fromCard;
 
   static ProductPageTransition byName(String? type) {
     return switch (type) {
       'slideUp' => ProductPageTransition.slideUp,
+      'fromCard' => ProductPageTransition.fromCard,
       _ => ProductPageTransition.standard,
     };
   }

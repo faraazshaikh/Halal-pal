@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smooth_app/generic_lib/bottom_sheets/smooth_bottom_sheet.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
-import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/resources/app_icons.dart' as icons;
 import 'package:smooth_app/themes/smooth_theme_colors.dart';
 
@@ -38,52 +36,81 @@ class _SmoothPopupMenuButtonState<T> extends State<SmoothPopupMenuButton<T>> {
       tooltip:
           widget.buttonLabel ??
           MaterialLocalizations.of(context).showMenuTooltip,
-      onPressed: _openModalSheet,
+      onPressed: _openMenu,
     );
   }
 
-  void _openModalSheet() {
-    showSmoothModalSheet(
+  /// "Menus start at their button": the menu opens right under the button
+  /// that was tapped and grows from it, instead of sliding up from the
+  /// bottom of the screen.
+  Future<void> _openMenu() async {
+    final RenderObject? buttonBox = context.findRenderObject();
+    final RenderObject? overlayBox = Navigator.of(
+      context,
+      rootNavigator: true,
+    ).overlay?.context.findRenderObject();
+    if (buttonBox is! RenderBox || overlayBox is! RenderBox) {
+      return;
+    }
+
+    final Rect below = Rect.fromPoints(
+      buttonBox.localToGlobal(
+        buttonBox.size.bottomLeft(Offset.zero),
+        ancestor: overlayBox,
+      ),
+      buttonBox.localToGlobal(
+        buttonBox.size.bottomRight(Offset.zero),
+        ancestor: overlayBox,
+      ),
+    );
+
+    final List<SmoothPopupMenuItem<T>> list = widget
+        .itemBuilder(context)
+        .where((SmoothPopupMenuItem<T> item) => item.enabled)
+        .toList();
+    if (list.isEmpty) {
+      return;
+    }
+
+    // The position in the list is the value, so items whose own value is
+    // empty can still be told apart from closing the menu.
+    final int? selected = await showMenu<int>(
       context: context,
       useRootNavigator: true,
-      builder: (BuildContext context) {
-        final Iterable<SmoothPopupMenuItem<T>> list = widget
-            .itemBuilder(context)
-            .where((SmoothPopupMenuItem<T> item) => item.enabled);
-
-        return SmoothModalSheet(
-          title:
-              widget.actionsTitle ??
-              AppLocalizations.of(context).menu_button_list_actions,
-          prefixIndicator: true,
-          bodyPadding: EdgeInsets.zero,
-          body: ListView.separated(
-            padding: EdgeInsetsDirectional.only(
-              bottom: MediaQuery.viewPaddingOf(context).bottom,
-            ),
-            itemCount: list.length,
-            shrinkWrap: true,
-            itemBuilder: (BuildContext context, int index) {
-              final SmoothPopupMenuItem<T> item = list.elementAt(index);
-
-              return ListTile(
-                leading: item.icon,
-                title: Text(
-                  item.label,
-                  style: const TextStyle(fontWeight: FontWeight.w500),
+      position: RelativeRect.fromRect(below, Offset.zero & overlayBox.size),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+      elevation: 8.0,
+      popUpAnimationStyle: AnimationStyle(
+        curve: Curves.easeOutCubic,
+        reverseCurve: Curves.easeInCubic,
+        duration: const Duration(milliseconds: 280),
+        reverseDuration: const Duration(milliseconds: 180),
+      ),
+      items: <PopupMenuEntry<int>>[
+        for (int i = 0; i < list.length; i++)
+          PopupMenuItem<int>(
+            value: i,
+            child: Row(
+              children: <Widget>[
+                if (list[i].icon != null) ...<Widget>[
+                  list[i].icon!,
+                  const SizedBox(width: 12.0),
+                ],
+                Flexible(
+                  child: Text(
+                    list[i].label,
+                    style: const TextStyle(fontWeight: FontWeight.w500),
+                  ),
                 ),
-                onTap: () {
-                  Navigator.of(context).pop();
-                  widget.onSelected.call(item.value);
-                },
-              );
-            },
-            separatorBuilder: (BuildContext context, int index) =>
-                const Divider(),
+              ],
+            ),
           ),
-        );
-      },
+      ],
     );
+
+    if (selected != null) {
+      widget.onSelected.call(list[selected].value);
+    }
   }
 }
 

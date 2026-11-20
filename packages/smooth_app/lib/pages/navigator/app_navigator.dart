@@ -24,6 +24,7 @@ import 'package:smooth_app/pages/guides/guide/guide_open_products_facts.dart';
 import 'package:smooth_app/pages/navigator/error_page.dart';
 import 'package:smooth_app/pages/navigator/external_page.dart';
 import 'package:smooth_app/pages/navigator/external_page_webview.dart';
+import 'package:smooth_app/pages/navigator/card_to_page_transition.dart';
 import 'package:smooth_app/pages/navigator/slide_up_transition.dart';
 import 'package:smooth_app/pages/onboarding/onboarding_flow_navigator.dart';
 import 'package:smooth_app/pages/preferences/user_preferences_page.dart';
@@ -186,6 +187,10 @@ class _SmoothGoRouter {
                       key: state.pageKey,
                       child: widget,
                     ),
+                  ProductPageTransition.fromCard => CardToPage.getTransition<void>(
+                    key: state.pageKey,
+                    child: widget,
+                  ),
                 };
               },
             ),

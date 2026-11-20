@@ -5,8 +5,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:scanner_ml_kit/scanner_ml_kit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:smooth_app/cards/product_cards/smooth_product_card_found.dart';
 import 'package:smooth_app/helpers/entry_points_helper.dart';
 import 'package:smooth_app/main.dart' as app;
+import 'package:smooth_app/pages/navigator/card_to_page_transition.dart';
 import 'package:smooth_app/pages/onboarding/onboarding_flow_navigator.dart';
 import 'package:smooth_app/widgets/smooth_navigation_bar.dart';
 
@@ -72,6 +74,24 @@ void main() {
       // Drop the recorded exception so the next stage starts clean.
       tester.takeException();
     }
+  }
+
+  /// Measures the rectangle that grows out of the card (and shrinks back):
+  /// reads its position a few times while the motion runs.
+  Future<List<Rect>> sampleMotion(
+    WidgetTester tester, {
+    required int frames,
+    required int everyMs,
+  }) async {
+    final List<Rect> rects = <Rect>[];
+    for (int i = 0; i < frames; i++) {
+      await tester.pump(Duration(milliseconds: everyMs));
+      final Finder clip = find.byKey(CardToPage.clipKey);
+      if (clip.evaluate().isNotEmpty) {
+        rects.add(tester.getRect(clip.first));
+      }
+    }
+    return rects;
   }
 
   Finder navIcon(IconData icon) => find
@@ -143,6 +163,31 @@ void main() {
       await wait(tester, 3);
     });
 
+    await stage(tester, 'History menu grows from its button', () async {
+      final Finder button = find.byIcon(Icons.more_vert_rounded);
+      expect(button, findsWidgets, reason: 'no menu button on History');
+      final Rect buttonRect = tester.getRect(button.first);
+      await tester.tap(button.first);
+      await wait(tester, 1);
+      final Finder items = find.byType(PopupMenuItem<int>);
+      expect(items, findsWidgets, reason: 'the menu did not open');
+      final Rect menu = tester.getRect(items.first);
+      log('menu button $buttonRect, first menu item $menu');
+      expect(
+        menu.top - buttonRect.bottom,
+        inInclusiveRange(-8.0, 80.0),
+        reason: 'the menu must open right under its button',
+      );
+      expect(
+        (menu.right - buttonRect.right).abs(),
+        lessThan(48.0),
+        reason: 'the menu must line up with its button',
+      );
+      await tester.binding.handlePopRoute();
+      await wait(tester, 1);
+      expect(find.byType(PopupMenuItem<int>), findsNothing);
+    });
+
     await stage(tester, 'Scan screen (after History)', () async {
       await tester.tap(navIcon(Icons.qr_code_scanner_rounded));
       await wait(tester, 10);
@@ -175,6 +220,90 @@ void main() {
       }
       await tester.tap(result.first);
       await wait(tester, 15);
+    });
+
+    await stage(tester, 'Back from the product page', () async {
+      await tester.binding.handlePopRoute();
+      await wait(tester, 2);
+    });
+
+    await stage(tester, 'Search results list', () async {
+      final Finder field = find.byType(TextField);
+      expect(field, findsWidgets, reason: 'no search box');
+      await tester.enterText(field.first, 'nutella');
+      await tester.testTextInput.receiveAction(TextInputAction.search);
+      await wait(tester, 20);
+      expect(
+        find.byType(SmoothProductCardItemFound),
+        findsWidgets,
+        reason: 'the search found no product rows (is the internet down?)',
+      );
+    });
+
+    final Size screen = tester.view.physicalSize / tester.view.devicePixelRatio;
+
+    await stage(tester, 'Card grows into the product page', () async {
+      final Rect card = tester.getRect(
+        find.byType(SmoothProductCardItemFound).first,
+      );
+      log('card is $card on a screen of $screen');
+      await tester.tap(find.byType(SmoothProductCardItemFound).first);
+      final List<Rect> rects = await sampleMotion(
+        tester,
+        frames: 14,
+        everyMs: 50,
+      );
+      log('growing rectangle heights: '
+          '${rects.map((Rect r) => r.height.round()).toList()}');
+      expect(rects.length, greaterThan(4), reason: 'no growing rectangle seen');
+      expect(
+        rects.first.height,
+        lessThan(screen.height * 0.6),
+        reason: 'the page must start small, at the card',
+      );
+      for (int i = 1; i < rects.length; i++) {
+        expect(
+          rects[i].height,
+          greaterThanOrEqualTo(rects[i - 1].height - 2),
+          reason: 'the rectangle must only grow while opening',
+        );
+      }
+      await wait(tester, 3);
+      expect(
+        tester.getRect(find.byKey(CardToPage.clipKey).first).height,
+        greaterThan(screen.height * 0.97),
+        reason: 'the page must end up filling the screen',
+      );
+    });
+
+    await stage(tester, 'Back shrinks the page into the card', () async {
+      await tester.binding.handlePopRoute();
+      final List<Rect> rects = await sampleMotion(
+        tester,
+        frames: 7,
+        everyMs: 45,
+      );
+      log('shrinking rectangle heights: '
+          '${rects.map((Rect r) => r.height.round()).toList()}');
+      expect(rects.length, greaterThan(2), reason: 'no shrinking seen');
+      for (int i = 1; i < rects.length; i++) {
+        expect(
+          rects[i].height,
+          lessThanOrEqualTo(rects[i - 1].height + 2),
+          reason: 'the rectangle must only shrink while closing',
+        );
+      }
+      expect(
+        rects.last.height,
+        lessThan(rects.first.height - 50),
+        reason: 'Back must visibly shrink the page',
+      );
+      await wait(tester, 2);
+      expect(
+        find.byType(SmoothProductCardItemFound),
+        findsWidgets,
+        reason: 'the list must be back after Back',
+      );
     });
 
     log('FINISHED with ${failures.length} failed stage(s)');

@@ -11,6 +11,8 @@ import 'package:smooth_app/generic_lib/widgets/picture_not_found.dart';
 import 'package:smooth_app/helpers/product_cards_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/navigator/app_navigator.dart';
+import 'package:smooth_app/pages/navigator/card_to_page_transition.dart';
+import 'package:smooth_app/pages/product/product_page/new_product_header.dart';
 
 class SmoothProductCardItemFound extends StatelessWidget {
   const SmoothProductCardItemFound({
@@ -120,10 +122,18 @@ class SmoothProductCardItemFound extends StatelessWidget {
       child: InkWell(
         onTap:
             onTap ??
-            () => AppNavigator.of(context).push(
-              AppRoutes.PRODUCT(product.barcode!, heroTag: heroTag),
-              extra: product,
-            ),
+            () {
+              // The page grows out of this card, and Back shrinks it back.
+              CardOrigin.remember(context);
+              AppNavigator.of(context).push(
+                AppRoutes.PRODUCT(
+                  product.barcode!,
+                  heroTag: heroTag,
+                  transition: ProductPageTransition.fromCard,
+                ),
+                extra: product,
+              );
+            },
         onLongPress: () => onLongPress?.call(),
         child: child,
       ),

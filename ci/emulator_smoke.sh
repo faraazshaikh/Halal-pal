@@ -42,11 +42,27 @@ GRANT_PID=$!
 ) &
 SHOT_PID=$!
 
+# A screen recording of the test itself (so the motion can be checked frame
+# by frame). It starts once the app is running, in 170-second pieces.
+(
+  until grep -q "SMOKE" "$EVID/test.log" 2>/dev/null; do sleep 1; done
+  echo "recording started $(date +%H:%M:%S)" >> "$EVID/events.txt"
+  for i in 1 2 3 4; do
+    adb -s "$DEVICE" shell screenrecord --time-limit 170 --size 540x1170 "/sdcard/rec_$i.mp4"
+  done
+) &
+REC_PID=$!
+
 cd packages/smooth_app
 flutter test integration_test/halalpal_smoke_test.dart -d "$DEVICE" 2>&1 | tee "$EVID/test.log"
 RESULT=${PIPESTATUS[0]}
 
-kill "$SHOT_PID" "$GRANT_PID" 2>/dev/null || true
+kill "$SHOT_PID" "$GRANT_PID" "$REC_PID" 2>/dev/null || true
+# Stop the recorder cleanly so the video file is complete, then collect it.
+adb -s "$DEVICE" shell "pkill -SIGINT screenrecord" || true
+sleep 4
+adb -s "$DEVICE" pull /sdcard/ "$EVID/recordings" >/dev/null 2>&1 || true
+rm -rf "$EVID/recordings/Android" 2>/dev/null || true
 adb -s "$DEVICE" logcat -d -s flutter:V AndroidRuntime:E > "$EVID/app_log.txt" || true
 echo "test exit code: $RESULT" | tee -a "$EVID/events.txt"
 exit "$RESULT"
