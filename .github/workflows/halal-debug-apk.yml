@@ -10,7 +10,8 @@ on:
       - halalpal-rebrand
 
 permissions:
-  contents: read
+  # contents: write lets the last step update the public 'latest' release.
+  contents: write
 
 jobs:
   build:
@@ -101,3 +102,24 @@ jobs:
           name: halal-pal-release-apk
           path: packages/smooth_app/build/app/outputs/flutter-apk/app-release.apk
           retention-days: 14
+
+      # Permanent download link, no login and no expiry:
+      # https://github.com/faraazshaikh/halal-pal/releases/download/latest/HalalPal.apk
+      # The download page links here, so visitors always get the newest build.
+      - name: 📢 Publish latest signed APK (permanent download link)
+        if: steps.release.outcome == 'success' && steps.sign.outputs.signed == 'yes' && github.ref == 'refs/heads/halalpal-rebrand'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp packages/smooth_app/build/app/outputs/flutter-apk/app-release.apk HalalPal.apk
+          VER=$(grep '^version:' packages/smooth_app/pubspec.yaml | sed 's/version: *//; s/+.*//')
+          BUILD=$((1000 + ${{ github.run_number }}))
+          TITLE="Halal Pal $VER (build $BUILD)"
+          NOTES="Halal Pal $VER, build $BUILD. Built $(date -u +%Y-%m-%d). A helper based on the ingredient list, not a halal certificate."
+          if gh release view latest >/dev/null 2>&1; then
+            gh release edit latest --title "$TITLE" --notes "$NOTES"
+            gh release upload latest HalalPal.apk --clobber
+          else
+            gh release create latest HalalPal.apk --title "$TITLE" --notes "$NOTES" --target "$GITHUB_SHA"
+          fi
