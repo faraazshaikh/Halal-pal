@@ -246,7 +246,8 @@ class _SmoothGoRouter {
                 return switch (ProductPageTransition.byName(
                   state.uri.queryParameters['transition'],
                 )) {
-                  ProductPageTransition.standard => MaterialPage<void>(
+                  ProductPageTransition.standard ||
+                  ProductPageTransition.fromCard => MaterialPage<void>(
                     key: state.pageKey,
                     child: page,
                   ),
