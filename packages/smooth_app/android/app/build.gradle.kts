@@ -62,6 +62,10 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
         release {
+            // R8 shrinking can strip camera and barcode-scanner classes in
+            // release builds only. Off while the scanner is being fixed.
+            isMinifyEnabled = false
+            isShrinkResources = false
             signingConfig = if (System.getenv("SIGN_STORE_PATH") != null) {
                 signingConfigs.getByName("release")
             } else {
