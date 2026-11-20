@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/helpers/halal_checker.dart';
+import 'package:smooth_app/helpers/report_issue.dart';
 
 /// Colours, icon and wording for each halal verdict.
 class HalalStyle {
@@ -152,6 +153,21 @@ class HalalCard extends StatelessWidget {
               'Based on the ingredient list only. Not a halal certificate: '
               'check the pack for a halal mark.',
               style: textTheme.bodySmall?.copyWith(color: Colors.white70),
+            ),
+            const SizedBox(height: SMALL_SPACE),
+            OutlinedButton.icon(
+              onPressed: () => reportProductIssue(
+                context,
+                product: product,
+                result: result,
+                verdictLabel: style.label,
+              ),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.white,
+                side: const BorderSide(color: Colors.white70),
+              ),
+              icon: const Icon(Icons.flag_outlined, size: 18),
+              label: const Text('Report an issue with this product'),
             ),
           ],
         ],

@@ -59,7 +59,9 @@ jobs:
           # sentry_flutter needs minSdk 26 (Android 8.0+); build.gradle.kts
           # reads this Gradle project property.
           ORG_GRADLE_PROJECT_minSdk: 26
-        run: flutter build apk --debug -t lib/entrypoints/android/main_google_play.dart --target-platform android-arm64
+        # Build number goes up with every CI run so a new APK always installs
+        # over the previous one (pubspec starts at 1000, above the old 734).
+        run: flutter build apk --debug --build-number=$((1000 + ${{ github.run_number }})) -t lib/entrypoints/android/main_google_play.dart --target-platform android-arm64
 
       - name: ⬆️ Upload APK
         uses: actions/upload-artifact@v4
@@ -90,7 +92,7 @@ jobs:
           SIGN_STORE_PASSWORD: ${{ secrets.SIGN_STORE_PASSWORD }}
           SIGN_KEY_ALIAS: ${{ secrets.SIGN_KEY_ALIAS }}
           SIGN_KEY_PASSWORD: ${{ secrets.SIGN_KEY_PASSWORD }}
-        run: flutter build apk --release -t lib/entrypoints/android/main_google_play.dart --target-platform android-arm64
+        run: flutter build apk --release --build-number=$((1000 + ${{ github.run_number }})) -t lib/entrypoints/android/main_google_play.dart --target-platform android-arm64
 
       - name: ⬆️ Upload release APK
         if: steps.release.outcome == 'success'

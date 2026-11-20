@@ -8,6 +8,7 @@ import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/generic_lib/widgets/app_bars/logged_in/logged_in_app_bar.dart';
 import 'package:smooth_app/generic_lib/widgets/app_bars/logged_out/logged_out_app_bar.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
+import 'package:smooth_app/helpers/report_issue.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/donation/donation_offer.dart';
 import 'package:smooth_app/pages/food_preferences/food_preferences_page.dart';
@@ -73,6 +74,7 @@ class PreferencesPage extends StatelessWidget {
           PreferenceCard(
             title: appLocalizations.preferences_card_about,
             tiles: <PreferenceTile>[
+              _buildVersionTile(),
               _buildLegalInformationTile(appLocalizations),
               if (userPreferences.devMode > 0)
                 _buildDevModeTile(
@@ -251,6 +253,18 @@ class PreferencesPage extends StatelessWidget {
   }
 
   // About section
+  PreferenceTile _buildVersionTile() {
+    return PreferenceTile(
+      leading: const icons.Info(),
+      title: 'Version',
+      subtitle: FutureBuilder<String>(
+        future: halalPalVersionLabel(),
+        builder: (BuildContext context, AsyncSnapshot<String> snapshot) =>
+            Text(snapshot.data ?? ''),
+      ),
+    );
+  }
+
   NavigationPreferenceTile _buildLegalInformationTile(
     AppLocalizations appLocalizations,
   ) {
