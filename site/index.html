@@ -56,7 +56,7 @@
     margin-bottom: 16px;
   }
   h1 { margin: 0 0 8px; font-size: 40px; line-height: 1.1; letter-spacing: -0.5px; }
-  .tagline { margin: 0 auto 28px; max-width: 30em; font-size: 19px; opacity: 0.95; }
+  .tagline { margin: 0 auto 28px; max-width: 38em; font-size: 19px; opacity: 0.95; }
   .btn {
     display: inline-block;
     background: #fff; color: #1b5e20;
@@ -67,9 +67,10 @@
   }
   .btn:focus-visible, a:focus-visible { outline: 3px solid #ffb74d; outline-offset: 3px; }
   .meta { margin: 14px 0 0; font-size: 14px; opacity: 0.9; }
-  main { padding: 8px 0 24px; display: grid; grid-template-columns: 1fr; column-gap: 40px; align-items: start; }
-  @media (min-width: 900px) { main { grid-template-columns: 1fr 1fr; } }
-  section { margin: 24px 0; }
+  main { padding: 8px 0 24px; }
+  @media (min-width: 900px) { main { column-count: 2; column-gap: 48px; } }
+  section { margin: 0 0 32px; padding-top: 4px; break-inside: avoid; }
+  main section:first-child { margin-top: 24px; }
   h2 { font-size: 24px; margin: 0 0 10px; letter-spacing: -0.2px; }
   p { margin: 0 0 12px; }
   .card {
@@ -83,7 +84,7 @@
   .verdicts { list-style: none; padding: 0; }
   .verdicts li { display: flex; gap: 12px; align-items: flex-start; margin: 12px 0; }
   .chip {
-    flex: none; min-width: 92px; text-align: center;
+    flex: none; width: 108px; text-align: center;
     color: #fff; font-weight: 700; font-size: 14px;
     border-radius: 999px; padding: 4px 12px;
   }
@@ -171,7 +172,7 @@
       <ul>
         <li>It is a helper based on the ingredient list, not a religious ruling or a halal certificate. If you&rsquo;re unsure, check the pack for a halal mark or ask a scholar.</li>
         <li>It reads English ingredient lists only for now. Other languages are planned.</li>
-        <li>Found a wrong result? Tap <strong>Report an issue with this product</strong> in the app, or email <a href="mailto:hello@intelisenselabs.com">hello@intelisenselabs.com</a>.</li>
+        <li>Found a wrong result? Tap <strong>Report an issue with this product</strong> in the app, or <a href="mailto:hello@intelisenselabs.com?subject=Halal%20Pal%20issue">email us</a>.</li>
       </ul>
     </div>
   </section>
