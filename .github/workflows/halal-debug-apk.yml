@@ -71,7 +71,7 @@ jobs:
       - name: 🔑 Prepare release signing key (if secrets are set)
         id: sign
         env:
-          KS_B64: ${{ secrets.SIGN_KEYSTORE_B64 }}
+          KS_B64: ${{ secrets.SIGN_KEYSTORE_B64 || secrets.SIGN_KEYSTORE_864 }}
         run: |
           if [ -n "$KS_B64" ]; then
             echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/halalpal-release.jks"
