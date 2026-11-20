@@ -379,10 +379,25 @@ class AnalyticsHelper {
     DispatchSettings dispatchSettings = const DispatchSettings.persistent(),
   }) async {
     _packageInfo = await PackageInfo.fromPlatform();
-    // Halal Pal never sends analytics: the tracker is deliberately left
-    // uninitialised, so every tracking call returns immediately.
+    // Halal Pal never sends analytics. The tracker still has to be set up,
+    // because every screen that mixes in TraceableClientMixin calls it when
+    // it opens, and an uninitialised tracker throws and breaks the screen
+    // (History and the camera). It is initialised already opted out, with a
+    // dead address and no pings, so nothing is ever queued or sent.
     _setCrashReports(false);
     _setAnalyticsReports(false);
+    try {
+      await MatomoTracker.instance.initialize(
+        url: 'https://analytics.invalid/matomo.php',
+        siteId: '0',
+        dispatchSettings: const DispatchSettings.nonPersistent(),
+        pingInterval: null,
+        optOut: true,
+      );
+      await MatomoTracker.instance.setOptOut(optOut: true);
+    } catch (_) {
+      // Already initialised (hot reload).
+    }
   }
 
   /// A visitor id should have a length of 16 characters.
