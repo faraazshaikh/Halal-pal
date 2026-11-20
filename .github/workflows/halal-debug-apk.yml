@@ -58,7 +58,7 @@ jobs:
 
       - name: 🧪 Halal checker tests
         working-directory: packages/smooth_app
-        run: flutter test test/helpers/halal_checker_test.dart test/helpers/update_checker_test.dart test/helpers/analytics_tracker_test.dart
+        run: flutter test test/helpers/halal_checker_test.dart test/helpers/update_checker_test.dart test/helpers/analytics_tracker_test.dart test/pages/navigator/card_to_page_transition_test.dart
 
       - name: 📱 Build debug APK
         working-directory: packages/smooth_app
