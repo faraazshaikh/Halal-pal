@@ -92,6 +92,33 @@ Future<void> launchSmoothApp({
 
   _enableEdgeToEdgeMode();
 
+  // In release builds a screen that fails to build is a plain grey box. Show
+  // what failed instead, so a broken screen can be reported and fixed.
+  ErrorWidget.builder = (FlutterErrorDetails details) {
+    final String stack = (details.stack?.toString() ?? '')
+        .split('\n')
+        .take(8)
+        .join('\n');
+    return Directionality(
+      textDirection: TextDirection.ltr,
+      child: ColoredBox(
+        color: Colors.black,
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(16, 48, 16, 16),
+          child: Text(
+            'This screen failed to load:\n${details.exceptionAsString()}\n\n$stack',
+            style: const TextStyle(
+              color: Colors.redAccent,
+              fontSize: 11,
+              decoration: TextDecoration.none,
+              fontWeight: FontWeight.normal,
+            ),
+          ),
+        ),
+      ),
+    );
+  };
+
   // Halal Pal does not send crash reports anywhere.
   runApp(const SmoothApp());
 }
