@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:smooth_app/data_models/preferences/user_preferences.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
 import 'package:smooth_app/helpers/provider_helper.dart';
+import 'package:smooth_app/helpers/update_checker.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/generic_lib/widgets/smooth_back_button.dart';
 import 'package:smooth_app/pages/navigator/app_navigator.dart';
@@ -50,6 +51,42 @@ class PageManagerState extends State<PageManager> {
   BottomNavigationTab? _currentPage;
   bool? _useNewHomePage;
   late List<Widget> _tabs;
+
+  @override
+  void initState() {
+    super.initState();
+    // Starts the once-per-launch check for a newer Halal Pal.
+    UpdateChecker.instance.newerVersion.addListener(_onUpdateAvailable);
+    WidgetsBinding.instance.addPostFrameCallback(
+      (_) => _onUpdateAvailable(),
+    );
+  }
+
+  @override
+  void dispose() {
+    UpdateChecker.instance.newerVersion.removeListener(_onUpdateAvailable);
+    super.dispose();
+  }
+
+  bool _updateMessageShown = false;
+
+  void _onUpdateAvailable() {
+    final String? newer = UpdateChecker.instance.newerVersion.value;
+    if (newer == null || _updateMessageShown || !mounted) {
+      return;
+    }
+    _updateMessageShown = true;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('A new version of Halal Pal is available ($newer)'),
+        duration: const Duration(seconds: 12),
+        action: SnackBarAction(
+          label: 'Update',
+          onPressed: UpdateChecker.openDownloadPage,
+        ),
+      ),
+    );
+  }
 
   void _selectTab(BottomNavigationTab tabItem, int index) {
     if (tabItem == _currentPage) {

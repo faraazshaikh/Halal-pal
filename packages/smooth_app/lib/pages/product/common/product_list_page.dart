@@ -20,6 +20,7 @@ import 'package:smooth_app/generic_lib/loading_dialog.dart';
 import 'package:smooth_app/generic_lib/widgets/smooth_responsive.dart';
 import 'package:smooth_app/generic_lib/widgets/smooth_snackbar.dart';
 import 'package:smooth_app/helpers/app_helper.dart';
+import 'package:smooth_app/helpers/update_checker.dart';
 import 'package:smooth_app/helpers/robotoff_insight_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/all_product_list_modal.dart';
@@ -144,6 +145,22 @@ class _ProductListPageState extends State<ProductListPage>
         centerTitle: false,
         animateActionMode: true,
         actions: <Widget>[
+          if (productList.listType == ProductListType.HISTORY)
+            // Bell with a dot: only shown when a newer Halal Pal exists.
+            ValueListenableBuilder<String?>(
+              valueListenable: UpdateChecker.instance.newerVersion,
+              builder: (BuildContext context, String? newer, Widget? _) =>
+                  newer == null
+                  ? EMPTY_WIDGET
+                  : IconButton(
+                      icon: const Badge(
+                        smallSize: 9,
+                        child: Icon(Icons.notifications_outlined),
+                      ),
+                      tooltip: 'Update available: $newer',
+                      onPressed: UpdateChecker.openDownloadPage,
+                    ),
+            ),
           if (productList.listType == ProductListType.HISTORY)
             IconButton(
               icon: const Icon(Icons.settings_outlined),
