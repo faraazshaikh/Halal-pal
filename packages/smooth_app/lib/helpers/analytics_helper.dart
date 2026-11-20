@@ -388,29 +388,6 @@ class AnalyticsHelper {
     // dead address and no pings, so nothing is ever queued or sent.
     _setCrashReports(false);
     _setAnalyticsReports(false);
-    try {
-      await MatomoTracker.instance.initialize(
-        url: 'https://analytics.invalid/matomo.php',
-        siteId: '0',
-        // Fixed values, so set-up never has to ask the phone for its
-        // package or device details and cannot fail on them.
-        userAgent: 'HalalPal',
-        contentBaseUrl: 'https://halalpal.invalid',
-        dispatchSettings: const DispatchSettings.nonPersistent(),
-        pingInterval: null,
-        optOut: true,
-        httpClient: httpClient,
-      );
-      await MatomoTracker.instance.setOptOut(optOut: true);
-      // Opt-out stops anything being sent, but the tracker still lists page
-      // views in memory. Empty that list regularly so nothing builds up.
-      Timer.periodic(
-        const Duration(seconds: 30),
-        (_) => MatomoTracker.instance.dropActions(),
-      );
-    } catch (_) {
-      // Already initialised (hot reload).
-    }
   }
 
   /// A visitor id should have a length of 16 characters.
