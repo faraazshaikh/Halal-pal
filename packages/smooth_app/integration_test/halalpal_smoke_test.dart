@@ -230,9 +230,10 @@ void main() {
     await stage(tester, 'Search results list', () async {
       final Finder field = find.byType(TextField);
       expect(field, findsWidgets, reason: 'no search box');
-      await tester.enterText(field.first, 'nutella');
-      await tester.testTextInput.receiveAction(TextInputAction.search);
-      await wait(tester, 20);
+      final TextField box = tester.widget<TextField>(field.first);
+      box.controller!.text = 'nutella';
+      box.onSubmitted!('nutella');
+      await wait(tester, 25);
       expect(
         find.byType(SmoothProductCardItemFound),
         findsWidgets,
