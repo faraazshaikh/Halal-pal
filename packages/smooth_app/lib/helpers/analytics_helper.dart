@@ -390,6 +390,10 @@ class AnalyticsHelper {
       await MatomoTracker.instance.initialize(
         url: 'https://analytics.invalid/matomo.php',
         siteId: '0',
+        // Fixed values, so set-up never has to ask the phone for its
+        // package or device details and cannot fail on them.
+        userAgent: 'HalalPal',
+        contentBaseUrl: 'https://halalpal.invalid',
         dispatchSettings: const DispatchSettings.nonPersistent(),
         pingInterval: null,
         optOut: true,

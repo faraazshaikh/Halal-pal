@@ -24,6 +24,9 @@ jobs:
     defaults:
       run:
         shell: bash
+    outputs:
+      signed: ${{ steps.sign.outputs.signed }}
+      release_built: ${{ steps.release.outcome }}
     steps:
       - name: 📂 Checkout code
         uses: actions/checkout@v7
@@ -55,7 +58,7 @@ jobs:
 
       - name: 🧪 Halal checker tests
         working-directory: packages/smooth_app
-        run: flutter test test/helpers/halal_checker_test.dart test/helpers/update_checker_test.dart
+        run: flutter test test/helpers/halal_checker_test.dart test/helpers/update_checker_test.dart test/helpers/analytics_tracker_test.dart
 
       - name: 📱 Build debug APK
         working-directory: packages/smooth_app
@@ -106,20 +109,99 @@ jobs:
           path: packages/smooth_app/build/app/outputs/flutter-apk/app-release.apk
           retention-days: 14
 
-      # Permanent download link, no login and no expiry:
-      # https://github.com/faraazshaikh/halal-pal/releases/download/latest/HalalPal.apk
-      # The download page links here, so visitors always get the newest build.
-      - name: 📢 Publish latest signed APK (permanent download link)
-        if: steps.release.outcome == 'success' && steps.sign.outputs.signed == 'yes' && github.ref == 'refs/heads/halalpal-rebrand'
-        continue-on-error: true
+  # Opens the real app on an Android emulator and visits every main screen.
+  # A screen that crashes fails this job, and then nothing is published.
+  emulator-smoke:
+    name: Emulator smoke test (every screen opens)
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: 📂 Checkout code
+        uses: actions/checkout@v7
+
+      - name: ☕ Setup Java
+        uses: actions/setup-java@v6.2.0
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - run: echo "FLUTTER_VERSION=$(cat flutter-version.txt)" >> $GITHUB_OUTPUT
+        id: flutter-version
+
+      - name: 🪺 Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          cache: true
+          flutter-version: ${{ steps.flutter-version.outputs.FLUTTER_VERSION }}
+          cache-key: flutter-${{ hashFiles('flutter-version.txt')}}-${{ hashFiles('packages/smooth_app/pubspec.lock')}}
+
+      - name: 🔧 Enable scanner and store dependencies
+        run: |
+          chmod +x ci/dependencies/scanner/enable_mlkit_dependency.sh ci/dependencies/app_store/enable_google_play_dependency.sh
+          ci/dependencies/scanner/enable_mlkit_dependency.sh
+          ci/dependencies/app_store/enable_google_play_dependency.sh
+
+      - name: 📦 Get dependencies
+        run: ci/pub_get.sh
+
+      - name: 🧩 Enable KVM (fast emulator)
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: 🤖 Run the smoke test on an emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back emulated -camera-front emulated
+          disable-animations: true
+          script: bash ci/emulator_smoke.sh
+
+      - name: ⬆️ Upload evidence (screenshots, test log, app log)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: emulator-evidence
+          path: evidence/
+          retention-days: 14
+          if-no-files-found: warn
+
+  # Permanent download link, no login and no expiry:
+  # https://github.com/faraazshaikh/halal-pal/releases/download/latest/HalalPal.apk
+  # The download page links here, so visitors always get the newest build.
+  # Runs only when the unit tests, the build AND the emulator smoke test passed.
+  publish:
+    name: Publish latest signed APK (only after all tests passed)
+    needs: [build, emulator-smoke]
+    if: needs.build.outputs.release_built == 'success' && needs.build.outputs.signed == 'yes' && github.ref == 'refs/heads/halalpal-rebrand'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 📂 Checkout code
+        uses: actions/checkout@v7
+
+      - name: ⬇️ Download the tested release APK
+        uses: actions/download-artifact@v4
+        with:
+          name: halal-pal-release-apk
+          path: tested-apk
+
+      - name: 📢 Publish latest signed APK
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          cp packages/smooth_app/build/app/outputs/flutter-apk/app-release.apk HalalPal.apk
+          cp tested-apk/app-release.apk HalalPal.apk
           VER=$(grep '^version:' packages/smooth_app/pubspec.yaml | sed 's/version: *//; s/+.*//')
           BUILD=$((1000 + ${{ github.run_number }}))
           TITLE="Halal Pal $VER (build $BUILD)"
-          NOTES="Halal Pal $VER, build $BUILD. Built $(date -u +%Y-%m-%d). A helper based on the ingredient list, not a halal certificate."
+          NOTES="Halal Pal $VER, build $BUILD. Built $(date -u +%Y-%m-%d). Passed the unit tests and the emulator smoke test (every main screen opens). A helper based on the ingredient list, not a halal certificate."
           if gh release view latest >/dev/null 2>&1; then
             gh release edit latest --title "$TITLE" --notes "$NOTES"
             gh release upload latest HalalPal.apk --clobber
