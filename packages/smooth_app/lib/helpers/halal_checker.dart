@@ -37,9 +37,14 @@ class HalalResult {
 
 /// Deterministic halal check: the same input always gives the same verdict,
 /// and a haram match can never be overridden.
+///
+/// [halalCertified] is true when the product's labels say it is halal
+/// certified: then only the things that are never allowed (pork, alcohol,
+/// blood, carmine) are flagged, not the source-dependent ones.
 HalalResult checkHalal({
   String? ingredientsText,
   List<String>? additiveNames,
+  bool halalCertified = false,
 }) {
   final String text = <String>[
     if (ingredientsText != null) ingredientsText,
@@ -80,6 +85,10 @@ HalalResult checkHalal({
     }
   }
 
+  if (halalCertified) {
+    return _finish(found);
+  }
+
   // 3. Gelatin: haram unless the source is stated.
   final List<int> gelatinPositions = <int>[
     for (final String term in HALAL_GELATIN_TERMS)
@@ -118,7 +127,13 @@ HalalResult checkHalal({
 
   // 4. Doubtful (mushbooh) keywords and E-numbers.
   for (final HalalRule rule in HALAL_MUSHBOOH_KEYWORDS) {
-    if (_hasKeyword(text, rule.term)) {
+    final bool plainFlavour = rule.reason == HALAL_FLAVOURING_REASON;
+    if (plainFlavour &&
+        found.keys.any((String k) => k.startsWith('natural flavo'))) {
+      // "natural flavouring" is already listed; do not list it twice.
+      continue;
+    }
+    if (_hasKeyword(text, rule.term, exemptions: HALAL_SOURCE_EXEMPTIONS)) {
       add(rule.term, rule.reason, HalalVerdict.mushbooh);
     }
   }
@@ -128,6 +143,21 @@ HalalResult checkHalal({
     }
   }
 
+  return _finish(found);
+}
+
+/// True if the product's label tags say it is halal certified.
+bool isHalalCertifiedByLabels(List<String>? labelsTags) =>
+    labelsTags?.any((String tag) {
+      final String t = tag.toLowerCase();
+      return t.contains('halal') &&
+          !t.contains('non-halal') &&
+          !t.contains('not-halal') &&
+          !t.contains('no-halal');
+    }) ??
+    false;
+
+HalalResult _finish(Map<String, HalalFinding> found) {
   final List<HalalFinding> findings = found.values.toList(growable: false);
   // Haram first, then mushbooh.
   findings.sort(
@@ -146,13 +176,21 @@ HalalResult checkHalal({
 
 /// Start positions of [term] as a whole word in [text], ignoring harmless
 /// phrases such as "alcohol free" or "wine vinegar".
-List<int> _keywordPositions(String text, String term) {
+List<int> _keywordPositions(
+  String text,
+  String term, {
+  Map<String, List<String>>? exemptions,
+}) {
   final RegExp regExp = RegExp(
     '(?<![a-z])${RegExp.escape(term)}(?![a-z])',
   );
+  final List<String>? sourceWords = exemptions?[term];
   final List<int> positions = <int>[];
   for (final RegExpMatch match in regExp.allMatches(text)) {
     if (_isHarmlessContext(text, term, match)) {
+      continue;
+    }
+    if (sourceWords != null && _sourceStatedNear(text, match, sourceWords)) {
       continue;
     }
     positions.add(match.start);
@@ -160,8 +198,38 @@ List<int> _keywordPositions(String text, String term) {
   return positions;
 }
 
-bool _hasKeyword(String text, String term) =>
-    _keywordPositions(text, term).isNotEmpty;
+bool _hasKeyword(
+  String text,
+  String term, {
+  Map<String, List<String>>? exemptions,
+}) => _keywordPositions(text, term, exemptions: exemptions).isNotEmpty;
+
+/// True if a source word is written right next to the match, such as
+/// "microbial rennet" or "lecithin (soya)". Words must touch the term (before
+/// it, or in brackets after it), so "glycerin, palm oil" is still flagged.
+/// Halal wording ("halal chicken", "chicken (halal)", "alcohol free flavour")
+/// is also accepted a few words either side.
+bool _sourceStatedNear(String text, RegExpMatch match, List<String> words) {
+  final String before = text.substring(0, match.start);
+  final String after = text.substring(match.end);
+  if (words.contains('halal')) {
+    final String window =
+        before.substring(before.length > 30 ? before.length - 30 : 0) +
+        after.substring(0, after.length > 30 ? 30 : after.length);
+    return words.any(window.contains);
+  }
+  for (final String word in words) {
+    final String w = RegExp.escape(word);
+    if (RegExp('(?<![a-z])$w[a-z]*[\\s-]*\$').hasMatch(before)) {
+      return true;
+    }
+    if (RegExp('^\\s*[(\\[:,/-]\\s*$w').hasMatch(after) &&
+        !RegExp(r'^\s*,').hasMatch(after)) {
+      return true;
+    }
+  }
+  return false;
+}
 
 bool _isHarmlessContext(String text, String term, RegExpMatch match) {
   final String before = text.substring(0, match.start);
@@ -175,6 +243,36 @@ bool _isHarmlessContext(String text, String term, RegExpMatch match) {
     }
   }
   if (term == 'wine' && RegExp(r'^\s*vinegar').hasMatch(after)) {
+    return true;
+  }
+  if (term == 'blood' && RegExp(r'^\s*orange').hasMatch(after)) {
+    return true;
+  }
+  if (term == 'meat' &&
+      (RegExp(r'^[\s-]*free').hasMatch(after) ||
+          RegExp(r'(no|non|not)[\s-]*$').hasMatch(before))) {
+    return true;
+  }
+  if (term == 'flavour' || term == 'flavor') {
+    // "flavour enhancer" (for example E621) is an additive, not a flavouring.
+    if (RegExp(r'^\s*enhancer').hasMatch(after)) {
+      return true;
+    }
+  }
+  if (<String>{
+        'chicken', 'beef', 'lamb', 'turkey', 'duck', 'veal', 'goat', 'meat',
+      }.contains(term) &&
+      RegExp(r'^\s*(flavou?r|flavou?red|style|seasoning|taste)').hasMatch(after)) {
+    return true;
+  }
+  if (term == 'goat' &&
+      RegExp(r"^(['’]s)?\s*(milk|cheese|cheeses|curd|yogh?urt)").hasMatch(after)) {
+    return true;
+  }
+  if (term == 'lamb' && RegExp(r"^(['’]s)?\s*lettuce").hasMatch(after)) {
+    return true;
+  }
+  if (term == 'beef' && RegExp(r'^\s*tomato').hasMatch(after)) {
     return true;
   }
   return false;

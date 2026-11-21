@@ -69,7 +69,7 @@ class AppSettingsRoot extends PreferencesRoot {
         ],
       ),
       PreferenceCard(
-        title: appLocalizations.crash_reporting_toggle_title,
+        title: 'Reports to Halal Pal',
         tiles: <PreferenceTile>[
           _buildCrashReportingTile(
             appLocalizations,
@@ -224,8 +224,11 @@ class AppSettingsRoot extends PreferencesRoot {
   ) {
     return TogglePreferenceTile(
       leading: icons.Crash(color: iconColor),
-      title: appLocalizations.crash_reporting_toggle_title,
-      subtitleText: appLocalizations.crash_reporting_toggle_subtitle,
+      title: 'Send crash reports',
+      subtitleText:
+          'If the app crashes, a short error report is sent to the Halal Pal '
+          'team so the bug can be fixed. It holds the error and the app '
+          'version, with no name, account or location.',
       state: userPreferences.crashReports,
       onToggle: (bool value) => userPreferences.setCrashReports(value),
     );
@@ -238,8 +241,11 @@ class AppSettingsRoot extends PreferencesRoot {
   ) {
     return TogglePreferenceTile(
       leading: icons.Incognito(color: iconColor),
-      title: appLocalizations.send_anonymous_data_toggle_title,
-      subtitleText: appLocalizations.send_anonymous_data_toggle_subtitle,
+      title: 'Share anonymous usage',
+      subtitleText:
+          'Counts which screens and features are used, and the result of a '
+          'scan, so Halal Pal can be improved. It is sent to Halal Pal, '
+          'never with a name, account, location or barcode.',
       state: userPreferences.userTracking,
       onToggle: (bool value) => userPreferences.setUserTracking(value),
     );

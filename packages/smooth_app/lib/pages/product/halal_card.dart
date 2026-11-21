@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
+import 'package:smooth_app/helpers/halal_reporting.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/helpers/halal_checker.dart';
 import 'package:smooth_app/helpers/report_issue.dart';
@@ -61,7 +62,9 @@ class HalalCard extends StatelessWidget {
     final HalalResult result = checkHalal(
       ingredientsText: product.ingredientsText,
       additiveNames: product.additives?.names,
+      halalCertified: isHalalCertifiedByLabels(product.labelsTags),
     );
+    HalalReporting.trackVerdict(product.barcode, result.verdict.name);
     final HalalStyle style = HalalStyle.of(result.verdict);
     final TextTheme textTheme = Theme.of(context).textTheme;
 

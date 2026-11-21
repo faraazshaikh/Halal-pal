@@ -25,6 +25,7 @@ import 'package:smooth_app/database/local_database.dart';
 import 'package:smooth_app/generic_lib/animations/rive_animation.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
+import 'package:smooth_app/helpers/halal_reporting.dart';
 import 'package:smooth_app/helpers/camera_helper.dart';
 import 'package:smooth_app/helpers/entry_points_helper.dart';
 import 'package:smooth_app/helpers/global_vars.dart';
@@ -119,7 +120,6 @@ Future<void> launchSmoothApp({
     );
   };
 
-  // Halal Pal does not send crash reports anywhere.
   runApp(const SmoothApp());
 }
 
@@ -173,6 +173,7 @@ Future<bool> _init1() async {
   UserManagementProvider().checkUserLoginValidity(_userPreferences);
 
   await AnalyticsHelper.linkPreferences(_userPreferences);
+  await HalalReporting.init(_userPreferences);
 
   await ProductQuery.initCountry(_userPreferences);
   _themeProvider = ThemeProvider(_userPreferences);

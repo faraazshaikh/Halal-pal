@@ -8,6 +8,7 @@ on:
     branches:
       - halal-badge
       - halalpal-rebrand
+      - halalpal-reports
     # The download page lives in site/ and needs no app build.
     paths-ignore:
       - 'site/**'
@@ -58,7 +59,7 @@ jobs:
 
       - name: 🧪 Halal checker tests
         working-directory: packages/smooth_app
-        run: flutter test test/helpers/halal_checker_test.dart test/helpers/update_checker_test.dart test/helpers/analytics_tracker_test.dart test/pages/navigator/card_to_page_transition_test.dart
+        run: flutter test test/helpers/halal_checker_test.dart test/helpers/update_checker_test.dart test/helpers/analytics_tracker_test.dart test/pages/navigator/card_to_page_transition_test.dart test/helpers/halal_reporting_test.dart
 
       - name: 📱 Build debug APK
         working-directory: packages/smooth_app
@@ -176,7 +177,7 @@ jobs:
       # Keep the screenshots where they can be opened without a login: a
       # pre-release (never shown as the latest download) replaced on every run.
       - name: 🖼️ Attach evidence to the test-evidence pre-release
-        if: always() && github.ref == 'refs/heads/halalpal-rebrand'
+        if: always() && (github.ref == 'refs/heads/halalpal-rebrand' || github.ref == 'refs/heads/halalpal-reports')
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}

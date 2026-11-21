@@ -1,0 +1,129 @@
+{
+  "name": "Halal Pal - reports",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "halalpal-report",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "n1",
+      "name": "Report in",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "halalpal-report"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.body.kind }}",
+              "rightValue": "crash",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "n2",
+      "name": "Is crash",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "sendTo": "hello@intelisenselabs.com",
+        "subject": "={{ 'Halal Pal crash ' + String($json.body.app || '?').slice(0,30) + ' ' + String($json.body.platform || '').slice(0,20) }}",
+        "message": "={{ 'Time: ' + $json.body.time + '\\nApp: ' + $json.body.app + '\\nPlatform: ' + $json.body.platform + '\\n\\nError:\\n' + String($json.body.error || '').slice(0,1500) + '\\n\\nStack:\\n' + String($json.body.stack || '').slice(0,6000) }}",
+        "options": {
+          "appendAttribution": false
+        },
+        "emailType": "text"
+      },
+      "id": "n3",
+      "name": "Email crash",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        480,
+        -80
+      ],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "CaKGEqDvBbD2T7cx",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const s = $getWorkflowStaticData('global');\nconst b = $input.first().json.body || {};\nconst day = new Date().toISOString().slice(0,10);\ns.counts = s.counts || {};\nfor (const ev of (Array.isArray(b.events) ? b.events.slice(0,200) : [])) {\n  const p = ev.p ? Object.values(ev.p).map(v => String(v).slice(0,40)).join('/') : '';\n  const key = [day, String(b.app||'?').slice(0,20), String(b.platform||'?').slice(0,15), String(ev.e||'?').slice(0,40), p].join(' | ');\n  s.counts[key] = (s.counts[key] || 0) + 1;\n}\nreturn [{ json: { stored: Object.keys(s.counts).length } }];"
+      },
+      "id": "n4",
+      "name": "Count usage",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        100
+      ]
+    }
+  ],
+  "connections": {
+    "Report in": {
+      "main": [
+        [
+          {
+            "node": "Is crash",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is crash": {
+      "main": [
+        [
+          {
+            "node": "Email crash",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Count usage",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "none",
+    "saveManualExecutions": false,
+    "executionOrder": "v1"
+  }
+}

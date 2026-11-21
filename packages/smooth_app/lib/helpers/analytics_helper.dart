@@ -8,6 +8,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:smooth_app/data_models/preferences/user_preferences.dart';
 import 'package:smooth_app/helpers/global_vars.dart';
+import 'package:smooth_app/helpers/halal_reporting.dart';
 import 'package:smooth_app/query/product_query.dart';
 
 /// Category for Matomo Events
@@ -381,11 +382,12 @@ class AnalyticsHelper {
     http.Client? httpClient,
   }) async {
     _packageInfo = await PackageInfo.fromPlatform();
-    // Halal Pal never sends analytics. The tracker still has to be set up,
-    // because every screen that mixes in TraceableClientMixin calls it when
-    // it opens, and an uninitialised tracker throws and breaks the screen
-    // (History and the camera). It is initialised already opted out, with a
-    // dead address and no pings, so nothing is ever queued or sent.
+    // Matomo (the old Open Food Facts tracker) is never used. It still has to
+    // be set up, because every screen that mixes in TraceableClientMixin
+    // calls it when it opens, and an uninitialised tracker throws and breaks
+    // the screen (History and the camera). It is initialised already opted
+    // out, with a dead address and no pings, so nothing is ever queued or
+    // sent. Halal Pal's own reports go through HalalReporting.
     _setCrashReports(false);
     _setAnalyticsReports(false);
     try {
@@ -475,6 +477,8 @@ class AnalyticsHelper {
     String? action,
     ProductType? productType,
   }) {
+    // Anonymous count for Halal Pal's own server (no barcode, no value).
+    HalalReporting.trackUsage(msg, <String, String>{'c': category});
     if (!MatomoTracker.instance.initialized) {
       return;
     }
@@ -540,14 +544,18 @@ class AnalyticsHelper {
     String? searchCategory,
     int? searchCount,
   }) {
-    if (!MatomoTracker.instance.initialized) {
-      return;
-    }
     final String searchString = '$search,$searchCategory,$searchCount';
     if (searchString == latestSearch) {
       return;
     }
     latestSearch = searchString;
+    // Only the fact that a search happened is counted, never what was typed.
+    HalalReporting.trackUsage('search', <String, String>{
+      'c': searchCategory ?? '',
+    });
+    if (!MatomoTracker.instance.initialized) {
+      return;
+    }
     MatomoTracker.instance.trackSearch(
       searchKeyword: search,
       searchCount: searchCount,
@@ -576,7 +584,12 @@ class AnalyticsHelper {
   }
 
   static void sendException(dynamic throwable, {dynamic stackTrace}) {
-    unawaited(Sentry.captureException(throwable, stackTrace: stackTrace));
+    unawaited(
+      HalalReporting.reportCrash(
+        throwable ?? 'unknown error',
+        stackTrace is StackTrace ? stackTrace : null,
+      ),
+    );
   }
 }
 

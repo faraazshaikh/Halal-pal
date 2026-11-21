@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:smooth_app/helpers/halal_reporting.dart';
 import 'package:smooth_app/data_models/preferences/user_preferences.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
 import 'package:smooth_app/helpers/provider_helper.dart';
@@ -89,6 +90,7 @@ class PageManagerState extends State<PageManager> {
   }
 
   void _selectTab(BottomNavigationTab tabItem, int index) {
+    HalalReporting.trackUsage('tab', <String, String>{'name': tabItem.name});
     if (tabItem == _currentPage) {
       _navigatorKeys[tabItem]!.currentState!.popUntil(
         (Route<dynamic> route) => route.isFirst,
